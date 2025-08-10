@@ -34,12 +34,6 @@ class MobileOptions extends OptionsScreen {
 		actionMode = 'A_B';
 		super("Mobile", 'Change Mobile Related Things such as Controls alpha, screen timeout....', null, 'LEFT_FULL', 'A_B');
 		#if TOUCH_CONTROLS
-		add(new ArrayOption(
-			"Extra Hints",
-			"Select how many extra hints you prefer to have on hitbox",
-			['NONE', 'SINGLE', 'DOUBLE'],
-			["None", "Single", "Double"],
-			'extraHints'));
 		add(new NumOption(
 			"Hitbox Opacity",
 			"Change how opaque the Hitbox should be",

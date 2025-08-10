@@ -23,7 +23,7 @@ class MemoryCounter extends Sprite {
 			label.y = 0;
 			label.text = "FPS";
 			label.multiline = label.wordWrap = false;
-			label.defaultTextFormat = new TextFormat(openfl.utils.Assets.getFont("assets/fonts/Consolas.ttf").fontName, 12, -1);
+			label.defaultTextFormat = new TextFormat(openfl.utils.Assets.getFont("assets/fonts/DTM-Mono.ttf").fontName, 12, -1);
 			label.selectable = false;
 			addChild(label);
 		}

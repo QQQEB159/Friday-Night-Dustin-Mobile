@@ -28,7 +28,7 @@ class FramerateCategory extends Sprite {
 			label.autoSize = LEFT;
 			label.x = 0;
 			label.y = 0;
-			label.defaultTextFormat = new TextFormat(openfl.utils.Assets.getFont("assets/fonts/Consolas.ttf").fontName, label == this.title ? 18 : 12, -1);
+			label.defaultTextFormat = new TextFormat(openfl.utils.Assets.getFont("assets/fonts/DTM-Mono.ttf").fontName, label == this.title ? 18 : 12, -1);
 			label.selectable = false;
 			addChild(label);
 		}

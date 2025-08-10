@@ -11,7 +11,7 @@ class CodenameBuildField extends TextField {
 		defaultTextFormat = Framerate.textFormat;
 		autoSize = LEFT;
 		multiline = wordWrap = false;
-		text = 'Codename Engine ${Main.releaseCycle}\nVersion ${Main.releaseVersion}';
+		text = '';
 		selectable = false;
 	}
 }

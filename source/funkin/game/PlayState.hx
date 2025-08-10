@@ -38,6 +38,8 @@ using StringTools;
 @:access(funkin.game.StrumLine)
 class PlayState extends MusicBeatState
 {
+	public static var qqqeb:Bool = false;
+	
 	/**
 	 * Current PlayState instance.
 	 */
@@ -995,6 +997,7 @@ class PlayState extends MusicBeatState
 	}
 
 	public override function destroy() {
+		qqqeb = false;
 		scripts.call("destroy");
 		#if mobile lime.system.System.allowScreenTimeout = Options.screenTimeOut; #end
 		for(g in __cachedGraphics)

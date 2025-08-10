@@ -51,7 +51,7 @@ class Framerate extends Sprite {
 		super();
 		if (instance != null) throw "Cannot create another instance";
 		instance = this;
-		textFormat = new TextFormat(openfl.utils.Assets.getFont("assets/fonts/Consolas.ttf").fontName, 12, -1);
+		textFormat = new TextFormat(openfl.utils.Assets.getFont("assets/fonts/DTM-Mono.ttf").fontName, 12, -1);
 
 		isLoaded = true;
 

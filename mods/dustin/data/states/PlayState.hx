@@ -16,7 +16,7 @@ function onOpenSubState(e) if (e.substate is VideoCutscene) {
 
 function finishDustin() {
     script.destroy();
-    FlxG.save.flush();
+    //FlxG.save.flush();
     if (dustCall != null) dustCall();
 
     if (name == "assets/videos/the-uprising-end-cutscene.mp4")

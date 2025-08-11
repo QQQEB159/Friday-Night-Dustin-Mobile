@@ -54,6 +54,10 @@ jobs:
           brew install ldid
           cd export/release/ios/build/Release-iphoneos/dustin.app
           ldid -S../../../dustin/dustin.entitlements dustin
+          cd ..
+          mkdir Payload
+          mv dustin.app Payload
+          zip -r dustin.ipa Payload
       - name: Uploading artifact
         uses: actions/upload-artifact@v4
         with:

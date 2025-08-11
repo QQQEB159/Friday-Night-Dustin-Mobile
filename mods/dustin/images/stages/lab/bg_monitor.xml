@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="bg_monitor.png" width="727" height="226" spritePadding="3" borderPadding="1">
+	<SubTexture name="Monitor0000" x="1" y="1" width="361" height="224" frameX="-5" frameY="-4" frameWidth="374" frameHeight="235"/>
+	<SubTexture name="Monitor0001" x="1" y="1" width="361" height="224" frameX="-5" frameY="-4" frameWidth="374" frameHeight="235"/>
+	<SubTexture name="Monitor0002" x="1" y="1" width="361" height="224" frameX="-5" frameY="-4" frameWidth="374" frameHeight="235"/>
+	<SubTexture name="Monitor0003" x="1" y="1" width="361" height="224" frameX="-5" frameY="-4" frameWidth="374" frameHeight="235"/>
+	<SubTexture name="Monitor0004" x="1" y="1" width="361" height="224" frameX="-5" frameY="-4" frameWidth="374" frameHeight="235"/>
+	<SubTexture name="Monitor0005" x="365" y="1" width="361" height="224" frameX="-5" frameY="-4" frameWidth="374" frameHeight="235"/>
+	<SubTexture name="Monitor0006" x="365" y="1" width="361" height="224" frameX="-5" frameY="-4" frameWidth="374" frameHeight="235"/>
+	<SubTexture name="Monitor0007" x="365" y="1" width="361" height="224" frameX="-5" frameY="-4" frameWidth="374" frameHeight="235"/>
+	<SubTexture name="Monitor0008" x="365" y="1" width="361" height="224" frameX="-5" frameY="-4" frameWidth="374" frameHeight="235"/>
+	<SubTexture name="Monitor0009" x="365" y="1" width="361" height="224" frameX="-5" frameY="-4" frameWidth="374" frameHeight="235"/>
+</TextureAtlas>

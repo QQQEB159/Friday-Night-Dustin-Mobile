@@ -1,0 +1,9 @@
+{
+    "params": [
+        {
+            "name": "lerpSpeed",
+            "type": "String",
+            "defaultValue": "0.05"
+        }
+    ]
+}

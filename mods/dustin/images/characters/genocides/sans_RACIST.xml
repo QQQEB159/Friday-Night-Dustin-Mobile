@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="sans_RACIST.png" width="6004" height="1205">
+	<SubTexture name="down0000" x="4397" y="429" width="475" height="700" frameX="-0" frameY="-25" frameWidth="475" frameHeight="725"/>
+	<SubTexture name="down0001" x="4397" y="429" width="475" height="700" frameX="-0" frameY="-25" frameWidth="475" frameHeight="725"/>
+	<SubTexture name="down0002" x="857" y="454" width="475" height="725" frameX="-0" frameY="-0" frameWidth="475" frameHeight="725"/>
+	<SubTexture name="down0003" x="857" y="454" width="475" height="725" frameX="-0" frameY="-0" frameWidth="475" frameHeight="725"/>
+	<SubTexture name="idle0000" x="1335" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="idle0001" x="1335" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="idle0002" x="1335" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="idle0003" x="1335" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="idle0004" x="1335" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="idle0005" x="1335" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="idle0006" x="1335" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="idle0007" x="3113" y="1" width="750" height="425" rotated="true" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="idle0008" x="3113" y="1" width="750" height="425" rotated="true" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="idle0009" x="3113" y="1" width="750" height="425" rotated="true" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="idle0010" x="3113" y="1" width="750" height="425" rotated="true" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="idle0011" x="3113" y="1" width="750" height="425" rotated="true" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="idle0012" x="3113" y="1" width="750" height="425" rotated="true" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="idle0013" x="3113" y="1" width="750" height="425" rotated="true" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="left0000" x="3866" y="1" width="750" height="425" rotated="true" frameX="-0" frameY="-0" frameWidth="450" frameHeight="750"/>
+	<SubTexture name="left0001" x="3866" y="1" width="750" height="425" rotated="true" frameX="-0" frameY="-0" frameWidth="450" frameHeight="750"/>
+	<SubTexture name="left0002" x="4619" y="1" width="750" height="425" rotated="true" frameX="-25" frameY="-0" frameWidth="450" frameHeight="750"/>
+	<SubTexture name="left0003" x="4619" y="1" width="750" height="425" rotated="true" frameX="-25" frameY="-0" frameWidth="450" frameHeight="750"/>
+	<SubTexture name="right0000" x="1607" y="1" width="750" height="450" rotated="true" frameX="-25" frameY="-0" frameWidth="475" frameHeight="750"/>
+	<SubTexture name="right0001" x="1607" y="1" width="750" height="450" rotated="true" frameX="-25" frameY="-0" frameWidth="475" frameHeight="750"/>
+	<SubTexture name="right0002" x="2360" y="1" width="750" height="450" rotated="true" frameX="-0" frameY="-0" frameWidth="475" frameHeight="750"/>
+	<SubTexture name="right0003" x="2360" y="1" width="750" height="450" rotated="true" frameX="-0" frameY="-0" frameWidth="475" frameHeight="750"/>
+	<SubTexture name="uhoh10000" x="5372" y="1" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10001" x="5372" y="1" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10002" x="5372" y="1" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10003" x="5372" y="1" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10004" x="1763" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10005" x="1763" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10006" x="1763" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10007" x="1763" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10008" x="4875" y="429" width="425" height="700" frameX="-0" frameY="-50" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10009" x="4875" y="429" width="425" height="700" frameX="-0" frameY="-50" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10010" x="4875" y="429" width="425" height="700" frameX="-0" frameY="-50" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10011" x="4875" y="429" width="425" height="700" frameX="-0" frameY="-50" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10012" x="3113" y="429" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10013" x="3113" y="429" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10014" x="3113" y="429" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10015" x="3113" y="429" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10016" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10017" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10018" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10019" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10020" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10021" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10022" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10023" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10024" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10025" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10026" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10027" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10028" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10029" x="2619" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10030" x="2619" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10031" x="2619" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10032" x="2619" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10033" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10034" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10035" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10036" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10037" x="2619" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10038" x="2619" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10039" x="2619" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10040" x="2619" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10041" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10042" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10043" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10044" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10045" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10046" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10047" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10048" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10049" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10050" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10051" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10052" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10053" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10054" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10055" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10056" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10057" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10058" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10059" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10060" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10061" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10062" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10063" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10064" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10065" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10066" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10067" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10068" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10069" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10070" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh10071" x="2191" y="454" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20000" x="5303" y="754" width="700" height="425" rotated="true" frameX="-0" frameY="-50" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20001" x="5303" y="754" width="700" height="425" rotated="true" frameX="-0" frameY="-50" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20002" x="5303" y="754" width="700" height="425" rotated="true" frameX="-0" frameY="-50" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20003" x="5303" y="754" width="700" height="425" rotated="true" frameX="-0" frameY="-50" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20004" x="1" y="454" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20005" x="1" y="454" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20006" x="1" y="454" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20007" x="1" y="454" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20008" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20009" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20010" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20011" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20012" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20013" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20014" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20015" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20016" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20017" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20018" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20019" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20020" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20021" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20022" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20023" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20024" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20025" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20026" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20027" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20028" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="uhoh20029" x="3541" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="up0000" x="1" y="1" width="825" height="450" rotated="true" frameX="-0" frameY="-0" frameWidth="450" frameHeight="825"/>
+	<SubTexture name="up0001" x="1" y="1" width="825" height="450" rotated="true" frameX="-0" frameY="-0" frameWidth="450" frameHeight="825"/>
+	<SubTexture name="up0002" x="829" y="1" width="775" height="450" rotated="true" frameX="-0" frameY="-50" frameWidth="450" frameHeight="825"/>
+	<SubTexture name="up0003" x="829" y="1" width="775" height="450" rotated="true" frameX="-0" frameY="-50" frameWidth="450" frameHeight="825"/>
+	<SubTexture name="walk0000" x="3969" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="walk0001" x="3969" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="walk0002" x="3969" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="walk0003" x="3969" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="walk0004" x="3969" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="walk0005" x="3969" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="walk0006" x="3969" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="walk0007" x="3969" y="429" width="425" height="725" frameX="-0" frameY="-25" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="walk0008" x="429" y="454" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="walk0009" x="429" y="454" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="walk0010" x="429" y="454" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="walk0011" x="429" y="454" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="walk0012" x="429" y="454" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="walk0013" x="429" y="454" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="walk0014" x="429" y="454" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+	<SubTexture name="walk0015" x="429" y="454" width="425" height="750" frameX="-0" frameY="-0" frameWidth="425" frameHeight="750"/>
+</TextureAtlas>

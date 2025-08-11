@@ -1,0 +1,1 @@
+<!DOCTYPE codename-engine-character><character icon="idk" flipX="true" isPlayer="true" sprite="homiecide/sanstheskeletin"><anim anim="swapsans_death0" name="firstDeath"/><anim x="9" loop="true" y="18" anim="swapsans_deathLOOP0" name="deathLoop"/><anim x="98" y="31" anim="swapsans_deathEND0" name="deathConfirm"/></character>

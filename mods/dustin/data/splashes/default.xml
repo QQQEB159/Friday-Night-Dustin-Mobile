@@ -1,0 +1,15 @@
+<!DOCTYPE codename-engine-splashes>
+<splashes sprite="game/splashes/default" alpha="0.6" scale="0.8">
+	<strum id="0"> <!-- LEFT -->
+		<anim name="splashleft2" anim="note impact 2 purple" fps="24" x="0" y="-10" />
+	</strum>
+	<strum id="1"> <!-- DOWN -->
+		<anim name="splashdown2" anim="note impact 2 blue" fps="24" x="0" y="-10" />
+	</strum>
+	<strum id="2"> <!-- UP -->
+		<anim name="splashup2" anim="note impact 2 green" fps="24" x="0" y="-10" />
+	</strum>
+	<strum id="3"> <!-- RIGHT -->
+		<anim name="splashright2" anim="note impact 2 red" fps="24" x="0" y="-10" />
+	</strum>
+</splashes>

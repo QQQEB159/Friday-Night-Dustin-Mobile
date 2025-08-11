@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="phantom.png" width="4491" height="3970">
+	<SubTexture name="phantom_sans_down0000" x="693" y="3312" width="688" height="631" frameX="-2" frameY="-19" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0001" x="693" y="3312" width="688" height="631" frameX="-2" frameY="-19" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0002" x="1384" y="3304" width="687" height="635" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0003" x="1384" y="3304" width="687" height="635" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0004" x="2074" y="3299" width="687" height="635" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0005" x="2074" y="3299" width="687" height="635" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0006" x="2764" y="3297" width="687" height="635" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0007" x="2764" y="3297" width="687" height="635" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0008" x="3855" y="1" width="635" height="687" rotated="true" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0009" x="3855" y="1" width="635" height="687" rotated="true" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0010" x="3855" y="691" width="635" height="687" rotated="true" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0011" x="3855" y="691" width="635" height="687" rotated="true" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0012" x="1384" y="3304" width="687" height="635" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0013" x="1384" y="3304" width="687" height="635" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0014" x="2074" y="3299" width="687" height="635" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0015" x="2074" y="3299" width="687" height="635" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0016" x="2764" y="3297" width="687" height="635" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0017" x="2764" y="3297" width="687" height="635" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0018" x="3855" y="1" width="635" height="687" rotated="true" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0019" x="3855" y="1" width="635" height="687" rotated="true" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0020" x="3855" y="691" width="635" height="687" rotated="true" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0021" x="3855" y="691" width="635" height="687" rotated="true" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0022" x="1384" y="3304" width="687" height="635" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0023" x="1384" y="3304" width="687" height="635" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0024" x="2074" y="3299" width="687" height="635" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0025" x="2074" y="3299" width="687" height="635" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_down0026" x="2764" y="3297" width="687" height="635" frameX="-0" frameY="-0" frameWidth="690" frameHeight="650"/>
+	<SubTexture name="phantom_sans_idle0000" x="2098" y="1402" width="694" height="643" rotated="true" frameX="-0" frameY="-0" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0001" x="2098" y="1402" width="694" height="643" rotated="true" frameX="-0" frameY="-0" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0002" x="1" y="2666" width="694" height="643" rotated="true" frameX="-0" frameY="-2" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0003" x="1" y="2666" width="694" height="643" rotated="true" frameX="-0" frameY="-2" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0004" x="1" y="2022" width="696" height="641" rotated="true" frameX="-1" frameY="-3" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0005" x="1" y="2022" width="696" height="641" rotated="true" frameX="-1" frameY="-3" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0006" x="716" y="1362" width="698" height="633" rotated="true" frameX="-5" frameY="-6" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0007" x="716" y="1362" width="698" height="633" rotated="true" frameX="-5" frameY="-6" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0008" x="1918" y="702" width="629" height="697" frameX="-7" frameY="-8" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0009" x="1918" y="702" width="629" height="697" frameX="-7" frameY="-8" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0010" x="1918" y="1" width="630" height="698" frameX="-7" frameY="-8" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0011" x="1918" y="1" width="630" height="698" frameX="-7" frameY="-8" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0012" x="700" y="2022" width="696" height="632" rotated="true" frameX="-6" frameY="-8" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0013" x="700" y="2022" width="696" height="632" rotated="true" frameX="-6" frameY="-8" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0014" x="698" y="2666" width="694" height="635" rotated="true" frameX="-4" frameY="-7" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0015" x="698" y="2666" width="694" height="635" rotated="true" frameX="-4" frameY="-7" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0016" x="1395" y="2657" width="694" height="639" rotated="true" frameX="-2" frameY="-3" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0017" x="1395" y="2657" width="694" height="639" rotated="true" frameX="-2" frameY="-3" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0018" x="2551" y="700" width="641" height="695" frameX="-1" frameY="-1" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0019" x="2551" y="700" width="641" height="695" frameX="-1" frameY="-1" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0020" x="1399" y="1998" width="696" height="641" rotated="true" frameX="-1" frameY="-0" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0021" x="1399" y="1998" width="696" height="641" rotated="true" frameX="-1" frameY="-0" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0022" x="2551" y="1" width="641" height="696" frameX="-1" frameY="-0" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_idle0023" x="2551" y="1" width="641" height="696" frameX="-1" frameY="-0" frameWidth="643" frameHeight="706"/>
+	<SubTexture name="phantom_sans_left0000" x="2092" y="2642" width="692" height="652" rotated="true" frameX="-0" frameY="-0" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0001" x="2092" y="2642" width="692" height="652" rotated="true" frameX="-0" frameY="-0" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0002" x="3195" y="1" width="657" height="689" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0003" x="3195" y="1" width="657" height="689" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0004" x="3195" y="693" width="657" height="689" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0005" x="3195" y="693" width="657" height="689" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0006" x="3195" y="1385" width="657" height="689" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0007" x="3195" y="1385" width="657" height="689" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0008" x="2787" y="2077" width="689" height="657" rotated="true" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0009" x="2787" y="2077" width="689" height="657" rotated="true" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0010" x="1" y="3312" width="689" height="657" rotated="true" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0011" x="1" y="3312" width="689" height="657" rotated="true" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0012" x="3195" y="1" width="657" height="689" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0013" x="3195" y="1" width="657" height="689" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0014" x="3195" y="693" width="657" height="689" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0015" x="3195" y="693" width="657" height="689" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0016" x="3195" y="1385" width="657" height="689" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0017" x="3195" y="1385" width="657" height="689" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0018" x="2787" y="2077" width="689" height="657" rotated="true" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_left0019" x="2787" y="2077" width="689" height="657" rotated="true" frameX="-5" frameY="-6" frameWidth="662" frameHeight="695"/>
+	<SubTexture name="phantom_sans_right0000" x="2098" y="2048" width="657" height="575" rotated="true" frameX="-10" frameY="-0" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0001" x="2098" y="2048" width="657" height="575" rotated="true" frameX="-10" frameY="-0" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0002" x="1417" y="1402" width="655" height="577" rotated="true" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0003" x="1417" y="1402" width="655" height="577" rotated="true" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0004" x="3855" y="1381" width="577" height="655" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0005" x="3855" y="1381" width="577" height="655" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0006" x="3855" y="2039" width="577" height="655" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0007" x="3855" y="2039" width="577" height="655" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0008" x="3479" y="2697" width="655" height="577" rotated="true" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0009" x="3479" y="2697" width="655" height="577" rotated="true" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0010" x="3454" y="3277" width="577" height="655" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0011" x="3454" y="3277" width="577" height="655" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0012" x="1417" y="1402" width="655" height="577" rotated="true" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0013" x="1417" y="1402" width="655" height="577" rotated="true" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0014" x="3855" y="1381" width="577" height="655" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0015" x="3855" y="1381" width="577" height="655" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0016" x="3855" y="2039" width="577" height="655" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0017" x="3855" y="2039" width="577" height="655" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0018" x="3479" y="2697" width="655" height="577" rotated="true" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_right0019" x="3479" y="2697" width="655" height="577" rotated="true" frameX="-0" frameY="-5" frameWidth="590" frameHeight="661"/>
+	<SubTexture name="phantom_sans_up0000" x="1" y="1" width="622" height="726" frameX="-9" frameY="-0" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0001" x="1" y="1" width="622" height="726" frameX="-9" frameY="-0" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0002" x="626" y="1" width="643" height="712" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0003" x="626" y="1" width="643" height="712" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0004" x="1" y="730" width="712" height="643" rotated="true" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0005" x="1" y="730" width="712" height="643" rotated="true" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0006" x="1272" y="1" width="643" height="712" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0007" x="1272" y="1" width="643" height="712" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0008" x="716" y="716" width="712" height="643" rotated="true" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0009" x="716" y="716" width="712" height="643" rotated="true" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0010" x="1" y="1376" width="712" height="643" rotated="true" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0011" x="1" y="1376" width="712" height="643" rotated="true" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0012" x="626" y="1" width="643" height="712" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0013" x="626" y="1" width="643" height="712" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0014" x="1" y="730" width="712" height="643" rotated="true" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0015" x="1" y="730" width="712" height="643" rotated="true" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0016" x="1272" y="1" width="643" height="712" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0017" x="1272" y="1" width="643" height="712" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0018" x="716" y="716" width="712" height="643" rotated="true" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+	<SubTexture name="phantom_sans_up0019" x="716" y="716" width="712" height="643" rotated="true" frameX="-0" frameY="-7" frameWidth="643" frameHeight="726"/>
+</TextureAtlas>

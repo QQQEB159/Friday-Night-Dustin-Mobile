@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="PLAYERhotland.png" width="3384" height="2114" spritePadding="3" borderPadding="1">
+	<SubTexture name="hotlanddown0000" x="1" y="1" width="610" height="915" frameX="0" frameY="0" frameWidth="623" frameHeight="963"/>
+	<SubTexture name="hotlanddown0001" x="1" y="1" width="610" height="915" frameX="0" frameY="0" frameWidth="623" frameHeight="963"/>
+	<SubTexture name="hotlanddown0002" x="614" y="1" width="622" height="963" frameX="-2" frameY="-16" frameWidth="623" frameHeight="963"/>
+	<SubTexture name="hotlanddown0003" x="614" y="1" width="622" height="963" frameX="-2" frameY="-16" frameWidth="623" frameHeight="963"/>
+	<SubTexture name="hotlanddown0004" x="614" y="1" width="622" height="963" frameX="-2" frameY="-16" frameWidth="623" frameHeight="963"/>
+	<SubTexture name="hotlanddown0005" x="614" y="1" width="622" height="963" frameX="-2" frameY="-16" frameWidth="623" frameHeight="963"/>
+	<SubTexture name="hotlanddown0006" x="614" y="1" width="622" height="963" frameX="-2" frameY="-16" frameWidth="623" frameHeight="963"/>
+	<SubTexture name="hotlanddown0007" x="614" y="1" width="622" height="963" frameX="-2" frameY="-16" frameWidth="623" frameHeight="963"/>
+	<SubTexture name="hotlanddown0008" x="614" y="1" width="622" height="963" frameX="-2" frameY="-16" frameWidth="623" frameHeight="963"/>
+	<SubTexture name="hotlanddown0009" x="614" y="1" width="622" height="963" frameX="-2" frameY="-16" frameWidth="623" frameHeight="963"/>
+	<SubTexture name="hotlandidle0000" x="1" y="1007" width="603" height="1071" frameX="0" frameY="-14" frameWidth="603" frameHeight="1079"/>
+	<SubTexture name="hotlandidle0001" x="1" y="1007" width="603" height="1071" frameX="0" frameY="-14" frameWidth="603" frameHeight="1079"/>
+	<SubTexture name="hotlandidle0002" x="1" y="1007" width="603" height="1071" frameX="0" frameY="-14" frameWidth="603" frameHeight="1079"/>
+	<SubTexture name="hotlandidle0003" x="1" y="1007" width="603" height="1071" frameX="0" frameY="-14" frameWidth="603" frameHeight="1079"/>
+	<SubTexture name="hotlandidle0004" x="1" y="1007" width="603" height="1071" frameX="0" frameY="-14" frameWidth="603" frameHeight="1079"/>
+	<SubTexture name="hotlandidle0005" x="607" y="1007" width="601" height="1079" frameX="-2" frameY="0" frameWidth="603" frameHeight="1079"/>
+	<SubTexture name="hotlandidle0006" x="607" y="1007" width="601" height="1079" frameX="-2" frameY="0" frameWidth="603" frameHeight="1079"/>
+	<SubTexture name="hotlandidle0007" x="607" y="1007" width="601" height="1079" frameX="-2" frameY="0" frameWidth="603" frameHeight="1079"/>
+	<SubTexture name="hotlandidle0008" x="607" y="1007" width="601" height="1079" frameX="-2" frameY="0" frameWidth="603" frameHeight="1079"/>
+	<SubTexture name="hotlandidle0009" x="607" y="1007" width="601" height="1079" frameX="-2" frameY="0" frameWidth="603" frameHeight="1079"/>
+	<SubTexture name="hotlandleft0000" x="2624" y="1" width="759" height="819" rotated="true" frameX="0" frameY="0" frameWidth="819" frameHeight="779"/>
+	<SubTexture name="hotlandleft0001" x="2624" y="1" width="759" height="819" rotated="true" frameX="0" frameY="0" frameWidth="819" frameHeight="779"/>
+	<SubTexture name="hotlandleft0002" x="1843" y="1" width="778" height="779" frameX="-63" frameY="-5" frameWidth="819" frameHeight="779"/>
+	<SubTexture name="hotlandleft0003" x="1843" y="1" width="778" height="779" frameX="-63" frameY="-5" frameWidth="819" frameHeight="779"/>
+	<SubTexture name="hotlandleft0004" x="1843" y="1" width="778" height="779" frameX="-63" frameY="-5" frameWidth="819" frameHeight="779"/>
+	<SubTexture name="hotlandleft0005" x="1843" y="1" width="778" height="779" frameX="-63" frameY="-5" frameWidth="819" frameHeight="779"/>
+	<SubTexture name="hotlandleft0006" x="1843" y="1" width="778" height="779" frameX="-63" frameY="-5" frameWidth="819" frameHeight="779"/>
+	<SubTexture name="hotlandleft0007" x="1843" y="1" width="778" height="779" frameX="-63" frameY="-5" frameWidth="819" frameHeight="779"/>
+	<SubTexture name="hotlandleft0008" x="1843" y="1" width="778" height="779" frameX="-63" frameY="-5" frameWidth="819" frameHeight="779"/>
+	<SubTexture name="hotlandleft0009" x="1843" y="1" width="778" height="779" frameX="-63" frameY="-5" frameWidth="819" frameHeight="779"/>
+	<SubTexture name="hotlandright0000" x="1915" y="1007" width="671" height="1058" frameX="-103" frameY="-13" frameWidth="740" frameHeight="1106"/>
+	<SubTexture name="hotlandright0001" x="1915" y="1007" width="671" height="1058" frameX="-103" frameY="-13" frameWidth="740" frameHeight="1106"/>
+	<SubTexture name="hotlandright0002" x="2589" y="1007" width="740" height="1106" frameX="0" frameY="0" frameWidth="740" frameHeight="1106"/>
+	<SubTexture name="hotlandright0003" x="2589" y="1007" width="740" height="1106" frameX="0" frameY="0" frameWidth="740" frameHeight="1106"/>
+	<SubTexture name="hotlandright0004" x="2589" y="1007" width="740" height="1106" frameX="0" frameY="0" frameWidth="740" frameHeight="1106"/>
+	<SubTexture name="hotlandright0005" x="2589" y="1007" width="740" height="1106" frameX="0" frameY="0" frameWidth="740" frameHeight="1106"/>
+	<SubTexture name="hotlandright0006" x="2589" y="1007" width="740" height="1106" frameX="0" frameY="0" frameWidth="740" frameHeight="1106"/>
+	<SubTexture name="hotlandright0007" x="2589" y="1007" width="740" height="1106" frameX="0" frameY="0" frameWidth="740" frameHeight="1106"/>
+	<SubTexture name="hotlandright0008" x="2589" y="1007" width="740" height="1106" frameX="0" frameY="0" frameWidth="740" frameHeight="1106"/>
+	<SubTexture name="hotlandright0009" x="2589" y="1007" width="740" height="1106" frameX="0" frameY="0" frameWidth="740" frameHeight="1106"/>
+	<SubTexture name="hotlandup0000" x="1211" y="1007" width="701" height="928" frameX="0" frameY="0" frameWidth="701" frameHeight="1003"/>
+	<SubTexture name="hotlandup0001" x="1211" y="1007" width="701" height="928" frameX="0" frameY="0" frameWidth="701" frameHeight="1003"/>
+	<SubTexture name="hotlandup0002" x="1239" y="1" width="601" height="1003" frameX="-94" frameY="-1" frameWidth="701" frameHeight="1003"/>
+	<SubTexture name="hotlandup0003" x="1239" y="1" width="601" height="1003" frameX="-94" frameY="-1" frameWidth="701" frameHeight="1003"/>
+	<SubTexture name="hotlandup0004" x="1239" y="1" width="601" height="1003" frameX="-94" frameY="-1" frameWidth="701" frameHeight="1003"/>
+	<SubTexture name="hotlandup0005" x="1239" y="1" width="601" height="1003" frameX="-94" frameY="-1" frameWidth="701" frameHeight="1003"/>
+	<SubTexture name="hotlandup0006" x="1239" y="1" width="601" height="1003" frameX="-94" frameY="-1" frameWidth="701" frameHeight="1003"/>
+	<SubTexture name="hotlandup0007" x="1239" y="1" width="601" height="1003" frameX="-94" frameY="-1" frameWidth="701" frameHeight="1003"/>
+	<SubTexture name="hotlandup0008" x="1239" y="1" width="601" height="1003" frameX="-94" frameY="-1" frameWidth="701" frameHeight="1003"/>
+	<SubTexture name="hotlandup0009" x="1239" y="1" width="601" height="1003" frameX="-94" frameY="-1" frameWidth="701" frameHeight="1003"/>
+</TextureAtlas>

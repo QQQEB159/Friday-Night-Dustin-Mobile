@@ -1,0 +1,14 @@
+{
+    "params": [
+        {
+            "name": "New Multi",
+            "type": "Float(0, 9999, 0.01, 5)",
+            "defaultValue": "0"
+        },
+        {
+            "name": "New Angle Multi",
+            "type": "Float(0, 9999, 0.01, 5)",
+            "defaultValue": "0"
+        }
+    ]
+}

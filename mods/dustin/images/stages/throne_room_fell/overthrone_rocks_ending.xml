@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="overthrone_rocks_ending.png" width="6222" height="5799" spritePadding="3" borderPadding="1">
+	<SubTexture name="rocks_ending0000" x="3535" y="5310" width="2605" height="488" frameX="-77" frameY="-1" frameWidth="2682" frameHeight="1900"/>
+	<SubTexture name="rocks_ending0001" x="3535" y="4417" width="2673" height="890" frameX="-9" frameY="-152" frameWidth="2682" frameHeight="1900"/>
+	<SubTexture name="rocks_ending0002" x="1" y="1" width="2682" height="1172" frameX="0" frameY="-192" frameWidth="2682" frameHeight="1900"/>
+	<SubTexture name="rocks_ending0003" x="2686" y="1" width="1741" height="2682" rotated="true" frameX="0" frameY="-273" frameWidth="2682" frameHeight="1900"/>
+	<SubTexture name="rocks_ending0004" x="1" y="1176" width="2682" height="1900" frameX="0" frameY="-211" frameWidth="2682" frameHeight="1900"/>
+	<SubTexture name="rocks_ending0005" x="4430" y="1" width="1791" height="2682" rotated="true" frameX="0" frameY="-352" frameWidth="2682" frameHeight="1900"/>
+	<SubTexture name="rocks_ending0006" x="1" y="3079" width="1809" height="2682" rotated="true" frameX="0" frameY="-395" frameWidth="2682" frameHeight="1900"/>
+	<SubTexture name="rocks_ending0007" x="1813" y="3079" width="1719" height="2682" rotated="true" frameX="0" frameY="-412" frameWidth="2682" frameHeight="1900"/>
+	<SubTexture name="rocks_ending0008" x="3535" y="2686" width="2682" height="1728" frameX="0" frameY="-402" frameWidth="2682" frameHeight="1900"/>
+	<SubTexture name="rocks_ending0009" x="3535" y="2686" width="2682" height="1728" frameX="0" frameY="-402" frameWidth="2682" frameHeight="1900"/>
+	<SubTexture name="rocks_ending0010" x="3535" y="2686" width="2682" height="1728" frameX="0" frameY="-402" frameWidth="2682" frameHeight="1900"/>
+	<SubTexture name="rocks_ending0011" x="3535" y="2686" width="2682" height="1728" frameX="0" frameY="-402" frameWidth="2682" frameHeight="1900"/>
+	<SubTexture name="rocks_ending0012" x="3535" y="2686" width="2682" height="1728" frameX="0" frameY="-402" frameWidth="2682" frameHeight="1900"/>
+	<SubTexture name="rocks_ending0013" x="3535" y="2686" width="2682" height="1728" frameX="0" frameY="-402" frameWidth="2682" frameHeight="1900"/>
+</TextureAtlas>

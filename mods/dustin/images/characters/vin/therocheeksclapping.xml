@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="therocheeksclapping.png" width="3326" height="3041">
+	<SubTexture name="thero_down instance 10000" x="1910" y="1732" width="482" height="437" rotated="true" frameX="-606" frameY="-66" frameWidth="1176" frameHeight="781"/>
+	<SubTexture name="thero_down instance 10001" x="1" y="1872" width="509" height="435" rotated="true" frameX="-632" frameY="-172" frameWidth="1176" frameHeight="781"/>
+	<SubTexture name="thero_down instance 10002" x="1984" y="1" width="480" height="504" rotated="true" frameX="-611" frameY="-248" frameWidth="1176" frameHeight="781"/>
+	<SubTexture name="thero_down instance 10003" x="984" y="2273" width="427" height="282" frameX="-648" frameY="-315" frameWidth="1176" frameHeight="781"/>
+	<SubTexture name="thero_down instance 10004" x="2927" y="427" width="396" height="331" frameX="-648" frameY="-272" frameWidth="1176" frameHeight="781"/>
+	<SubTexture name="thero_down instance 10005" x="2927" y="427" width="396" height="331" frameX="-648" frameY="-272" frameWidth="1176" frameHeight="781"/>
+	<SubTexture name="thero_down instance 10006" x="2912" y="761" width="374" height="356" frameX="-655" frameY="-252" frameWidth="1176" frameHeight="781"/>
+	<SubTexture name="thero_down instance 10007" x="2912" y="761" width="374" height="356" frameX="-655" frameY="-252" frameWidth="1176" frameHeight="781"/>
+	<SubTexture name="thero_down instance 10008" x="984" y="2621" width="444" height="419" rotated="true" frameX="-634" frameY="-229" frameWidth="1176" frameHeight="781"/>
+	<SubTexture name="thero_down instance 10009" x="1978" y="2172" width="470" height="380" frameX="-585" frameY="-225" frameWidth="1176" frameHeight="781"/>
+	<SubTexture name="thero_down instance 10010" x="553" y="1132" width="540" height="366" rotated="true" frameX="-645" frameY="-145" frameWidth="1176" frameHeight="781"/>
+	<SubTexture name="thero_down instance 10011" x="1" y="1" width="455" height="634" frameX="-611" frameY="-29" frameWidth="1176" frameHeight="781"/>
+	<SubTexture name="thero_idle instance 10000" x="2317" y="2629" width="438" height="382" frameX="-213" frameY="-92" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10001" x="2317" y="2629" width="438" height="382" frameX="-213" frameY="-92" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10002" x="1875" y="2629" width="439" height="387" frameX="-214" frameY="-92" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10003" x="1875" y="2629" width="439" height="387" frameX="-214" frameY="-92" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10004" x="449" y="2644" width="444" height="390" frameX="-213" frameY="-89" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10005" x="449" y="2644" width="444" height="390" frameX="-213" frameY="-89" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10006" x="449" y="2644" width="444" height="390" frameX="-213" frameY="-89" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10007" x="2451" y="2177" width="396" height="449" rotated="true" frameX="-211" frameY="-84" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10008" x="2451" y="2177" width="396" height="449" rotated="true" frameX="-211" frameY="-84" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10009" x="2451" y="2177" width="396" height="449" rotated="true" frameX="-211" frameY="-84" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10010" x="2451" y="1772" width="454" height="402" frameX="-209" frameY="-83" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10011" x="2451" y="1772" width="454" height="402" frameX="-209" frameY="-83" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10012" x="2451" y="1772" width="454" height="402" frameX="-209" frameY="-83" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10013" x="2451" y="508" width="458" height="404" frameX="-209" frameY="-85" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10014" x="2451" y="508" width="458" height="404" frameX="-209" frameY="-85" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10015" x="2451" y="915" width="456" height="400" frameX="-211" frameY="-89" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10016" x="2451" y="915" width="456" height="400" frameX="-211" frameY="-89" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10017" x="1" y="2644" width="445" height="396" frameX="-213" frameY="-86" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10018" x="1" y="2644" width="445" height="396" frameX="-213" frameY="-86" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10019" x="1" y="2644" width="445" height="396" frameX="-213" frameY="-86" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10020" x="1431" y="2629" width="441" height="390" frameX="-211" frameY="-85" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10021" x="1431" y="2629" width="441" height="390" frameX="-211" frameY="-85" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_idle instance 10022" x="1431" y="2629" width="441" height="390" frameX="-211" frameY="-85" frameWidth="712" frameHeight="536"/>
+	<SubTexture name="thero_left instance 10000" x="1504" y="2172" width="471" height="446" rotated="true" frameX="-169" frameY="-68" frameWidth="725" frameHeight="672"/>
+	<SubTexture name="thero_left instance 10001" x="459" y="1" width="547" height="582" frameX="-117" frameY="-28" frameWidth="725" frameHeight="672"/>
+	<SubTexture name="thero_left instance 10002" x="1096" y="1453" width="507" height="463" frameX="-93" frameY="-146" frameWidth="725" frameHeight="672"/>
+	<SubTexture name="thero_left instance 10003" x="2758" y="2629" width="372" height="394" frameX="-93" frameY="-215" frameWidth="725" frameHeight="672"/>
+	<SubTexture name="thero_left instance 10004" x="2850" y="2177" width="371" height="372" frameX="-80" frameY="-248" frameWidth="725" frameHeight="672"/>
+	<SubTexture name="thero_left instance 10005" x="2850" y="2177" width="371" height="372" frameX="-80" frameY="-248" frameWidth="725" frameHeight="672"/>
+	<SubTexture name="thero_left instance 10006" x="2910" y="1120" width="374" height="373" rotated="true" frameX="-82" frameY="-247" frameWidth="725" frameHeight="672"/>
+	<SubTexture name="thero_left instance 10007" x="2910" y="1120" width="374" height="373" rotated="true" frameX="-82" frameY="-247" frameWidth="725" frameHeight="672"/>
+	<SubTexture name="thero_left instance 10008" x="2909" y="1496" width="374" height="372" rotated="true" frameX="-98" frameY="-240" frameWidth="725" frameHeight="672"/>
+	<SubTexture name="thero_left instance 10009" x="1947" y="849" width="490" height="443" rotated="true" frameX="-120" frameY="-100" frameWidth="725" frameHeight="672"/>
+	<SubTexture name="thero_left instance 10010" x="1" y="638" width="567" height="491" frameX="-109" frameY="-70" frameWidth="725" frameHeight="672"/>
+	<SubTexture name="thero_left instance 10011" x="2451" y="1318" width="455" height="451" frameX="-217" frameY="-51" frameWidth="725" frameHeight="672"/>
+	<SubTexture name="thero_right instance 10000" x="2927" y="1" width="398" height="423" frameX="-121" frameY="-74" frameWidth="712" frameHeight="599"/>
+	<SubTexture name="thero_right instance 10001" x="571" y="586" width="550" height="535" frameX="-120" frameY="-30" frameWidth="712" frameHeight="599"/>
+	<SubTexture name="thero_right instance 10002" x="1124" y="555" width="347" height="514" rotated="true" frameX="-141" frameY="-98" frameWidth="712" frameHeight="599"/>
+	<SubTexture name="thero_right instance 10003" x="1" y="1552" width="514" height="317" frameX="-141" frameY="-98" frameWidth="712" frameHeight="599"/>
+	<SubTexture name="thero_right instance 10004" x="1096" y="1124" width="521" height="326" frameX="-151" frameY="-98" frameWidth="712" frameHeight="599"/>
+	<SubTexture name="thero_right instance 10005" x="1096" y="1124" width="521" height="326" frameX="-151" frameY="-98" frameWidth="712" frameHeight="599"/>
+	<SubTexture name="thero_right instance 10006" x="1620" y="526" width="324" height="518" rotated="true" frameX="-154" frameY="-104" frameWidth="712" frameHeight="599"/>
+	<SubTexture name="thero_right instance 10007" x="1620" y="526" width="324" height="518" rotated="true" frameX="-154" frameY="-104" frameWidth="712" frameHeight="599"/>
+	<SubTexture name="thero_right instance 10008" x="1620" y="1047" width="314" height="509" rotated="true" frameX="-155" frameY="-112" frameWidth="712" frameHeight="599"/>
+	<SubTexture name="thero_right instance 10009" x="1026" y="1919" width="475" height="351" frameX="-138" frameY="-140" frameWidth="712" frameHeight="599"/>
+	<SubTexture name="thero_right instance 10010" x="513" y="2273" width="468" height="354" frameX="-173" frameY="-110" frameWidth="712" frameHeight="599"/>
+	<SubTexture name="thero_right instance 10011" x="1469" y="1" width="512" height="522" frameX="-38" frameY="-43" frameWidth="712" frameHeight="599"/>
+	<SubTexture name="thero_up instance 10000" x="1009" y="1" width="457" height="551" frameX="-36" frameY="-87" frameWidth="564" frameHeight="656"/>
+	<SubTexture name="thero_up instance 10001" x="1" y="1132" width="549" height="417" rotated="true" frameX="-28" frameY="-43" frameWidth="564" frameHeight="656"/>
+	<SubTexture name="thero_up instance 10002" x="518" y="1817" width="505" height="444" rotated="true" frameX="-39" frameY="-36" frameWidth="564" frameHeight="656"/>
+	<SubTexture name="thero_up instance 10003" x="1606" y="1559" width="301" height="483" frameX="-95" frameY="-47" frameWidth="564" frameHeight="656"/>
+	<SubTexture name="thero_up instance 10004" x="553" y="1501" width="506" height="313" rotated="true" frameX="-83" frameY="-32" frameWidth="564" frameHeight="656"/>
+	<SubTexture name="thero_up instance 10005" x="553" y="1501" width="506" height="313" rotated="true" frameX="-83" frameY="-32" frameWidth="564" frameHeight="656"/>
+	<SubTexture name="thero_up instance 10006" x="1947" y="526" width="499" height="320" rotated="true" frameX="-74" frameY="-33" frameWidth="564" frameHeight="656"/>
+	<SubTexture name="thero_up instance 10007" x="1947" y="526" width="499" height="320" rotated="true" frameX="-74" frameY="-33" frameWidth="564" frameHeight="656"/>
+	<SubTexture name="thero_up instance 10008" x="1" y="2310" width="473" height="331" rotated="true" frameX="-62" frameY="-41" frameWidth="564" frameHeight="656"/>
+	<SubTexture name="thero_up instance 10009" x="2908" y="1871" width="373" height="303" rotated="true" frameX="-99" frameY="-117" frameWidth="564" frameHeight="656"/>
+	<SubTexture name="thero_up instance 10010" x="1937" y="1295" width="488" height="434" rotated="true" frameX="-27" frameY="-104" frameWidth="564" frameHeight="656"/>
+	<SubTexture name="thero_up instance 10011" x="2467" y="1" width="457" height="468" frameX="-46" frameY="-165" frameWidth="564" frameHeight="656"/>
+</TextureAtlas>

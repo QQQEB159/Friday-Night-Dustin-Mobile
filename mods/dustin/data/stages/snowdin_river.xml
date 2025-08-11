@@ -1,0 +1,23 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom=".55" name="snowdinriver" folder="stages/snowdin_river" playerZoom=".63">
+    <sprite name="BG" x="-600" y="-480" sprite="back" antialiasing="true" scale="1.5" scrollx=".5" zoomFactor="1.2" />
+
+    <!-- Papyrus Part -->
+    <sprite name="cliff" x="-790" y="-330" sprite="Papyrus/cliff" antialiasing="true" scale="1.5" scrollx=".93" zoomFactor="1.05" />
+    <sprite name="ground" x="-795" y="-500" sprite="Papyrus/front" antialiasing="true" scale="1.7"/>
+    <sprite name="trees" x="-800" y="-490" sprite="Papyrus/trees" antialiasing="true" scale="1.5"/>
+
+    <!-- Sans Part -->
+    <precache-sans>
+        <sprite name="cliff" x="-790" y="-330" sprite="Sans/cliff" antialiasing="true" scale="1.5" scrollx=".93" zoomFactor="1.05" />
+        <sprite name="smoke" x="-790" y="-330" sprite="Sans/smoke" antialiasing="true" scale="1.5" scrollx=".9" zoomFactor="1.05" />
+        <sprite name="ground" x="-795" y="-500" sprite="Sans/front" antialiasing="true" scale="1.5"/>
+        <sprite name="head" x="-150" y="320" sprite="Sans/paps_head" beatInterval="2">
+            <anim name="idle" anim="PAPS_HEAD" x="0" y="0" loop="false" fps="24" type="onbeat" />
+            <anim name="dies" anim="fucking_dies" x="0" y="140" loop="false" fps="24" />
+        </sprite>
+    </precache-sans>
+
+	<opponent x="-700" y="0" camxoffset="200" camyoffset="40"/>
+	<player x="500" y="20" camyoffset="-80" camxoffset="-265"/>
+</stage>

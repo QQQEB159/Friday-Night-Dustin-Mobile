@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="sans_shadow.png" width="3329" height="1100" spritePadding="3" borderPadding="1">
+	<SubTexture name="shadowdown0000" x="1" y="1" width="427" height="508" rotated="true" frameX="-1" frameY="-1" frameWidth="508" frameHeight="431"/>
+	<SubTexture name="shadowdown0001" x="1" y="1" width="427" height="508" rotated="true" frameX="-1" frameY="-1" frameWidth="508" frameHeight="431"/>
+	<SubTexture name="shadowdown0002" x="431" y="1" width="431" height="504" rotated="true" frameX="-1" frameY="-2" frameWidth="508" frameHeight="431"/>
+	<SubTexture name="shadowdown0003" x="431" y="1" width="431" height="504" rotated="true" frameX="-1" frameY="-2" frameWidth="508" frameHeight="431"/>
+	<SubTexture name="shadowidle0000" x="865" y="1" width="481" height="531" rotated="true" frameX="-5" frameY="-1" frameWidth="531" frameHeight="488"/>
+	<SubTexture name="shadowidle0001" x="865" y="1" width="481" height="531" rotated="true" frameX="-5" frameY="-1" frameWidth="531" frameHeight="488"/>
+	<SubTexture name="shadowidle0002" x="1349" y="1" width="481" height="530" rotated="true" frameX="-6" frameY="-1" frameWidth="531" frameHeight="488"/>
+	<SubTexture name="shadowidle0003" x="1349" y="1" width="481" height="530" rotated="true" frameX="-6" frameY="-1" frameWidth="531" frameHeight="488"/>
+	<SubTexture name="shadowidle0004" x="1833" y="1" width="483" height="529" rotated="true" frameX="-6" frameY="-1" frameWidth="531" frameHeight="488"/>
+	<SubTexture name="shadowidle0005" x="1833" y="1" width="483" height="529" rotated="true" frameX="-6" frameY="-1" frameWidth="531" frameHeight="488"/>
+	<SubTexture name="shadowidle0006" x="2319" y="1" width="487" height="527" rotated="true" frameX="-4" frameY="-2" frameWidth="531" frameHeight="488"/>
+	<SubTexture name="shadowidle0007" x="2319" y="1" width="487" height="527" rotated="true" frameX="-4" frameY="-2" frameWidth="531" frameHeight="488"/>
+	<SubTexture name="shadowidle0008" x="2809" y="1" width="488" height="528" rotated="true" frameX="-2" frameY="-2" frameWidth="531" frameHeight="488"/>
+	<SubTexture name="shadowidle0009" x="2809" y="1" width="488" height="528" rotated="true" frameX="-2" frameY="-2" frameWidth="531" frameHeight="488"/>
+	<SubTexture name="shadowidle0010" x="1" y="535" width="487" height="528" rotated="true" frameX="-2" frameY="-3" frameWidth="531" frameHeight="488"/>
+	<SubTexture name="shadowidle0011" x="1" y="535" width="487" height="528" rotated="true" frameX="-2" frameY="-3" frameWidth="531" frameHeight="488"/>
+	<SubTexture name="shadowidle0012" x="1" y="535" width="487" height="528" rotated="true" frameX="-2" frameY="-3" frameWidth="531" frameHeight="488"/>
+	<SubTexture name="shadowidle0013" x="1" y="535" width="487" height="528" rotated="true" frameX="-2" frameY="-3" frameWidth="531" frameHeight="488"/>
+	<SubTexture name="shadowleft0000" x="491" y="535" width="498" height="557" rotated="true" frameX="-2" frameY="-2" frameWidth="557" frameHeight="498"/>
+	<SubTexture name="shadowleft0001" x="491" y="535" width="498" height="557" rotated="true" frameX="-2" frameY="-2" frameWidth="557" frameHeight="498"/>
+	<SubTexture name="shadowleft0002" x="992" y="535" width="495" height="554" rotated="true" frameX="-6" frameY="-2" frameWidth="557" frameHeight="498"/>
+	<SubTexture name="shadowleft0003" x="992" y="535" width="495" height="554" rotated="true" frameX="-6" frameY="-2" frameWidth="557" frameHeight="498"/>
+	<SubTexture name="shadowright0000" x="1490" y="535" width="422" height="560" rotated="true" frameX="-11" frameY="-2" frameWidth="564" frameHeight="425"/>
+	<SubTexture name="shadowright0001" x="1490" y="535" width="422" height="560" rotated="true" frameX="-11" frameY="-2" frameWidth="564" frameHeight="425"/>
+	<SubTexture name="shadowright0002" x="1915" y="535" width="425" height="564" rotated="true" frameX="-2" frameY="-3" frameWidth="564" frameHeight="425"/>
+	<SubTexture name="shadowright0003" x="1915" y="535" width="425" height="564" rotated="true" frameX="-2" frameY="-3" frameWidth="564" frameHeight="425"/>
+	<SubTexture name="shadowup0000" x="2343" y="535" width="493" height="511" rotated="true" frameX="-2" frameY="-1" frameWidth="511" frameHeight="493"/>
+	<SubTexture name="shadowup0001" x="2343" y="535" width="493" height="511" rotated="true" frameX="-2" frameY="-1" frameWidth="511" frameHeight="493"/>
+	<SubTexture name="shadowup0002" x="2839" y="535" width="489" height="508" rotated="true" frameX="-6" frameY="-1" frameWidth="511" frameHeight="493"/>
+	<SubTexture name="shadowup0003" x="2839" y="535" width="489" height="508" rotated="true" frameX="-6" frameY="-1" frameWidth="511" frameHeight="493"/>
+</TextureAtlas>

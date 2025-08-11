@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="mainchara_testing.png" width="197" height="30">
+	<SubTexture name="spr_maincharad_0" x="0" y="0" width="19" height="29" frameX="-0" frameY="-0" frameWidth="19" frameHeight="29"/>
+	<SubTexture name="spr_maincharad_1" x="19" y="0" width="19" height="29" frameX="-0" frameY="-0" frameWidth="19" frameHeight="29"/>
+	<SubTexture name="spr_maincharad_2" x="0" y="0" width="19" height="29" frameX="-0" frameY="-0" frameWidth="19" frameHeight="29"/>
+	<SubTexture name="spr_maincharad_3" x="38" y="0" width="19" height="29" frameX="-0" frameY="-0" frameWidth="19" frameHeight="29"/>
+	<SubTexture name="spr_maincharal_0" x="57" y="0" width="20" height="30" frameX="-0" frameY="-0" frameWidth="20" frameHeight="30"/>
+	<SubTexture name="spr_maincharal_1" x="77" y="0" width="20" height="30" frameX="-0" frameY="-0" frameWidth="20" frameHeight="30"/>
+	<SubTexture name="spr_maincharar_0" x="97" y="0" width="20" height="30" frameX="-0" frameY="-0" frameWidth="20" frameHeight="30"/>
+	<SubTexture name="spr_maincharar_1" x="117" y="0" width="20" height="30" frameX="-0" frameY="-0" frameWidth="20" frameHeight="30"/>
+	<SubTexture name="spr_maincharau_0" x="137" y="0" width="20" height="30" frameX="-0" frameY="-0" frameWidth="20" frameHeight="30"/>
+	<SubTexture name="spr_maincharau_1" x="157" y="0" width="20" height="30" frameX="-0" frameY="-0" frameWidth="20" frameHeight="30"/>
+	<SubTexture name="spr_maincharau_2" x="137" y="0" width="20" height="30" frameX="-0" frameY="-0" frameWidth="20" frameHeight="30"/>
+	<SubTexture name="spr_maincharau_3" x="177" y="0" width="20" height="30" frameX="-0" frameY="-0" frameWidth="20" frameHeight="30"/>
+</TextureAtlas>

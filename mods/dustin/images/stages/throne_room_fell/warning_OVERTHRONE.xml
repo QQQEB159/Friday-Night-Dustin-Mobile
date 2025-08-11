@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="warning_OVERTHRONE.png" width="452" height="164" spritePadding="3" borderPadding="1">
+	<SubTexture name="warning_OVERTHRONE0000" x="1" y="1" width="224" height="162" frameX="-6" frameY="-6" frameWidth="230" frameHeight="168"/>
+	<SubTexture name="warning_OVERTHRONE0001" x="1" y="1" width="224" height="162" frameX="-6" frameY="-6" frameWidth="230" frameHeight="168"/>
+	<SubTexture name="warning_OVERTHRONE0002" x="1" y="1" width="224" height="162" frameX="-6" frameY="-6" frameWidth="230" frameHeight="168"/>
+	<SubTexture name="warning_OVERTHRONE0003" x="1" y="1" width="224" height="162" frameX="-6" frameY="-6" frameWidth="230" frameHeight="168"/>
+	<SubTexture name="warning_OVERTHRONE0004" x="228" y="1" width="223" height="162" frameX="-7" frameY="-6" frameWidth="230" frameHeight="168"/>
+	<SubTexture name="warning_OVERTHRONE0005" x="228" y="1" width="223" height="162" frameX="-7" frameY="-6" frameWidth="230" frameHeight="168"/>
+	<SubTexture name="warning_OVERTHRONE0006" x="228" y="1" width="223" height="162" frameX="-7" frameY="-6" frameWidth="230" frameHeight="168"/>
+	<SubTexture name="warning_OVERTHRONE0007" x="228" y="1" width="223" height="162" frameX="-7" frameY="-6" frameWidth="230" frameHeight="168"/>
+</TextureAtlas>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ASGOREOT.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ASGOREIDLE0000" x="5120" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGOREIDLE0001" x="5120" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGOREIDLE0002" x="5120" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGOREIDLE0003" x="5120" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGOREIDLE0004" x="5120" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGOREIDLE0005" x="0" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGOREIDLE0006" x="0" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGOREIDLE0007" x="0" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGOREIDLE0008" x="0" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGOREIDLE0009" x="0" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGOREIDLE0010" x="2560" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGOREIDLE0011" x="2560" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGOREIDLE0012" x="2560" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGOREIDLE0013" x="2560" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGOREIDLE0014" x="2560" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0000" x="5120" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0001" x="5120" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0002" x="5120" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0003" x="5120" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0004" x="5120" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0005" x="0" y="1716" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0006" x="0" y="1716" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0007" x="0" y="1716" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0008" x="0" y="1716" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0009" x="2560" y="1716" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0010" x="2560" y="1716" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0011" x="2560" y="1716" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0012" x="2560" y="1716" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0013" x="5120" y="1716" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0014" x="5120" y="1716" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0015" x="5120" y="1716" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0016" x="5120" y="1716" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0017" x="0" y="3432" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0018" x="0" y="3432" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0019" x="2560" y="3432" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0020" x="5120" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0021" x="5120" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0022" x="5120" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0023" x="5120" y="0" width="2560" height="1716"/>
+	<SubTexture name="ASGORESTOMP0024" x="5120" y="0" width="2560" height="1716"/>
+</TextureAtlas>

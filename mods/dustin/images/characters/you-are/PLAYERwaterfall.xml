@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="PLAYERwaterfall.png" width="2028" height="3626" spritePadding="3" borderPadding="1">
+	<SubTexture name="waterfalldown0000" x="1" y="786" width="634" height="838" rotated="true" frameX="-13" frameY="-17" frameWidth="875" frameHeight="663"/>
+	<SubTexture name="waterfalldown0001" x="1" y="786" width="634" height="838" rotated="true" frameX="-13" frameY="-17" frameWidth="875" frameHeight="663"/>
+	<SubTexture name="waterfalldown0002" x="1312" y="786" width="662" height="874" rotated="true" frameX="0" frameY="0" frameWidth="875" frameHeight="663"/>
+	<SubTexture name="waterfalldown0003" x="1312" y="786" width="662" height="874" rotated="true" frameX="0" frameY="0" frameWidth="875" frameHeight="663"/>
+	<SubTexture name="waterfalldown0004" x="1312" y="786" width="662" height="874" rotated="true" frameX="0" frameY="0" frameWidth="875" frameHeight="663"/>
+	<SubTexture name="waterfalldown0005" x="1312" y="786" width="662" height="874" rotated="true" frameX="0" frameY="0" frameWidth="875" frameHeight="663"/>
+	<SubTexture name="waterfallidle0000" x="656" y="1" width="671" height="766" rotated="true" frameX="-5" frameY="0" frameWidth="783" frameHeight="672"/>
+	<SubTexture name="waterfallidle0001" x="656" y="1" width="671" height="766" rotated="true" frameX="-5" frameY="0" frameWidth="783" frameHeight="672"/>
+	<SubTexture name="waterfallidle0002" x="656" y="1" width="671" height="766" rotated="true" frameX="-5" frameY="0" frameWidth="783" frameHeight="672"/>
+	<SubTexture name="waterfallidle0003" x="656" y="1" width="671" height="766" rotated="true" frameX="-5" frameY="0" frameWidth="783" frameHeight="672"/>
+	<SubTexture name="waterfallidle0004" x="656" y="1" width="671" height="766" rotated="true" frameX="-5" frameY="0" frameWidth="783" frameHeight="672"/>
+	<SubTexture name="waterfallidle0005" x="1" y="1" width="652" height="782" rotated="true" frameX="0" frameY="-19" frameWidth="783" frameHeight="672"/>
+	<SubTexture name="waterfallidle0006" x="1" y="1" width="652" height="782" rotated="true" frameX="0" frameY="-19" frameWidth="783" frameHeight="672"/>
+	<SubTexture name="waterfallidle0007" x="1" y="1" width="652" height="782" rotated="true" frameX="0" frameY="-19" frameWidth="783" frameHeight="672"/>
+	<SubTexture name="waterfallidle0008" x="1" y="1" width="652" height="782" rotated="true" frameX="0" frameY="-19" frameWidth="783" frameHeight="672"/>
+	<SubTexture name="waterfallidle0009" x="1" y="1" width="652" height="782" rotated="true" frameX="0" frameY="-19" frameWidth="783" frameHeight="672"/>
+	<SubTexture name="waterfallleft0000" x="1" y="2658" width="1052" height="851" frameX="0" frameY="-9" frameWidth="1053" frameHeight="852"/>
+	<SubTexture name="waterfallleft0001" x="1" y="2658" width="1052" height="851" frameX="0" frameY="-9" frameWidth="1053" frameHeight="852"/>
+	<SubTexture name="waterfallleft0002" x="911" y="1663" width="846" height="992" rotated="true" frameX="-153" frameY="0" frameWidth="1053" frameHeight="852"/>
+	<SubTexture name="waterfallleft0003" x="911" y="1663" width="846" height="992" rotated="true" frameX="-153" frameY="0" frameWidth="1053" frameHeight="852"/>
+	<SubTexture name="waterfallleft0004" x="911" y="1663" width="846" height="992" rotated="true" frameX="-153" frameY="0" frameWidth="1053" frameHeight="852"/>
+	<SubTexture name="waterfallleft0005" x="911" y="1663" width="846" height="992" rotated="true" frameX="-153" frameY="0" frameWidth="1053" frameHeight="852"/>
+	<SubTexture name="waterfallright0000" x="638" y="786" width="671" height="813" rotated="true" frameX="0" frameY="-17" frameWidth="814" frameHeight="698"/>
+	<SubTexture name="waterfallright0001" x="638" y="786" width="671" height="813" rotated="true" frameX="0" frameY="-17" frameWidth="814" frameHeight="698"/>
+	<SubTexture name="waterfallright0002" x="1330" y="1" width="697" height="759" rotated="true" frameX="-57" frameY="0" frameWidth="814" frameHeight="698"/>
+	<SubTexture name="waterfallright0003" x="1330" y="1" width="697" height="759" rotated="true" frameX="-57" frameY="0" frameWidth="814" frameHeight="698"/>
+	<SubTexture name="waterfallright0004" x="1330" y="1" width="697" height="759" rotated="true" frameX="-57" frameY="0" frameWidth="814" frameHeight="698"/>
+	<SubTexture name="waterfallright0005" x="1330" y="1" width="697" height="759" rotated="true" frameX="-57" frameY="0" frameWidth="814" frameHeight="698"/>
+	<SubTexture name="waterfallup0000" x="1056" y="2658" width="944" height="967" rotated="true" frameX="-1" frameY="-1" frameWidth="969" frameHeight="946"/>
+	<SubTexture name="waterfallup0001" x="1056" y="2658" width="944" height="967" rotated="true" frameX="-1" frameY="-1" frameWidth="969" frameHeight="946"/>
+	<SubTexture name="waterfallup0002" x="1" y="1663" width="907" height="907" frameX="-19" frameY="-27" frameWidth="969" frameHeight="946"/>
+	<SubTexture name="waterfallup0003" x="1" y="1663" width="907" height="907" frameX="-19" frameY="-27" frameWidth="969" frameHeight="946"/>
+	<SubTexture name="waterfallup0004" x="1" y="1663" width="907" height="907" frameX="-19" frameY="-27" frameWidth="969" frameHeight="946"/>
+	<SubTexture name="waterfallup0005" x="1" y="1663" width="907" height="907" frameX="-19" frameY="-27" frameWidth="969" frameHeight="946"/>
+</TextureAtlas>

@@ -1,0 +1,1 @@
+<!DOCTYPE codename-engine-character><character x="80" y="90" sprite="inopia/inopia_sans" camx="90" icon="genocides-sans" color="#F8F8F8" holdTime="6.1"><anim name="idle" anim="sans_idle" loop="true"/><anim name="singLEFT" anim="sans_left"/><anim name="singDOWN" anim="sans_down"/><anim name="singUP" anim="sans_up"/><anim name="singRIGHT" anim="sans_right"/></character>

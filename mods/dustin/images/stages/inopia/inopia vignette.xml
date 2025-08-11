@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="inopia vignette.png" width="5768" height="1082" spritePadding="3" borderPadding="1">
+	<SubTexture name="vignette0000" x="1" y="1" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="vignette0001" x="1" y="1" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="vignette0002" x="1" y="1" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="vignette0003" x="1" y="1" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="vignette0004" x="1" y="1" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="vignette0005" x="1924" y="1" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="vignette0006" x="1924" y="1" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="vignette0007" x="1924" y="1" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="vignette0008" x="1924" y="1" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="vignette0009" x="1924" y="1" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="vignette0010" x="3847" y="1" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="vignette0011" x="3847" y="1" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="vignette0012" x="3847" y="1" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="vignette0013" x="3847" y="1" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="vignette0014" x="3847" y="1" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080"/>
+</TextureAtlas>

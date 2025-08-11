@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="PhantomSans_assets.png" width="7513" height="2634" spritePadding="3" borderPadding="1">
+	<SubTexture name="PhantomSans DOWN note0000" x="1" y="1" width="557" height="590" frameX="0" frameY="-27" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0001" x="1" y="1" width="557" height="590" frameX="0" frameY="-27" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0002" x="561" y="1" width="555" height="585" frameX="-5" frameY="-19" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0003" x="561" y="1" width="555" height="585" frameX="-5" frameY="-19" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0004" x="1119" y="1" width="551" height="580" frameX="-9" frameY="-9" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0005" x="1119" y="1" width="551" height="580" frameX="-9" frameY="-9" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0006" x="1673" y="1" width="550" height="602" frameX="-11" frameY="-3" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0007" x="1673" y="1" width="550" height="602" frameX="-11" frameY="-3" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0008" x="2226" y="1" width="548" height="606" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0009" x="2226" y="1" width="548" height="606" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0010" x="2777" y="1" width="548" height="600" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0011" x="2777" y="1" width="548" height="600" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0012" x="3328" y="1" width="548" height="598" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0013" x="3328" y="1" width="548" height="598" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0014" x="3879" y="1" width="548" height="587" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0015" x="3879" y="1" width="548" height="587" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0016" x="4430" y="1" width="548" height="588" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0017" x="4430" y="1" width="548" height="588" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0018" x="4981" y="1" width="548" height="585" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0019" x="4981" y="1" width="548" height="585" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0020" x="5532" y="1" width="548" height="604" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0021" x="5532" y="1" width="548" height="604" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0022" x="2226" y="1" width="548" height="606" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0023" x="2226" y="1" width="548" height="606" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0024" x="2777" y="1" width="548" height="600" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0025" x="2777" y="1" width="548" height="600" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0026" x="3328" y="1" width="548" height="598" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans DOWN note0027" x="3328" y="1" width="548" height="598" frameX="-13" frameY="0" frameWidth="557" frameHeight="606"/>
+	<SubTexture name="PhantomSans IDLE0000" x="6083" y="1" width="442" height="607" frameX="-17" frameY="-15" frameWidth="457" frameHeight="639"/>
+	<SubTexture name="PhantomSans IDLE0001" x="6083" y="1" width="442" height="607" frameX="-17" frameY="-15" frameWidth="457" frameHeight="639"/>
+	<SubTexture name="PhantomSans IDLE0002" x="6528" y="1" width="443" height="607" frameX="-16" frameY="-17" frameWidth="457" frameHeight="639"/>
+	<SubTexture name="PhantomSans IDLE0003" x="6528" y="1" width="443" height="607" frameX="-16" frameY="-17" frameWidth="457" frameHeight="639"/>
+	<SubTexture name="PhantomSans IDLE0004" x="6974" y="1" width="456" height="610" frameX="-1" frameY="-10" frameWidth="457" frameHeight="639"/>
+	<SubTexture name="PhantomSans IDLE0005" x="6974" y="1" width="456" height="610" frameX="-1" frameY="-10" frameWidth="457" frameHeight="639"/>
+	<SubTexture name="PhantomSans IDLE0006" x="1" y="614" width="457" height="634" frameX="0" frameY="-5" frameWidth="457" frameHeight="639"/>
+	<SubTexture name="PhantomSans IDLE0007" x="1" y="614" width="457" height="634" frameX="0" frameY="-5" frameWidth="457" frameHeight="639"/>
+	<SubTexture name="PhantomSans IDLE0008" x="461" y="614" width="450" height="639" frameX="-8" frameY="0" frameWidth="457" frameHeight="639"/>
+	<SubTexture name="PhantomSans IDLE0009" x="461" y="614" width="450" height="639" frameX="-8" frameY="0" frameWidth="457" frameHeight="639"/>
+	<SubTexture name="PhantomSans IDLE0010" x="914" y="614" width="428" height="633" frameX="-30" frameY="0" frameWidth="457" frameHeight="639"/>
+	<SubTexture name="PhantomSans IDLE0011" x="914" y="614" width="428" height="633" frameX="-30" frameY="0" frameWidth="457" frameHeight="639"/>
+	<SubTexture name="PhantomSans IDLE0012" x="1345" y="614" width="405" height="630" frameX="-53" frameY="-3" frameWidth="457" frameHeight="639"/>
+	<SubTexture name="PhantomSans IDLE0013" x="1345" y="614" width="405" height="630" frameX="-53" frameY="-3" frameWidth="457" frameHeight="639"/>
+	<SubTexture name="PhantomSans LEFT note0000" x="1753" y="614" width="607" height="633" frameX="0" frameY="-7" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0001" x="1753" y="614" width="607" height="633" frameX="0" frameY="-7" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0002" x="2363" y="614" width="604" height="623" frameX="-7" frameY="-4" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0003" x="2363" y="614" width="604" height="623" frameX="-7" frameY="-4" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0004" x="2970" y="614" width="603" height="616" frameX="-16" frameY="-1" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0005" x="2970" y="614" width="603" height="616" frameX="-16" frameY="-1" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0006" x="3576" y="614" width="599" height="633" frameX="-23" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0007" x="3576" y="614" width="599" height="633" frameX="-23" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0008" x="4178" y="614" width="599" height="634" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0009" x="4178" y="614" width="599" height="634" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0010" x="4780" y="614" width="599" height="636" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0011" x="4780" y="614" width="599" height="636" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0012" x="5382" y="614" width="599" height="641" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0013" x="5382" y="614" width="599" height="641" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0014" x="5984" y="614" width="599" height="631" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0015" x="5984" y="614" width="599" height="631" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0016" x="6586" y="614" width="599" height="621" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0017" x="6586" y="614" width="599" height="621" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0018" x="1" y="1258" width="599" height="614" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0019" x="1" y="1258" width="599" height="614" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0020" x="603" y="1258" width="599" height="633" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0021" x="603" y="1258" width="599" height="633" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0022" x="4178" y="614" width="599" height="634" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0023" x="4178" y="614" width="599" height="634" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0024" x="4780" y="614" width="599" height="636" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0025" x="4780" y="614" width="599" height="636" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0026" x="5382" y="614" width="599" height="641" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans LEFT note0027" x="5382" y="614" width="599" height="641" frameX="-24" frameY="0" frameWidth="607" frameHeight="641"/>
+	<SubTexture name="PhantomSans RIGHT note0000" x="1205" y="1258" width="600" height="617" frameX="-31" frameY="-5" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0001" x="1205" y="1258" width="600" height="617" frameX="-31" frameY="-5" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0002" x="1808" y="1258" width="578" height="616" frameX="-36" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0003" x="1808" y="1258" width="578" height="616" frameX="-36" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0004" x="2389" y="1258" width="544" height="614" frameX="-53" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0005" x="2389" y="1258" width="544" height="614" frameX="-53" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0006" x="2936" y="1258" width="564" height="602" frameX="-32" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0007" x="2936" y="1258" width="564" height="602" frameX="-32" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0008" x="3503" y="1258" width="569" height="604" frameX="-26" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0009" x="3503" y="1258" width="569" height="604" frameX="-26" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0010" x="4075" y="1258" width="579" height="601" frameX="-16" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0011" x="4075" y="1258" width="579" height="601" frameX="-16" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0012" x="4657" y="1258" width="595" height="621" frameX="0" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0013" x="4657" y="1258" width="595" height="621" frameX="0" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0014" x="5255" y="1258" width="580" height="622" frameX="-15" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0015" x="5255" y="1258" width="580" height="622" frameX="-15" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0016" x="5838" y="1258" width="560" height="616" frameX="-35" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0017" x="5838" y="1258" width="560" height="616" frameX="-35" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0018" x="6401" y="1258" width="544" height="614" frameX="-51" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0019" x="6401" y="1258" width="544" height="614" frameX="-51" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0020" x="6948" y="1258" width="564" height="602" frameX="-31" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0021" x="6948" y="1258" width="564" height="602" frameX="-31" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0022" x="3503" y="1258" width="569" height="604" frameX="-26" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0023" x="3503" y="1258" width="569" height="604" frameX="-26" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0024" x="4075" y="1258" width="579" height="601" frameX="-16" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0025" x="4075" y="1258" width="579" height="601" frameX="-16" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0026" x="4657" y="1258" width="595" height="621" frameX="0" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans RIGHT note0027" x="4657" y="1258" width="595" height="621" frameX="0" frameY="0" frameWidth="600" frameHeight="622"/>
+	<SubTexture name="PhantomSans UP note0000" x="1" y="1894" width="559" height="720" frameX="-35" frameY="0" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0001" x="1" y="1894" width="559" height="720" frameX="-35" frameY="0" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0002" x="563" y="1894" width="588" height="714" frameX="-24" frameY="-16" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0003" x="563" y="1894" width="588" height="714" frameX="-24" frameY="-16" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0004" x="1154" y="1894" width="609" height="714" frameX="-14" frameY="-27" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0005" x="1154" y="1894" width="609" height="714" frameX="-14" frameY="-27" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0006" x="1766" y="1894" width="630" height="737" frameX="0" frameY="-30" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0007" x="1766" y="1894" width="630" height="737" frameX="0" frameY="-30" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0008" x="2399" y="1894" width="630" height="739" frameX="0" frameY="-31" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0009" x="2399" y="1894" width="630" height="739" frameX="0" frameY="-31" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0010" x="3032" y="1894" width="630" height="732" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0011" x="3032" y="1894" width="630" height="732" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0012" x="3665" y="1894" width="630" height="730" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0013" x="3665" y="1894" width="630" height="730" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0014" x="4298" y="1894" width="630" height="717" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0015" x="4298" y="1894" width="630" height="717" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0016" x="4931" y="1894" width="630" height="718" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0017" x="4931" y="1894" width="630" height="718" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0018" x="5564" y="1894" width="630" height="715" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0019" x="5564" y="1894" width="630" height="715" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0020" x="6197" y="1894" width="630" height="737" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0021" x="6197" y="1894" width="630" height="737" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0022" x="6830" y="1894" width="630" height="739" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0023" x="6830" y="1894" width="630" height="739" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0024" x="3032" y="1894" width="630" height="732" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0025" x="3032" y="1894" width="630" height="732" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0026" x="3665" y="1894" width="630" height="730" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+	<SubTexture name="PhantomSans UP note0027" x="3665" y="1894" width="630" height="730" frameX="0" frameY="-34" frameWidth="630" frameHeight="739"/>
+</TextureAtlas>

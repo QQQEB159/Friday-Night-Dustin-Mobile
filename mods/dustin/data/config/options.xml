@@ -1,0 +1,36 @@
+<menu name="DUSTIN OPTIONS" desc="">
+    <touchPad name="touchPad" menuName="DUSTIN OPTIONS" dpadMode="UP_DOWN" actionMode="A_B" />
+    <menu name="Shaders" desc="Enable/Disable Shaders. (for toasters)">
+    <touchPad name="touchPad" menuName="Shaders" dpadMode="UP_DOWN" actionMode="A_B" />
+        <checkbox id="bloom" name="Bloom Shaders" desc="Enable/Disable Bloom Shaders. (very intensive)" />
+        <checkbox id="particles" name="Particles Shaders" desc="Enable/Disable Particles Shaders. (medium intensive)" />
+        <checkbox id="distortion" name="Distortion Shaders" desc="Enable/Disable Distortion Shaders. (medium intensive)" />
+        <checkbox id="godrays" name="God Rays Shader" desc="Enable/Disable God Rays Shaders. (medium intensive)" />
+        <checkbox id="fogShader" name="Fog Shader" desc="Enable/Disable Fog Shaders." />
+        <checkbox id="gradientShader" name="Gradient Shader" desc="Enable/Disable Gradient Shaders." />
+        <checkbox id="glitching" name="Glitch Shader" desc="Enable/Disable Glitching Shader." />
+        <checkbox id="impact" name="Impact Shader" desc="Enable/Disable Impact Shaders." />
+        <checkbox id="screenVignette2" name="ScreenVignette Shader" desc="Enable/Disable ScreenVignette2 Shaders." />
+        <checkbox id="saturation" name="Saturation Shader" desc="Enable/Disable Saturation Shaders." />
+        <checkbox id="static" name="Static Shader" desc="Enable/Disable Static Shaders." />
+        <checkbox id="blackwhite" name="Blackwhite Shader" desc="Enable/Disable Blackwhite Shaders." />
+        <checkbox id="pixel" name="Pixel Shader" desc="Enable/Disable Pixel Shaders." />
+        <checkbox id="tapenoise" name="Tapenoise Shader" desc="Enable/Disable Tapenoise Shaders." />
+        <checkbox id="radial" name="Radial Shader" desc="Enable/Disable Radial Shaders." />
+        <checkbox id="embers" name="Embers Shader" desc="Enable/Disable Embers Shaders." />
+        <checkbox id="flames" name="Flames Shader" desc="Enable/Disable Flames Shaders." />
+        <checkbox id="wi" name="Wi Shader" desc="Enable/Disable Wi Shaders." />
+    </menu>
+    <checkbox id="mechanics" name="Mechanics" desc="" />
+    <checkbox id="nh" name="No-Hit Mode" desc="" />
+    <checkbox id="botplay" name="botplay" desc="If you have poor manual dexterity, just turn this on" />
+    <!--
+	<checkbox id="dev" name="Developer Mode" desc="Enables debug_tools.hx, allows for speeding up/slowing down the game.
+	PRESS 1 - Skip Song
+	PRESS 2 - Slows Game By 10% (Min Speed: 10%)
+	PRESS 3 - Resets Game Speed To 100%
+	PRESS 4 - Speeds Game By 10% (Max Speed: 200%)
+	PRESS 5 - Hold To Speed Game By 2000%, Uses BOTPLAY
+	PRESS 6 - Toggle For Botplay On Player Strums" />
+    -->
+</menu>

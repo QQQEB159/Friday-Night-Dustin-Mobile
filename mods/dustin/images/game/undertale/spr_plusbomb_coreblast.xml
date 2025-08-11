@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="spr_plusbomb_coreblast.png" width="20" height="141">
+	<SubTexture name="spr_plusbomb_coreblast_0" x="0" y="0" width="20" height="20" frameX="-0" frameY="-0" frameWidth="20" frameHeight="20"/>
+	<SubTexture name="spr_plusbomb_coreblast_1" x="0" y="20" width="20" height="20" frameX="-0" frameY="-0" frameWidth="20" frameHeight="20"/>
+	<SubTexture name="spr_plusbomb_coreblast_2" x="0" y="40" width="20" height="20" frameX="-0" frameY="-0" frameWidth="20" frameHeight="20"/>
+	<SubTexture name="spr_plusbomb_coreblast_3" x="0" y="60" width="20" height="20" frameX="-0" frameY="-0" frameWidth="20" frameHeight="20"/>
+	<SubTexture name="spr_plusbomb_coreblast_4" x="0" y="80" width="20" height="20" frameX="-0" frameY="-0" frameWidth="20" frameHeight="20"/>
+	<SubTexture name="spr_plusbomb_coreblast_5" x="0" y="100" width="20" height="20" frameX="-0" frameY="-0" frameWidth="20" frameHeight="20"/>
+	<SubTexture name="spr_plusbomb_coreblast_6" x="0" y="120" width="20" height="20" frameX="-0" frameY="-0" frameWidth="20" frameHeight="20"/>
+	<SubTexture name="spr_plusbomb_coreblast_7" x="0" y="140" width="1" height="1" frameX="-0" frameY="-0" frameWidth="1" frameHeight="1"/>
+</TextureAtlas>

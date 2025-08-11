@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="sanses_bg.png" width="1480" height="896" spritePadding="3" borderPadding="1">
+	<SubTexture name="sanses_bg0000" x="1" y="1" width="1476" height="449" frameX="-5" frameY="-3" frameWidth="1491" frameHeight="452"/>
+	<SubTexture name="sanses_bg0001" x="1" y="1" width="1476" height="449" frameX="-5" frameY="-3" frameWidth="1491" frameHeight="452"/>
+	<SubTexture name="sanses_bg0002" x="1" y="1" width="1476" height="449" frameX="-5" frameY="-3" frameWidth="1491" frameHeight="452"/>
+	<SubTexture name="sanses_bg0003" x="1" y="1" width="1476" height="449" frameX="-5" frameY="-3" frameWidth="1491" frameHeight="452"/>
+	<SubTexture name="sanses_bg0004" x="1" y="1" width="1476" height="449" frameX="-5" frameY="-3" frameWidth="1491" frameHeight="452"/>
+	<SubTexture name="sanses_bg0005" x="1" y="453" width="1478" height="442" frameX="-4" frameY="-10" frameWidth="1491" frameHeight="452"/>
+	<SubTexture name="sanses_bg0006" x="1" y="453" width="1478" height="442" frameX="-4" frameY="-10" frameWidth="1491" frameHeight="452"/>
+	<SubTexture name="sanses_bg0007" x="1" y="453" width="1478" height="442" frameX="-4" frameY="-10" frameWidth="1491" frameHeight="452"/>
+	<SubTexture name="sanses_bg0008" x="1" y="453" width="1478" height="442" frameX="-4" frameY="-10" frameWidth="1491" frameHeight="452"/>
+	<SubTexture name="sanses_bg0009" x="1" y="453" width="1478" height="442" frameX="-4" frameY="-10" frameWidth="1491" frameHeight="452"/>
+</TextureAtlas>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="LightBeameye.png" width="1281" height="1064">
+	<SubTexture name="UndyneStarEYE0000" x="765" y="1011" width="51" height="52" rotated="true" frameX="-50" frameY="-296" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0001" x="765" y="1011" width="51" height="52" rotated="true" frameX="-50" frameY="-296" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0002" x="976" y="660" width="69" height="80" rotated="true" frameX="-43" frameY="-287" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0003" x="976" y="660" width="69" height="80" rotated="true" frameX="-43" frameY="-287" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0004" x="911" y="851" width="149" height="185" rotated="true" frameX="-40" frameY="-216" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0005" x="1" y="549" width="672" height="371" frameX="-35" frameY="-5" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0006" x="1" y="549" width="672" height="371" frameX="-35" frameY="-5" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0007" x="1" y="549" width="672" height="371" frameX="-35" frameY="-5" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0008" x="724" y="1" width="322" height="656" rotated="true" frameX="-36" frameY="-37" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0009" x="724" y="1" width="322" height="656" rotated="true" frameX="-36" frameY="-37" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0010" x="724" y="1" width="322" height="656" rotated="true" frameX="-36" frameY="-37" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0011" x="1049" y="1" width="231" height="570" rotated="true" frameX="-36" frameY="-124" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0012" x="1049" y="1" width="231" height="570" rotated="true" frameX="-36" frameY="-124" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0013" x="1049" y="1" width="231" height="570" rotated="true" frameX="-36" frameY="-124" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0014" x="765" y="660" width="143" height="348" rotated="true" frameX="-42" frameY="-206" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0015" x="765" y="660" width="143" height="348" rotated="true" frameX="-42" frameY="-206" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0016" x="911" y="660" width="62" height="188" rotated="true" frameX="-44" frameY="-288" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0017" x="911" y="660" width="62" height="188" rotated="true" frameX="-44" frameY="-288" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0018" x="976" y="743" width="66" height="78" rotated="true" frameX="-44" frameY="-290" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0019" x="976" y="743" width="66" height="78" rotated="true" frameX="-44" frameY="-290" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0020" x="676" y="549" width="45" height="46" frameX="-54" frameY="-299" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0021" x="676" y="549" width="45" height="46" frameX="-54" frameY="-299" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0022" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0023" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0024" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0025" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0026" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0027" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0028" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0029" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0030" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0031" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0032" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0033" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0034" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0035" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0036" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0037" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0038" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0039" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0040" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0041" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0042" x="765" y="1011" width="51" height="52" rotated="true" frameX="-50" frameY="-296" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0043" x="765" y="1011" width="51" height="52" rotated="true" frameX="-50" frameY="-296" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0044" x="976" y="660" width="69" height="80" rotated="true" frameX="-43" frameY="-287" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0045" x="976" y="660" width="69" height="80" rotated="true" frameX="-43" frameY="-287" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0046" x="1049" y="574" width="205" height="117" frameX="-40" frameY="-251" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0047" x="1" y="1" width="720" height="307" frameX="-34" frameY="-198" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0048" x="1" y="1" width="720" height="307" frameX="-34" frameY="-198" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0049" x="1" y="1" width="720" height="307" frameX="-34" frameY="-198" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0050" x="1" y="311" width="698" height="235" frameX="-36" frameY="-243" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0051" x="1" y="311" width="698" height="235" frameX="-36" frameY="-243" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0052" x="1" y="311" width="698" height="235" frameX="-36" frameY="-243" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0053" x="1" y="923" width="604" height="140" frameX="-38" frameY="-263" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0054" x="1" y="923" width="604" height="140" frameX="-38" frameY="-263" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0055" x="1" y="923" width="604" height="140" frameX="-38" frameY="-263" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0056" x="676" y="660" width="86" height="362" rotated="true" frameX="-42" frameY="-289" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0057" x="676" y="660" width="86" height="362" rotated="true" frameX="-42" frameY="-289" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0058" x="911" y="660" width="62" height="188" rotated="true" frameX="-44" frameY="-288" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0059" x="911" y="660" width="62" height="188" rotated="true" frameX="-44" frameY="-288" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0060" x="976" y="743" width="66" height="78" rotated="true" frameX="-44" frameY="-290" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0061" x="976" y="743" width="66" height="78" rotated="true" frameX="-44" frameY="-290" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0062" x="676" y="549" width="45" height="46" frameX="-54" frameY="-299" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0063" x="676" y="549" width="45" height="46" frameX="-54" frameY="-299" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0064" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0065" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0066" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0067" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0068" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0069" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0070" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0071" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0072" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0073" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0074" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0075" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0076" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0077" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0078" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0079" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0080" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0081" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0082" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0083" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0084" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0085" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0086" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0087" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0088" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0089" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0090" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+	<SubTexture name="UndyneStarEYE0091" x="702" y="311" width="1" height="1" frameX="-0" frameY="-0" frameWidth="768" frameHeight="733"/>
+</TextureAtlas>

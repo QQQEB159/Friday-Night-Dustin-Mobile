@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="temmie.png" width="187" height="2888" spritePadding="3" borderPadding="1">
+	<SubTexture name="temmie_DIES0000" x="1" y="1" width="173" height="166" frameX="0" frameY="0" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0001" x="1" y="1078" width="174" height="148" frameX="-4" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0002" x="1" y="1229" width="174" height="148" frameX="-4" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0003" x="1" y="1380" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0004" x="1" y="1531" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0005" x="1" y="1531" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0006" x="1" y="466" width="173" height="150" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0007" x="1" y="466" width="173" height="150" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0008" x="1" y="1682" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0009" x="1" y="1682" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0010" x="1" y="1380" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0011" x="1" y="1380" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0012" x="1" y="1531" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0013" x="1" y="1531" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0014" x="1" y="466" width="173" height="150" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0015" x="1" y="619" width="173" height="150" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0016" x="1" y="1833" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0017" x="1" y="1984" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0018" x="1" y="2135" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0019" x="1" y="2286" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0020" x="1" y="2437" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0021" x="1" y="2588" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0022" x="1" y="772" width="173" height="150" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0023" x="1" y="925" width="173" height="150" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0024" x="1" y="1682" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0025" x="1" y="1682" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_DIES0026" x="1" y="1380" width="173" height="148" frameX="-3" frameY="-1" frameWidth="174" frameHeight="166"/>
+	<SubTexture name="temmie_idle0000" x="1" y="321" width="185" height="142" frameX="0" frameY="-7" frameWidth="185" frameHeight="148"/>
+	<SubTexture name="temmie_idle0001" x="1" y="321" width="185" height="142" frameX="0" frameY="-7" frameWidth="185" frameHeight="148"/>
+	<SubTexture name="temmie_idle0002" x="1" y="170" width="178" height="148" frameX="-4" frameY="-2" frameWidth="185" frameHeight="148"/>
+	<SubTexture name="temmie_idle0003" x="1" y="170" width="178" height="148" frameX="-4" frameY="-2" frameWidth="185" frameHeight="148"/>
+	<SubTexture name="temmie_idle0004" x="1" y="2739" width="173" height="148" frameX="-6" frameY="0" frameWidth="185" frameHeight="148"/>
+	<SubTexture name="temmie_idle0005" x="1" y="2739" width="173" height="148" frameX="-6" frameY="0" frameWidth="185" frameHeight="148"/>
+	<SubTexture name="temmie_idle0006" x="1" y="2739" width="173" height="148" frameX="-6" frameY="0" frameWidth="185" frameHeight="148"/>
+	<SubTexture name="temmie_idle0007" x="1" y="2739" width="173" height="148" frameX="-6" frameY="0" frameWidth="185" frameHeight="148"/>
+	<SubTexture name="temmie_idle0008" x="1" y="2739" width="173" height="148" frameX="-6" frameY="0" frameWidth="185" frameHeight="148"/>
+	<SubTexture name="temmie_idle0009" x="1" y="2739" width="173" height="148" frameX="-6" frameY="0" frameWidth="185" frameHeight="148"/>
+	<SubTexture name="temmie_idle0010" x="1" y="2739" width="173" height="148" frameX="-6" frameY="0" frameWidth="185" frameHeight="148"/>
+	<SubTexture name="temmie_idle0011" x="1" y="2739" width="173" height="148" frameX="-6" frameY="0" frameWidth="185" frameHeight="148"/>
+	<SubTexture name="temmie_idle0012" x="1" y="2739" width="173" height="148" frameX="-6" frameY="0" frameWidth="185" frameHeight="148"/>
+	<SubTexture name="temmie_idle0013" x="1" y="2739" width="173" height="148" frameX="-6" frameY="0" frameWidth="185" frameHeight="148"/>
+</TextureAtlas>

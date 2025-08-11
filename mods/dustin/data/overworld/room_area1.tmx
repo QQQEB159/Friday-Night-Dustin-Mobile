@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="left-up" width="34" height="13" tilewidth="20" tileheight="20" infinite="0" nextlayerid="17" nextobjectid="54">
+ <imagelayer id="14" name="bg">
+  <image source="../../images/overworld/rooms/room_area1.png" width="680" height="260"/>
+  <properties>
+   <property name="camerabounds" type="object" value="31"/>
+   <property name="camerazoom" type="float" value="1.5"/>
+  </properties>
+ </imagelayer>
+ <objectgroup id="15" name="collision">
+  <object id="8" x="240" y="60">
+   <properties>
+    <property name="slope" type="int" value="0"/>
+   </properties>
+   <polyline points="0,0 20,20"/>
+  </object>
+  <object id="9" x="60" y="60">
+   <properties>
+    <property name="slope" type="int" value="0"/>
+   </properties>
+   <polyline points="0,0 -20,20"/>
+  </object>
+  <object id="10" x="20" y="180">
+   <properties>
+    <property name="slope" type="int" value="0"/>
+   </properties>
+   <polyline points="0,0 60,60"/>
+  </object>
+  <object id="11" x="220" y="240">
+   <properties>
+    <property name="slope" type="int" value="0"/>
+   </properties>
+   <polyline points="0,0 40,-40"/>
+  </object>
+  <object id="15" x="280" y="140">
+   <properties>
+    <property name="slope" type="int" value="0"/>
+   </properties>
+   <polyline points="0,0 20,20"/>
+  </object>
+  <object id="42" x="100" y="240">
+   <polyline points="-20,0 120,0"/>
+  </object>
+  <object id="43" x="60" y="60">
+   <polyline points="0,0 180,0"/>
+  </object>
+  <object id="44" x="260" y="80">
+   <polyline points="0,0 20,0"/>
+  </object>
+  <object id="45" x="280" y="140">
+   <polyline points="0,0 0,-60"/>
+  </object>
+  <object id="46" x="40" y="80">
+   <polyline points="0,0 -20,0"/>
+  </object>
+  <object id="47" x="20" y="180">
+   <polyline points="0,0 0,-100"/>
+  </object>
+  <object id="48" x="260" y="200">
+   <polyline points="0,0 400,0"/>
+  </object>
+  <object id="49" x="300" y="160">
+   <polyline points="0,0 300,0"/>
+  </object>
+  <object id="50" x="660" y="200">
+   <polyline points="0,0 0,-40"/>
+  </object>
+  <object id="51" x="660" y="160">
+   <polyline points="0,0 -20,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="16" name="objects">
+  <object id="25" name="room_exit" x="600" y="100" width="40" height="60">
+   <properties>
+    <property name="next_enterance_id" value="0"/>
+    <property name="next_room" value="room_area1_2"/>
+   </properties>
+  </object>
+  <object id="30" name="player" x="136" y="114">
+   <properties>
+    <property name="enterance_facing" value="d"/>
+    <property name="enterance_id" value="0"/>
+   </properties>
+  </object>
+  <object id="31" name="bounds" x="0" y="0" width="680" height="260" visible="0"/>
+  <object id="53" name="player" x="600" y="150">
+   <properties>
+    <property name="enterance_facing" value="d"/>
+    <property name="enterance_id" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

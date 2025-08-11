@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="bonetravaganza_gf_red_fire.png"><SubTexture name="bonetravaganza_gf_red_fire left0000" x="1293" y="3906" width="1300" height="892" frameX="-727" frameY="-918" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire left0001" x="1293" y="3906" width="1300" height="892" frameX="-727" frameY="-918" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire left0002" x="3638" y="1300" width="1661" height="1248" frameX="-542" frameY="-562" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire left0003" x="3638" y="1300" width="1661" height="1248" frameX="-542" frameY="-562" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire left0004" x="0" y="1306" width="1759" height="1300" frameX="-493" frameY="-510" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire left0005" x="0" y="1306" width="1759" height="1300" frameX="-493" frameY="-510" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire left0006" x="1759" y="1306" width="1793" height="1300" frameX="-476" frameY="-510" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire left0007" x="1759" y="1306" width="1793" height="1300" frameX="-476" frameY="-510" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire left0008" x="0" y="0" width="1819" height="1306" frameX="-463" frameY="-504" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire left0009" x="0" y="0" width="1819" height="1306" frameX="-463" frameY="-504" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire left0010" x="3454" y="2606" width="1293" height="905" frameX="-732" frameY="-905" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire left0011" x="3454" y="2606" width="1293" height="905" frameX="-732" frameY="-905" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire right0000" x="2593" y="3906" width="1300" height="892" frameX="-727" frameY="-918" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire right0001" x="2593" y="3906" width="1300" height="892" frameX="-727" frameY="-918" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire right0002" x="1793" y="2606" width="1661" height="1248" frameX="-542" frameY="-562" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire right0003" x="1793" y="2606" width="1661" height="1248" frameX="-542" frameY="-562" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire right0004" x="3638" y="0" width="1759" height="1300" frameX="-493" frameY="-510" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire right0005" x="3638" y="0" width="1759" height="1300" frameX="-493" frameY="-510" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire right0006" x="0" y="2606" width="1793" height="1300" frameX="-476" frameY="-510" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire right0007" x="0" y="2606" width="1793" height="1300" frameX="-476" frameY="-510" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire right0008" x="1819" y="0" width="1819" height="1306" frameX="-463" frameY="-504" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire right0009" x="1819" y="0" width="1819" height="1306" frameX="-463" frameY="-504" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire right0010" x="0" y="3906" width="1293" height="905" frameX="-732" frameY="-905" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_red_fire right0011" x="0" y="3906" width="1293" height="905" frameX="-732" frameY="-905" frameWidth="2827" frameHeight="2329" />
+</TextureAtlas>

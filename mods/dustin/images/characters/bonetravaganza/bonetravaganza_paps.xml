@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="bonetravaganza_paps.png"><SubTexture name="bonetravaganza_paps idle0000" x="966" y="2673" width="618" height="825" frameX="-545" frameY="-222" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0001" x="966" y="2673" width="618" height="825" frameX="-545" frameY="-222" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0002" x="2040" y="1821" width="595" height="832" frameX="-557" frameY="-215" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0003" x="2040" y="1821" width="595" height="832" frameX="-557" frameY="-215" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0004" x="2740" y="1689" width="607" height="839" frameX="-541" frameY="-208" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0005" x="2740" y="1689" width="607" height="839" frameX="-541" frameY="-208" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0006" x="2740" y="845" width="659" height="844" frameX="-539" frameY="-203" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0007" x="2740" y="845" width="659" height="844" frameX="-539" frameY="-203" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0008" x="1359" y="1821" width="681" height="850" frameX="-536" frameY="-197" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0009" x="1359" y="1821" width="681" height="850" frameX="-536" frameY="-197" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0010" x="972" y="963" width="624" height="852" frameX="-533" frameY="-195" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0011" x="972" y="963" width="624" height="852" frameX="-533" frameY="-195" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0012" x="2119" y="0" width="621" height="852" frameX="-532" frameY="-195" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0013" x="2119" y="0" width="621" height="852" frameX="-532" frameY="-195" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0014" x="2119" y="852" width="618" height="852" frameX="-532" frameY="-195" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0015" x="2119" y="852" width="618" height="852" frameX="-532" frameY="-195" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0016" x="0" y="1821" width="671" height="852" frameX="-532" frameY="-195" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0017" x="0" y="1821" width="671" height="852" frameX="-532" frameY="-195" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0018" x="671" y="1821" width="688" height="852" frameX="-532" frameY="-195" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps idle0019" x="671" y="1821" width="688" height="852" frameX="-532" frameY="-195" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps right0000" x="0" y="963" width="972" height="858" frameX="-455" frameY="-208" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps right0001" x="0" y="963" width="972" height="858" frameX="-455" frameY="-208" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps right0002" x="2740" y="0" width="963" height="845" frameX="-435" frameY="-220" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps right0003" x="2740" y="0" width="963" height="845" frameX="-435" frameY="-220" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps right0004" x="0" y="2673" width="966" height="844" frameX="-428" frameY="-221" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps right0005" x="0" y="2673" width="966" height="844" frameX="-428" frameY="-221" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps left0000" x="0" y="0" width="727" height="963" frameX="-409" frameY="-84" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps left0001" x="0" y="0" width="727" height="963" frameX="-409" frameY="-84" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps left0002" x="727" y="0" width="697" height="943" frameX="-464" frameY="-104" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps left0003" x="727" y="0" width="697" height="943" frameX="-464" frameY="-104" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps left0004" x="1424" y="0" width="695" height="940" frameX="-472" frameY="-107" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps left0005" x="1424" y="0" width="695" height="940" frameX="-472" frameY="-107" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps up0000" x="1584" y="2673" width="742" height="764" frameX="-374" frameY="-295" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps up0001" x="1584" y="2673" width="742" height="764" frameX="-374" frameY="-295" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps up0002" x="2876" y="2673" width="733" height="715" frameX="-383" frameY="-337" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps up0003" x="2876" y="2673" width="733" height="715" frameX="-383" frameY="-337" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps up0004" x="3703" y="0" width="743" height="709" frameX="-379" frameY="-342" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps up0005" x="3703" y="0" width="743" height="709" frameX="-379" frameY="-342" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps down0000" x="3703" y="1413" width="597" height="653" frameX="-670" frameY="-396" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps down0001" x="3703" y="1413" width="597" height="653" frameX="-670" frameY="-396" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps down0002" x="3703" y="709" width="554" height="704" frameX="-674" frameY="-343" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps down0003" x="3703" y="709" width="554" height="704" frameX="-674" frameY="-343" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps down0004" x="2326" y="2673" width="550" height="716" frameX="-674" frameY="-333" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="bonetravaganza_paps down0005" x="2326" y="2673" width="550" height="716" frameX="-674" frameY="-333" frameWidth="1920" frameHeight="1080" />
+</TextureAtlas>

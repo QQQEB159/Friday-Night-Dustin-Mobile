@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="left-up" width="16" height="21" tilewidth="20" tileheight="20" infinite="0" nextlayerid="5" nextobjectid="54">
+ <imagelayer id="2" name="bg">
+  <image source="../../images/overworld/rooms/room_area1_2.png" width="319" height="339"/>
+  <properties>
+   <property name="camerabounds" type="object" value="50"/>
+   <property name="camerazoom" type="float" value="1.5"/>
+  </properties>
+ </imagelayer>
+ <objectgroup id="4" name="collision">
+  <object id="5" x="120" y="420">
+   <polyline points="0,0 0,-40"/>
+  </object>
+  <object id="6" x="200" y="420">
+   <polyline points="0,0 0,-40"/>
+  </object>
+  <object id="28" x="200" y="380">
+   <properties>
+    <property name="slope" type="int" value="0"/>
+   </properties>
+   <polyline points="0,0 20,-20"/>
+  </object>
+  <object id="29" x="120" y="380">
+   <properties>
+    <property name="slope" type="int" value="0"/>
+   </properties>
+   <polyline points="0,0 -20,-20"/>
+  </object>
+  <object id="30" x="220" y="360">
+   <polyline points="0,0 40,0"/>
+  </object>
+  <object id="31" x="100" y="360">
+   <polyline points="0,0 -40,0"/>
+  </object>
+  <object id="32" x="260" y="360">
+   <properties>
+    <property name="slope" type="int" value="0"/>
+   </properties>
+   <polyline points="0,0 60,-60"/>
+  </object>
+  <object id="33" x="60" y="360">
+   <properties>
+    <property name="slope" type="int" value="0"/>
+   </properties>
+   <polyline points="0,0 -60,-60"/>
+  </object>
+  <object id="34" x="0" y="220">
+   <properties>
+    <property name="slope" type="int" value="0"/>
+   </properties>
+   <polyline points="0,0 20,-20"/>
+  </object>
+  <object id="35" x="320" y="220">
+   <properties>
+    <property name="slope" type="int" value="0"/>
+   </properties>
+   <polyline points="0,0 -20,-20"/>
+  </object>
+  <object id="36" x="20" y="200">
+   <polyline points="0,0 40,0"/>
+  </object>
+  <object id="37" x="300" y="200">
+   <polyline points="0,0 -40,0"/>
+  </object>
+  <object id="38" x="60" y="200">
+   <properties>
+    <property name="slope" type="int" value="0"/>
+   </properties>
+   <polyline points="0,0 20,-20"/>
+  </object>
+  <object id="39" x="260" y="200">
+   <properties>
+    <property name="slope" type="int" value="0"/>
+   </properties>
+   <polyline points="0,0 -20,-20"/>
+  </object>
+  <object id="42" x="80" y="180">
+   <polyline points="0,0 20,0"/>
+  </object>
+  <object id="43" x="240" y="180">
+   <polyline points="0,0 -20,0"/>
+  </object>
+  <object id="44" x="180" y="160">
+   <polyline points="0,0 40,0"/>
+  </object>
+  <object id="45" x="100" y="160">
+   <polyline points="0,0 40,0"/>
+  </object>
+  <object id="46" x="220" y="180">
+   <polyline points="0,0 0,-20"/>
+  </object>
+  <object id="47" x="100" y="180">
+   <polyline points="0,0 0,-20"/>
+  </object>
+  <object id="48" x="0" y="220">
+   <polyline points="0,0 0,80"/>
+  </object>
+  <object id="49" x="320" y="220">
+   <polyline points="0,0 0,80"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="objects">
+  <object id="1" name="player" x="150" y="360">
+   <properties>
+    <property name="enterance_facing" value="u"/>
+    <property name="enterance_id" value="0"/>
+   </properties>
+  </object>
+  <object id="3" name="room_exit" x="140" y="120" width="40" height="40">
+   <properties>
+    <property name="next_enterance_id" value="0"/>
+    <property name="next_room" value="null"/>
+   </properties>
+  </object>
+  <object id="4" name="player" x="150" y="175">
+   <properties>
+    <property name="enterance_facing" value="d"/>
+    <property name="enterance_id" value="1"/>
+   </properties>
+  </object>
+  <object id="50" name="bounds" x="875" y="80" width="-500" height="320" visible="0"/>
+  <object id="52" name="room_exit" x="120" y="410" width="80" height="10">
+   <properties>
+    <property name="next_enterance_id" value="1"/>
+    <property name="next_room" value="room_area1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

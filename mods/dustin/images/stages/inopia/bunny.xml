@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="bunny.png" width="838" height="800" spritePadding="3" borderPadding="1">
+	<SubTexture name="bunny_appear0000" x="457" y="459" width="300" height="335" rotated="true" frameX="0" frameY="-202" frameWidth="336" frameHeight="499"/>
+	<SubTexture name="bunny_appear0001" x="457" y="459" width="300" height="335" rotated="true" frameX="0" frameY="-202" frameWidth="336" frameHeight="499"/>
+	<SubTexture name="bunny_appear0002" x="457" y="459" width="300" height="335" rotated="true" frameX="0" frameY="-202" frameWidth="336" frameHeight="499"/>
+	<SubTexture name="bunny_appear0003" x="457" y="459" width="300" height="335" rotated="true" frameX="0" frameY="-202" frameWidth="336" frameHeight="499"/>
+	<SubTexture name="bunny_appear0004" x="457" y="459" width="300" height="335" rotated="true" frameX="0" frameY="-202" frameWidth="336" frameHeight="499"/>
+	<SubTexture name="bunny_appear0005" x="1" y="1" width="231" height="499" frameX="-45" frameY="0" frameWidth="336" frameHeight="499"/>
+	<SubTexture name="bunny_appear0006" x="1" y="1" width="231" height="499" frameX="-45" frameY="0" frameWidth="336" frameHeight="499"/>
+	<SubTexture name="bunny_appear0007" x="1" y="1" width="231" height="499" frameX="-45" frameY="0" frameWidth="336" frameHeight="499"/>
+	<SubTexture name="bunny_appear0008" x="1" y="1" width="231" height="499" frameX="-45" frameY="0" frameWidth="336" frameHeight="499"/>
+	<SubTexture name="bunny_appear0009" x="1" y="1" width="231" height="499" frameX="-45" frameY="0" frameWidth="336" frameHeight="499"/>
+	<SubTexture name="bunny_appear0010" x="541" y="1" width="296" height="451" frameX="-9" frameY="-41" frameWidth="336" frameHeight="499"/>
+	<SubTexture name="bunny_appear0011" x="541" y="1" width="296" height="451" frameX="-9" frameY="-41" frameWidth="336" frameHeight="499"/>
+	<SubTexture name="bunny_appear0012" x="541" y="1" width="296" height="451" frameX="-9" frameY="-41" frameWidth="336" frameHeight="499"/>
+	<SubTexture name="bunny_appear0013" x="541" y="1" width="296" height="451" frameX="-9" frameY="-41" frameWidth="336" frameHeight="499"/>
+	<SubTexture name="bunny_appear0014" x="541" y="1" width="296" height="451" frameX="-9" frameY="-41" frameWidth="336" frameHeight="499"/>
+	<SubTexture name="bunny_idle0000" x="541" y="1" width="296" height="451" frameX="-9" frameY="-41" frameWidth="303" frameHeight="455"/>
+	<SubTexture name="bunny_idle0001" x="541" y="1" width="296" height="451" frameX="-9" frameY="-41" frameWidth="303" frameHeight="455"/>
+	<SubTexture name="bunny_idle0002" x="541" y="1" width="296" height="451" frameX="-9" frameY="-41" frameWidth="303" frameHeight="455"/>
+	<SubTexture name="bunny_idle0003" x="541" y="1" width="296" height="451" frameX="-9" frameY="-41" frameWidth="303" frameHeight="455"/>
+	<SubTexture name="bunny_idle0004" x="541" y="1" width="296" height="451" frameX="-9" frameY="-41" frameWidth="303" frameHeight="455"/>
+	<SubTexture name="bunny_idle0005" x="1" y="503" width="453" height="296" rotated="true" frameX="-4" frameY="-2" frameWidth="303" frameHeight="455"/>
+	<SubTexture name="bunny_idle0006" x="1" y="503" width="453" height="296" rotated="true" frameX="-4" frameY="-2" frameWidth="303" frameHeight="455"/>
+	<SubTexture name="bunny_idle0007" x="1" y="503" width="453" height="296" rotated="true" frameX="-4" frameY="-2" frameWidth="303" frameHeight="455"/>
+	<SubTexture name="bunny_idle0008" x="1" y="503" width="453" height="296" rotated="true" frameX="-4" frameY="-2" frameWidth="303" frameHeight="455"/>
+	<SubTexture name="bunny_idle0009" x="1" y="503" width="453" height="296" rotated="true" frameX="-4" frameY="-2" frameWidth="303" frameHeight="455"/>
+	<SubTexture name="bunny_idle0010" x="235" y="1" width="303" height="455" frameX="0" frameY="0" frameWidth="303" frameHeight="455"/>
+	<SubTexture name="bunny_idle0011" x="235" y="1" width="303" height="455" frameX="0" frameY="0" frameWidth="303" frameHeight="455"/>
+	<SubTexture name="bunny_idle0012" x="235" y="1" width="303" height="455" frameX="0" frameY="0" frameWidth="303" frameHeight="455"/>
+	<SubTexture name="bunny_idle0013" x="235" y="1" width="303" height="455" frameX="0" frameY="0" frameWidth="303" frameHeight="455"/>
+	<SubTexture name="bunny_idle0014" x="235" y="1" width="303" height="455" frameX="0" frameY="0" frameWidth="303" frameHeight="455"/>
+</TextureAtlas>

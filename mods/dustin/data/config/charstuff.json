@@ -1,0 +1,244 @@
+[
+  {
+    "name": "DUSTTALE",
+    "characters": [
+      {
+        "name": "BF",
+        "desc": "After falling into the underground and escaping Pico, he's marked his heart with revenge. He will become strong enough to avenge GF.",
+        "authors": "* FUNKIN TEAM",
+        "image": "game/ui/pause/characterIcons/you-are",
+        "offset": { "x": 20, "y": 95 }
+      },
+      {
+        "name": "Pico",
+        "desc": "After noticing he was stuck in a time loop when he was singing against BF, he killed GF, as he figured out she was the reason time kept resetting. When he killed her, he felt an immense power course through his body.\n\nSomething he had never felt before: he had gained \"EXP.\" After chasing BF but losing him as BF fell into the Underground, he proceeded to kill more and more people, becoming practically immortal by the time we see him in The Uprising.",
+        "authors": "* TOM FULP",
+        "image": "game/ui/pause/characterIcons/pico",
+        "offset": { "x": 20, "y": 95 }
+      },
+      {
+        "name": "Sans",
+        "desc": "A lazy but generally beloved skeleton who's excellent at making jokes, but he is burdened by knowledge no-one should ever be burdened with. After the human performed enough resets, something strange happened.\n\nHe knew now he remembered more than he should. And with this knowledge... he came to the conclusion that the only way to beat the human was through gaining enough EXP to make it impossible for them to win. Brother to Papyrus.",
+        "authors": "* ASK_DUSTTALE",
+        "image": "game/ui/pause/characterIcons/perseverance",
+        "offset": { "x": 20, "y": 30 }
+      },
+      {
+        "name": "Papyrus",
+        "desc": "Jovial puzzle and pasta enthusiast, with his sights set on becoming a Royal Guard and getting popular enough to have lots of friends. Brother to Sans.",
+        "authors": "* TOBY FOX",
+        "image": "game/ui/pause/characterIcons/kinemorto",
+        "offset": { "x": 40, "y": 40 }
+      },
+      {
+        "name": "Phantom Paps",
+        "desc": "A machination of Sans' mind, brought on by the amount of guilt he felt in his brother's killing at his own hands. Though... it seems a lot of \"Papyrus\" is still there.",
+        "authors": "* ASK_DUSTTALE",
+        "image": "game/ui/pause/characterIcons/phantom_paps",
+        "offset": { "x": -25, "y": -10 }
+      },
+      {
+        "name": "Undyne",
+        "desc": "The fierce leader of the Underground's Royal Guard, and a beacon of hope for the underground as well.\n\nEven after she should've been struck down for good, she persisted because she knew she might be the only thing between the murderers killing everyone they find and the world's annihilation.\n\nThrough her own DETERMINATION, she defied death to keep on fighting.",
+        "authors": "* TOBY FOX",
+        "image": "game/ui/pause/characterIcons/undyne",
+        "offset": { "x": -25, "y": -30  }
+      },
+      {
+        "name": "MTT NEO",
+        "desc": "The flamboyant entertainment star of the Underground.\n\nAfter the CORE blasts apart after lack of maintanence, he has to transform into his NEO form whil submerged in lava, adapting to it and giving himself a \"hot\" new look.",
+        "authors": "* TOBY FOX",
+        "image": "game/ui/pause/characterIcons/mtt",
+        "offset": { "x": -40, "y": -30  }
+      },
+      {
+        "name": "Tankman",
+        "desc": "Sergeant John \"Tankman\" Captain. He's the last of his army after Pico killed them all....",
+        "authors": "* TOM FULP",
+        "image": "game/ui/pause/characterIcons/the-uprising",
+        "offset": { "x": 10, "y": 30 }
+      }
+    ]
+  },
+  {
+    "name": "DUSTSWAP",
+    "characters": [
+      {
+        "name": "Papyrus",
+        "desc": "The \"Underswap\" AU version of Papyrus, now having realized to a greater extent the nature of the world his lives in just like the Sans in Dusttale.\n\nYou wouldn't be able to guess it at a glance, but he's still the younger brother to Sans, and he is just slightly more energetic than the Sans from Undertale.",
+        "authors": "* RENMARGO",
+        "image": "game/ui/pause/characterIcons/homie-cide",
+        "offset": { "x": -30, "y": 25 }
+      },
+      {
+        "name": "Sans",      
+        "desc": "The \"Underswap\" AU version of Sans.\n\nHe largely shares the same kind of personality as Papyrus in Undertale, with a few notable differences being that he enjoys making Mexican food instead of Italian, and enjoys puns and the sort just as much as Sans does in Undertale.",
+        "authors": "* RENMARGO",
+        "image": "game/ui/pause/characterIcons/swap-sans",
+        "offset": { "x": 30, "y": 100 }
+      }
+    ]
+  },
+  {
+    "name": "DUSTFELL",
+    "characters": [
+      {
+        "name": "Sans",
+        "desc": "A \"darker and edgier\" version of the original Sans, due to the nature of the world he is in.\n\nHe's harsher than the original Sans from Undertale, and notably seems to prefer knock knock jokes to puns, as well as striving to be more \"cool and collected.\"\n\nHe is burdened by the same knowledge as Sans in the original \"Dusttale.\"",
+        "authors": "* RENMARGO",
+        "image": "game/ui/pause/characterIcons/overthrone",
+        "offset": { "x": 25, "y": 80 }
+      }
+    ]
+  },
+  {
+    "name": "DUSTBELIEF",
+    "characters": [
+      {
+        "name": "Papyrus",
+        "desc": "This version of Papyrus has been forced to kill his brother in self-defense. In his brother's last moments, Sans tells Papyrus about exactly what is happening, burdening him too with the knowledge of the true nature of their world.\n\nPapyrus is notably more insane as his power increases, and has come to the conclusion that the best way to make the human stop and never come back is to make them suffer as much as possible before death.",
+        "authors": "* AUDE-JAVEL",
+        "image": "game/ui/pause/characterIcons/haunted",
+        "offset": { "x": 0, "y": 0 }
+      },
+      {
+        "name": "Phantom Sans",
+        "desc": "A machination of Papyrus' mind, similarly brought on by the same circumstances as Phantom Papyrus in Dusttale\n\nIs trying to help his brother finish what he couldn't.",
+        "authors": "* AUDE-JAVEL",
+        "image": "game/ui/pause/characterIcons/phantom-sans",
+        "offset": { "x": 20, "y": 20 }
+      },
+      {
+        "name": "Revived Sans",
+        "desc": "Sans isn't really quite alive, but Papyrus' combined power and insanity take form and bring him as close to real as he can get.\n\nIn the end, though, this is just Sans from how Papyrus' thought of him.",
+        "authors": "* AUDE-JAVEL",
+        "image": "game/ui/pause/characterIcons/bonz_sans",
+        "offset": { "x": 10, "y": 100 }
+      },
+      {
+        "name": "Rev. Undyne",
+        "desc": "Is in the same state as Sans is.\n\nAnother delusion taken form from Papyrus' mind of one of the friends he held most dear.",
+        "authors": "* AUDE-JAVEL",
+        "image": "game/ui/pause/characterIcons/bonz_undyne",
+        "offset": { "x": -10, "y": 0 }
+      }
+    ]
+  },
+  {
+    "name": "DUSTSHIFT",
+    "characters": [
+      {
+        "name": "Chara",
+        "desc": "Chara in the role of Sans.\n\nThey are the adopted sibling of Asriel (often acting as the voice of reason between the two), and have a very cynical view of the world and a deep hatred for humanity.\n\nAs this is the \"Dustshift\" version of Chara, they are burdened by the same knowledge as Sans in the original \"Dusttale.\"",
+        "authors": "* THECH1CKNLORD",
+        "image": "game/ui/pause/characterIcons/redscreen",
+        "offset": { "x": -20, "y": 50 }
+      }
+    ]
+  },
+  {
+    "name": "HORRORTALE",
+    "characters": [
+      {
+        "name": "Sans",
+        "desc": "This version of Sans has had his skull broken open and his original magical eye taken by Undyne, who has become the violent queen of the Underground.\n\nHis psychological state has been severely damaged, almost showing no care for what is right or wrong anymore. The starvation that has fallen upon the Underground makes this even worse. Despite his state, he does happen to show some regret or sadness over things like tearing out Aliza's arm in a hungered frenzy in the Horrortale comic.",
+        "authors": "* SOUR APPLE",
+        "image": "game/ui/pause/characterIcons/inopia",
+        "offset": { "x": 15, "y": 75 }
+      },
+      {
+        "name": "Papyrus",
+        "desc": "Although his appearance is much scarier, he is still pretty much the same Papyrus as he was in the original Undertale.\n\nHe is even idolized by the other monsters around him now as they acknowledge that he might be the only one in the Underground left with a sense of morality. It should be noted, though, that his pasta nowadays may contain a few more...\"organic\" ingredients.",
+        "authors": "* SOUR APPLE",
+        "image": "game/ui/pause/characterIcons/horror-paps",
+        "offset": { "x": 15, "y": -30 }
+      }
+    ]
+  },
+  {
+    "name": "UNDERFRESH",
+    "characters": [
+      {
+        "name": "Sans",
+        "desc": "Not really a \"Sans,\" as his body is simply the host for the parasite in his eye.\n\nAn eccentric type who doesn't really know the definition of personal space.",
+        "authors": "* LOVEROFPIGGIES",
+        "image": "game/ui/pause/characterIcons/yolo",
+        "offset": { "x": 20, "y": 65   }
+      }
+    ]
+  },
+  {
+    "name": "UNDERVERSE",
+    "characters": [
+      {
+        "name": "Error Sans",
+        "desc": "Though he used to be just regular old Sans, strange things have happened to him.\n\n As he was able to utilize the power of \"DETERMINATION\" to leave his original world in the best state he could, doing so left him in a very intriguing state,falling into a place between universes and glitched beyond repair.\n\nHe now dedicates himself to destroying every Alternate Universe in existence.",
+        "authors": "* LOVEROFPIGGIES",
+        "image": "game/ui/pause/characterIcons/Uncreate",
+        "offset": { "x": 0, "y": 0 }
+      }
+    ]
+  },
+  {
+    "name": "SMTH NEW",
+    "characters": [
+      {
+        "name": "Killer Sans",
+        "desc": "After making a deal with Chara, he joined them in their killing of the Underground in an effort to feel something again.\n\nAs he has done so, his physical form has changed due to his building DETERMINATION within.\n\nHe doesn't tend to have a good reaction to dwelling on the things he's done.",
+        "authors": "* RAHAFWABAS",
+        "image": "game/ui/pause/characterIcons/psychopath",
+        "offset": { "x": 10, "y": 90 }
+      }
+    ]
+  },
+  {
+    "name": "DELTARUNE",
+    "characters": [
+      {
+        "name": "Sans",
+        "desc": "Just regular old Sans from Deltarune.",
+        "authors": "TOBY FOX",
+        "image": "game/ui/pause/characterIcons/bargain",
+        "offset": { "x": 0, "y": 100 }
+      }
+    ]
+  },
+  {
+    "name": "DUSTDUST",
+    "characters": [
+      {
+        "name": "Sans",
+        "desc": "This \"Dustdust\" is the sans from the genocide ending of Dusttale 2.0.\n\nThrough sheer frustration of defeat, he decided to kill as much as he can, and in doing so he gained enough power to rip through timelines to continue his endless killing spree become ever more powerful.",
+        "authors": "* CARNO-POWER",
+        "image": "game/ui/pause/characterIcons/vindication",
+        "offset": { "x": 20, "y": 95 }
+      }
+    ]
+  },
+  {
+    "name": "EXTRAS",
+    "characters": [
+      {
+        "name": "GENOCIDES",
+        "desc": "EVIL FUCKING SANS WHO IS GOING TO KILL YOU",
+        "authors": "* MYASS41",
+        "image": "game/ui/pause/characterIcons/genocides",
+        "offset": { "x": 0 , "y": 20 }
+      },
+      {
+        "name": "Papyrus.exe",
+        "desc": "SUPER EVIL PAPYRUS WHO HAS EVIL MAGIC POWERS AND MAKES HIS BLOOD PASTA THAT KILLS YOU",
+        "authors": "* KWYSOCKI243",
+        "image": "game/ui/pause/characterIcons/genocides_2",
+        "offset": { "x": -35 , "y": 5 }
+      },
+      {
+        "name": "Thero",
+        "desc": "*Placeholder",
+        "authors": "* LEMONEMY",
+        "image": "game/ui/pause/characterIcons/thero",
+        "offset": { "x": -35 , "y": 5 }
+      }
+    ]
+  }
+]

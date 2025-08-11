@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="texture.png" width="1076" height="91">
+  <SubTexture name="sick" x="0" y="0"  width="299" height="91" frameX="-0" frameY="-0" frameWidth="299" frameHeight="91"/>
+  <SubTexture name="good" x="299" y="0"  width="289" height="87" frameX="-0" frameY="-0" frameWidth="289" frameHeight="87"/>
+  <SubTexture name="shit" x="588" y="0"  width="267" height="87" frameX="-0" frameY="-0" frameWidth="267" frameHeight="87"/>
+  <SubTexture name="bad" x="855" y="0"  width="221" height="87" frameX="-0" frameY="-0" frameWidth="221" frameHeight="87"/>
+</TextureAtlas>

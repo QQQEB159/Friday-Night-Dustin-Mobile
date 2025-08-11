@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="gasterBlaster.png" width="3076" height="2113" spritePadding="3" borderPadding="1">
+	<SubTexture name="shoot0000" x="2756" y="1832" width="304" height="233" frameX="-1764" frameY="-450" frameWidth="3333" frameHeight="1080"/>
+	<SubTexture name="shoot0001" x="2734" y="1598" width="308" height="231" frameX="-1893" frameY="-448" frameWidth="3333" frameHeight="1080"/>
+	<SubTexture name="shoot0002" x="2453" y="550" width="389" height="188" frameX="-1882" frameY="-467" frameWidth="3333" frameHeight="1080"/>
+	<SubTexture name="shoot0003" x="1472" y="1900" width="1281" height="212" frameX="-1860" frameY="-465" frameWidth="3333" frameHeight="1080"/>
+	<SubTexture name="shoot0004" x="1718" y="1346" width="1292" height="249" frameX="-1865" frameY="-441" frameWidth="3333" frameHeight="1080"/>
+	<SubTexture name="shoot0005" x="1472" y="1641" width="1259" height="256" frameX="-1795" frameY="-444" frameWidth="3333" frameHeight="1080"/>
+	<SubTexture name="shoot0006" x="1" y="1641" width="1468" height="263" frameX="-1635" frameY="-427" frameWidth="3333" frameHeight="1080"/>
+	<SubTexture name="shoot0007" x="1" y="1346" width="1714" height="292" frameX="-1355" frameY="-426" frameWidth="3333" frameHeight="1080"/>
+	<SubTexture name="shoot0008" x="1" y="550" width="2449" height="312" frameX="-564" frameY="-419" frameWidth="3333" frameHeight="1080"/>
+	<SubTexture name="shoot0009" x="1" y="1125" width="3074" height="218" frameX="-212" frameY="-465" frameWidth="3333" frameHeight="1080"/>
+	<SubTexture name="shoot0010" x="1" y="1" width="2982" height="279" frameX="-219" frameY="-433" frameWidth="3333" frameHeight="1080"/>
+	<SubTexture name="shoot0011" x="1" y="283" width="3067" height="264" frameX="-169" frameY="-438" frameWidth="3333" frameHeight="1080"/>
+	<SubTexture name="shoot0012" x="1" y="865" width="2871" height="257" frameX="-253" frameY="-440" frameWidth="3333" frameHeight="1080"/>
+	<SubTexture name="shoot0013" x="2734" y="1832" width="1" height="1" frameX="0" frameY="0" frameWidth="3333" frameHeight="1080"/>
+</TextureAtlas>

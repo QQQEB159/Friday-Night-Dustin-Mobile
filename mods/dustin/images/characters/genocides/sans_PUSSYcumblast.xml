@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="sans_PUSSYcumblast.png" width="1670" height="1587">
+	<SubTexture name="DEATH0000" x="884" y="1310" width="276" height="276" frameX="-438" frameY="-638" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="DEATH0001" x="884" y="1310" width="276" height="276" frameX="-438" frameY="-638" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="DEATH0002" x="884" y="1310" width="276" height="276" frameX="-438" frameY="-638" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="DEATH0003" x="884" y="1310" width="276" height="276" frameX="-438" frameY="-638" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="DEATH0004" x="884" y="1310" width="276" height="276" frameX="-438" frameY="-638" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="DEATH0005" x="884" y="1310" width="276" height="276" frameX="-438" frameY="-638" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="DEATH0006" x="1" y="1" width="1139" height="1151" frameX="-0" frameY="-113" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="DEATH0007" x="1" y="1" width="1139" height="1151" frameX="-0" frameY="-113" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="DEATH0008" x="555" y="1155" width="326" height="352" frameX="-413" frameY="-612" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="DEATH0009" x="555" y="1155" width="326" height="352" frameX="-413" frameY="-612" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="DEATH0010" x="1" y="1155" width="551" height="376" rotated="true" frameX="-388" frameY="-463" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="DEATH0011" x="1" y="1155" width="551" height="376" rotated="true" frameX="-388" frameY="-463" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="DEATH0012" x="1143" y="631" width="476" height="676" frameX="-338" frameY="-413" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="DEATH0013" x="1143" y="631" width="476" height="676" frameX="-338" frameY="-413" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="DEATH0014" x="1143" y="1" width="526" height="627" frameX="-338" frameY="-512" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="DEATH0015" x="1143" y="1" width="526" height="627" frameX="-338" frameY="-512" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="DEATH0016" x="884" y="1155" width="1" height="1" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="DEATH0017" x="884" y="1155" width="1" height="1" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="1280"/>
+</TextureAtlas>

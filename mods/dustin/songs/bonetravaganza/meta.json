@@ -1,0 +1,32 @@
+{
+	"opponentModeAllowed": true,
+	"icon": "Icon",
+	"difficulties": [
+		"hard"
+	],
+	"color": "#FFFFFF",
+	"name": "bonetravaganza",
+	"coopAllowed": true,
+	"customValues": {
+		"customName": "bonetrAvaganza",
+		"credits": {
+			"CHART": "GOJIMANPLAYS",
+			"BACKGROUND": "WILLART-MEI",
+			"SPRITES": "WILLART-MEI, ALHAMBRITO, CASSANDRA",
+			"SONG": "CHEZZAR, MAR MAR, SKIE"
+		},
+		"gameover": {
+			"isMonster": false,
+			"quote": "HUMAN, THE SHOW MUST GO ON!",
+			"song": "bonetravaganza",
+			"sound": "paps"
+		},
+		"stats": "* PAPYRUS - VERY POWERFUL AND COOL \n* EVERYBODY LOVES HIM!!\n* HUMAN GET BACK TO THE SONG!!",
+		"titleCardSubtext": "* by Chezzar/pause(0.5)/\n* ft. Mar Mar & Skie"
+	},
+	"stepsPerBeat": 4,
+	"displayName": "Bonetravaganza",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 150
+}

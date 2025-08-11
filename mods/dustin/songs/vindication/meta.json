@@ -1,0 +1,34 @@
+{
+	"opponentModeAllowed": false,
+	"icon": "face",
+	"difficulties": [
+		"HARD"
+	],
+	"customValues": {
+		"characterY": null,
+		"titleCardSubtext": "* by Lemonemy/pause(0.5)/\n* ft. Chezzar & Skie",
+		"character": null,
+		"credits": {
+			"SPRITES": "CHEZZAR, CHUF",
+			"BACKGROUND": "NEF",
+			"CHART": "CURIOUS",
+			"SONG": "LEMONEMY, CHEZZAR, SKIE"
+		},
+		"gameover": {
+			"quote": "heh, just like the old times.",
+			"isMonster": false,
+			"sound": "sans",
+			"song": "vindication"
+		},
+		"mainColor": null,
+		"stats": "* SANS 99 ATK 99 DEF\n* Has been looking for you.\n* Holds the EXP of thousands of AUs.",
+		"characterX": null
+	},
+	"name": "Vindication",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Vindication",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 180
+}

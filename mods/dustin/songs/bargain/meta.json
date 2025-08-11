@@ -1,0 +1,31 @@
+{
+	"opponentModeAllowed": false,
+	"icon": "face",
+	"difficulties": [
+		"HARD"
+	],
+	"customValues": {
+		"customName": "bargAin",
+		"credits": {
+			"CHART": "CURIOUS",
+			"BACKGROUND": "WEEDEET",
+			"SPRITES": "WEEDEET, ALHAMBRITO119",
+			"SONG": "DAVID0414"
+		},
+		"gameover": {
+			"isMonster": false,
+			"quote": "geeetttt dunked on!!!",
+			"song": "bargain",
+			"sound": "sans"
+		},
+		"stats": "* SANS 1 ATK 1 DEF\n* The easiest enemy.\n* He did your mom last night.",
+		"titleCardSubtext": "* by David0414"
+	},
+	"name": "Bargain",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Bargain",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 170
+}

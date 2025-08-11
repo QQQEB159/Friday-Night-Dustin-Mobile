@@ -1,0 +1,31 @@
+{
+	"opponentModeAllowed": false,
+	"icon": "face",
+	"difficulties": [
+		"HARD"
+	],
+	"customValues": {
+		"credits": {
+			"SPRITES": "SAMUEL PASTEL, INKSUS",
+			"BACKGROUND": "NEF",
+			"CHART": "CURIOUS",
+			"SONG": "LEMONEMY"
+		},
+		"gameover": {
+			"quote": "jJuSt lEav3 mE al0Ne!",
+			"isMonster": true,
+			"sound": "sans",
+			"song": "uncreate"
+		},
+		"titleCardSubtext": "* by Lemonemy",
+		"stats": "* ERROR SANS 9999 ATK 9999 DEF\n* The AU Destroyer Abomination.\n* Can control souls with his strings."
+	},
+	"color": "#9271FD",
+	"name": "Uncreate",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Uncreate",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 190
+}

@@ -1,0 +1,22 @@
+{
+	"name": "YOLO",
+	"needsVoices": true,
+	"bpm": 190,
+	"customValues": {
+		"gameover" :{
+			"quote": "c'mon pal, is that all you got?",
+			"sound": "sans",
+			"song": "yolo",
+			"isMonster": false
+		},
+		"customName": "yOlo",
+		"titleCardSubtext": "* by Chezzar",
+		"stats": "* SANS 10 ATK 999999999 DEF\n* Doesn't know personal space.\n* Raddest being in the multiverse.",
+		"credits": {
+			"SONG": "CHEZZAR",
+			"SPRITES": "CHUF, CHEZZAR",
+			"BACKGROUND": "DAS",
+			"CHART": "FROSTIC"
+			}
+	}
+}

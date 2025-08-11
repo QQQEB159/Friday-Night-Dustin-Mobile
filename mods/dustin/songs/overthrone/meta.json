@@ -1,0 +1,32 @@
+{
+	"opponentModeAllowed": false,
+	"icon": "face",
+	"difficulties": [
+		"hard"
+	],
+	"customValues": {
+		"customName": "overthRone",
+		"titleCardSubtext": "* by Mar Mar/pause(0.5)/\n* ft. Skie",
+		"gameover": {
+			"quote": "tch, and don't come back.",
+			"isMonster": false,
+			"sound": "fellsans",
+			"song": "overthrone"
+		},
+		"credits": {
+			"SPRITES": "CHUF, CHEZZAR, ANDREWFLA",
+			"BACKGROUND": "HLOARTS",
+			"CHART": "FROSTIC",
+			"SONG": "MAR MAR, SKIE"
+		},
+		"mainColor": "#B93B3E",
+		"stats": "* SANS 58 ATK 15 DEF\n* The demon in red.\n* Burned everyone to ashes."
+	},
+	"name": "Overthrone",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Overthrone",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 138
+}

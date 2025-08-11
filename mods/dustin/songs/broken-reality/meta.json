@@ -1,0 +1,32 @@
+{
+	"opponentModeAllowed": false,
+	"difficulties": [
+		"hard"
+	],
+	"icon": "Icon",
+	"coopAllowed": false,
+	"name": "broken-reality",
+	"color": "#FFFFFF",
+	"customValues": {
+		"credits": {
+			"customName": "brOken reality",
+			"CHART": "CURIOUS, GOJIMANPLAYS",
+			"BACKGROUND": "WEEDEET",
+			"SPRITES": "HORRORSPINN, WILLART-MEI, ALHAMBRITO119, CHEZZAR",
+			"SONG": "MAR MAR, SKIE, MADHAYTER, CHOMA, DAVID0414, CHEZZAR"
+		},
+		"gameover": {
+			"isMonster": false,
+			"quote": "i'll be waiting.",
+			"song": "broken-reality",
+			"sound": "sans"
+		},
+		"stats": "* SANS - 97 ATK 81 DEF \n* The final battle begins.\n* Moonlight shines through your sins.",
+		"titleCardSubtext": "* by Mar Mar, Skie/pause(0.5)/\n* ft. Madhayter, Choma, Chezzar, David0414"
+	},
+	"stepsPerBeat": 4,
+	"displayName": "Broken Reality",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 120
+}

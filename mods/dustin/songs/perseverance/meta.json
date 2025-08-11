@@ -1,0 +1,30 @@
+{
+	"opponentModeAllowed": false,
+	"icon": "face",
+	"difficulties": [
+		"hard"
+	],
+	"customValues": {
+		"credits": {
+			"SONG": "CHEZZAR, MAR MAR",
+			"SPRITES": "CHUF, APRICOSKA, AMAZE, YOKUTZEN",
+			"BACKGROUND": "WEEDEET, FIZZYPOP",
+			"CHART": "CURIOUS"
+		},
+		"gameover": {
+			"isMonster": false,
+			"quote": "BOYFRIEND, stay DETERMINATED!",
+			"song": "perseverance",
+			"sound": "gf"
+		},
+		"stats": "* SANS 31 ATK 26 DEF\n* He is not ready yet.\n* Something is familiar about him.",
+		"titleCardSubtext": "* by Chezzar/pause(0.5)/\n* ft. Mar Mar"
+	},
+	"name": "Perseverance",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Perseverance",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 120
+}

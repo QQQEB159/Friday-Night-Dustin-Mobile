@@ -899,9 +899,6 @@ class PlayState extends MusicBeatState
 		}
 
 		startedCountdown = true;
-		#if TOUCH_CONTROLS
-		hitbox.visible = true;
-		#end
 		Conductor.songPosition = 0;
 		Conductor.songPosition -= Conductor.crochet * introLength - Conductor.songOffset;
 

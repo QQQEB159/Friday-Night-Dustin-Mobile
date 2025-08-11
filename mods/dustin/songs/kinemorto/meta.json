@@ -1,0 +1,35 @@
+{
+	"opponentModeAllowed": false,
+	"icon": "face",
+	"difficulties": [
+		"hard"
+	],
+	"customValues": {
+		"characterY": null,
+		"character": null,
+		"customName": "kinemOrto",
+		"titleCardSubtext": "* by Chezzar/pause(0.5)/\n* ft. David0414",
+		"mainColor": null,
+		"credits": {
+			"SPRITES": "WEEDEET, CHUF, CHEZZAR, ALHAMBRITO119",
+			"BACKGROUND": "JFLOID",
+			"CHART": "CURIOUS",
+			"SONG": "CHEZZAR, DAVID0414"
+		},
+		"gameover": {
+			"isMonster": false,
+			"quote": "BOYFRIEND, you need to wake up!",
+			"song": "kinemorto",
+			"sound": "gf"
+		},
+		"characterX": null,
+		"stats": "* PAPYRUS  8 ATK  2 DEF\n* He likes to say NYEH HEH HEH.\n* Will capture the human."
+	},
+	"name": "Kinemorto",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Kinemorto",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 140
+}

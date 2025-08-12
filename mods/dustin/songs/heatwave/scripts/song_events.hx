@@ -45,12 +45,12 @@ function create() {
     lightShader = new CustomShader("heatlight");
     lightShader.threshold = .14;
 
-    if (FlxG.save.data.wi)
+    /*if (FlxG.save.data.wi)
     {
     FlxG.camera.addShader(wi);
     camCharacters.addShader(wi);
     camHUD.addShader(wi);
-    }
+    }*/
     }
 
     flickerSprite = new FunkinSprite().makeSolid(FlxG.width, FlxG.height, 0xFF000000);

@@ -19,7 +19,6 @@
         <checkbox id="radial" name="Radial Shader" desc="Enable/Disable Radial Shaders." />
         <checkbox id="embers" name="Embers Shader" desc="Enable/Disable Embers Shaders." />
         <checkbox id="flames" name="Flames Shader" desc="Enable/Disable Flames Shaders." />
-        <checkbox id="wi" name="Wi Shader" desc="Enable/Disable Wi Shaders." />
     </menu>
     <checkbox id="mechanics" name="Mechanics" desc="" />
     <checkbox id="nh" name="No-Hit Mode" desc="" />

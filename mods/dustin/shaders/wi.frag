@@ -70,7 +70,7 @@ float snoise(vec2 v)
     vec3 g;
     g.x  = a0.x  * x0.x  + h.x  * x0.y;
     g.yz = a0.yz * x12.xz + h.yz * x12.yw;
-    return (fullglitch * 130) * dot(m, g);
+    return (fullglitch * 130.0) * dot(m, g);
 }
 
 float onOff(float a, float b, float c)
@@ -106,7 +106,7 @@ vec4 getVideo(vec2 uv)
 
     float window = 1./(1.+20.*(look.y-mod(iTime/4.,1.))*(look.y-mod(iTime/4.,1.)));
     if (moveScreenX) {
-        look.x = look.x + (sin(look.y*10. + iTime)/50.*onOff((4. * timeMulti),(4. * timeMulti),(.3 * timeMulti))*(1.+cos(iTime*80.))*window)*(glitchModifier*2);
+        look.x = look.x + (sin(look.y*10. + iTime)/50.*onOff((4. * timeMulti),(4. * timeMulti),(.3 * timeMulti))*(1.+cos(iTime*80.))*window)*(glitchModifier*2.0);
     }
     
 

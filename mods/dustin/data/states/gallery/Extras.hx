@@ -106,7 +106,7 @@ function create() {
 
     upArrow = new FlxText(1180, 160, 50, "^", 70, true);
     upArrow.setFormat(Paths.font("8bit-jve.ttf"), 70, FlxColor.WHITE, FlxTextAlign.CENTER);
-    upArrow.scrollFactor.set(0, 0); // 固定在屏幕上
+    upArrow.scrollFactor.set(0, 0);
     add(upArrow);
 
     downArrow = new FlxText(1180, 260, 50, "^", 70, true);
@@ -115,8 +115,11 @@ function create() {
     downArrow.scrollFactor.set(0, 0);
     add(downArrow);
 
-    exitText = new FlxText(0, 660, FlxG.height - -1600, "< EXIT", 46, true);
+    exitText = new FlxText(0, 660, FlxG.height, "< EXIT", 46, true);
     exitText.setFormat(Paths.font("8bit-jve.ttf"), 46, FlxColor.WHITE, FlxTextAlign.CENTER);
+    exitText.x = 1100;
+    exitText.fieldWidth = 150;
+    exitText.fieldHeight = 50;
     exitText.scrollFactor.set(0, 0);
     add(exitText);
 

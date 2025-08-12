@@ -101,6 +101,9 @@ function create() {
 
     exitText = new FunkinText(0, 660, FlxG.width, "< EXIT", 46);
     exitText.alignment = FlxTextAlign.RIGHT;
+    exitText.x = 1100;
+    exitText.fieldWidth = 150;
+    exitText.fieldHeight = 50;
     exitText.setFormat(Paths.font("8bit-jve.ttf"), 46, FlxColor.WHITE, FlxTextAlign.RIGHT);
     add(exitText);
 

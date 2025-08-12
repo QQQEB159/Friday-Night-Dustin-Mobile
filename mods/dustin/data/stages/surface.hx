@@ -58,17 +58,19 @@ function create() {
     heatcam.even = false;
     heatcam.strength = 0.8; 
 
-    stage.getSprite("background").shader = heatcam;
+    if (FlxG.save.data.distortion) stage.getSprite("background").shader = heatcam;
 
     wave = new CustomShader("waving");
     wave.time = 0; wave.speed = 0.4; 
     wave.even = false;
     wave.strength = 0.3; 
 
+    if (FlxG.save.data.distortion) {
     stage.getSprite("mountain").shader = heat;
     stage.getSprite("city").shader = heat;
 
     stage.getSprite("grass").shader = wave;
+    }
     }
 
     tankman_ghost_char = strumLines.members[3].characters[0];

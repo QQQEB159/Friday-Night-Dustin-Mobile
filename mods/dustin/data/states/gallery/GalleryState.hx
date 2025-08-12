@@ -44,10 +44,12 @@ function create() {
         optionTexts.push(txt);
     }
 
-    // 添加 exitText
     exitText = new FunkinText(0, 660, FlxG.width, "< EXIT", 46);
     exitText.alignment = FlxTextAlign.LEFT;
     exitText.setFormat(Paths.font("8bit-jve.ttf"), 46, FlxColor.WHITE, FlxTextAlign.LEFT);
+    exitText.fieldWidth = 150;
+    exitText.fieldHeight = 50;
+    exitText.updateHitbox();
     add(exitText);
 
     changeSelection(0, true);
@@ -117,7 +119,6 @@ function update(elapsed:Float):Void {
             }
         }
 
-        // 检测是否点击了 exitText
         if (FlxG.mouse.overlaps(exitText)) {
             galleryMusicStarted = false;
             FlxG.sound.music.stop();

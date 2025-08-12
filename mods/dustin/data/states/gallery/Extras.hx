@@ -35,6 +35,10 @@ var canSelect:Bool = true;
 var leftArrow:FlxSprite;
 var rightArrow:FlxSprite;
 
+var upArrow:FlxText;
+var downArrow:FlxText;
+var exitText:FlxText;
+
 var galleryGroups:Array<String> = [
     "mods/dustin/images/gallery/shitpost",
     "mods/dustin/images/gallery/concepts",
@@ -100,10 +104,21 @@ function create() {
     rightArrow.y = b.y + (b.height - leftArrow.height) / 2;
     add(rightArrow);
 
-    var divLine = new FlxSprite(FlxG.width / 2 - 50, (FlxG.height - 500) / 2);
-    divLine.makeGraphic(4, 500, FlxColor.WHITE);
-    divLine.scrollFactor.set(0, 0);
-    add(divLine);
+    upArrow = new FlxText(1180, 160, 50, "^", 70, true);
+    upArrow.setFormat(Paths.font("8bit-jve.ttf"), 70, FlxColor.WHITE, FlxTextAlign.CENTER);
+    upArrow.scrollFactor.set(0, 0); // 固定在屏幕上
+    add(upArrow);
+
+    downArrow = new FlxText(1180, 260, 50, "^", 70, true);
+    downArrow.setFormat(Paths.font("8bit-jve.ttf"), 70, FlxColor.WHITE, FlxTextAlign.CENTER);
+    downArrow.angle = 180;
+    downArrow.scrollFactor.set(0, 0);
+    add(downArrow);
+
+    exitText = new FlxText(0, 660, FlxG.height - -1600, "< EXIT", 46, true);
+    exitText.setFormat(Paths.font("8bit-jve.ttf"), 46, FlxColor.WHITE, FlxTextAlign.CENTER);
+    exitText.scrollFactor.set(0, 0);
+    add(exitText);
 
     loadGalleryGroup(galleryGroups[currentGroupIndex]);
 
@@ -177,6 +192,13 @@ function update(elapsed:Float) {
     if (FlxG.mouse.wheel != 0) {
         cameraY -= FlxG.mouse.wheel * 20;
     }
+
+    if (FlxG.mouse.pressed && FlxG.mouse.overlaps(upArrow)) {
+        cameraY = Math.max(0, cameraY - 200 * elapsed);
+    } else if (FlxG.mouse.pressed && FlxG.mouse.overlaps(downArrow)) {
+        cameraY = Math.min(maxCameraY, cameraY + 200 * elapsed);
+    }
+
     cameraY = Math.min(Math.max(0, cameraY), maxCameraY);
     FlxG.camera.scroll.set(0, cameraY);
 
@@ -209,7 +231,7 @@ function update(elapsed:Float) {
         loadGalleryGroup(galleryGroups[currentGroupIndex]);
     }
 
-    if (FlxG.keys.justPressed.ESCAPE) {
+    if (FlxG.keys.justPressed.ESCAPE || FlxG.mouse.justPressed && FlxG.mouse.overlaps(exitText)) {
         if (!FlxG.sound.music.playing) {
             FlxG.sound.music.resume();
         }
@@ -269,7 +291,6 @@ function showPreview(index:Int):Void {
             previewVideo.visible = true;
         });
 
-
         previewVideo.bitmap.onEndReached.add(function() {
             previewVideo.stop();
             previewVideo.visible = false;
@@ -328,7 +349,6 @@ function showPreview(index:Int):Void {
 
 function animateArrow(sprite:FlxText):Void {
     FlxTween.cancelTweensOf(sprite);
-    FlxG.sound.play(Paths.sound("menu/scroll"), 1);
 
     FlxTween.tween(sprite.scale, { x:1.2, y:1.2 }, 0.1, {
         type: FlxTweenType.PINGPONG,

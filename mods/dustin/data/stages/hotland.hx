@@ -39,7 +39,7 @@ function create() {
     stage.getSprite("embershit").flipY = true;
     if(Options.gameplayShaders) {
     if (FlxG.save.data.particles) stage.getSprite("embershit").shader = embers;
-    stage.getSprite("lavaPT2").shader = heat;
+    if (FlxG.save.data.distortion) stage.getSprite("lavaPT2").shader = heat;
 
     embers2 = new CustomShader("firething");
     embers2.LAYERS_COUNT = 7; embers2.ALPHA_MOD = .2;
@@ -79,7 +79,7 @@ function create() {
 
     flames = new CustomShader("roaring_flame"); // flame on!!!! -lunar
     flames.time = 0; flames.intensitiy = 0; flames.zoom = 1;
-    stage.getSprite("rflames").shader = flames;
+    if (FlxG.save.data.flames) stage.getSprite("rflames").shader = flames;
     }
     stage.getSprite("rflames").flipY = true;
 

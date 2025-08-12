@@ -1,0 +1,12 @@
+# THIS FILE ISNT NECESSARY,
+# BUT YOU CAN USE IT TO SORT WEEKS
+
+dustbelief-1
+dustbelief-2
+dustfell-1
+dustshift-1
+dustswap-1
+dustswap-2
+dusttale-1
+dusttale-2
+dusttale-3

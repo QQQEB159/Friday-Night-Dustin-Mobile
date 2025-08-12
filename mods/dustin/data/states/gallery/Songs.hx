@@ -147,6 +147,8 @@ function create():Void {
 
     exitText = new FunkinText(0, 660, FlxG.width, "< EXIT", 46);
     exitText.alignment = FlxTextAlign.LEFT;
+    exitText.fieldWidth = 150;
+    exitText.fieldHeight = 50;
     exitText.setFormat(Paths.font("8bit-jve.ttf"), 46, FlxColor.WHITE, FlxTextAlign.LEFT);
     add(exitText);
 }
@@ -201,11 +203,11 @@ function _showInfo():Void {
     infoFrame.set_alpha(1); infoBackground.set_alpha(1);
     titleText.set_alpha(1); storyText.set_alpha(1);
     titleUnderline.set_alpha(1);
-    FlxTween.tween(infoFrame, { y: infY }, 0.4, { ease: FlxEase.circOut });
-    FlxTween.tween(infoBackground, { y: infY + 5 }, 0.4, { ease: FlxEase.circOut });
-    FlxTween.tween(titleText, { y: infY + 20 },0.4, { ease: FlxEase.circOut });
+    FlxTween.tween(infoFrame,      { y: infY },     0.4, { ease: FlxEase.circOut });
+    FlxTween.tween(infoBackground,{ y: infY + 5 }, 0.4, { ease: FlxEase.circOut });
+    FlxTween.tween(titleText,      { y: infY + 20 },0.4, { ease: FlxEase.circOut });
     FlxTween.tween(titleUnderline, { y: infY + 90 }, 0.4, { ease: FlxEase.circOut });
-    FlxTween.tween(storyText, { y: infY + 120 },0.4, { ease: FlxEase.circOut });
+    FlxTween.tween(storyText,      { y: infY + 120 },0.4, { ease: FlxEase.circOut });
 
     infoVisible = true;
 }
@@ -213,16 +215,16 @@ function _showInfo():Void {
 function _hideInfo():Void {
     FlxTween.tween(overlay, { alpha: 0 }, 0.4, { ease: FlxEase.quadInOut });
 
-    FlxTween.tween(infoFrame, { y: offY }, 0.4, { ease: FlxEase.circIn });
-    FlxTween.tween(infoBackground, { y: offY + 5 }, 0.4, { ease: FlxEase.circIn });
-    FlxTween.tween(titleText, { y: offY + 20 },0.4, { ease: FlxEase.circIn });
+    FlxTween.tween(infoFrame,      { y: offY },     0.4, { ease: FlxEase.circIn });
+    FlxTween.tween(infoBackground,{ y: offY + 5 }, 0.4, { ease: FlxEase.circIn });
+    FlxTween.tween(titleText,      { y: offY + 20 },0.4, { ease: FlxEase.circIn });
     FlxTween.tween(titleUnderline, { y: offY + 90 }, 0.4, {
     ease: FlxEase.circIn,
         onComplete: function(_) {
             titleUnderline.set_alpha(0);
         }
     });
-    FlxTween.tween(storyText, { y: offY + 100 },0.4, { ease: FlxEase.circIn, onComplete: function(t) {
+    FlxTween.tween(storyText,      { y: offY + 100 },0.4, { ease: FlxEase.circIn, onComplete: function(t) {
         infoFrame.set_alpha(0);
         infoBackground.set_alpha(0);
         titleText.set_alpha(0);
@@ -242,7 +244,7 @@ function changeSelection(amt:Int):Void {
     var fadeDuration = 0.15;
     var moveDuration = 0.3;
 
-    FlxTween.tween(frame, { alpha: 0, x: frame.x + screenOffset }, fadeDuration, { ease: FlxEase.quadOut });
+    FlxTween.tween(frame,      { alpha: 0, x: frame.x + screenOffset }, fadeDuration, { ease: FlxEase.quadOut });
     FlxTween.tween(background, { alpha: 0, x: background.x + screenOffset }, fadeDuration, { ease: FlxEase.quadOut });
     FlxTween.tween(imageDisplay,{ alpha: 0, x: imageDisplay.x + screenOffset }, fadeDuration, { ease: FlxEase.quadOut, onComplete: () -> {
             curSelected = FlxMath.wrap(curSelected + amt, 0, images.length - 1);
@@ -254,7 +256,7 @@ function changeSelection(amt:Int):Void {
 
             frame.alpha = background.alpha = imageDisplay.alpha = 0;
 
-            FlxTween.tween(frame, { x: originalX, alpha: 1 }, moveDuration, { ease: FlxEase.quadOut });
+            FlxTween.tween(frame,      { x: originalX, alpha: 1 }, moveDuration, { ease: FlxEase.quadOut });
             FlxTween.tween(background, { x: originalX + 5, alpha: 1 }, moveDuration, { ease: FlxEase.quadOut });
             FlxTween.tween(imageDisplay, {
                 x: originalX + 5 + (background.width - imageDisplay.width) / 2,

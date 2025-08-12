@@ -10,8 +10,9 @@ var modosexoactivado:Bool = false;
 function onPostCountdown(event) event.sprite?.color = ratingColor;
 function create() {
     if(Options.gameplayShaders) {
-    if (FlxG.save.data.distortion) FlxG.camera.addShader(heat2 = new CustomShader("waterDistortion"));
+    if (FlxG.save.data.distortion) { FlxG.camera.addShader(heat2 = new CustomShader("waterDistortion"));
     heat2.strength = 0;
+    }
     }
 }
 function postCreate() {    
@@ -68,7 +69,9 @@ function stepHit(step:Int) {
             chair.visible = true;
             cup.visible = true;
             table.visible = true;
-            if(Options.gameplayShaders) heat2.strength = 0.2;
+            if(Options.gameplayShaders) {
+            if (FlxG.save.data.distortion) heat2.strength = 0.2;
+            }
 
             bunny.visible = true;
             hoodie_bunnies.visible = true;
@@ -83,7 +86,9 @@ function stepHit(step:Int) {
             bg.visible = true;
             bg_spark.visible = true;
             shading.visible = true;
-            if(Options.gameplayShaders) heat2.strength = 0;
+            if(Options.gameplayShaders) { 
+            if (FlxG.save.data.distortion) heat2.strength = 0;
+            }
 
             walls.visible = false;
             door.visible = false;
@@ -161,7 +166,9 @@ function update(elapsed:Float){
         health = 2.0;
     }
 
-    if(Options.gameplayShaders) heat2?.time = (tottalTimer += elapsed);
+    if(Options.gameplayShaders) {
+    if (FlxG.save.data.distortion) heat2?.time = (tottalTimer += elapsed);
+    }
     if (startMoving) {
         floatTime += elapsed;
         var floatOffset = Math.sin(floatTime * Math.PI) * 20;

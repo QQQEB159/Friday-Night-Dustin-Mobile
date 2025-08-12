@@ -16,9 +16,9 @@ function create() {
     if (FlxG.save.data.distortion) {
     FlxG.camera.addShader(heat2 = new CustomShader("waterDistortion"));
     camHUD.addShader(heat = new CustomShader("waterDistortion"));
-    }
     heat.strength = 0;
     heat2.strength = 0;
+    }
     }
 
     /*
@@ -61,8 +61,10 @@ var tottalTimer:Float = FlxG.random.float(50, 300);
 
 function update(elapsed:Float) {
     if(Options.gameplayShaders) {
+    if (FlxG.save.data.distortion) {
     heat?.time = (tottalTimer += elapsed);
     heat2?.time = (tottalTimer += elapsed);
+    }
     }
     if (beam.visible) {
         switch (gf.animation.curAnim.name) {
@@ -122,8 +124,10 @@ function stepHit(step:Int) {
             FlxTween.tween(bones, {alpha: 0}, 3, {ease: FlxEase.quadOut});
         case 761:
             if(Options.gameplayShaders) {
+            if (FlxG.save.data.distortion) {
             heat.strength = 0.2;
             heat2.strength = 0.3;
+            }
             }
             gf.alpha = 1;
             gf.visible = false;
@@ -159,8 +163,10 @@ function stepHit(step:Int) {
             dad.alpha = 1;
             gf.alpha = 1;
             if(Options.gameplayShaders) {
+            if (FlxG.save.data.distortion) {
             heat.strength = 0;
             heat2.strength = 0;
+            }
             }
             for (strum in cpuStrums.members)
                 if (strum != null) strum.alpha = 1;

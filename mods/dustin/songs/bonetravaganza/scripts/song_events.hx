@@ -79,6 +79,7 @@ function stepHit(step:Int) {
                 for (note in strumLine.notes)
                     FlxTween.tween(note, {alpha: 1}, 1, {ease: FlxEase.quadOut});
         case 3112:
+            hitbox.buttonUp.color = 0xFFFF00;
             stage.getSprite("guitar_background").visible = true;
             stage.getSprite("guitar_foreground").visible = true;
 

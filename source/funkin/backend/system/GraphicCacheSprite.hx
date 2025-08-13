@@ -24,8 +24,8 @@ class GraphicCacheSprite extends FlxSprite {
 	 * Caches a graphic at specified path.
 	 * @param path Path to the graphic.
 	 */
-	public function cache(path:String) {
-		cacheGraphic(FlxG.bitmap.add(path));
+	/*public function cache(path:String) {
+		cacheGraphic(FlxG.bitmap.add(path));*/
 	}
 
 	/**

@@ -27,6 +27,8 @@ function startVideo(name:String, ?leCallback:Void->Void, ?ext:String, ?usePath:B
     callback = leCallback;
     ext ??= "mp4";
 
+    FlxG.save.flush();
+    
     cutsceneCamera = new FlxCamera();
     cutsceneCamera.bgColor = 0xFF000000;
     FlxG.cameras.add(cutsceneCamera, false);

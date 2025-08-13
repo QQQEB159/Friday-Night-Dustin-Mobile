@@ -1002,6 +1002,7 @@ class PlayState extends MusicBeatState
 			g.useCount--;
 			g.destroyOnNoUse = true;
 	    }
+	    FlxG.bitmap.clearCache();
 		@:privateAccess
 			for (strumLine in strumLines.members)
 				FlxG.sound.destroySound(strumLine.vocals);

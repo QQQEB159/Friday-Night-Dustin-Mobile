@@ -998,7 +998,10 @@ class PlayState extends MusicBeatState
 		scripts.call("destroy");
 		#if mobile lime.system.System.allowScreenTimeout = Options.screenTimeOut; #end
 		for(g in __cachedGraphics)
+		{
 			g.useCount--;
+			g.destroyOnNoUse = true;
+	    }
 		@:privateAccess
 			for (strumLine in strumLines.members)
 				FlxG.sound.destroySound(strumLine.vocals);

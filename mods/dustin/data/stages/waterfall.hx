@@ -3,6 +3,7 @@ import flixel.effects.particles.FlxTypedEmitter;
 import flixel.effects.particles.FlxParticle;
 import flixel.effects.particles.FlxEmitterMode;
 import flixel.util.FlxSpriteUtil;
+import openfl.geom.ColorTransform;
 
 var gfShaderSprite;
 var blackOverlay;
@@ -48,12 +49,12 @@ function postCreate() {
     beam.x += 600;
     beam.y += -225;
 
-    gfShaderSprite = new Character(gf.x, gf.y, "undyne_hurt_white", stage.isCharFlipped("undyne_hurt_white", false));
+    /*gfShaderSprite = new Character(gf.x, gf.y, "undyne_hurt_white", stage.isCharFlipped("undyne_hurt_white", false));
     gfShaderSprite.alpha = 0;
     gfShaderSprite.x = gf.x;
     gfShaderSprite.y = gf.y;
-    add(gfShaderSprite);
-
+    add(gfShaderSprite);*/
+    
     customLengthOverride = 199000;
 }
 
@@ -173,7 +174,25 @@ function stepHit(step:Int) {
             gf.visible = true;
 
         case 1526:
-            FlxTween.tween(gfShaderSprite, { alpha: 1 }, 1.5);
+            //FlxTween.tween(gfShaderSprite, { alpha: 1 }, 1.5);
+    var colorQ = {
+    r: gf.colorTransform.redOffset,
+    g: gf.colorTransform.greenOffset,
+    b: gf.colorTransform.blueOffset
+    };
+    FlxTween.tween(colorQ, {
+    r: 255,
+    g: 255,
+    b: 255
+}, 1, {
+    onUpdate: function() {
+        gf.colorTransform = new ColorTransform(
+            1, 1, 1, 1,
+            Math.floor(colorQ.r), 
+            Math.floor(colorQ.g), 
+            Math.floor(colorQ.b),
+            0);
+    }, ease: FlxEase.linear});
             FlxTween.tween(blackOverlay, { alpha: 1 }, 1.5);
             FlxG.camera.shake(0.002, 0.3);
 
@@ -195,7 +214,8 @@ function stepHit(step:Int) {
         case 1543:
             FlxG.camera.shake(0.02, 0.5);
             beam.visible = true;
-            gfShaderSprite.visible = false;
+            //gfShaderSprite.visible = false;
+            gf.colorTransform = new ColorTransform();
             blackOverlay.visible = false;
 
             cracks.alpha = 0;

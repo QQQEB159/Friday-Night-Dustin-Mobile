@@ -12,7 +12,7 @@ uniform vec3 FOG_COLOR;
 uniform vec3 BG;
 uniform float ZOOM;
 uniform int OCTAVES;
-uniform int FEATHER;
+uniform float FEATHER;
 uniform float INTENSITY;
 
 // Noise functions from the fog shader
@@ -79,7 +79,7 @@ void main()
         vec3 effect = fogEffect * vec3(gradient * fogAmount, gradient * fogAmount, gradient * fogAmount);
         col.rgb += effect;
 
-        if (col.a == 0 && (effect.r > 0. || effect.g > 0. || effect.b > 0.))
+        if (col.a == 0. && (effect.r > 0. || effect.g > 0. || effect.b > 0.))
 		    col.a = brightness(effect);
     }
 
@@ -91,7 +91,7 @@ void main()
         vec3 effect = fogEffect * vec3(gradient * fogAmount, gradient * fogAmount, gradient * fogAmount);
         col.rgb += effect;
 
-        if (col.a == 0 && (effect.r > 0. || effect.g > 0. || effect.b > 0.))
+        if (col.a == 0. && (effect.r > 0. || effect.g > 0. || effect.b > 0.))
 		    col.a = brightness(effect);
     }
     

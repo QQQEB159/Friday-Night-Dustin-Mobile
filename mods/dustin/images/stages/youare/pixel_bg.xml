@@ -1,17 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="pixel_bg.png">
-	<!-- Created with Adobe Animate version 24.0.7.61 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="anim0000" x="4" y="4" width="1800" height="1170"/>
-	<SubTexture name="anim0001" x="4" y="4" width="1800" height="1170"/>
-	<SubTexture name="anim0002" x="4" y="4" width="1800" height="1170"/>
-	<SubTexture name="anim0003" x="4" y="4" width="1800" height="1170"/>
-	<SubTexture name="anim0004" x="1819" y="4" width="1800" height="1170"/>
-	<SubTexture name="anim0005" x="1819" y="4" width="1800" height="1170"/>
-	<SubTexture name="anim0006" x="1819" y="4" width="1800" height="1170"/>
-	<SubTexture name="anim0007" x="1819" y="4" width="1800" height="1170"/>
-	<SubTexture name="anim0008" x="4" y="1189" width="1800" height="1170"/>
-	<SubTexture name="anim0009" x="4" y="1189" width="1800" height="1170"/>
-	<SubTexture name="anim0010" x="4" y="1189" width="1800" height="1170"/>
-	<SubTexture name="anim0011" x="4" y="1189" width="1800" height="1170"/>
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="anim0000" x="1804" y="0" width="1804" height="1174" frameX="2" frameY="2" frameWidth="1800" frameHeight="1170"/>
+	<SubTexture name="anim0001" x="1804" y="0" width="1804" height="1174" frameX="2" frameY="2" frameWidth="1800" frameHeight="1170"/>
+	<SubTexture name="anim0002" x="1804" y="0" width="1804" height="1174" frameX="2" frameY="2" frameWidth="1800" frameHeight="1170"/>
+	<SubTexture name="anim0003" x="1804" y="0" width="1804" height="1174" frameX="2" frameY="2" frameWidth="1800" frameHeight="1170"/>
+	<SubTexture name="anim0004" x="0" y="1174" width="1804" height="1174" frameX="2" frameY="2" frameWidth="1800" frameHeight="1170"/>
+	<SubTexture name="anim0005" x="0" y="1174" width="1804" height="1174" frameX="2" frameY="2" frameWidth="1800" frameHeight="1170"/>
+	<SubTexture name="anim0006" x="0" y="1174" width="1804" height="1174" frameX="2" frameY="2" frameWidth="1800" frameHeight="1170"/>
+	<SubTexture name="anim0007" x="0" y="1174" width="1804" height="1174" frameX="2" frameY="2" frameWidth="1800" frameHeight="1170"/>
+	<SubTexture name="anim0008" x="0" y="0" width="1804" height="1174" frameX="2" frameY="2" frameWidth="1800" frameHeight="1170"/>
+	<SubTexture name="anim0009" x="0" y="0" width="1804" height="1174" frameX="2" frameY="2" frameWidth="1800" frameHeight="1170"/>
+	<SubTexture name="anim0010" x="0" y="0" width="1804" height="1174" frameX="2" frameY="2" frameWidth="1800" frameHeight="1170"/>
+	<SubTexture name="anim0011" x="0" y="0" width="1804" height="1174" frameX="2" frameY="2" frameWidth="1800" frameHeight="1170"/>
 </TextureAtlas>

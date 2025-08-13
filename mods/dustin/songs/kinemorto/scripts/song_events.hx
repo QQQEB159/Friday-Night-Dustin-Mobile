@@ -181,10 +181,12 @@ function stepHit(step:Int) {
                 papyrusNutting.playAnim("burstin", true);
             });
         case 832:
+            idleSpeed = 0.2; snowSpeed = 1.5;
+            camZoomMult = 1;
             if(Options.gameplayShaders) {
             snowShader2.BRIGHT = 2; snowShader.BRIGHT = 2;
-            fogShader.INTENSITY = 1.3; camZoomMult = 1;
-            radial.blur = .019; idleSpeed = 0.2; snowSpeed = 1.5;
+            fogShader.INTENSITY = 1.3; 
+            radial.blur = .019; 
             oldstatic.strength = 2; blackwhite.grayness = .7;
 
             bloom_new.brightness = 1.2; water.strength = .2;

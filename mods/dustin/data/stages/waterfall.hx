@@ -49,11 +49,13 @@ function postCreate() {
     beam.x += 600;
     beam.y += -225;
 
-    /*gfShaderSprite = new Character(gf.x, gf.y, "undyne_hurt_white", stage.isCharFlipped("undyne_hurt_white", false));
+    if(Options.gameplayShaders) {
+    gfShaderSprite = new Character(gf.x, gf.y, "undyne_hurt_white", stage.isCharFlipped("undyne_hurt_white", false));
     gfShaderSprite.alpha = 0;
     gfShaderSprite.x = gf.x;
     gfShaderSprite.y = gf.y;
-    add(gfShaderSprite);*/
+    add(gfShaderSprite);
+    }
     
     customLengthOverride = 199000;
 }
@@ -174,7 +176,8 @@ function stepHit(step:Int) {
             gf.visible = true;
 
         case 1526:
-            //FlxTween.tween(gfShaderSprite, { alpha: 1 }, 1.5);
+            if(Options.gameplayShaders) FlxTween.tween(gfShaderSprite, { alpha: 1 }, 1.5);
+    if(!Options.gameplayShaders) {
     var colorQ = {
     r: gf.colorTransform.redOffset,
     g: gf.colorTransform.greenOffset,
@@ -193,6 +196,7 @@ function stepHit(step:Int) {
             Math.floor(colorQ.b),
             0);
     }, ease: FlxEase.linear});
+    }
             FlxTween.tween(blackOverlay, { alpha: 1 }, 1.5);
             FlxG.camera.shake(0.002, 0.3);
 
@@ -214,8 +218,8 @@ function stepHit(step:Int) {
         case 1543:
             FlxG.camera.shake(0.02, 0.5);
             beam.visible = true;
-            //gfShaderSprite.visible = false;
-            gf.colorTransform = new ColorTransform();
+            if(Options.gameplayShaders) gfShaderSprite.visible = false;
+            if(!Options.gameplayShaders) gf.colorTransform = new ColorTransform();
             blackOverlay.visible = false;
 
             cracks.alpha = 0;

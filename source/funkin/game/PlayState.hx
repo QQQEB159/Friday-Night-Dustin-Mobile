@@ -997,12 +997,6 @@ class PlayState extends MusicBeatState
 		qqqeb = false;
 		scripts.call("destroy");
 		#if mobile lime.system.System.allowScreenTimeout = Options.screenTimeOut; #end
-		for(g in __cachedGraphics)
-		{
-			g.useCount--;
-			g.destroyOnNoUse = true;
-	    }
-	    FlxG.bitmap.clearCache();
 		@:privateAccess
 			for (strumLine in strumLines.members)
 				FlxG.sound.destroySound(strumLine.vocals);
@@ -1012,6 +1006,12 @@ class PlayState extends MusicBeatState
 			FlxG.sound.destroySound(inst);
 			FlxG.sound.destroySound(vocals);
 		}
+		for(g in __cachedGraphics)
+		{
+			g.useCount--;
+			g.destroyOnNoUse = true;
+	    }
+	    //FlxG.bitmap.clearCache();
 
 		WindowUtils.resetAffixes();
 		SaveWarning.reset();

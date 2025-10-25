@@ -1,9 +1,0 @@
-{
-    "params": [
-        {
-            "name": "New Skin",
-            "type": "String",
-            "defaultValue": "default"
-        }
-    ]
-}

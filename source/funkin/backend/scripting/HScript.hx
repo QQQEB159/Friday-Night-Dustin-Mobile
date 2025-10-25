@@ -27,7 +27,7 @@ class HScript extends Script {
 
 		try {
 			if(Assets.exists(rawPath)) code = Assets.getText(rawPath);
-		} catch(e) Logs.error('Error while reading $path: ${Std.string(e)}');
+		} catch(e) Logs.trace('Error while reading $path: ${Std.string(e)}', ERROR);
 
 		parser = initParser();
 		//folderlessPath = Path.directory(path);

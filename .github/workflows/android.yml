@@ -40,7 +40,7 @@ jobs:
       - name: Uploading artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Codename Engine Android
+          name: Dustin Android
           path: export/release/android/bin/app/build/outputs/apk/release/*.apk
       - name: Clearing already existing cache
         uses: actions/github-script@v6

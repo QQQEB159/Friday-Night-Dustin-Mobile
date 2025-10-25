@@ -1,0 +1,42 @@
+name: Release
+on: workflow_dispatch
+
+permissions: write-all
+
+jobs:
+  build-android:
+    uses: ./.github/workflows/android.yml
+  build-ios:
+    uses: ./.github/workflows/ios.yml
+
+  Releaser:
+    needs: [build-android, build-ios]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Android Build
+        uses: actions/download-artifact@main
+        with:
+          name: Dustin Android
+          path: ${{ github.workspace }}
+
+      - name: Move Android File
+        run: mv "${{ github.workspace }}/dustin-release.apk" "${{ github.workspace }}/Dustin-Android.apk"
+
+      - name: Download iOS Build
+        uses: actions/download-artifact@main
+        with:
+          name: Dustin iOS
+          path: ${{ github.workspace }}
+
+      - name: Move iOS File
+        run: mv "${{ github.workspace }}/dustin.ipa" "${{ github.workspace }}/Dustin-iOS.ipa"
+
+      - name: Publish The Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "v1.1.1"
+          tag_name: "v1.1.1"
+          prerelease: false
+          files: |
+            ${{ github.workspace }}/*.apk
+            ${{ github.workspace }}/*.ipa

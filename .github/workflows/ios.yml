@@ -22,7 +22,7 @@ jobs:
           key: cache-build-ios
           path: |
             .haxelib/
-            export/release/ios/CodenameEngine/haxe/
+            export/release/ios/dustin/haxe/
           restore-keys: |
             cache-build-ios
       - name: Installing/Updating libraries
@@ -61,7 +61,7 @@ jobs:
       - name: Uploading artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Codename Engine IOS
+          name: Dustin IOS
           path: export/release/ios/build/Release-iphoneos/*.ipa
       - name: Uploading new cache
         uses: actions/cache@v3
@@ -70,6 +70,6 @@ jobs:
           key: cache-build-ios
           path: |
             .haxelib/
-            export/release/ios/CodenameEngine/haxe
+            export/release/ios/dustin/haxe
           restore-keys: |
             cache-build-ios

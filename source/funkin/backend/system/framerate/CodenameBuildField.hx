@@ -11,7 +11,7 @@ class CodenameBuildField extends TextField {
 		defaultTextFormat = Framerate.textFormat;
 		autoSize = LEFT;
 		multiline = wordWrap = false;
-		text = '';
+		text = "Friday Night Dustin' v1.1.1";
 		selectable = false;
 	}
 }

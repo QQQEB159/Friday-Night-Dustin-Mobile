@@ -133,7 +133,7 @@ class StorageUtil
 enum abstract StorageType(String) from String to String
 {
 	final forcedPath = '/storage/emulated/0/';
-	final packageNameLocal = 'com.funny.dustin';
+	final packageNameLocal = 'com.chezzarcat.dustin';
 	final fileLocal = 'dustin';
 
 	var EXTERNAL_DATA = "EXTERNAL_DATA";

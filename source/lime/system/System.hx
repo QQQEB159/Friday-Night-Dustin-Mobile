@@ -689,7 +689,8 @@ class System
 	{
 		// executes first!!
 		#if (sys && !macro)
-		funkin.backend.system.Main.preInit();
+		funkin.backend.utils.NativeAPI.registerAsDPICompatible();
+		funkin.backend.system.CommandLineHandler.parseCommandLine(Sys.args());
 		#end
 
 		if (__applicationEntryPoint == null)

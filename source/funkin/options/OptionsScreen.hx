@@ -74,7 +74,7 @@ class OptionsScreen extends FlxTypedSpriteGroup<OptionType> {
 		if(prevVPadModes.length > 0){
 			MusicBeatState.getState().removeTouchPad();
 			MusicBeatState.getState().addTouchPad(prevVPadModes[0], prevVPadModes[1]);
-			MusicBeatState.getState().addTouchPadCamera();
+			//MusicBeatState.getState().addTouchPadCamera();
 		}
 	}
 

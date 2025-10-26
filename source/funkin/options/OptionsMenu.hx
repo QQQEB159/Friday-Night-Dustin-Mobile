@@ -88,7 +88,7 @@ class OptionsMenu extends TreeMenu {
 		}
 		
 		addTouchPad('UP_DOWN', 'A_B_C');
-		addTouchPadCamera();
+		//addTouchPadCamera();
 	}
 
 	public override function update(elapsed:Float) {

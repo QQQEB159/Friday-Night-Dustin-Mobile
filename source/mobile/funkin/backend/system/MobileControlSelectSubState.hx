@@ -30,6 +30,7 @@ import mobile.funkin.backend.utils.TouchUtil;
 import flixel.input.touch.FlxTouch;
 import flixel.ui.FlxButton as UIButton;
 import funkin.backend.MusicBeatSubstate;
+import flixel.text.FlxText;
 
 class MobileControlSelectSubState extends MusicBeatSubstate
 {

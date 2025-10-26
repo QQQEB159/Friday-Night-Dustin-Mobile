@@ -14,6 +14,8 @@ import flixel.FlxSubState;
 import mobile.funkin.backend.utils.MobileData;
 import mobile.objects.Hitbox;
 import mobile.objects.TouchPad;
+import mobile.objects.MobileControls;
+import mobile.objects.IMobileControls;
 import flixel.FlxCamera;
 import flixel.util.FlxDestroyUtil;
 #end
@@ -105,6 +107,8 @@ class MusicBeatSubstate extends FlxSubState implements IBeatReceiver
 	public var hitbox:Hitbox;
 	public var hboxCam:FlxCamera;
 	public var tpadCam:FlxCamera;
+	public var mobileControls:IMobileControls;
+	public var mobileControlsCam:FlxCamera;
 	#end
 
 	public function addTouchPad(DPad:String, Action:String)
@@ -163,6 +167,47 @@ class MusicBeatSubstate extends FlxSubState implements IBeatReceiver
 		#end
 	}
 
+	public function addMobileControls(defaultDrawTarget:Bool = false):Void
+	{
+		#if TOUCH_CONTROLS
+		switch (MobileData.mode)
+		{
+			case 0: // RIGHT_FULL
+				mobileControls = new TouchPad('RIGHT_FULL', 'NONE');
+			case 1: // LEFT_FULL
+				mobileControls = new TouchPad('LEFT_FULL', 'NONE');
+			case 2: // CUSTOM
+				mobileControls = MobileData.getTouchPadCustom(new TouchPad('RIGHT_FULL', 'NONE'));
+			case 3: // HITBOX
+				mobileControls = new Hitbox();
+		}
+
+		mobileControlsCam = new FlxCamera();
+		mobileControlsCam.bgColor.alpha = 0;
+		FlxG.cameras.add(mobileControlsCam, defaultDrawTarget);
+
+		mobileControls.instance.cameras = [mobileControlsCam];
+		mobileControls.instance.visible = false;
+		add(mobileControls.instance);
+		#end
+	}
+
+	public function removeMobileControls()
+	{
+		if (mobileControls != null)
+		{
+			remove(mobileControls.instance);
+			mobileControls.instance = FlxDestroyUtil.destroy(mobileControls.instance);
+			mobileControls = null;
+		}
+
+		if (mobileControlsCam != null)
+		{
+			FlxG.cameras.remove(mobileControlsCam);
+			mobileControlsCam = FlxDestroyUtil.destroy(mobileControlsCam);
+		}
+	}
+	
 	public function addTouchPadCamera(?defaultDrawTarget:Bool = false) {
 		#if TOUCH_CONTROLS
 		if (touchPad != null)
@@ -326,6 +371,7 @@ class MusicBeatSubstate extends FlxSubState implements IBeatReceiver
 		#if TOUCH_CONTROLS
 		removeTouchPad();
 		removeHitbox();
+		removeMobileControls();
 		#end
 		
 		super.destroy();

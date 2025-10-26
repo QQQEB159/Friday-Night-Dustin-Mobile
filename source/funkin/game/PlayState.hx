@@ -787,9 +787,9 @@ class PlayState extends MusicBeatState
 
 		startingSong = true;
 
-		addHitbox();
 		#if TOUCH_CONTROLS
-		hitbox.visible = true;
+		addMobileControls();
+		mobileControls.instance.visible = true;
 		#end
 		#if !android
 		addTouchPad('NONE', 'P');
@@ -1529,7 +1529,7 @@ class PlayState extends MusicBeatState
 	public function endSong():Void
 	{
 		#if TOUCH_CONTROLS
-		hitbox.visible = false;
+		mobileControls.instance.visible = false;
 		#end
 		endingSong = true;
 		scripts.call("onSongEnd");
@@ -1574,7 +1574,7 @@ class PlayState extends MusicBeatState
 	 */
 	public function nextSong() {
 		#if TOUCH_CONTROLS
-		hitbox.visible = false;
+		mobileControls.instance.visible = false;
 		#end
 		if (isStoryMode)
 		{

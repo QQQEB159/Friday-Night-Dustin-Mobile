@@ -38,6 +38,8 @@ class MobileData
 	public static var actionModes:Map<String, TouchButtonsData> = new Map();
 	public static var dpadModes:Map<String, TouchButtonsData> = new Map();
 
+	public static var mode(get, set):Int;
+	public static var forcedMode:Null<Int>;
 	public static var save:FlxSave;
 
 	public static function init()

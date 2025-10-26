@@ -36,7 +36,7 @@ import funkin.game.PlayState;
  *
  * @author: Karim Akra and Homura Akemi (HomuHomu833)
  */
-class Hitbox extends MobileInputManager
+class Hitbox extends MobileInputManager implements IMobileControls
 {
 	final offsetFir:Int = (Options.hitboxPos ? Std.int(FlxG.height / 4) * 3 : 0);
 	final offsetSec:Int = (Options.hitboxPos ? 0 : Std.int(FlxG.height / 4));

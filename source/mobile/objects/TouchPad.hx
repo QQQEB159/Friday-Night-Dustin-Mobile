@@ -37,7 +37,7 @@ import funkin.game.PlayState;
  * @author: Karim Akra and Homura Akemi (HomuHomu833)
  */
 @:access(mobile.objects.TouchButton)
-class TouchPad extends MobileInputManager
+class TouchPad extends MobileInputManager implements IMobileControls
 {
 	public var buttonLeft:TouchButton = new TouchButton(0, 0, [MobileInputID.LEFT]);
 	public var buttonUp:TouchButton = new TouchButton(0, 0, [MobileInputID.UP]);
@@ -73,6 +73,8 @@ class TouchPad extends MobileInputManager
 	public var buttonX:TouchButton = new TouchButton(0, 0, [MobileInputID.X]);
 	public var buttonY:TouchButton = new TouchButton(0, 0, [MobileInputID.Y]);
 	public var buttonZ:TouchButton = new TouchButton(0, 0, [MobileInputID.Z]);
+	public var buttonExtra:TouchButton = new TouchButton(0, 0, [MobileInputID.EXTRA_1]);
+	public var buttonExtra2:TouchButton = new TouchButton(0, 0, [MobileInputID.EXTRA_2]);
 
 	public var instance:MobileInputManager;
 	public var curDPadMode:String = "NONE";
@@ -146,6 +148,25 @@ class TouchPad extends MobileInputManager
 		}
 	}
 
+	public function setExtrasDefaultPos()
+	{
+		var int:Int = 0;
+
+		if (MobileData.save.data.extraData == null)
+			MobileData.save.data.extraData = new Array();
+
+		for (button in Reflect.fields(this))
+		{
+			var field = Reflect.field(this, button);
+			if (button.toLowerCase().contains('extra') && Std.isOfType(field, TouchButton))
+			{
+				MobileData.save.data.extraData[int] = FlxPoint.get(field.x, field.y);
+				++int;
+			}
+		}
+		MobileData.save.flush();
+	}
+	
 	private function createButton(X:Float, Y:Float, Graphic:String, ?Color:FlxColor = 0xFFFFFF, ?IDs:Array<MobileInputID>):TouchButton
 	{
 		var button = new TouchButton(X, Y, IDs);

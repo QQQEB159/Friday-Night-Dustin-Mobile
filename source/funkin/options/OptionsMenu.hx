@@ -86,7 +86,7 @@ class OptionsMenu extends TreeMenu {
 			}
 		}
 		
-		addTouchPad('UP_DOWN', 'A_B');
+		addTouchPad('UP_DOWN', 'A_B_C');
 		addTouchPadCamera();
 	}
 

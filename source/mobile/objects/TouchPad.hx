@@ -30,6 +30,7 @@ import flixel.group.FlxSpriteGroup;
 import flixel.util.FlxSignal.FlxTypedSignal;
 import openfl.display.BitmapData;
 import openfl.utils.Assets;
+import funkin.game.PlayState;
 
 /**
  * ...
@@ -117,6 +118,15 @@ class TouchPad extends MobileInputManager
 
 		curDPadMode = DPad;
 		curActionMode = Action;
+		
+		if(PlayState.qqqeb)
+		{
+			if (MobileData.mode != 3)
+			{
+				add(buttonExtra = createButton((DPad == 'LEFT_FULL') ? 1149 : 0, FlxG.height - 137, 's', 0xFF0066FF));
+			}
+		}
+		
 		alpha = Options.touchPadAlpha;
 		scrollFactor.set();
 		updateTrackedButtons();

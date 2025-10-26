@@ -1,7 +1,6 @@
 package funkin.options;
 
 import funkin.options.type.OptionType;
-import mobile.funkin.backend.system.MobileControlSelectSubState;
 
 class OptionsScreen extends FlxTypedSpriteGroup<OptionType> {
 	public static var optionHeight:Float = 120;
@@ -68,11 +67,6 @@ class OptionsScreen extends FlxTypedSpriteGroup<OptionType> {
 		}
 		if (controls.BACK || (FlxG.mouse.justReleasedRight && !controls.touchC))
 			close();
-			
-		if (MusicBeatState.getState().touchPad.buttonC.justPressed || FlxG.keys.justPressed.CONTROL && controls.touchC)
-		{
-			openSubState(new MobileControlSelectSubState());
-		}
 	}
 
 	public function close() {

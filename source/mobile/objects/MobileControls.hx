@@ -29,6 +29,10 @@ package mobile.objects;
  * @author: Karim Akra
  */
 #if TOUCH_CONTROLS
+
+import flixel.group.FlxSpriteGroup;
+import flixel.group.FlxGroup.FlxTypedGroup;
+
 class MobileControls extends FlxTypedSpriteGroup<MobileInputManager>
 {
 	public var touchPad:TouchPad = new TouchPad('NONE', 'NONE');

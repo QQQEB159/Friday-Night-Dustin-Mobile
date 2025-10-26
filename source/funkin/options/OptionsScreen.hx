@@ -69,7 +69,7 @@ class OptionsScreen extends FlxTypedSpriteGroup<OptionType> {
 		if (controls.BACK || (FlxG.mouse.justReleasedRight && !controls.touchC))
 			close();
 			
-		if (touchPad.buttonC.justPressed || FlxG.keys.justPressed.CONTROL && controls.touchC)
+		if (MusicBeatState.getState().touchPad.buttonC.justPressed || FlxG.keys.justPressed.CONTROL && controls.touchC)
 		{
 			openSubState(new MobileControlSelectSubState());
 		}

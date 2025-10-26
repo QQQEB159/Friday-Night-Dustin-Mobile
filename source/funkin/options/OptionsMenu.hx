@@ -96,14 +96,10 @@ class OptionsMenu extends TreeMenu {
 		
 		if (MusicBeatState.getState().touchPad.buttonC.justPressed || FlxG.keys.justPressed.CONTROL && controls.touchC)
 		{
-			MusicBeatState.getState().touchPad.active = MusicBeatState.getState().touchPad.visible = false;
 			openSubState(new MobileControlSelectSubState());
+			persistentUpdate = false;
+			persistentDraw = true;
 		}
-	}
-	
-	override function closeSubState() {
-		super.closeSubState();
-		MusicBeatState.getState().touchPad.active = MusicBeatState.getState().touchPad.visible = true;
 	}
 	
 	public override function exit() {

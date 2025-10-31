@@ -5,7 +5,7 @@ import sys.FileSystem;
 #end
 import funkin.backend.assets.ModsFolder;
 import funkin.menus.TitleState;
-import funkin.menus.BetaWarningState;
+import funkin.menus.WarningState;
 import funkin.backend.chart.EventsData;
 import flixel.FlxState;
 import haxe.io.Path;
@@ -24,7 +24,7 @@ typedef AddonInfo = {
  */
 class MainState extends FlxState {
 	public static var initiated:Bool = false;
-	public static var betaWarningShown:Bool = false;
+	public static var warningShown:Bool = false;
 	public override function create() {
 		super.create();
 		#if mobile
@@ -131,11 +131,11 @@ class MainState extends FlxState {
 		EventsData.reloadEvents();
 		TitleState.initialized = false;
 
-		if (betaWarningShown)
+		if (warningShown)
 			FlxG.switchState(new TitleState());
 		else {
-			FlxG.switchState(new BetaWarningState());
-			betaWarningShown = true;
+			FlxG.switchState(new WarningState());
+			warningShown = true;
 		}
 
 		CoolUtil.safeAddAttributes('./.temp/', NativeAPI.FileAttribute.HIDDEN);

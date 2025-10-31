@@ -1,19 +1,17 @@
 package funkin.backend.system.updating;
 
-import openfl.Lib;
-import sys.io.Process;
-import haxe.zip.Reader;
+import funkin.backend.system.github.GitHubRelease;
 import funkin.backend.utils.ZipUtil;
 import haxe.io.Path;
-import openfl.utils.ByteArray;
-import sys.io.File;
-import sys.io.FileOutput;
+import openfl.Lib;
 import openfl.events.Event;
 import openfl.events.ProgressEvent;
-import openfl.net.URLRequest;
 import openfl.net.URLLoader;
+import openfl.net.URLRequest;
+import openfl.utils.ByteArray;
 import sys.FileSystem;
-import funkin.backend.system.github.GitHubRelease;
+import sys.io.File;
+import sys.io.FileOutput;
 
 class AsyncUpdater {
 	// NON ASYNC STUFF
@@ -39,6 +37,10 @@ class AsyncUpdater {
 	#if mac
 	public static var executableGitHubName:String = "update-mac";
 	public static var executableName:String = "CodenameEngine";
+	#end
+	#if mobile
+	public static var executableGitHubName:String = "";
+	public static var executableName:String = "";
 	#end
 
 	public var releases:Array<GitHubRelease>;
@@ -66,7 +68,7 @@ class AsyncUpdater {
 			var reader = ZipUtil.openZip(path);
 
 			progress.curZipProgress = new ZipProgress();
-			ZipUtil.uncompressZip(reader, './', null, progress.curZipProgress);
+			ZipUtil.uncompressZip(reader, Sys.getCwd(), null, progress.curZipProgress);
 			// FileSystem.deleteFile(path);
 		}
 		if (executableReplaced = FileSystem.exists('$path$executableName')) {

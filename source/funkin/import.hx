@@ -6,6 +6,7 @@ import funkin.backend.MusicBeatSubstate;
 import funkin.backend.MusicBeatGroup;
 import funkin.backend.FunkinSprite;
 import funkin.backend.utils.*;
+import funkin.backend.utils.TranslationUtil as TU;
 import funkin.backend.system.Logs;
 import funkin.options.Options;
 import funkin.game.PlayState;
@@ -25,6 +26,9 @@ import flixel.tweens.FlxEase;
 import flixel.util.FlxDestroyUtil;
 import flixel.effects.particles.FlxEmitter;
 import flixel.effects.particles.FlxParticle;
+
+import funkin.backend.system.Flags;
+import funkin.Types;
 
 import funkin.menus.ui.Alphabet;
 import flixel.group.FlxGroup.FlxTypedGroup;

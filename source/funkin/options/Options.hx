@@ -35,6 +35,10 @@ class Options
 	public static var songOffset:Float = 0;
 	public static var framerate:Int = #if mobile 60 #else 120 #end;
 	public static var gpuOnlyBitmaps:Bool = #if (mac || web || mobile) false #else true #end; // causes issues on mac and web
+	public static var language = "en"; // default to english, Flags.DEFAULT_LANGUAGE should not modify this
+	public static var streamedMusic:Bool = true;
+	public static var streamedVocals:Bool = false;
+	public static var quality:Int = 1;
 
 	public static var lastLoadedMod:String = null;
 
@@ -169,13 +173,22 @@ class Options
 	public static var SOLO_DEBUG_RELOAD(get, null):Array<FlxKey>;
 
 	public static function load() {
+		var path = haxe.macro.Compiler.getDefine("SAVE_OPTIONS_PATH"), name = haxe.macro.Compiler.getDefine("SAVE_OPTIONS_NAME");
+		if (path == null) path = 'CodenameEngine';
+		if (name == null) name = 'options';
+
 		if (__save == null) __save = new FlxSave();
-		__save.bind("options", "CodenameEngine");
+		__save.bind(name, path);
 		__load();
 
 		if (!__eventAdded) {
 			Lib.application.onExit.add(function(i:Int) {
-				trace("Saving settings...");
+				Logs.traceColored([
+					Logs.getPrefix("Options"),
+					Logs.logText("Saving "),
+					Logs.logText("settings", GREEN),
+					Logs.logText("...")
+				], VERBOSE);
 				save();
 			});
 			__eventAdded = true;
@@ -186,9 +199,22 @@ class Options
 
 	public static function applySettings() {
 		applyKeybinds();
-		FlxG.game.stage.quality = (FlxG.enableAntialiasing = antialiasing) ? LOW : BEST;
+
+		switch (quality) {
+			case 0:
+				antialiasing = false;
+				lowMemoryMode = true;
+				gameplayShaders = false;
+			case 1:
+				antialiasing = true;
+				lowMemoryMode = false;
+				gameplayShaders = true;
+		}
+
+		FlxG.game.stage.quality = (FlxG.enableAntialiasing = antialiasing) ? BEST : LOW;
 		FlxG.autoPause = autoPause;
-		FlxG.drawFramerate = FlxG.updateFramerate = framerate;
+		if (FlxG.updateFramerate < framerate) FlxG.drawFramerate = FlxG.updateFramerate = framerate;
+		else FlxG.updateFramerate = FlxG.drawFramerate = framerate;
 	}
 
 	public static function applyKeybinds() {

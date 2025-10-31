@@ -1,53 +1,71 @@
 package funkin.options;
 
-import funkin.options.type.Checkbox;
 import haxe.xml.Access;
-import funkin.options.type.*;
+import flixel.util.typeLimit.OneOfThree;
+import funkin.editors.ui.UIState;
 import funkin.options.categories.*;
 import funkin.options.TreeMenu;
-import mobile.funkin.backend.system.MobileControlSelectSubState;
+import haxe.ds.Map;
+import funkin.options.type.*;
+
+typedef OptionCategory = {
+	var name:String;
+	var desc:String;
+	var ?state:OneOfThree<TreeMenuScreen, Class<TreeMenuScreen>, (name:String, desc:String, ?touchPadModes:Array<String>) -> TreeMenuScreen>;
+	var ?substate:OneOfThree<MusicBeatSubstate, Class<MusicBeatSubstate>, (name:String, desc:String) -> MusicBeatSubstate>;
+	var ?suffix:String;
+	var ?touchPadModes:Array<String>;
+}
 
 class OptionsMenu extends TreeMenu {
 	public static var mainOptions:Array<OptionCategory> = [
-		{
-			name: 'Controls',
-			desc: 'Change Controls for Player 1 and Player 2!',
-			state: null,
+		{  // name and desc are actually the translations ids!  - Nex
+			name: 'optionsTree.controls-name',
+			desc: 'optionsTree.controls-desc',
+			suffix: '',
 			substate: funkin.options.keybinds.KeybindsOptions
 		},
 		{
-			name: 'Gameplay >',
-			desc: 'Change Gameplay options such as Downscroll, Scroll Speed, Naughtyness...',
+			name: 'optionsTree.gameplay-name',
+			desc: 'optionsTree.gameplay-desc',
 			state: GameplayOptions
 		},
 		{
-			name: 'Appearance >',
-			desc: 'Change Appearance options such as Flashing menus...',
+			name: 'optionsTree.appearance-name',
+			desc: 'optionsTree.appearance-desc',
 			state: AppearanceOptions
 		},
 		#if (mobile || TOUCH_CONTROLS)
 		{
-			name: 'Mobile Options >',
-			desc: 'Change Options related to Mobile or Touch Controls',
+			name: 'optionsTree.mobile-name',
+			desc: 'optionsTree.mobile-desc',
 			state: MobileOptions
 		},
 		#end
+		#if TRANSLATIONS_SUPPORT
 		{
-			name: 'Miscellaneous >',
-			desc: 'Use this menu to reset save data or engine settings.',
+			name: 'optionsTree.language-name',
+			desc: 'optionsTree.language-desc',
+			state: LanguageOptions
+		},
+		#end
+		{
+			name: 'optionsTree.miscellaneous-name',
+			desc: 'optionsTree.miscellaneous-desc',
 			state: MiscOptions
 		}
 	];
 
 	var bg:FlxSprite;
+	var debugOption:TextOption;
 
-	public override function create() {
+	override function create() {
 		super.create();
-		
+
 		if (funkin.backend.system.Controls.instance.touchC)
 		{
 			mainOptions = mainOptions.filter(function(option) {
-				return option.name != "Controls";
+				return option.name != "optionsTree.controls-name";
 			});
 		}
 
@@ -55,26 +73,42 @@ class OptionsMenu extends TreeMenu {
 
 		DiscordUtil.call("onMenuLoaded", ["Options Menu"]);
 
-		bg = new FlxSprite(-80).loadAnimatedGraphic(Paths.image('menus/menuBGBlue'));
-		// bg.scrollFactor.set();
-		bg.scale.set(1.15, 1.15);
-		bg.updateHitbox();
-		bg.screenCenter();
-		bg.scrollFactor.set();
+		add(bg = new FlxSprite().loadAnimatedGraphic(Paths.image('menus/menuBGBlue')));
 		bg.antialiasing = true;
-		add(bg);
+		bg.scrollFactor.set();
+		updateBG();
 
-		main = new OptionsScreen("Options", "Select a category to continue.", [for(o in mainOptions) new TextOption(o.name, o.desc, function() {
+		for (i in mainOptions) if (i.name == "optionsTree.language-name" && Flags.DISABLE_LANGUAGES) mainOptions.remove(i);
+
+		addMenu(new TreeMenuScreen('optionsMenu.header.title', 'optionsMenu.header.desc', [for (o in mainOptions) new TextOption(o.name, o.desc, o.suffix != null ? o.suffix : " >", () -> {
 			if (o.substate != null) {
 				persistentUpdate = false;
 				persistentDraw = true;
-				if (o.substate is MusicBeatSubstate) openSubState(o.substate);
-				else openSubState(Type.createInstance(o.substate, []));
-			} else {
-				if (o.state is OptionsScreen) optionsTree.add(o.state);
-				else optionsTree.add(Type.createInstance(o.state, []));
+
+				if (o.substate is MusicBeatSubstate)
+					openSubState(o.substate);
+				else if(Reflect.isFunction(o.substate)) {
+					var substate:(name:String, desc:String) -> MusicBeatSubstate = o.substate;
+					openSubState(substate(o.name, o.desc));
+				}
+				else // o.substate is Class<TreeMenuScreen>
+					openSubState(Type.createInstance(o.substate, [o.name, o.desc]));
 			}
-		})]);
+			else {
+				if (o.state is TreeMenuScreen)
+					addMenu(o.state);
+				else if (Reflect.isFunction(o.state)) {
+					var state:(name:String, desc:String, ?touchPadModes:Array<String>) -> TreeMenuScreen = o.state;
+					addMenu(state(o.name, o.desc, o.touchPadModes));
+				}
+				else { // o.state is Class<TreeMenuScreen>
+					addMenu(Type.createInstance(o.state, [o.name, o.desc, null, null, o.touchPadModes]));
+				}
+			}
+		})]));
+
+		checkDebugOption();
+		var first = tree.first();
 
 		for (i in funkin.backend.assets.ModsFolder.getLoadedMods()) {
 			var xmlPath = Paths.xml('config/options/LIB_$i');
@@ -83,63 +117,94 @@ class OptionsMenu extends TreeMenu {
 				var access:Access = null;
 				try access = new Access(Xml.parse(Paths.assetsTree.getSpecificAsset(xmlPath, "TEXT")))
 				catch(e) Logs.trace('Error while parsing options.xml: ${Std.string(e)}', ERROR);
-				if (access != null) for (o in parseOptionsFromXML(access)) main.add(o);
+				if (access != null) for (o in parseOptionsFromXML(first, access)) first.add(o);
 			}
 		}
-		
-		addTouchPad('UP_DOWN', 'A_B_C');
-		//addTouchPadCamera();
+		#if TOUCH_CONTROLS
+		addTouchPad('UP_DOWN', 'A_B');
+		addTouchPadCamera();
+		#end
 	}
 
-	public override function update(elapsed:Float) {
-		super.update(elapsed);
-		
-		if (MusicBeatState.getState().touchPad.buttonC.justPressed || FlxG.keys.justPressed.CONTROL && controls.touchC)
-		{
-			openSubState(new MobileControlSelectSubState());
-			persistentUpdate = false;
-			persistentDraw = true;
+	function checkDebugOption() {
+		var first = tree.first();
+		if (Options.devMode) {
+			if (debugOption == null) {
+				first.insert(CoolUtil.minInt(first.length, mainOptions.length),
+					debugOption = new TextOption('optionsTree.debug-name', 'optionsTree.debug-desc', ' >', () -> addMenu(new DebugOptions()))
+				);
+			}
+		}
+		else if (debugOption != null) {
+			first.remove(debugOption, true);
+			debugOption = flixel.util.FlxDestroyUtil.destroy(debugOption);
+			if (first.curSelected >= first.length) first.changeSelection(0, true);
 		}
 	}
-	
-	public override function exit() {
+
+	public function updateBG() {
+		var scaleX:Float = FlxG.width / bg.width;
+		var scaleY:Float = FlxG.height / bg.height;
+		bg.scale.x = bg.scale.y = Math.max(scaleX, scaleY) * 1.15;
+		bg.screenCenter();
+	}
+
+	override function onResize(width:Int, height:Int) {
+		super.onResize(width, height);
+		if (!UIState.resolutionAware) return;
+
+		updateBG();
+	}
+
+	override function menuChanged() {
+		super.menuChanged();
+		checkDebugOption();
+	}
+
+	override function exit() {
 		Options.save();
 		Options.applySettings();
 		super.exit();
 	}
 
-	/**
-	 * XML STUFF
-	 */
-	var vpadMap:Map<String, Array<String>> = new Map();
-	public function parseOptionsFromXML(xml:Access):Array<OptionType> {
-		var options:Array<OptionType> = [];
+	// XML STUFF
+	public function parseOptionsFromXML(screen:TreeMenuScreen, xml:Access):Array<FlxSprite> {
+		var options:Array<FlxSprite> = [];
 
 		for(node in xml.elements) {
+			switch(node.name) {
+				case "separator":
+					options.push(new Separator(node.has.height ? Std.parseFloat(node.att.height) : 67));
+			}
+
 			if (!node.has.name) {
-				Logs.trace("An option node requires a name attribute.", WARNING);
+				Logs.warn("An option node requires a name attribute.");
 				continue;
 			}
 			var name = node.getAtt("name");
-			var desc = node.getAtt("desc").getDefault("No Description");
+			var desc = node.getAtt("desc").getDefault("optionsMenu.desc-missing");
+			if (screen.prefix?.length > 0) {
+				name = screen.prefix + name;
+				if (node.has.desc) desc = screen.prefix + desc;
+			}
 
 			switch(node.name) {
 				case "checkbox":
 					if (!node.has.id) {
-						Logs.trace("A checkbox option requires an \"id\" for option saving.", WARNING);
+						Logs.warn("A checkbox option requires an \"id\" for option saving.");
 						continue;
 					}
-					options.push(new Checkbox(name, desc, node.att.id, FlxG.save.data));
-
+					options.push(new Checkbox(name, desc, node.att.id, null, FlxG.save.data));
 				case "number":
 					if (!node.has.id) {
-						Logs.trace("A number option requires an \"id\" for option saving.", WARNING);
+						Logs.warn("A number option requires an \"id\" for option saving.");
 						continue;
 					}
-					options.push(new NumOption(name, desc, Std.parseFloat(node.att.min), Std.parseFloat(node.att.max), Std.parseFloat(node.att.change), node.att.id, null, FlxG.save.data));
+					var step = node.has.change ? Std.parseFloat(node.att.change) : (node.has.step ? Std.parseFloat(node.att.step) : null);
+					options.push(new NumOption(name, desc, Std.parseFloat(node.att.min), Std.parseFloat(node.att.max), step, node.att.id, null, FlxG.save.data));
 				case "choice":
 					if (!node.has.id) {
-						Logs.trace("A choice option requires an \"id\" for option saving.", WARNING);
+						Logs.warn("A choice option requires an \"id\" for option saving.");
 						continue;
 					}
 
@@ -153,10 +218,26 @@ class OptionsMenu extends TreeMenu {
 
 					if(optionOptions.length > 0)
 						options.push(new ArrayOption(name, desc, optionOptions, optionDisplayOptions, node.att.id, null, FlxG.save.data));
-
+				case 'radio':
+					if (!node.has.id) {
+						Logs.warn("A radio option requires an \"id\" for option saving.");
+						continue;
+					}
+					var v:Dynamic = Std.parseFloat(node.att.value);
+					options.push(new RadioButton(screen, name, desc, node.att.id, v != null ? v : node.att.value, null, FlxG.save.data, node.has.forId ? node.att.forId : null));
+				case 'slider':
+					if (!node.has.id) {
+						Logs.warn("A slider option requires an \"id\" for option saving.");
+						continue;
+					}
+					var step = node.has.change ? Std.parseFloat(node.att.change) : (node.has.step ? Std.parseFloat(node.att.step) : null);
+					var segments = node.has.segments ? Std.parseInt(node.att.segments) : 5;
+					options.push(new SliderOption(name, desc, Std.parseFloat(node.att.min), Std.parseFloat(node.att.max), step, segments, node.att.id, Std.parseInt(node.att.barWidth), null, FlxG.save.data));
 				case "menu":
-					options.push(new TextOption(name + " >", desc, function() {
-						optionsTree.add(new OptionsScreen(name, desc, parseOptionsFromXML(node), vpadMap.exists(name) ? vpadMap.get(name)[0] : 'NONE', vpadMap.exists(name) ? vpadMap.get(name)[1] : 'NONE'));
+					options.push(new TextOption(name, desc, ' >', () -> {
+						var screen = new TreeMenuScreen(name, desc, node.getAtt("prefix").getDefault(""));
+						for (o in parseOptionsFromXML(screen, node)) screen.add(o);
+						addMenu(screen);
 					}));
 				case "touchPad":
 					#if TOUCH_CONTROLS
@@ -164,7 +245,8 @@ class OptionsMenu extends TreeMenu {
 						node.getAtt("dpadMode") == null ? MusicBeatState.getState().touchPad.curDPadMode : node.getAtt("dpadMode"), 
 						node.getAtt("actionMode") == null ? MusicBeatState.getState().touchPad.curActionMode : node.getAtt("actionMode")
 					];
-					vpadMap.set(node.getAtt("menuName"), arr);
+					// MTODO: IMPLEMENT
+					//vpadMap.set(node.getAtt("menuName"), arr);
 					#end
 			}
 		}

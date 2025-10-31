@@ -117,6 +117,13 @@ class MainState extends FlxState {
 			loadLib(addon.path, ltrim(addon.name, "[HIGH]"));
 		#end
 
+		Flags.reset();
+		Flags.load();
+		funkin.savedata.FunkinSave.init();
+
+		TranslationUtil.findAllLanguages();
+		TranslationUtil.setLanguage(Flags.DISABLE_LANGUAGES ? Flags.DEFAULT_LANGUAGE : null);
+		
 		MusicBeatTransition.script = "";
 		Main.refreshAssets();
 		ModsFolder.onModSwitch.dispatch(ModsFolder.currentModFolder);

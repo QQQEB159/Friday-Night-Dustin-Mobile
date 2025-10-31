@@ -10,7 +10,11 @@
 	<!--
 		CHANGE THE SAVE PATH & NAME FOR YOUR MOD HERE!
 	-->
-	<app save-path="ChezzarCat" save-name="save-default" mod-saves="true" />
+	<haxedef name="SAVE_PATH" value="ChezzarCat"/>
+	<haxedef name="SAVE_NAME" value="save-default"/>
+	
+	<haxedef name="SAVE_OPTIONS_PATH" value="ChezzarCat"/>
+	<haxedef name="SAVE_OPTIONS_NAME" value="options"/>
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
@@ -133,6 +137,8 @@
 
 	<!-- Comment this out to disable global scripts !-->
 	<haxedef name="GLOBAL_SCRIPT" />
+	
+	<haxedef name="TRANSLATIONS_SUPPORT"/>
 
 	<!-- Comment this out to disable softcoded states and state scripting !-->
 	<haxedef name="SOFTCODED_STATES" />

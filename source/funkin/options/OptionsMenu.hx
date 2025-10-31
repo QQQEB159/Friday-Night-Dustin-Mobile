@@ -183,10 +183,6 @@ class OptionsMenu extends TreeMenu {
 			}
 			var name = node.getAtt("name");
 			var desc = node.getAtt("desc").getDefault("optionsMenu.desc-missing");
-			if (screen.prefix?.length > 0) {
-				name = screen.prefix + name;
-				if (node.has.desc) desc = screen.prefix + desc;
-			}
 
 			switch(node.name) {
 				case "checkbox":

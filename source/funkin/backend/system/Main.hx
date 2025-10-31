@@ -1,6 +1,5 @@
 package funkin.backend.system;
 
-import funkin.editors.SaveWarning;
 import funkin.backend.assets.AssetsLibraryList;
 import funkin.backend.system.framerate.SystemInfo;
 import openfl.utils.AssetLibrary;
@@ -129,7 +128,7 @@ class Main extends Sprite
 
 	public static function loadGameSettings() {
 		WindowUtils.init();
-		SaveWarning.init();
+		//SaveWarning.init();
 		MemoryUtil.init();
 		@:privateAccess
 		FlxG.game.getTimer = getTimer;

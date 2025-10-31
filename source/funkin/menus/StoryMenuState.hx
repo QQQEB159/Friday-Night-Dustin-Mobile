@@ -340,7 +340,7 @@ class StoryWeeklist {
 
 	public function new() {}
 
-	public function getWeeksFromSource(source:funkin.backend.assets.AssetsLibraryList.AssetSource, useTxt:Bool = true, loadCharactersData:Bool = true) {
+	public function getWeeksFromSource(source:funkin.backend.assets.AssetSource, useTxt:Bool = true, loadCharactersData:Bool = true) {
 		var path:String = Paths.txt('weeks/weeks');
 		var weeksFound:Array<String> = useTxt && Paths.assetsTree.existsSpecific(path, "TEXT", source) ? CoolUtil.coolTextFile(path) :
 			[for (c in Paths.getFolderContent('data/weeks/weeks/', false, source)) if (Path.extension(c).toLowerCase() == "xml") Path.withoutExtension(c)];

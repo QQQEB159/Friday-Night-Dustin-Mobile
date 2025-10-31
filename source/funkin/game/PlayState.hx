@@ -1,11 +1,8 @@
 package funkin.game;
 
-import funkin.editors.charter.CharterSelection;
 import flixel.FlxState;
-import funkin.editors.SaveWarning;
 import funkin.backend.chart.EventsData;
 import funkin.backend.system.RotatingSpriteGroup;
-import funkin.editors.charter.Charter;
 import funkin.savedata.FunkinSave;
 import flixel.graphics.FlxGraphic;
 import funkin.backend.chart.Chart;
@@ -726,7 +723,7 @@ class PlayState extends MusicBeatState
 		}
 
 		for(str in strumLines)
-			str.generate(str.data, (chartingMode && Charter.startHere) ? Charter.startTime : null);
+			str.generate(str.data, null);
 
 		FlxG.camera.follow(camFollow, LOCKON, 0.04);
 		FlxG.camera.zoom = defaultCamZoom;
@@ -806,7 +803,7 @@ class PlayState extends MusicBeatState
 			if (s != null)
 				FlxG.sound.load(Paths.sound(s));
 
-		if (chartingMode) {
+		/*if (chartingMode) {
 			WindowUtils.prefix = Charter.undos.unsaved ? "* " : "";
 			WindowUtils.suffix = " (Chart Playtesting)";
 
@@ -817,7 +814,7 @@ class PlayState extends MusicBeatState
 				@:privateAccess Chart.save('${Paths.getAssetsRoot()}/songs/${Charter.__song.toLowerCase()}',
 					PlayState.SONG, Charter.__diff.toLowerCase(), {saveMetaInChart: false, prettyPrint: Options.editorPrettyPrint});
 			}
-		}
+		}*/
 	}
 
 	@:dox(hide) public override function createPost() {
@@ -980,7 +977,7 @@ class PlayState extends MusicBeatState
 			strumLine.vocals.play();
 			strumLine.vocals.pause();
 		}
-		inst.time = vocals.time = (chartingMode && Charter.startHere) ? Charter.startTime : 0;
+		inst.time = vocals.time = 0;
 		for (strumLine in strumLines.members) {
 			strumLine.vocals.time = vocals.time;
 			strumLine.vocals.play();
@@ -1014,7 +1011,7 @@ class PlayState extends MusicBeatState
 	    //FlxG.bitmap.clearCache();
 
 		WindowUtils.resetAffixes();
-		SaveWarning.reset();
+		//SaveWarning.reset();
 
 		instance = null;
 
@@ -1195,7 +1192,7 @@ class PlayState extends MusicBeatState
 		updateDiscordPresence();
 	}
 
-	public function saveWarn(closingWindow:Bool = true) {
+	/*public function saveWarn(closingWindow:Bool = true) {
 		persistentUpdate = false;
 		paused = true;
 
@@ -1237,7 +1234,7 @@ class PlayState extends MusicBeatState
 				}
 			}
 		]));
-	}
+	}*/
 
 	dynamic function updateIconPositions() {
 		var iconOffset:Int = 26;
@@ -1287,8 +1284,8 @@ class PlayState extends MusicBeatState
 		if (updateRatingStuff != null)
 			updateRatingStuff();
 
-		if (canAccessDebugMenus && chartingMode && FlxG.keys.justPressed.SEVEN)
-			FlxG.switchState(new funkin.editors.charter.Charter(SONG.meta.name, difficulty, false));
+		/*if (canAccessDebugMenus && chartingMode && FlxG.keys.justPressed.SEVEN)
+			FlxG.switchState(new funkin.editors.charter.Charter(SONG.meta.name, difficulty, false));*/
 
 		if (doIconBop)
 			for (icon in iconArray)
@@ -1617,9 +1614,9 @@ class PlayState extends MusicBeatState
 		}
 		else
 		{
-			if (chartingMode)
+			/*if (chartingMode)
 				FlxG.switchState(new funkin.editors.charter.Charter(SONG.meta.name, difficulty, false));
-			else
+			else*/
 				FlxG.switchState(new FreeplayState());
 		}
 	}

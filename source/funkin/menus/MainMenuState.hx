@@ -102,7 +102,7 @@ class MainMenuState extends MusicBeatState
 				if (FlxG.keys.justPressed.SEVEN #if TOUCH_CONTROLS || touchPad.buttonE.justPressed #end) {
 					persistentUpdate = false;
 					persistentDraw = true;
-					openSubState(new funkin.editors.EditorPicker());
+					//openSubState(new funkin.editors.EditorPicker());
 				}
 				/*
 				if (FlxG.keys.justPressed.SEVEN)

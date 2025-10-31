@@ -1,9 +1,10 @@
 package funkin.menus.credits;
 
 import flixel.util.FlxColor;
-import funkin.backend.assets.AssetsLibraryList.AssetSource;
-import funkin.options.OptionsScreen;
+import funkin.backend.assets.AssetSource;
+import funkin.backend.system.github.GitHubContributor.CreditsGitHubContributor;
 import funkin.options.TreeMenu;
+import funkin.options.TreeMenuScreen;
 import funkin.options.type.*;
 import haxe.xml.Access;
 
@@ -11,15 +12,18 @@ class CreditsMain extends TreeMenu {
 	var bg:FlxSprite;
 	var items:Array<OptionType> = [];
 
-	public override function create() {
-		bg = new FlxSprite(-80).loadAnimatedGraphic(Paths.image('menus/menuBGBlue'));
-		// bg.scrollFactor.set();
-		bg.scale.set(1.15, 1.15);
-		bg.updateHitbox();
-		bg.screenCenter();
-		bg.scrollFactor.set();
+	override function create() {
+		super.create();
+
+		DiscordUtil.call("onMenuLoaded", ["Credits Menu"]);
+
+		add(bg = new FlxSprite().loadAnimatedGraphic(Paths.image('menus/menuBGBlue')));
 		bg.antialiasing = true;
-		add(bg);
+		bg.scrollFactor.set();
+		updateBG();
+
+		var first = new TreeMenuScreen('credits.name', 'credits.madePossible');
+		addMenu(first);
 
 		for (i in funkin.backend.assets.ModsFolder.getLoadedMods()) {
 			var xmlPath = Paths.xml('config/credits/LIB_$i');
@@ -27,47 +31,47 @@ class CreditsMain extends TreeMenu {
 			if (Paths.assetsTree.existsSpecific(xmlPath, "TEXT")) {
 				var access:Access = null;
 				try access = new Access(Xml.parse(Paths.assetsTree.getSpecificAsset(xmlPath, "TEXT")))
-				catch(e) Logs.trace('Error while parsing credits.xml: ${Std.string(e)}', ERROR);
-				if (access != null) for (c in parseCreditsFromXML(access)) items.push(c);
+				catch(e) Logs.trace('[CreditsMain] Error while parsing credits.xml: ${Std.string(e)}', ERROR);
+				if (access != null) for (c in parseCreditsFromXML(access))  first.add(c);
 			}
 		}
 
-		items.push(new TextOption("Codename Engine >", "Select this to see all the contributors of the engine!", function() {
-			optionsTree.add(Type.createInstance(CreditsCodename, []));
-		}));
-		items.push(new TextOption("Friday Night Funkin'", "Select this to open the itch.io page of the original game to donate!", function() {
-			CoolUtil.openURL("https://ninja-muffin24.itch.io/funkin");
-		}));
+		first.add(new TextOption('Codename Engine', 'credits.selectCodename', ' >', () -> addMenu(new CreditsCodename())));
+		first.add(new TextOption('Friday Night Funkin\'', 'credits.selectBase', ' >', () -> CoolUtil.openURL(Flags.URL_FNF_ITCH)));
 
-		main = new OptionsScreen('Credits', 'The people who made this possible!', items, 'UP_DOWN', 'A_B');
-		super.create();
-
-		DiscordUtil.call("onMenuLoaded", ["Credits Menu"]);
+		addTouchPad("UP_DOWN", "A_B");
+		addTouchPadCamera();
 	}
 
-	/**
-	 * XML STUFF
-	 */
-	public function parseCreditsFromXML(xml:Access, source:AssetSource = BOTH):Array<OptionType> {
-		var credsMenus:Array<OptionType> = [];
+	public function updateBG() {
+		var scaleX:Float = FlxG.width / bg.width;
+		var scaleY:Float = FlxG.height / bg.height;
+		bg.scale.x = bg.scale.y = Math.max(scaleX, scaleY) * 1.15;
+		bg.screenCenter();
+	}
+
+	// XML STUFF
+	public function parseCreditsFromXML(xml:Access, source:AssetSource = BOTH):Array<FlxSprite> {
+		var credsMenus:Array<FlxSprite> = [];
 
 		for(node in xml.elements) {
 			var desc = node.getAtt("desc").getDefault("No Description");
 
 			if (node.name == "github") {
 				if (!node.has.user) {
-					Logs.trace("A github node requires a user attribute.", WARNING);
+					Logs.warn("A github node requires a user attribute.", "CreditsMain");
 					continue;
 				}
 
 				var username = node.getAtt("user");
-				var user = {  // Kind of forcing
+				var user:CreditsGitHubContributor = {  // Kind of forcing
 					login: username,
 					html_url: 'https://github.com/$username',
 					avatar_url: 'https://github.com/$username.png'
 				};
 				var opt:GithubIconOption = new GithubIconOption(user, desc, null,
-					node.has.customName ? node.att.customName : null, node.has.size ? Std.parseInt(node.att.size) : 96,
+					node.has.customName ? node.att.customName : null,
+					node.has.size ? Std.parseInt(node.att.size) : 96,
 					node.has.portrait ? node.att.portrait.toLowerCase() == "false" ? false : true : true
 				);
 				if (node.has.color)
@@ -75,7 +79,7 @@ class CreditsMain extends TreeMenu {
 				credsMenus.push(opt);
 			} else {
 				if (!node.has.name) {
-					Logs.trace("A credit node requires a name attribute.", WARNING);
+					Logs.warn("A credit node requires a name attribute.", "CreditsMain");
 					continue;
 				}
 				var name = node.getAtt("name");
@@ -92,9 +96,7 @@ class CreditsMain extends TreeMenu {
 						credsMenus.push(opt);
 
 					case "menu":
-						credsMenus.push(new TextOption(name + " >", desc, function() {
-							optionsTree.add(new OptionsScreen(name, desc, parseCreditsFromXML(node, source), 'UP_DOWN', 'A_B'));
-						}));
+						credsMenus.push(new TextOption(name, desc, ' >', () -> addMenu(new TreeMenuScreen(name, desc, parseCreditsFromXML(node, source)))));
 				}
 			}
 		}

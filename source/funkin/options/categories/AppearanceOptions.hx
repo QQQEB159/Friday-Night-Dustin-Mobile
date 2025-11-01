@@ -15,6 +15,7 @@ class AppearanceOptions extends TreeMenuScreen {
 		add(new Separator());
 		add(new TextOption('optionsMenu.advanced', 'optionsTree.appearance.advanced-desc', ' >', () ->
 			parent.addMenu(new AdvancedAppearanceOptions())));
+		add(new Checkbox(getNameID('gpuOnlyBitmaps'), getDescID('gpuOnlyBitmaps'), 'gpuOnlyBitmaps'));
 	}
 
 	private function __changeFPS(value:Float) {

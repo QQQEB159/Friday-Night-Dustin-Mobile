@@ -646,6 +646,7 @@ class PlayState extends MusicBeatState
 	@:dox(hide) override public function create()
 	{
 		#if mobile lime.system.System.allowScreenTimeout = false; #end
+		FlxG.mouse.visible = false;
 		Note.__customNoteTypeExists = [];
 
 		// SCRIPTING & DATA INITIALIZATION

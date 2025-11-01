@@ -1729,7 +1729,7 @@ class PlayState extends MusicBeatState
 		endingSong = true;
 		canPause = false;
 		#if TOUCH_CONTROLS
-		mobileControls.instance.visible = false;
+		if(PlayState.SONG.meta.name != "genocides") mobileControls.instance.visible = false;
 		#end
 
 		for (strumLine in strumLines.members) strumLine.vocals.stop();

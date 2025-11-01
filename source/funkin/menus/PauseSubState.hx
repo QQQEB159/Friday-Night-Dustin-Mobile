@@ -210,9 +210,13 @@ class PauseSubState extends MusicBeatSubstate
 	override function closeSubState() {
 		persistentUpdate = true;
 		super.closeSubState();
-		removeTouchPad();
-		addTouchPad('UP_DOWN', 'A');
-		addTouchPadCamera();
+		if(PlayState.SONG.meta.name == "genocides") {
+	    addTouchPad('UP_DOWN_Q', 'A_Q');
+	    addTouchPadCamera();
+	    } else {
+	    addTouchPad('UP_DOWN', 'A');
+	    addTouchPadCamera();
+	    }
 	}
 
 	function changeSelection(change:Int = 0):Void

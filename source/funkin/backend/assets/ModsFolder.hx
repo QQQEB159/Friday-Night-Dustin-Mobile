@@ -27,11 +27,11 @@ class ModsFolder {
 	/**
 	 * Path to the `mods` folder.
 	 */
-	public static var modsPath:String = #if mobile StorageUtil.getStorageDirectory(true) + #end "mods/";
+	public static var modsPath:String = #if android StorageUtil.getModsPath() + #elseif (!android && mobile) StorageUtil.getStorageDirectory() + #end "mods/";
 	/**
 	 * Path to the `addons` folder.
 	 */
-	public static var addonsPath:String = #if mobile StorageUtil.getStorageDirectory(true) + #end "addons/";
+	public static var addonsPath:String = #if android StorageUtil.getModsPath() + #elseif (!android && mobile) StorageUtil.getStorageDirectory() + #end "addons/";
 
 	/**
 	 * If accessing a file as assets/data/global/LIB_mymod.hx should redirect to mymod:assets/data/global.hx

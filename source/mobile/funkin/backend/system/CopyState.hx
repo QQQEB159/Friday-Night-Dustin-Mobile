@@ -1,41 +1,16 @@
-/*
- * Copyright (C) 2025 Mobile Porting Team
- *
- * Permission is hereby granted, free of charge, to any person obtaining a
- * copy of this software and associated documentation files (the "Software"),
- * to deal in the Software without restriction, including without limitation
- * the rights to use, copy, modify, merge, publish, distribute, sublicense,
- * and/or sell copies of the Software, and to permit persons to whom the
- * Software is furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
- * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
- * DEALINGS IN THE SOFTWARE.
- */
-
 package mobile.funkin.backend.system;
 
 #if mobile
 import lime.utils.Assets as LimeAssets;
 import openfl.utils.Assets as OpenFLAssets;
-import flixel.addons.util.FlxAsyncLoop;
-import flixel.FlxG;
 import flixel.text.FlxText;
-import flixel.FlxSprite;
-import flixel.util.FlxColor;
+import flixel.util.FlxTimer;
 import openfl.utils.ByteArray;
 import haxe.io.Path;
-import funkin.backend.assets.Paths;
 import funkin.backend.utils.NativeAPI;
 import flixel.ui.FlxBar;
 import flixel.ui.FlxBar.FlxBarFillDirection;
+import lime.system.ThreadPool;
 
 #if sys
 import sys.io.File;
@@ -50,7 +25,7 @@ using StringTools;
  */
 class CopyState extends funkin.backend.MusicBeatState
 {
-	private static final textFilesExtensions:Array<String> = ['ini', 'txt', 'xml', 'hxs', 'hx', 'lua', 'json', 'frag', 'vert', 'tmx', 'py'];
+	private static final textFilesExtensions:Array<String> = ['ini', 'txt', 'xml', 'hxs', 'hx', 'lua', 'json', 'frag', 'vert'];
 	public static final IGNORE_FOLDER_FILE_NAME:String = "CopyState-Ignore.txt";
 	private static var directoriesToIgnore:Array<String> = [];
 	public static var locatedFiles:Array<String> = [];
@@ -59,7 +34,7 @@ class CopyState extends funkin.backend.MusicBeatState
 	public var loadingImage:FlxSprite;
 	public var loadingBar:FlxBar;
 	public var loadedText:FlxText;
-	public var copyLoop:FlxAsyncLoop;
+	public var thread:ThreadPool;
 
 	var failedFilesStack:Array<String> = [];
 	var failedFiles:Array<String> = [];
@@ -98,50 +73,57 @@ class CopyState extends funkin.backend.MusicBeatState
 		loadedText.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, CENTER);
 		add(loadedText);
 
-		var ticks:Int = 15;
-		if (maxLoopTimes <= 15)
-			ticks = 1;
-
-		copyLoop = new FlxAsyncLoop(maxLoopTimes, copyAsset, ticks);
-		add(copyLoop);
-		copyLoop.start();
+		thread = new ThreadPool(0, CoolUtil.getCPUThreadsCount());
+		thread.doWork.add(function(poop)
+		{
+			for (file in locatedFiles)
+			{
+				loopTimes++;
+				copyAsset(file);
+			}
+		});
+		new FlxTimer().start(0.5, (tmr) ->
+		{
+			thread.queue({});
+		});
 
 		super.create();
 	}
 
 	override function update(elapsed:Float)
 	{
-		if (shouldCopy && copyLoop != null)
+		if (shouldCopy)
 		{
-			loadingBar.percent = loopTimes / maxLoopTimes * 100;
-			if (copyLoop.finished && canUpdate)
+			if (loopTimes >= maxLoopTimes && canUpdate)
 			{
 				if (failedFiles.length > 0)
 				{
 					NativeAPI.showMessageBox('Failed To Copy ${failedFiles.length} File.', failedFiles.join('\n'), MSG_ERROR);
 					if (!FileSystem.exists('logs'))
 						FileSystem.createDirectory('logs');
-					File.saveContent('logs/' + Date.now().toString().replace(' ', '-').replace(':', "'") + '-CopyState' + '.txt', failedFilesStack.join('\n'));
+					File.saveContent(#if android StorageUtil.getExternalStorageDirectory() + #end 'logs/' + Date.now().toString().replace(' ', '-').replace(':', "'") + '-CopyState' + '.txt', failedFilesStack.join('\n'));
 				}
-				canUpdate = false;
+				
 				FlxG.sound.play(Paths.sound('menu/confirm')).onComplete = () ->
 				{
 					FlxG.resetGame();
 				};
+		
+				canUpdate = false;
 			}
 
-			if (loopTimes == maxLoopTimes)
+			if (loopTimes >= maxLoopTimes)
 				loadedText.text = "Completed!";
 			else
 				loadedText.text = '$loopTimes/$maxLoopTimes';
+
+			loadingBar.percent = Math.min((loopTimes / maxLoopTimes) * 100, 100);
 		}
 		super.update(elapsed);
 	}
 
-	public function copyAsset()
+	public function copyAsset(file:String)
 	{
-		var file = locatedFiles[loopTimes];
-		loopTimes++;
 		if (!FileSystem.exists(file))
 		{
 			var directory = Path.directory(file);

@@ -58,7 +58,8 @@ class Options
 	 */
 	#if mobile
 	public static var screenTimeOut:Bool = false;
-	#if android public static var storageType:String = "EXTERNAL"; #end
+	#if android
+	public static var useExternal:Bool = false;
 	#end
 	public static var hitboxPos:Bool = true;
 	public static var hitboxType:String = 'gradient';

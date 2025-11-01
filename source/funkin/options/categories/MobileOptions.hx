@@ -5,11 +5,17 @@ import lime.system.System as LimeSystem;
 
 class MobileOptions extends TreeMenuScreen
 {
+	#if android
+	final lastExternal:Bool = Options.useExternal;
+	var externalOption:Checkbox;
+	#end
+
 	public function new()
 	{
 		super('optionsTree.mobile-name', 'optionsTree.mobile-name', 'MobileOptions.', ['LEFT_FULL', 'A_B']);
 
 		#if TOUCH_CONTROLS
+		add(new ArrayOption(getNameID('extraHints'), getDescID('extraHints'), ['NONE', 'SINGLE', 'DOUBLE'], ["None", "Single", "Double"], 'extraHints'));
 		add(new NumOption(getNameID('hitboxAlpha'), getDescID('hitboxAlpha'), 0.0, 1.0, 0.1, "hitboxAlpha"));
 		add(new Checkbox(getNameID('oldPadTexture'), getDescID('oldPadTexture'), "oldPadTexture", () ->
 		{
@@ -36,11 +42,30 @@ class MobileOptions extends TreeMenuScreen
 			["No Gradient", "No Gradient (Old)", "Gradient", "Hidden"], 'hitboxType'));
 		add(new Checkbox(getNameID('hitboxPos'), getDescID('hitboxPos'), "hitboxPos"));
 		#end
+		#if android
+		add(externalOption = new Checkbox(getNameID('useExternal'), getNameID('useExternal'), "useExternal"));
+		#end
 		#if mobile
 		add(new Checkbox(getNameID('screenTimeOut'), getDescID('screenTimeOut'), "screenTimeOut", () ->
 		{
 			LimeSystem.allowScreenTimeout = Options.screenTimeOut;
 		}));
+		#end
+	}
+
+	override function close()
+	{
+		super.close();
+
+		#if android
+		if (lastExternal != externalOption.checked)
+		{
+			Options.save();
+			CoolUtil.safeSaveFile(lime.system.System.applicationStorageDirectory + "external.txt", Std.string(externalOption.checked));
+			persistentUpdate = false;
+			funkin.backend.utils.NativeAPI.showMessageBox(TU.translate('MobileOptions.storageTypeChange-title'), TU.translate('MobileOptions.storageTypeChange-body'));
+			Sys.exit(0);
+		}
 		#end
 	}
 }

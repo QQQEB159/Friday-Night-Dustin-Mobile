@@ -37,10 +37,13 @@ class MobileInputManager extends FlxTypedSpriteGroup<TouchButton>
 	 */
 	public var trackedButtons:Map<MobileInputID, TouchButton> = new Map<MobileInputID, TouchButton>();
 
+	public static var instance:Null<MobileInputManager> = null;
 	public function new()
 	{
 		super();
 		updateTrackedButtons();
+		
+		instance = this;
 	}
 
 	/**

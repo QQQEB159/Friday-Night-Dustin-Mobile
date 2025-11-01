@@ -184,12 +184,9 @@ class FreeplayState extends MusicBeatState
 		add(scoreText);
 
 		changeSelection(0, true);
+		changeCoopMode(0, true);
 
 		interpColor = new FlxInterpolateColor(bg.color);
-
-		addTouchPad('LEFT_FULL', 'A_B_X_Y');
-
-		changeCoopMode(0, true);
 	}
 
 	#if PRELOAD_ALL
@@ -204,7 +201,7 @@ class FreeplayState extends MusicBeatState
 	/**
 	 * Whenever the autoplayed song gets async loaded.
 	 */
-	public var disableAsyncLoading:Bool = #if (desktop || mobile) false #else true #end;
+	public var disableAsyncLoading:Bool = #if desktop false #else true #end;
 	/**
 	 * Time elapsed since last autoplay. If this time exceeds `timeUntilAutoplay`, the currently selected song will play.
 	 */
@@ -242,7 +239,7 @@ class FreeplayState extends MusicBeatState
 		if (canSelect) {
 			changeSelection((controls.UP_P ? -1 : 0) + (controls.DOWN_P ? 1 : 0) - FlxG.mouse.wheel);
 			changeDiff((controls.LEFT_P ? -1 : 0) + (controls.RIGHT_P ? 1 : 0));
-			changeCoopMode(((#if TOUCH_CONTROLS touchPad.buttonX.justPressed || #end controls.CHANGE_MODE) ? 1 : 0));
+			changeCoopMode((controls.CHANGE_MODE ? 1 : 0)); // TODO: make this configurable
 			// putting it before so that its actually smooth
 			updateOptionsAlpha();
 		}
@@ -264,6 +261,15 @@ class FreeplayState extends MusicBeatState
 		if (!disableAutoPlay && !songInstPlaying && (autoplayElapsed > timeUntilAutoplay)) {
 			if (curPlayingInst != (curPlayingInst = Paths.inst(curSong.name, curDifficulties[curDifficulty], curSong.instSuffix))) {
 				var streamed = false;
+				if (Options.streamedMusic) {
+					var sound = Assets.getMusic(curPlayingInst, true, false);
+					streamed = sound != null;
+
+					if (streamed && autoplayShouldPlay) {
+						FlxG.sound.playMusic(sound, 0);
+						Conductor.changeBPM(curSong.bpm, curSong.beatsPerMeasure, curSong.stepsPerBeat);
+					}
+				}
 
 				if (!streamed) {
 					var huh:Void->Void = function() {
@@ -296,7 +302,7 @@ class FreeplayState extends MusicBeatState
 		}
 
 		#if sys
-		if (#if TOUCH_CONTROLS touchPad.buttonY.justPressed || #end FlxG.keys.justPressed.EIGHT && Sys.args().contains("-livereload"))
+		if (FlxG.keys.justPressed.EIGHT && Sys.args().contains("-livereload"))
 			convertChart();
 		#end
 
@@ -422,15 +428,8 @@ class FreeplayState extends MusicBeatState
 		curCoopMode = event.value;
 
 		updateScore();
-		
+
 		var coopBinds = [CoolUtil.keyToString(Options.P1_CHANGE_MODE[0]), CoolUtil.keyToString(Options.P2_CHANGE_MODE[0])].filter(x -> x != "---");
-		if (controls.touchC)
-		{
-			#if TOUCH_CONTROLS
-			if (touchPad.buttonX != null)
-				coopBinds = ["X"];
-			#end
-		}
 		if (coopBinds.length == 2 && coopBinds[1] == coopBinds[0]) coopBinds.pop();
 		else if (coopBinds.length == 0) coopBinds.push("---");
 

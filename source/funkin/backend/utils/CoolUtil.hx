@@ -3,15 +3,31 @@ package funkin.backend.utils;
 #if cpp
 import cpp.Float64;
 #end
+import flxanimate.data.AnimationData.AnimAtlas;
+import flixel.graphics.FlxGraphic;
+import openfl.display.BitmapData;
+import flixel.graphics.frames.FlxAtlasFrames;
+import flixel.graphics.frames.FlxFramesCollection;
 #if sys
 import sys.FileSystem;
 #end
-import flixel.animation.FlxAnimation;
-import flixel.graphics.FlxGraphic;
-import flixel.graphics.frames.FlxAtlasFrames;
-import flixel.graphics.frames.FlxFramesCollection;
+import flixel.text.FlxText;
+import funkin.backend.utils.XMLUtil.TextFormat;
+import flixel.util.typeLimit.OneOfTwo;
+import flixel.util.typeLimit.OneOfThree;
+import flixel.tweens.FlxTween;
+import flixel.system.frontEnds.SoundFrontEnd;
+import flixel.sound.FlxSound;
+import funkin.backend.system.Conductor;
+import flixel.sound.FlxSoundGroup;
+import haxe.Json;
+import haxe.io.Path;
+import haxe.io.Bytes;
+import haxe.xml.Access;
 import flixel.input.keyboard.FlxKey;
-import flixel.math.FlxPoint;
+import lime.utils.Assets;
+import flixel.animation.FlxAnimation;
+import flixel.input.keyboard.FlxKey;
 import flixel.sound.FlxSound;
 import flixel.sound.FlxSoundGroup;
 import flixel.system.frontEnds.SoundFrontEnd;
@@ -19,21 +35,19 @@ import flixel.text.FlxText;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxAxes;
 import flixel.util.FlxColor;
-import flixel.util.typeLimit.OneOfThree;
 import flixel.util.typeLimit.OneOfTwo;
-import flxanimate.data.AnimationData.AnimAtlas;
 import funkin.backend.system.Conductor;
 import funkin.backend.utils.XMLUtil.TextFormat;
 import haxe.CallStack;
-import haxe.Constraints.IMap;
-import haxe.EnumTools.EnumValueTools;
 import haxe.Json;
 import haxe.io.Bytes;
 import haxe.io.Path;
 import haxe.xml.Access;
 import lime.utils.Assets;
-import openfl.display.BitmapData;
 import openfl.geom.ColorTransform;
+import flixel.math.FlxPoint;
+import haxe.Constraints.IMap;
+import haxe.EnumTools.EnumValueTools;
 
 using StringTools;
 
@@ -41,9 +55,6 @@ using StringTools;
  * Various utilities, that have no specific Util class.
 **/
 @:allow(funkin.game.PlayState)
-#if cpp
-@:cppFileCode('#include <thread>')
-#end
 final class CoolUtil
 {
 	/**
@@ -474,15 +485,19 @@ final class CoolUtil
 	 */
 	@:noUsing public static function playMusic(path:String, Persist:Bool = false, Volume:Float = 1, Looped:Bool = true, DefaultBPM:Float = 102, ?Group:FlxSoundGroup) {
 		Conductor.reset();
-		FlxG.sound.playMusic(path, Volume, Looped, Group);
-		if (FlxG.sound.music != null) {
-			FlxG.sound.music.persist = Persist;
-		}
+		if (FlxG.sound.music == null || !FlxG.sound.music.exists) FlxG.sound.music = new FlxSound();
+		else if (FlxG.sound.music.active) FlxG.sound.music.stop();
+		FlxG.sound.music.loadEmbedded(path, Looped);
+		FlxG.sound.music.volume = Volume;
+		FlxG.sound.music.persist = Persist;
+		FlxG.sound.defaultMusicGroup.add(FlxG.sound.music);
 
 		var iniPath = '${Path.withoutExtension(path)}.ini';
 		var musicData = Assets.exists(iniPath) ? IniUtil.parseAsset(iniPath)["Global"] : null;
 		if (musicData != null) {
 			if (musicData["LoopTime"] != null) FlxG.sound.music.loopTime = Std.parseFloat(musicData["LoopTime"]) * 1000;
+			if (musicData["EndTime"] != null) FlxG.sound.music.endTime = Std.parseFloat(musicData["EndTime"]) * 1000;
+			if (musicData["Offset"] != null) FlxG.sound.music.offset = Std.parseFloat(musicData["Offset"]) * 1000;
 
 			var timeSignParsed:Array<Null<Float>> = musicData["TimeSignature"] == null ? [] : [for(s in musicData["TimeSignature"].split("/")) Std.parseFloat(s)];
 			var beatsPerMeasure:Float = Flags.DEFAULT_BEATS_PER_MEASURE, stepsPerBeat:Float = Flags.DEFAULT_STEPS_PER_BEAT;
@@ -496,6 +511,8 @@ final class CoolUtil
 		}
 		else
 			Conductor.changeBPM(DefaultBPM);
+
+		FlxG.sound.music.play();
 	}
 
 	/**
@@ -926,10 +943,11 @@ final class CoolUtil
 	 * @param music Music
 	 */
 	public static inline function setMusic(frontEnd:SoundFrontEnd, music:FlxSound) {
-		if (frontEnd.music != null)
-			@:privateAccess frontEnd.destroySound(frontEnd.music);
+		if (frontEnd.music == music) return;
+
+		if (frontEnd.music != null) @:privateAccess frontEnd.destroySound(frontEnd.music);
 		frontEnd.list.remove(music);
-		frontEnd.music = music;
+		frontEnd.defaultMusicGroup.add(frontEnd.music = music);
 	}
 
 	/**
@@ -1416,16 +1434,6 @@ final class CoolUtil
 		var fromProperty = CoolUtil.parseProperty(fromTarget, fields);
 
 		return toProperty.setValue(fromProperty.getValue());
-	}
-	
-	#if cpp
-	@:functionCode('
-		return std::thread::hardware_concurrency();
-	')
-	#end
-	public static function getCPUThreadsCount():Int
-	{
-		return 1;
 	}
 }
 

@@ -75,7 +75,6 @@ class MainMenuState extends MusicBeatState
 		}
 
 		FlxG.camera.follow(camFollow, null, 0.06);
-		var modsKey:String = controls.touchC ? "M" : controls.getKeyName(SWITCHMOD);
 
 		versionText = new FunkinText(5, FlxG.height - 2, 0, [
 			Flags.VERSION_MESSAGE,
@@ -88,7 +87,6 @@ class MainMenuState extends MusicBeatState
 		add(versionText);
 
 		changeItem();
-		addTouchPad('UP_DOWN', 'A_B_M_E');
 
 		devModeWarning = new FunkinText(0, FlxG.height - 50, 1280, "You have to enable DEVELOPER MODE in the miscellaneous settings!", 24);
 		devModeWarning.alignment = CENTER;
@@ -109,7 +107,7 @@ class MainMenuState extends MusicBeatState
 		if (!selectedSomethin)
 		{
 			if (canAccessDebugMenus) {
-				if (controls.DEV_ACCESS #if TOUCH_CONTROLS || touchPad.buttonE.justPressed #end) {
+				if (controls.DEV_ACCESS) {
 					persistentUpdate = false;
 					persistentDraw = true;
 					openSubState(new funkin.editors.EditorPicker());
@@ -145,7 +143,7 @@ class MainMenuState extends MusicBeatState
 				FlxG.switchState(new TitleState());
 
 			#if MOD_SUPPORT
-			if (controls.SWITCHMOD #if TOUCH_CONTROLS || touchPad.buttonM.justPressed #end) {
+			if (controls.SWITCHMOD) {
 				openSubState(new ModSwitchMenu());
 				persistentUpdate = false;
 				persistentDraw = true;
@@ -163,12 +161,6 @@ class MainMenuState extends MusicBeatState
 		{
 			spr.screenCenter(X);
 		});
-	}
-
-	override function closeSubState() {
-		super.closeSubState();
-		removeTouchPad();
-		addTouchPad('UP_DOWN', 'A_B_M_E');
 	}
 
 	public override function switchTo(nextState:FlxState):Bool {

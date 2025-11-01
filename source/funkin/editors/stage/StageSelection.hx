@@ -14,8 +14,6 @@ class StageSelection extends EditorTreeMenu {
 		super.create();
 		DiscordUtil.call("onEditorTreeLoaded", ["Stage Editor"]);
 		addMenu(new StageSelectionScreen());
-		addTouchPad("UP_DOWN", "A_B");
-		addTouchPadCamera();
 	}
 }
 
@@ -24,25 +22,7 @@ class StageSelectionScreen extends EditorTreeMenuScreen {
 
 	public function makeStageOption(stage:String):TextOption {
 		return new TextOption(stage, getID('acceptStage'), () -> {
-			if (funkin.backend.system.Controls.instance.touchC)
-				parent.openSubState(new UIWarningSubstate(TU.translate('editor.warnings.mkRequirement-title'),
-					TU.translate('editor.warnings.mkRequirement-body'), [
-					{
-						label: TU.translate("editor.ok"),
-						color: 0xFFFFFF00,
-						onClick: (t) ->
-						{
-							FlxG.switchState(new StageEditor(stage));
-						}
-					},
-					{
-						label: TU.translate("editor.cancel"),
-						color: 0xFFFFFF00,
-						onClick: (t) -> {}
-					}
-				], false));
-			else
-				FlxG.switchState(new StageEditor(stage));
+			FlxG.switchState(new StageEditor(stage));
 		});
 	}
 

@@ -104,10 +104,14 @@ class TitleState extends MusicBeatState
 
 		var pressedEnter:Bool = FlxG.keys.justPressed.ENTER;
 
-		#if FLX_TOUCH
+		#if mobile
 		for (touch in FlxG.touches.list)
+		{
 			if (touch.justPressed)
+			{
 				pressedEnter = true;
+			}
+		}
 		#end
 
 		var gamepad:FlxGamepad = FlxG.gamepads.lastActive;

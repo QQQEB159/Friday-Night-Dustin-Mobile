@@ -135,8 +135,16 @@ class CharterStrumline extends UISprite {
 			healthIcons.add(healthIcon);
 		}
 
-		vocals = null;
-		vocals = strumLine.vocalsSuffix.length > 0 ? FlxG.sound.load(Paths.voices(PlayState.SONG.meta.name, PlayState.difficulty, strumLine.vocalsSuffix)) : new FlxSound();
+		var asset = strumLine.vocalsSuffix.length > 0 ? Assets.getSound(Paths.voices(PlayState.SONG.meta.name, PlayState.difficulty, strumLine.vocalsSuffix)) : null;
+
+		if (vocals == null) FlxG.sound.list.add(vocals = new FlxSound());
+		if (asset != null) {
+			vocals.reset();
+			vocals.loadEmbedded(asset);
+		}
+		else {
+			vocals.destroy();
+		}
 		vocals.group = FlxG.sound.defaultMusicGroup;
 	}
 }

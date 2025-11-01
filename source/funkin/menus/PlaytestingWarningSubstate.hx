@@ -68,8 +68,6 @@ class PlaytestingWarningSubstate extends MusicBeatSubstate
 
 		curSelected = options.length-1;
 		changeSelection(0);
-
-		addTouchPad('LEFT_RIGHT', 'A');
 	}
 
 	var sinner:Float = 0;

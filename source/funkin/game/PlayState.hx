@@ -561,7 +561,7 @@ class PlayState extends MusicBeatState
 	@:noCompletion @:dox(hide) private var _endSongCalled:Bool = false;
 
 	@:dox(hide)
-	var __vocalOffsetViolation:Float = 1;
+	var __vocalSyncTimer:Float = 1;
 
 	private function get_accuracy():Float {
 		if (accuracyPressedNotes <= 0) return -1;
@@ -1060,25 +1060,10 @@ class PlayState extends MusicBeatState
 
 		inst.onComplete = endSong;
 
-		if (!paused) {
-			FlxG.sound.setMusic(inst);
-			FlxG.sound.music.play();
-		}
-		vocals.play();
-
-		vocals.pause();
-		inst.pause();
-		for (strumLine in strumLines.members) {
-			strumLine.vocals.play();
-			strumLine.vocals.pause();
-		}
-		inst.time = vocals.time = (chartingMode && Charter.startHere) ? Charter.startTime : 0;
-		for (strumLine in strumLines.members) {
-			strumLine.vocals.time = vocals.time;
-			strumLine.vocals.play();
-		}
-		vocals.play();
-		inst.play();
+		var time = (chartingMode && Charter.startHere) ? Charter.startTime : 0;
+		for (strumLine in strumLines.members) strumLine.vocals.play(true, time);
+		vocals.play(true, time);
+		inst.play(true, time);
 
 		updateDiscordPresence();
 
@@ -1095,7 +1080,7 @@ class PlayState extends MusicBeatState
 		for (g in __cachedGraphics) g.useCount--;
 		@:privateAccess {
 			for (strumLine in strumLines.members) FlxG.sound.destroySound(strumLine.vocals);
-			FlxG.sound.destroySound(inst);
+			if (FlxG.sound.music != inst) FlxG.sound.destroySound(inst);
 			FlxG.sound.destroySound(vocals);
 		}
 
@@ -1157,17 +1142,16 @@ class PlayState extends MusicBeatState
 		curSong = songData.meta.name.toLowerCase();
 		curSongID = curSong.replace(" ", "-");
 
-		inst = FlxG.sound.load(Paths.inst(SONG.meta.name, difficulty, SONG.meta.instSuffix));
+		FlxG.sound.setMusic(inst = FlxG.sound.load(Assets.getMusic(Paths.inst(SONG.meta.name, difficulty, SONG.meta.instSuffix))));
 
 		var vocalsPath = Paths.voices(SONG.meta.name, difficulty, SONG.meta.vocalsSuffix);
 		if (SONG.meta.needsVoices && Assets.exists(vocalsPath))
-			vocals = FlxG.sound.load(vocalsPath);
+			vocals = FlxG.sound.load(Options.streamedVocals ? Assets.getMusic(vocalsPath) : vocalsPath);
 		else
 			vocals = new FlxSound();
 
-		inst.group = FlxG.sound.defaultMusicGroup;
 		vocals.group = FlxG.sound.defaultMusicGroup;
-		inst.persist = vocals.persist = false;
+		vocals.persist = false;
 
 		generatedMusic = true;
 	}
@@ -1271,17 +1255,11 @@ class PlayState extends MusicBeatState
 	@:dox(hide)
 	function resyncVocals():Void
 	{
-		vocals.pause();
-		for (strumLine in strumLines.members) strumLine.vocals.pause();
+		var time = Conductor.songPosition + Conductor.songOffset;
+		for (strumLine in strumLines.members) strumLine.vocals.play(true, time);
+		vocals.play(true, time);
+		if (!inst.playing) inst.play(true, time);
 
-		FlxG.sound.music.play();
-		Conductor.songPosition = FlxG.sound.music.time;
-		vocals.time = Conductor.songPosition + Conductor.songOffset;
-		for (strumLine in strumLines.members) {
-			strumLine.vocals.time = vocals.time;
-			strumLine.vocals.play();
-		}
-		vocals.play();
 		gameAndCharsCall("onVocalsResync");
 	}
 
@@ -1436,22 +1414,18 @@ class PlayState extends MusicBeatState
 				startSong();
 			}
 		}
-		else if (FlxG.sound.music != null) {
-			var instTime = FlxG.sound.music.time;
-			var isOffsync:Bool = vocals.time != instTime;
-			if(!isOffsync) {
-				for(strumLine in strumLines.members) {
-					if(strumLine.vocals.time != instTime) {
-						isOffsync = true;
-						break;
-					}
+		else if (FlxG.sound.music != null && (__vocalSyncTimer -= elapsed) < 0) {
+			__vocalSyncTimer = 1;
+
+			var instTime = FlxG.sound.music.getActualTime();
+			var isOffsync:Bool = vocals.loaded && Math.abs(instTime - vocals.getActualTime()) > 100;
+			if (!isOffsync) {
+				for (strumLine in strumLines.members) {
+					if ((isOffsync = strumLine.vocals.loaded && Math.abs(instTime - strumLine.vocals.getActualTime()) > 100)) break;
 				}
 			}
-			__vocalOffsetViolation = Math.max(0, __vocalOffsetViolation + (isOffsync ? elapsed : -elapsed / 2));
-			if (__vocalOffsetViolation > Flags.VOCAL_OFFSET_VIOLATION_THRESHOLD) {
-				resyncVocals();
-				__vocalOffsetViolation = 0;
-			}
+
+			if (isOffsync) resyncVocals();
 		}
 
 		while(events.length > 0 && events.last().time <= Conductor.songPosition)

@@ -1,0 +1,1 @@
+<!DOCTYPE codename-engine-character><character sprite="bargain/sans_trumpet" icon="sans" color="#FFFFFF" holdTime="6.1"><anim name="idle" anim="Idle"/><anim name="singLEFT" anim="up" x="-2" y="-7"/><anim name="singDOWN" anim="up" x="-2" y="-7"/><anim name="singUP" anim="up" x="-2" y="-7"/><anim name="singRIGHT" anim="up" x="-2" y="-7"/></character>

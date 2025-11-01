@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="bf_uprising.png" width="8153" height="2263">
+	<SubTexture name="idle0000" x="496" y="381" width="499" height="413" frameX="-644" frameY="-366" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="idle0001" x="998" y="382" width="499" height="413" frameX="-644" frameY="-366" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="idle0002" x="3221" y="1" width="491" height="409" frameX="-654" frameY="-370" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="idle0003" x="3715" y="1" width="491" height="409" frameX="-654" frameY="-370" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="idle0004" x="4209" y="1" width="491" height="409" frameX="-654" frameY="-370" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="idle0005" x="4703" y="1" width="490" height="410" frameX="-653" frameY="-369" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="idle0006" x="5196" y="1" width="490" height="410" frameX="-653" frameY="-369" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="idle0007" x="5689" y="1" width="490" height="410" frameX="-653" frameY="-369" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="idle0008" x="2470" y="409" width="478" height="415" frameX="-661" frameY="-365" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="idle0009" x="2951" y="413" width="478" height="415" frameX="-661" frameY="-365" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="idle0010" x="3432" y="413" width="483" height="418" frameX="-653" frameY="-362" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="idle0011" x="3918" y="413" width="483" height="418" frameX="-653" frameY="-362" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="idle0012" x="4404" y="414" width="483" height="418" frameX="-653" frameY="-362" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="idle0013" x="5860" y="414" width="481" height="419" frameX="-655" frameY="-361" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="idle0014" x="6344" y="414" width="481" height="419" frameX="-655" frameY="-361" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="idle0015" x="5860" y="414" width="481" height="419" frameX="-655" frameY="-361" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="idle0016" x="6344" y="414" width="481" height="419" frameX="-655" frameY="-361" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="right0000" x="1914" y="1249" width="613" height="430" frameX="-684" frameY="-347" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="right0001" x="1914" y="1249" width="613" height="430" frameX="-684" frameY="-347" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="right0002" x="5525" y="1265" width="593" height="435" frameX="-652" frameY="-343" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="right0003" x="5525" y="1265" width="593" height="435" frameX="-652" frameY="-343" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="right0004" x="5525" y="1265" width="593" height="435" frameX="-652" frameY="-343" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="right0005" x="5525" y="1265" width="593" height="435" frameX="-652" frameY="-343" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="left0000" x="6182" y="1" width="497" height="410" rotated="true" frameX="-555" frameY="-287" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="left0001" x="6182" y="1" width="497" height="410" rotated="true" frameX="-555" frameY="-287" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="left0002" x="2730" y="1" width="488" height="405" rotated="true" frameX="-574" frameY="-295" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="left0003" x="2730" y="1" width="488" height="405" rotated="true" frameX="-574" frameY="-295" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="left0004" x="2730" y="1" width="488" height="405" rotated="true" frameX="-574" frameY="-295" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="left0005" x="2730" y="1" width="488" height="405" rotated="true" frameX="-574" frameY="-295" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="down0000" x="450" y="1" width="447" height="365" frameX="-622" frameY="-421" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="down0001" x="450" y="1" width="447" height="365" frameX="-622" frameY="-421" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="down0002" x="900" y="1" width="445" height="377" frameX="-624" frameY="-410" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="down0003" x="900" y="1" width="445" height="377" frameX="-624" frameY="-410" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="down0004" x="900" y="1" width="445" height="377" frameX="-624" frameY="-410" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="down0005" x="900" y="1" width="445" height="377" frameX="-624" frameY="-410" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="up0000" x="6813" y="1712" width="551" height="550" rotated="true" frameX="-624" frameY="-223" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="up0001" x="6813" y="1712" width="551" height="550" rotated="true" frameX="-624" frameY="-223" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="up0002" x="5711" y="1703" width="548" height="525" frameX="-635" frameY="-251" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="up0003" x="5711" y="1703" width="548" height="525" frameX="-635" frameY="-251" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="up0004" x="5711" y="1703" width="548" height="525" frameX="-635" frameY="-251" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="up0005" x="5711" y="1703" width="548" height="525" frameX="-635" frameY="-251" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="rmiss0000" x="2530" y="1253" width="613" height="430" frameX="-683" frameY="-346" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="rmiss0001" x="6121" y="1265" width="594" height="435" frameX="-647" frameY="-342" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="rmiss0002" x="6121" y="1265" width="594" height="435" frameX="-647" frameY="-342" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="rmiss0003" x="6718" y="1267" width="592" height="435" frameX="-651" frameY="-342" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="rmiss0004" x="6718" y="1267" width="592" height="435" frameX="-651" frameY="-342" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="rmiss0005" x="6718" y="1267" width="592" height="435" frameX="-651" frameY="-342" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="lmiss0000" x="6682" y="1" width="497" height="410" rotated="true" frameX="-555" frameY="-287" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="lmiss0001" x="1" y="369" width="492" height="412" rotated="true" frameX="-578" frameY="-291" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="lmiss0002" x="1" y="369" width="492" height="412" rotated="true" frameX="-578" frameY="-291" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="lmiss0003" x="2234" y="1" width="493" height="404" rotated="true" frameX="-575" frameY="-291" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="lmiss0004" x="2234" y="1" width="493" height="404" rotated="true" frameX="-575" frameY="-291" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="lmiss0005" x="2234" y="1" width="493" height="404" rotated="true" frameX="-575" frameY="-291" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="dmiss0000" x="1" y="1" width="446" height="365" frameX="-623" frameY="-421" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="dmiss0001" x="1794" y="1" width="437" height="384" frameX="-627" frameY="-404" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="dmiss0002" x="1794" y="1" width="437" height="384" frameX="-627" frameY="-404" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="dmiss0003" x="1348" y="1" width="443" height="378" frameX="-625" frameY="-409" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="dmiss0004" x="1348" y="1" width="443" height="378" frameX="-625" frameY="-409" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="dmiss0005" x="1348" y="1" width="443" height="378" frameX="-625" frameY="-409" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="umiss0000" x="6813" y="1712" width="551" height="550" rotated="true" frameX="-624" frameY="-223" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="umiss0001" x="5155" y="1703" width="553" height="520" frameX="-633" frameY="-258" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="umiss0002" x="5155" y="1703" width="553" height="520" frameX="-633" frameY="-258" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="umiss0003" x="6262" y="1705" width="548" height="526" frameX="-635" frameY="-252" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="umiss0004" x="6262" y="1705" width="548" height="526" frameX="-635" frameY="-252" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="umiss0005" x="6262" y="1705" width="548" height="526" frameX="-635" frameY="-252" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0000" x="6828" y="415" width="481" height="419" frameX="-655" frameY="-361" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0001" x="7312" y="415" width="481" height="419" frameX="-655" frameY="-361" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0002" x="1" y="784" width="481" height="419" frameX="-655" frameY="-361" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0003" x="485" y="797" width="481" height="419" frameX="-655" frameY="-361" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0004" x="969" y="798" width="481" height="419" frameX="-655" frameY="-361" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0005" x="1453" y="804" width="481" height="419" frameX="-655" frameY="-361" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0006" x="1937" y="824" width="481" height="419" frameX="-655" frameY="-361" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0007" x="2421" y="827" width="481" height="419" frameX="-655" frameY="-361" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0008" x="2905" y="831" width="481" height="419" frameX="-655" frameY="-361" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0009" x="4890" y="414" width="482" height="418" frameX="-656" frameY="-362" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0010" x="5375" y="414" width="482" height="418" frameX="-656" frameY="-362" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0011" x="4813" y="835" width="480" height="426" frameX="-663" frameY="-354" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0012" x="5296" y="835" width="480" height="426" frameX="-663" frameY="-354" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0013" x="479" y="1219" width="476" height="430" frameX="-670" frameY="-350" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0014" x="958" y="1220" width="476" height="430" frameX="-670" frameY="-350" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0015" x="479" y="1219" width="476" height="430" frameX="-670" frameY="-350" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0016" x="1437" y="1226" width="474" height="434" frameX="-673" frameY="-346" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0017" x="3146" y="1256" width="474" height="434" frameX="-673" frameY="-346" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0018" x="3623" y="1256" width="474" height="434" frameX="-673" frameY="-346" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0019" x="4100" y="1263" width="472" height="434" frameX="-678" frameY="-346" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0020" x="4575" y="1264" width="472" height="434" frameX="-678" frameY="-346" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0021" x="5050" y="1264" width="472" height="434" frameX="-678" frameY="-346" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0022" x="5779" y="836" width="477" height="426" frameX="-678" frameY="-353" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0023" x="6259" y="836" width="477" height="426" frameX="-678" frameY="-353" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0024" x="4335" y="835" width="475" height="425" frameX="-678" frameY="-354" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0025" x="3389" y="834" width="470" height="419" frameX="-679" frameY="-360" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0026" x="3862" y="834" width="470" height="419" frameX="-679" frameY="-360" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0027" x="6739" y="837" width="466" height="427" frameX="-679" frameY="-353" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0028" x="7208" y="837" width="466" height="427" frameX="-679" frameY="-353" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0029" x="7313" y="1268" width="463" height="441" frameX="-681" frameY="-340" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0030" x="1" y="1637" width="463" height="443" frameX="-681" frameY="-338" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0031" x="2351" y="1686" width="458" height="458" frameX="-689" frameY="-324" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0032" x="2812" y="1693" width="458" height="458" frameX="-689" frameY="-324" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0033" x="3273" y="1693" width="467" height="461" frameX="-694" frameY="-321" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0034" x="3743" y="1700" width="467" height="461" frameX="-694" frameY="-321" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0035" x="4213" y="1701" width="468" height="461" frameX="-694" frameY="-321" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0036" x="4684" y="1701" width="468" height="461" frameX="-694" frameY="-321" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0037" x="1405" y="1663" width="470" height="456" frameX="-694" frameY="-326" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0038" x="1878" y="1682" width="470" height="456" frameX="-694" frameY="-326" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0039" x="467" y="1652" width="466" height="445" frameX="-694" frameY="-335" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0040" x="936" y="1653" width="466" height="445" frameX="-694" frameY="-335" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0041" x="7677" y="837" width="475" height="428" frameX="-677" frameY="-351" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0042" x="1" y="1206" width="475" height="428" frameX="-677" frameY="-351" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0043" x="1500" y="388" width="482" height="413" frameX="-660" frameY="-365" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0044" x="1985" y="408" width="482" height="413" frameX="-660" frameY="-365" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0045" x="7182" y="1" width="482" height="411" frameX="-656" frameY="-368" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0046" x="7667" y="1" width="482" height="411" frameX="-656" frameY="-368" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0047" x="5860" y="414" width="481" height="419" frameX="-655" frameY="-361" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0048" x="6344" y="414" width="481" height="419" frameX="-655" frameY="-361" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0049" x="5860" y="414" width="481" height="419" frameX="-655" frameY="-361" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="peroné0050" x="6344" y="414" width="481" height="419" frameX="-655" frameY="-361" frameWidth="1920" frameHeight="1080"/>
+</TextureAtlas>

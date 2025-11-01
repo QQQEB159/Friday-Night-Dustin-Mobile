@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="bg_spark.png" width="1689" height="276" spritePadding="3" borderPadding="1">
+	<SubTexture name="light_spark_animation0000" x="1" y="1" width="1121" height="274" frameX="-1333" frameY="-644" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="light_spark_animation0001" x="1" y="1" width="1121" height="274" frameX="-1333" frameY="-644" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="light_spark_animation0002" x="1125" y="137" width="142" height="74" frameX="-1309" frameY="-628" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="light_spark_animation0003" x="1125" y="137" width="142" height="74" frameX="-1309" frameY="-628" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="light_spark_animation0004" x="1415" y="1" width="273" height="250" frameX="-1289" frameY="-625" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="light_spark_animation0005" x="1415" y="1" width="273" height="250" frameX="-1289" frameY="-625" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="light_spark_animation0006" x="1125" y="1" width="287" height="71" frameX="-1282" frameY="-622" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="light_spark_animation0007" x="1125" y="1" width="287" height="71" frameX="-1282" frameY="-622" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="light_spark_animation0008" x="1125" y="75" width="267" height="59" frameX="-1288" frameY="-630" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="light_spark_animation0009" x="1125" y="75" width="267" height="59" frameX="-1288" frameY="-630" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="light_spark_animation0010" x="1270" y="137" width="133" height="43" frameX="-1327" frameY="-640" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="light_spark_animation0011" x="1270" y="137" width="133" height="43" frameX="-1327" frameY="-640" frameWidth="2560" frameHeight="1440"/>
+</TextureAtlas>

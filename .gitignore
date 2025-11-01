@@ -7,7 +7,6 @@ latest/*
 .haxelib/
 pages/
 docs/doc.xml
-mods/*
 addons/*
 !mods/readme.txt
 addons/*

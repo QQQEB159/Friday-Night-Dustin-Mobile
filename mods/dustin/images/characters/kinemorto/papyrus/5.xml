@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="5.png">
+	<!-- Created with Adobe Animate version 21.0.2.37893 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="voiceline40000" x="5" y="5" width="721" height="885" pivotX="268.05" pivotY="136.25"/>
+	<SubTexture name="voiceline40001" x="731" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40002" x="1457" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40003" x="2183" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40004" x="2909" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40005" x="2909" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40006" x="3635" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40007" x="3635" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40008" x="4361" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40009" x="5087" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40010" x="5813" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40011" x="6539" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40012" x="7265" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40013" x="7265" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40014" x="5" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40015" x="5" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40016" x="731" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40017" x="731" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40018" x="1457" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40019" x="1457" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40020" x="2909" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40021" x="2909" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40022" x="3635" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40023" x="3635" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40024" x="4361" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40025" x="4361" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40026" x="5813" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40027" x="5813" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40028" x="2183" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40029" x="2183" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40030" x="2909" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40031" x="3635" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40032" x="4361" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40033" x="4361" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40034" x="5087" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40035" x="2183" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40036" x="5813" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40037" x="5813" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40038" x="3635" y="5" width="721" height="885"/>
+	<SubTexture name="voiceline40039" x="6539" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40040" x="7265" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40041" x="7265" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40042" x="5" y="1785" width="721" height="885"/>
+	<SubTexture name="voiceline40043" x="5" y="1785" width="721" height="885"/>
+	<SubTexture name="voiceline40044" x="731" y="1785" width="721" height="885"/>
+	<SubTexture name="voiceline40045" x="1457" y="1785" width="721" height="885"/>
+	<SubTexture name="voiceline40046" x="2909" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40047" x="2909" y="895" width="721" height="885"/>
+	<SubTexture name="voiceline40048" x="2183" y="1785" width="721" height="885"/>
+	<SubTexture name="voiceline40049" x="2183" y="1785" width="721" height="885"/>
+	<SubTexture name="voiceline40050" x="2909" y="1785" width="721" height="885"/>
+	<SubTexture name="voiceline40051" x="2909" y="1785" width="721" height="885"/>
+	<SubTexture name="voiceline40052" x="3635" y="1785" width="721" height="885"/>
+	<SubTexture name="voiceline40053" x="3635" y="1785" width="721" height="885"/>
+</TextureAtlas>

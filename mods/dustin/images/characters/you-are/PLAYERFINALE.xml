@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="PLAYERFINALE.png" width="3711" height="2693" spritePadding="3" borderPadding="1">
+	<SubTexture name="YAdown0000" x="747" y="1143" width="803" height="879" rotated="true" frameX="0" frameY="-1" frameWidth="886" frameHeight="805"/>
+	<SubTexture name="YAdown0001" x="1553" y="1143" width="803" height="879" rotated="true" frameX="0" frameY="-1" frameWidth="886" frameHeight="805"/>
+	<SubTexture name="YAdown0002" x="2359" y="1143" width="677" height="886" rotated="true" frameX="-1" frameY="-126" frameWidth="886" frameHeight="805"/>
+	<SubTexture name="YAdown0003" x="2359" y="1143" width="677" height="886" rotated="true" frameX="-1" frameY="-126" frameWidth="886" frameHeight="805"/>
+	<SubTexture name="YAdown0004" x="2359" y="1143" width="677" height="886" rotated="true" frameX="-1" frameY="-126" frameWidth="886" frameHeight="805"/>
+	<SubTexture name="YAdown0005" x="2359" y="1143" width="677" height="886" rotated="true" frameX="-1" frameY="-126" frameWidth="886" frameHeight="805"/>
+	<SubTexture name="YAdown0006" x="2359" y="1143" width="677" height="886" rotated="true" frameX="-1" frameY="-126" frameWidth="886" frameHeight="805"/>
+	<SubTexture name="YAidle0000" x="1844" y="2125" width="905" height="553" rotated="true" frameX="0" frameY="-1" frameWidth="567" frameHeight="907"/>
+	<SubTexture name="YAidle0001" x="1844" y="2125" width="905" height="553" rotated="true" frameX="0" frameY="-1" frameWidth="567" frameHeight="907"/>
+	<SubTexture name="YAidle0002" x="1844" y="2125" width="905" height="553" rotated="true" frameX="0" frameY="-1" frameWidth="567" frameHeight="907"/>
+	<SubTexture name="YAidle0003" x="1844" y="2125" width="905" height="553" rotated="true" frameX="0" frameY="-1" frameWidth="567" frameHeight="907"/>
+	<SubTexture name="YAidle0004" x="1844" y="2125" width="905" height="553" rotated="true" frameX="0" frameY="-1" frameWidth="567" frameHeight="907"/>
+	<SubTexture name="YAidle0005" x="1844" y="2125" width="905" height="553" rotated="true" frameX="0" frameY="-1" frameWidth="567" frameHeight="907"/>
+	<SubTexture name="YAidle0006" x="1844" y="2125" width="905" height="553" rotated="true" frameX="0" frameY="-1" frameWidth="567" frameHeight="907"/>
+	<SubTexture name="YAidle0007" x="935" y="2125" width="906" height="567" rotated="true" frameX="0" frameY="0" frameWidth="567" frameHeight="907"/>
+	<SubTexture name="YAidle0008" x="935" y="2125" width="906" height="567" rotated="true" frameX="0" frameY="0" frameWidth="567" frameHeight="907"/>
+	<SubTexture name="YAidle0009" x="935" y="2125" width="906" height="567" rotated="true" frameX="0" frameY="0" frameWidth="567" frameHeight="907"/>
+	<SubTexture name="YAidle0010" x="935" y="2125" width="906" height="567" rotated="true" frameX="0" frameY="0" frameWidth="567" frameHeight="907"/>
+	<SubTexture name="YAidle0011" x="935" y="2125" width="906" height="567" rotated="true" frameX="0" frameY="0" frameWidth="567" frameHeight="907"/>
+	<SubTexture name="YAidle0012" x="935" y="2125" width="906" height="567" rotated="true" frameX="0" frameY="0" frameWidth="567" frameHeight="907"/>
+	<SubTexture name="YAidle0013" x="935" y="2125" width="906" height="567" rotated="true" frameX="0" frameY="0" frameWidth="567" frameHeight="907"/>
+	<SubTexture name="YAleft0000" x="1" y="1" width="781" height="1021" rotated="true" frameX="0" frameY="-8" frameWidth="1021" frameHeight="781"/>
+	<SubTexture name="YAleft0001" x="785" y="1" width="781" height="1021" rotated="true" frameX="0" frameY="-8" frameWidth="1021" frameHeight="781"/>
+	<SubTexture name="YAleft0002" x="1569" y="1" width="781" height="990" rotated="true" frameX="-111" frameY="0" frameWidth="1021" frameHeight="781"/>
+	<SubTexture name="YAleft0003" x="1569" y="1" width="781" height="990" rotated="true" frameX="-111" frameY="0" frameWidth="1021" frameHeight="781"/>
+	<SubTexture name="YAleft0004" x="1569" y="1" width="781" height="990" rotated="true" frameX="-111" frameY="0" frameWidth="1021" frameHeight="781"/>
+	<SubTexture name="YAleft0005" x="1569" y="1" width="781" height="990" rotated="true" frameX="-111" frameY="0" frameWidth="1021" frameHeight="781"/>
+	<SubTexture name="YAleft0006" x="1569" y="1" width="781" height="990" rotated="true" frameX="-111" frameY="0" frameWidth="1021" frameHeight="781"/>
+	<SubTexture name="YAright0000" x="3039" y="1143" width="558" height="931" rotated="true" frameX="-4" frameY="-20" frameWidth="932" frameHeight="558"/>
+	<SubTexture name="YAright0001" x="1" y="2125" width="931" height="558" frameX="-4" frameY="-20" frameWidth="932" frameHeight="558"/>
+	<SubTexture name="YAright0002" x="2752" y="2125" width="918" height="527" frameX="0" frameY="-1" frameWidth="932" frameHeight="558"/>
+	<SubTexture name="YAright0003" x="2752" y="2125" width="918" height="527" frameX="0" frameY="-1" frameWidth="932" frameHeight="558"/>
+	<SubTexture name="YAright0004" x="2752" y="2125" width="918" height="527" frameX="0" frameY="-1" frameWidth="932" frameHeight="558"/>
+	<SubTexture name="YAright0005" x="2752" y="2125" width="918" height="527" frameX="0" frameY="-1" frameWidth="932" frameHeight="558"/>
+	<SubTexture name="YAright0006" x="2752" y="2125" width="918" height="527" frameX="0" frameY="-1" frameWidth="932" frameHeight="558"/>
+	<SubTexture name="YAup0000" x="2353" y="1" width="677" height="1139" frameX="-34" frameY="-1" frameWidth="743" frameHeight="1140"/>
+	<SubTexture name="YAup0001" x="3033" y="1" width="677" height="1139" frameX="-34" frameY="-1" frameWidth="743" frameHeight="1140"/>
+	<SubTexture name="YAup0002" x="1" y="1143" width="743" height="979" frameX="0" frameY="-161" frameWidth="743" frameHeight="1140"/>
+	<SubTexture name="YAup0003" x="1" y="1143" width="743" height="979" frameX="0" frameY="-161" frameWidth="743" frameHeight="1140"/>
+	<SubTexture name="YAup0004" x="1" y="1143" width="743" height="979" frameX="0" frameY="-161" frameWidth="743" frameHeight="1140"/>
+	<SubTexture name="YAup0005" x="1" y="1143" width="743" height="979" frameX="0" frameY="-161" frameWidth="743" frameHeight="1140"/>
+	<SubTexture name="YAup0006" x="1" y="1143" width="743" height="979" frameX="0" frameY="-161" frameWidth="743" frameHeight="1140"/>
+</TextureAtlas>

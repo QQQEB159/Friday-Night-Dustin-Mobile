@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="bonetravaganza_bf_guitar.png"><SubTexture name="bonetravaganza_bf_guitar idle0000" x="501" y="534" width="445" height="494" frameX="-299" frameY="-293" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar idle0001" x="501" y="534" width="445" height="494" frameX="-299" frameY="-293" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar down0000" x="1926" y="409" width="476" height="401" frameX="-296" frameY="-353" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar down0001" x="1926" y="409" width="476" height="401" frameX="-296" frameY="-353" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar down0002" x="1926" y="0" width="477" height="409" frameX="-296" frameY="-347" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar down0003" x="1926" y="0" width="477" height="409" frameX="-296" frameY="-347" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar right0000" x="0" y="1063" width="504" height="464" frameX="-300" frameY="-292" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar right0001" x="0" y="1063" width="504" height="464" frameX="-300" frameY="-292" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar right0002" x="504" y="1063" width="496" height="464" frameX="-290" frameY="-292" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar right0003" x="504" y="1063" width="496" height="464" frameX="-290" frameY="-292" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar left0000" x="1503" y="0" width="423" height="466" frameX="-275" frameY="-291" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar left0001" x="1503" y="0" width="423" height="466" frameX="-275" frameY="-291" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar left0002" x="946" y="534" width="416" height="467" frameX="-293" frameY="-289" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar left0003" x="946" y="534" width="416" height="467" frameX="-293" frameY="-289" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar up0000" x="0" y="1527" width="500" height="405" frameX="-329" frameY="-354" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar up0001" x="0" y="1527" width="500" height="405" frameX="-329" frameY="-354" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar up0002" x="1000" y="1063" width="501" height="420" frameX="-318" frameY="-337" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar up0003" x="1000" y="1063" width="501" height="420" frameX="-318" frameY="-337" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0000" x="1000" y="1063" width="501" height="420" frameX="-318" frameY="-337" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0001" x="1000" y="1063" width="501" height="420" frameX="-318" frameY="-337" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0002" x="1002" y="0" width="501" height="533" frameX="-318" frameY="-224" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0003" x="1002" y="0" width="501" height="533" frameX="-318" frameY="-224" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0004" x="0" y="534" width="501" height="529" frameX="-318" frameY="-228" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0005" x="0" y="534" width="501" height="529" frameX="-318" frameY="-228" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0006" x="0" y="0" width="501" height="534" frameX="-318" frameY="-223" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0007" x="0" y="0" width="501" height="534" frameX="-318" frameY="-223" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0008" x="501" y="0" width="501" height="534" frameX="-318" frameY="-223" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0009" x="501" y="0" width="501" height="534" frameX="-318" frameY="-223" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0010" x="501" y="0" width="501" height="534" frameX="-318" frameY="-223" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0011" x="501" y="0" width="501" height="534" frameX="-318" frameY="-223" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0012" x="501" y="0" width="501" height="534" frameX="-318" frameY="-223" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0013" x="501" y="0" width="501" height="534" frameX="-318" frameY="-223" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0014" x="501" y="0" width="501" height="534" frameX="-318" frameY="-223" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0015" x="501" y="0" width="501" height="534" frameX="-318" frameY="-223" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0016" x="501" y="0" width="501" height="534" frameX="-318" frameY="-223" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0017" x="501" y="0" width="501" height="534" frameX="-318" frameY="-223" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0018" x="501" y="0" width="501" height="534" frameX="-318" frameY="-223" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0019" x="501" y="0" width="501" height="534" frameX="-318" frameY="-223" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0020" x="501" y="0" width="501" height="534" frameX="-318" frameY="-223" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="bonetravaganza_bf_guitar peace0021" x="501" y="0" width="501" height="534" frameX="-318" frameY="-223" frameWidth="1080" frameHeight="1080" />
+</TextureAtlas>

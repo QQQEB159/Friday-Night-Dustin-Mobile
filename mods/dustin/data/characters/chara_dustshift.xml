@@ -1,0 +1,1 @@
+<!DOCTYPE codename-engine-character><character sprite="redscreen/chararedscreen" icon="dust-chara" color="#354853" holdTime="9"><anim name="idle" anim="idle"/><anim name="singLEFT" anim="left" x="254" y="35"/><anim name="singDOWN" anim="down" x="49" y="-115"/><anim name="singUP" anim="up" x="98" y="277"/><anim name="singRIGHT" anim="right" x="-14" y="-14"/></character>

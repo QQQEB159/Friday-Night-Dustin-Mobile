@@ -1,0 +1,14 @@
+{
+    "params": [
+        {
+            "name": "Name",
+            "type": "String",
+            "defaultValue": "video"
+        },
+        {
+            "name": "Format",
+            "type": "String",
+            "defaultValue": "mp4"
+        }
+    ]
+}

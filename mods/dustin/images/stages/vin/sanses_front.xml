@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="sanses_front.png" width="372" height="578" spritePadding="3" borderPadding="1">
+	<SubTexture name="sanses_front0000" x="1" y="1" width="370" height="290" frameX="-6" frameY="-1" frameWidth="384" frameHeight="299"/>
+	<SubTexture name="sanses_front0001" x="1" y="1" width="370" height="290" frameX="-6" frameY="-1" frameWidth="384" frameHeight="299"/>
+	<SubTexture name="sanses_front0002" x="1" y="1" width="370" height="290" frameX="-6" frameY="-1" frameWidth="384" frameHeight="299"/>
+	<SubTexture name="sanses_front0003" x="1" y="1" width="370" height="290" frameX="-6" frameY="-1" frameWidth="384" frameHeight="299"/>
+	<SubTexture name="sanses_front0004" x="1" y="1" width="370" height="290" frameX="-6" frameY="-1" frameWidth="384" frameHeight="299"/>
+	<SubTexture name="sanses_front0005" x="1" y="294" width="365" height="283" frameX="-6" frameY="-1" frameWidth="384" frameHeight="299"/>
+	<SubTexture name="sanses_front0006" x="1" y="294" width="365" height="283" frameX="-6" frameY="-1" frameWidth="384" frameHeight="299"/>
+	<SubTexture name="sanses_front0007" x="1" y="294" width="365" height="283" frameX="-6" frameY="-1" frameWidth="384" frameHeight="299"/>
+	<SubTexture name="sanses_front0008" x="1" y="294" width="365" height="283" frameX="-6" frameY="-1" frameWidth="384" frameHeight="299"/>
+	<SubTexture name="sanses_front0009" x="1" y="294" width="365" height="283" frameX="-6" frameY="-1" frameWidth="384" frameHeight="299"/>
+</TextureAtlas>

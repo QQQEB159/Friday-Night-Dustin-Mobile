@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="bunny.png" width="2092" height="1801" spritePadding="3" borderPadding="1">
+	<SubTexture name="bunny_DIES0000" x="1" y="1" width="380" height="445" frameX="0" frameY="-2" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0001" x="1439" y="1" width="345" height="447" frameX="-7" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0002" x="1047" y="1352" width="344" height="447" frameX="-7" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0003" x="699" y="1352" width="345" height="447" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0004" x="737" y="1" width="350" height="447" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0005" x="737" y="1" width="350" height="447" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0006" x="1090" y="1" width="346" height="447" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0007" x="1090" y="1" width="346" height="447" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0008" x="703" y="902" width="346" height="447" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0009" x="703" y="902" width="346" height="447" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0010" x="699" y="1352" width="345" height="447" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0011" x="699" y="1352" width="345" height="447" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0012" x="737" y="1" width="350" height="447" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0013" x="737" y="1" width="350" height="447" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0014" x="350" y="903" width="346" height="447" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0015" x="737" y="451" width="346" height="448" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0016" x="354" y="452" width="346" height="448" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0017" x="1" y="900" width="346" height="448" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0018" x="1401" y="902" width="345" height="448" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0019" x="1435" y="451" width="345" height="448" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0020" x="384" y="1" width="350" height="448" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0021" x="1" y="449" width="350" height="448" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0022" x="1086" y="451" width="346" height="448" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0023" x="1052" y="902" width="346" height="447" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0024" x="1" y="1351" width="346" height="447" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0025" x="1" y="1351" width="346" height="447" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_DIES0026" x="350" y="1353" width="345" height="447" frameX="-4" frameY="0" frameWidth="380" frameHeight="448"/>
+	<SubTexture name="bunny_idle0000" x="1394" y="1353" width="318" height="440" frameX="0" frameY="-7" frameWidth="319" frameHeight="448"/>
+	<SubTexture name="bunny_idle0001" x="1394" y="1353" width="318" height="440" frameX="0" frameY="-7" frameWidth="319" frameHeight="448"/>
+	<SubTexture name="bunny_idle0002" x="1715" y="1353" width="312" height="443" frameX="-2" frameY="-4" frameWidth="319" frameHeight="448"/>
+	<SubTexture name="bunny_idle0003" x="1715" y="1353" width="312" height="443" frameX="-2" frameY="-4" frameWidth="319" frameHeight="448"/>
+	<SubTexture name="bunny_idle0004" x="1749" y="902" width="304" height="447" frameX="-5" frameY="0" frameWidth="319" frameHeight="448"/>
+	<SubTexture name="bunny_idle0005" x="1749" y="902" width="304" height="447" frameX="-5" frameY="0" frameWidth="319" frameHeight="448"/>
+	<SubTexture name="bunny_idle0006" x="1783" y="451" width="304" height="447" frameX="-5" frameY="0" frameWidth="319" frameHeight="448"/>
+	<SubTexture name="bunny_idle0007" x="1783" y="451" width="304" height="447" frameX="-5" frameY="0" frameWidth="319" frameHeight="448"/>
+	<SubTexture name="bunny_idle0008" x="1787" y="1" width="304" height="447" frameX="-5" frameY="0" frameWidth="319" frameHeight="448"/>
+	<SubTexture name="bunny_idle0009" x="1787" y="1" width="304" height="447" frameX="-5" frameY="0" frameWidth="319" frameHeight="448"/>
+	<SubTexture name="bunny_idle0010" x="1787" y="1" width="304" height="447" frameX="-5" frameY="0" frameWidth="319" frameHeight="448"/>
+	<SubTexture name="bunny_idle0011" x="1787" y="1" width="304" height="447" frameX="-5" frameY="0" frameWidth="319" frameHeight="448"/>
+	<SubTexture name="bunny_idle0012" x="1787" y="1" width="304" height="447" frameX="-5" frameY="0" frameWidth="319" frameHeight="448"/>
+	<SubTexture name="bunny_idle0013" x="1787" y="1" width="304" height="447" frameX="-5" frameY="0" frameWidth="319" frameHeight="448"/>
+</TextureAtlas>

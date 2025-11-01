@@ -1,0 +1,33 @@
+{
+	"customValues": {
+		"customName": "thermal-shock-gf-mix",
+		"titleCardSubtext": "* by Audieun/pause(0.5)/\n* ft. Chezzar & Mar Mar",
+		"character": "thermal-shock",
+		"gameover": {
+			"isMonster": true,
+			"quote": "PAPS, YOU STILL HAVE A JOB TO DO.",
+			"song": "thermal-shock",
+			"sound": "swapsans"
+		},
+		"mainColor": "#FFADD5",
+		"credits": {
+			"CHART": "CORVA",
+			"BACKGROUND": "JFLOID",
+			"SPRITES": "PHALV, CHEZZAR",
+			"SONG": "AUDIEUN, CHEZZAR, MARMAR"
+		},
+		"stats": "* CHARA 32 ATK 26 DEF\n* The fallen human.\n* You can see their true eyes."
+	},
+	"color": "#9271FD",
+	"opponentModeAllowed": false,
+	"difficulties": [
+		"hard"
+	],
+	"icon": "face",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "thermal-shock-gf-mix",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 140
+}

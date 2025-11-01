@@ -1,0 +1,27 @@
+{
+	"color": "#9271FD",
+	"customValues": {
+		"customName": "red demon O",
+		"titleCardSubtext": "* by Mar Mar\n* Original by Shiina Mota",
+		"character": "overthrone",
+		"credits": {
+			"SPRITES": "CHUF, CHEZZAR, ANDREWFLA",
+			"BACKGROUND": "HLOARTS",
+			"CHART": "FROSTIC",
+			"SONG": "MAR MAR"
+		},
+		"mainColor": "#FFFFFF",
+		"stats": "* SANS 58 ATK 15 DEF\n* The demon in red.\n* Burned everyone to ashes."
+	},
+	"opponentModeAllowed": false,
+	"icon": "face",
+	"difficulties": [
+		"hard"
+	],
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "red-demon-o",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 130
+}

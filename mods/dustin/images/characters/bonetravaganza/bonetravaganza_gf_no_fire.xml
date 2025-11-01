@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="bonetravaganza_gf_no_fire.png"><SubTexture name="bonetravaganza_gf_no_fire left0000" x="0" y="2741" width="1301" height="892" frameX="-726" frameY="-919" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire left0001" x="0" y="2741" width="1301" height="892" frameX="-726" frameY="-919" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire left0002" x="0" y="0" width="1295" height="932" frameX="-730" frameY="-879" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire left0003" x="0" y="0" width="1295" height="932" frameX="-730" frameY="-879" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire left0004" x="0" y="932" width="1294" height="905" frameX="-731" frameY="-906" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire left0005" x="0" y="932" width="1294" height="905" frameX="-731" frameY="-906" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire left0006" x="1294" y="932" width="1294" height="905" frameX="-731" frameY="-906" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire left0007" x="1294" y="932" width="1294" height="905" frameX="-731" frameY="-906" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire left0008" x="2590" y="0" width="1294" height="905" frameX="-731" frameY="-906" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire left0009" x="2590" y="0" width="1294" height="905" frameX="-731" frameY="-906" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire right0000" x="1301" y="2741" width="1300" height="892" frameX="-727" frameY="-918" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire right0001" x="1301" y="2741" width="1300" height="892" frameX="-727" frameY="-918" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire right0002" x="1295" y="0" width="1295" height="931" frameX="-731" frameY="-878" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire right0003" x="1295" y="0" width="1295" height="931" frameX="-731" frameY="-878" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire right0004" x="2590" y="905" width="1293" height="904" frameX="-732" frameY="-905" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire right0005" x="2590" y="905" width="1293" height="904" frameX="-732" frameY="-905" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire right0006" x="0" y="1837" width="1293" height="904" frameX="-732" frameY="-905" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire right0007" x="0" y="1837" width="1293" height="904" frameX="-732" frameY="-905" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire right0008" x="1293" y="1837" width="1293" height="904" frameX="-732" frameY="-905" frameWidth="2827" frameHeight="2329" />
+<SubTexture name="bonetravaganza_gf_no_fire right0009" x="1293" y="1837" width="1293" height="904" frameX="-732" frameY="-905" frameWidth="2827" frameHeight="2329" />
+</TextureAtlas>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cat.png">
+	<!-- Created with Adobe Animate version 24.0.7.61 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="cat_appear0000" x="3" y="3" width="114" height="92" frameX="-20" frameY="-144" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_appear0001" x="3" y="3" width="114" height="92" frameX="-20" frameY="-144" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_appear0002" x="3" y="3" width="114" height="92" frameX="-20" frameY="-144" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_appear0003" x="120" y="3" width="113" height="88" frameX="-17" frameY="-128" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_appear0004" x="120" y="3" width="113" height="88" frameX="-17" frameY="-128" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_appear0005" x="120" y="3" width="113" height="88" frameX="-17" frameY="-128" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_appear0006" x="236" y="3" width="150" height="196" frameX="-15" frameY="-20" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_appear0007" x="236" y="3" width="150" height="196" frameX="-15" frameY="-20" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_appear0008" x="389" y="3" width="193" height="216" frameX="0" frameY="0" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_appear0009" x="389" y="3" width="193" height="216" frameX="0" frameY="0" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_appear0010" x="389" y="3" width="193" height="216" frameX="0" frameY="0" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_appear0011" x="389" y="3" width="193" height="216" frameX="0" frameY="0" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_appear0012" x="585" y="3" width="201" height="203" frameX="0" frameY="0" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_appear0013" x="585" y="3" width="201" height="203" frameX="0" frameY="0" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_appear0014" x="585" y="3" width="201" height="203" frameX="0" frameY="0" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_appear0015" x="585" y="3" width="201" height="203" frameX="0" frameY="0" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_appear0016" x="585" y="3" width="201" height="203" frameX="0" frameY="0" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_idle0000" x="585" y="3" width="201" height="203" frameX="0" frameY="0" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_idle0001" x="585" y="3" width="201" height="203" frameX="0" frameY="0" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_idle0002" x="585" y="3" width="201" height="203" frameX="0" frameY="0" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_idle0003" x="585" y="3" width="201" height="203" frameX="0" frameY="0" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_idle0004" x="585" y="3" width="201" height="203" frameX="0" frameY="0" frameWidth="201" frameHeight="236"/>
+	<SubTexture name="cat_idle0005" x="789" y="3" width="200" height="204" frameX="-1" frameY="0" frameWidth="201" frameHeight="204"/>
+	<SubTexture name="cat_idle0006" x="789" y="3" width="200" height="204" frameX="-1" frameY="0" frameWidth="201" frameHeight="204"/>
+	<SubTexture name="cat_idle0007" x="789" y="3" width="200" height="204" frameX="-1" frameY="0" frameWidth="201" frameHeight="204"/>
+	<SubTexture name="cat_idle0008" x="789" y="3" width="200" height="204" frameX="-1" frameY="0" frameWidth="201" frameHeight="204"/>
+	<SubTexture name="cat_idle0009" x="789" y="3" width="200" height="204" frameX="-1" frameY="0" frameWidth="201" frameHeight="204"/>
+	<SubTexture name="cat_idle0010" x="3" y="222" width="200" height="204" frameX="-1" frameY="0" frameWidth="201" frameHeight="204"/>
+	<SubTexture name="cat_idle0011" x="3" y="222" width="200" height="204" frameX="-1" frameY="0" frameWidth="201" frameHeight="204"/>
+	<SubTexture name="cat_idle0012" x="3" y="222" width="200" height="204" frameX="-1" frameY="0" frameWidth="201" frameHeight="204"/>
+	<SubTexture name="cat_idle0013" x="3" y="222" width="200" height="204" frameX="-1" frameY="0" frameWidth="201" frameHeight="204"/>
+	<SubTexture name="cat_idle0014" x="3" y="222" width="200" height="204" frameX="-1" frameY="0" frameWidth="201" frameHeight="204"/>
+</TextureAtlas>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="thero_appear.png" width="1062" height="2877" spritePadding="3" borderPadding="1">
+	<SubTexture name="thero_appear0000" x="934" y="2168" width="62" height="68" rotated="true" frameX="-299" frameY="-268" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0001" x="934" y="2168" width="62" height="68" rotated="true" frameX="-299" frameY="-268" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0002" x="753" y="2168" width="178" height="186" rotated="true" frameX="-248" frameY="-219" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0003" x="753" y="2168" width="178" height="186" rotated="true" frameX="-248" frameY="-219" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0004" x="753" y="2168" width="178" height="186" rotated="true" frameX="-248" frameY="-219" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0005" x="388" y="2168" width="362" height="650" frameX="-169" frameY="-2" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0006" x="388" y="2168" width="362" height="650" frameX="-169" frameY="-2" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0007" x="1" y="2168" width="384" height="708" rotated="true" frameX="0" frameY="-136" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0008" x="1" y="2168" width="384" height="708" rotated="true" frameX="0" frameY="-136" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0009" x="1" y="1" width="535" height="556" rotated="true" frameX="-70" frameY="-49" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0010" x="1" y="1" width="535" height="556" rotated="true" frameX="-70" frameY="-49" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0011" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0012" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0013" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0014" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0015" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0016" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0017" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0018" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0019" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0020" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0021" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0022" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0023" x="1" y="560" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0024" x="1" y="1640" width="521" height="525" rotated="true" frameX="-102" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0025" x="1" y="1640" width="521" height="525" rotated="true" frameX="-102" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0026" x="1" y="1640" width="521" height="525" rotated="true" frameX="-102" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0027" x="1" y="1640" width="521" height="525" rotated="true" frameX="-102" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0028" x="525" y="1640" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0029" x="526" y="560" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0030" x="1" y="560" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0031" x="1" y="560" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0032" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0033" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0034" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0035" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0036" x="1" y="1640" width="521" height="525" rotated="true" frameX="-102" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0037" x="525" y="1640" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0038" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0039" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0040" x="1" y="560" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0041" x="1" y="1100" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0042" x="1" y="560" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0043" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0044" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0045" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0046" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0047" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0048" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0049" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0050" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0051" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0052" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0053" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0054" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0055" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0056" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0057" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0058" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0059" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0060" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0061" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0062" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0063" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0064" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0065" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0066" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0067" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0068" x="526" y="1100" width="521" height="525" rotated="true" frameX="-101" frameY="-54" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0069" x="539" y="1" width="522" height="537" rotated="true" frameX="-80" frameY="-55" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0070" x="1" y="2168" width="384" height="708" rotated="true" frameX="0" frameY="-136" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0071" x="1" y="2168" width="384" height="708" rotated="true" frameX="0" frameY="-136" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0072" x="388" y="2168" width="362" height="650" frameX="-169" frameY="-2" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0073" x="388" y="2168" width="362" height="650" frameX="-169" frameY="-2" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0074" x="753" y="2168" width="178" height="186" rotated="true" frameX="-248" frameY="-219" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0075" x="753" y="2168" width="178" height="186" rotated="true" frameX="-248" frameY="-219" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0076" x="753" y="2168" width="178" height="186" rotated="true" frameX="-248" frameY="-219" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0077" x="934" y="2168" width="62" height="68" rotated="true" frameX="-299" frameY="-268" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0078" x="934" y="2168" width="62" height="68" rotated="true" frameX="-299" frameY="-268" frameWidth="716" frameHeight="659"/>
+	<SubTexture name="thero_appear0079" x="999" y="2168" width="1" height="1" frameX="29" frameY="-97" frameWidth="716" frameHeight="659"/>
+</TextureAtlas>

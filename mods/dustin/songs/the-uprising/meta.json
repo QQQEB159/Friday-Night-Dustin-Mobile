@@ -1,0 +1,32 @@
+{
+	"opponentModeAllowed": true,
+	"difficulties": [
+		"hard"
+	],
+	"icon": "Icon",
+	"coopAllowed": true,
+	"name": "the-uprising",
+	"color": "#FFFFFF",
+	"customValues": {
+		"customName": "the Uprising",
+		"gameover": {
+			"quote": "Honey, get up, I'm still here.",
+			"isMonster": false,
+			"sound": "gf",
+			"song": "the-uprising"
+		},
+		"credits": {
+			"SPRITES": "S-WAY, WILLART-MEI",
+			"BACKGROUND": "NEF",
+			"CHART": "GOJIMANPLAYS",
+			"SONG": "ZEROH, SKIE, CHEZZAR"
+		},
+		"titleCardSubtext": "* by Zeroh/pause(0.5)/\n* ft. Skie & Chezzar",
+		"stats": "* TANKMAN 25 ATK 40 DEF\n* Last survivor of his army.\n* He looks damaged already."
+	},
+	"stepsPerBeat": 4,
+	"displayName": "The Uprising",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 195
+}

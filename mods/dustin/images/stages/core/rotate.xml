@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="rotate.png" width="1776" height="192" spritePadding="3" borderPadding="1">
+	<SubTexture name="idle0000" x="813" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="idle0001" x="813" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="idle0002" x="1006" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="idle0003" x="1006" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="idle0004" x="1" y="1" width="200" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="idle0005" x="1" y="1" width="200" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="idle0006" x="204" y="1" width="200" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="idle0007" x="204" y="1" width="200" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="idle0008" x="1199" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="idle0009" x="1199" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="idle0010" x="407" y="1" width="200" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="idle0011" x="407" y="1" width="200" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="idle0012" x="610" y="1" width="200" height="190" frameX="-10" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="idle0013" x="610" y="1" width="200" height="190" frameX="-10" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="idle0014" x="1392" y="1" width="190" height="190" frameX="-30" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="idle0015" x="1392" y="1" width="190" height="190" frameX="-30" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="scary0000" x="1585" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="scary0001" x="1585" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="scary0002" x="1585" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="scary0003" x="1585" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="scary0004" x="1585" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="scary0005" x="1585" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="scary0006" x="1585" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="scary0007" x="1585" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="scary0008" x="1585" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="scary0009" x="1585" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="scary0010" x="1585" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="scary0011" x="1585" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="scary0012" x="1585" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="scary0013" x="1585" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="scary0014" x="1585" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+	<SubTexture name="scary0015" x="1585" y="1" width="190" height="190" frameX="-20" frameY="-20" frameWidth="230" frameHeight="230"/>
+</TextureAtlas>

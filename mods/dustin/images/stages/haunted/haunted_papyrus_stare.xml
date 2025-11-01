@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="haunted_papyrus_stare.png"><SubTexture name="haunted_papyrus_stare idle0000" x="0" y="1305" width="1750" height="425" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0001" x="0" y="1305" width="1750" height="425" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0002" x="0" y="1305" width="1750" height="425" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0003" x="0" y="1305" width="1750" height="425" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0004" x="0" y="1305" width="1750" height="425" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0005" x="0" y="1305" width="1750" height="425" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0006" x="0" y="879" width="1750" height="426" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0007" x="0" y="879" width="1750" height="426" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0008" x="0" y="879" width="1750" height="426" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0009" x="0" y="879" width="1750" height="426" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0010" x="0" y="879" width="1750" height="426" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0011" x="0" y="879" width="1750" height="426" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0012" x="0" y="0" width="1750" height="452" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0013" x="0" y="0" width="1750" height="452" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0014" x="0" y="0" width="1750" height="452" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0015" x="0" y="0" width="1750" height="452" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0016" x="0" y="0" width="1750" height="452" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0017" x="0" y="0" width="1750" height="452" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0018" x="0" y="452" width="1750" height="427" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0019" x="0" y="452" width="1750" height="427" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0020" x="0" y="452" width="1750" height="427" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0021" x="0" y="452" width="1750" height="427" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0022" x="0" y="452" width="1750" height="427" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="haunted_papyrus_stare idle0023" x="0" y="452" width="1750" height="427" frameX="-85" frameY="-10" frameWidth="1920" frameHeight="1080" />
+</TextureAtlas>

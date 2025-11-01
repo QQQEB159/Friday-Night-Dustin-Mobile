@@ -1,0 +1,35 @@
+{
+	"customValues": {
+		"characterY": null,
+		"character": null,
+		"mainColor": null,
+		"credits": {
+			"CHART": "CURIOUS",
+			"BACKGROUND": "HLOARTS",
+			"SPRITES": "MERRITZ, CHEZZAR, CHUF",
+			"SONG": "MADHAYTER, CHEZZAR"
+		},
+		"customName": "heAtwave",
+		"titleCardSubtext": "* by Madhayter/pause(0.5)/\n* ft. Chezzar",
+		"gameover": {
+			"quote": "kid, i think that's enough.",
+			"isMonster": false,
+			"sound": "sans",
+			"song": "heatwave"
+		},
+		"stats": "* SANS 67 ATK 56 DEF\n* You've never seen him this upset.\n* Covered in more dust than usual.",
+		"characterX": null
+	},
+	"color": "#950B0B",
+	"opponentModeAllowed": true,
+	"difficulties": [
+		"hard"
+	],
+	"icon": "face",
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Heatwave",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 130
+}

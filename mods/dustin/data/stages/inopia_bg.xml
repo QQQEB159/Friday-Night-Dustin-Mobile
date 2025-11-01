@@ -1,0 +1,57 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom=".55" name="inopia_bg" playerZoom=".6" noteSkin="inopia" healthBarSkin="inopia" timeBarSkin="inopia">
+  <sprite name="BG7" x="-800" y="-800" sprite="stages/inopia/fondo" antialiasing="true" scrollx="0.4" scrolly="0.7" scale="1"/>
+  <sprite name="BG6" x="-1450" y="180" sprite="stages/inopia/arbol_5" antialiasing="true" scrollx="0.5" scrolly="0.75" scale="1"/>
+  <sprite name="BG5" x="-1200" y="170" sprite="stages/inopia/arbol_4" antialiasing="true" scrollx="0.6" scrolly="0.8" scale="1"/>
+  <sprite name="BG4" x="-950" y="120" sprite="stages/inopia/arbol_3" antialiasing="true" scrollx="0.7" scrolly="0.85" scale="1"/>
+  <sprite name="BG3" x="-600" y="70" sprite="stages/inopia/arbol_2" antialiasing="true" scrollx="0.8" scrolly="0.9" scale="1"/>
+  <sprite name="red_BG7" x="-800" y="-800" sprite="stages/inopia/rojo_fondo" antialiasing="true" scrollx="0.4" scrolly="0.7" scale="1"/>
+  <sprite name="red_BG6" x="-1450" y="180" sprite="stages/inopia/arbol_5" antialiasing="true" scrollx="0.5" scrolly="0.75" scale="1"/>
+  <sprite name="red_BG5" x="-1200" y="170" sprite="stages/inopia/rojo_arbol_4" antialiasing="true" scrollx="0.6" scrolly="0.8" scale="1"/>
+  <sprite name="red_BG4" x="-950" y="120" sprite="stages/inopia/rojo_arbol_3" antialiasing="true" scrollx="0.7" scrolly="0.85" scale="1"/>
+  <sprite name="red_BG3" x="-600" y="70" sprite="stages/inopia/rojo_arbol_2" antialiasing="true" scrollx="0.8" scrolly="0.9" scale="1"/>
+  <sprite name="bunny2" x="1400" y="800" sprite="stages/inopia/bunny2" scrollx="0.9" scrolly="0.95">
+    <anim name="idle" anim="bunny2_idle" x="0" y="0" loop="true" fps="24"/>
+    <anim name="enter" anim="bunny2_appear" x="0" y="0" loop="false" fps="24"/>
+  </sprite>
+  <sprite name="cat" x="800" y="950" sprite="stages/inopia/cat" scrollx="0.9" scrolly="0.95">
+    <anim name="idle" anim="cat_idle" x="0" y="0" loop="true" fps="24"/>
+    <anim name="enter" anim="cat_appear" x="0" y="0" loop="false" fps="24"/>
+  </sprite>
+  <sprite name="BG2" x="-400" y="0" sprite="stages/inopia/arbol_1" antialiasing="true" scrollx="0.9" scrolly="0.95" scale="1"/>
+  <sprite name="BG1" x="-400" y="1100" sprite="stages/inopia/suelo" antialiasing="true" scrollx="1" scrolly="1" scale="1"/>
+  <sprite name="red_BG2" x="-400" y="0" sprite="stages/inopia/rojo_arbol_1" antialiasing="true" scrollx="0.9" scrolly="0.95" scale="1"/>
+  <sprite name="red_BG1" x="-400" y="1100" sprite="stages/inopia/rojo_suelo" antialiasing="true" scrollx="1" scrolly="1" scale="1"/>
+  <gf x="300" y="630" camxoffset="700" camyoffset="-130"/>
+  <opponent x="1040" y="660" camxoffset="0" camyoffset="-30"/>
+  <player x="1900" y="660" camxoffset="-450" camyoffset="0"/>
+  <sprite name="deer" x="2600" y="1050" sprite="stages/inopia/deer" scrollx="1.5" scrolly="1.5">
+    <anim name="idle" anim="deer_idle" x="0" y="-55" loop="true" fps="24"/>
+    <anim name="enter" anim="deer_appeaer" x="0" y="0" loop="false" fps="24"/>
+  </sprite>
+  <sprite name="mouse" x="2000" y="1650" sprite="stages/inopia/mouse" scrollx="1.5" scrolly="1.5">
+    <anim name="idle" anim="mouse_idle" x="-10" y="-40" loop="true" fps="24"/>
+    <anim name="enter" anim="mouse_appear" x="0" y="0" loop="false" fps="24"/>
+  </sprite>
+  <sprite name="bunny" x="1300" y="1550" sprite="stages/inopia/bunny" scrollx="1.5" scrolly="1.5">
+    <anim name="idle" anim="bunny_idle" x="0" y="-30" loop="true" fps="24"/>
+    <anim name="enter" anim="bunny_appear" x="0" y="0" loop="false" fps="24"/>
+  </sprite>
+  <sprite name="bear" x="200" y="1350" sprite="stages/inopia/bear" scrollx="1.5" scrolly="1.5">
+    <anim name="idle" anim="bear_idle" x="-370" y="-30" loop="true" fps="24"/>
+    <anim name="enter" anim="bear_appear" x="0" y="0" loop="false" fps="24"/>
+  </sprite>
+  <sprite name="monster" x="200" y="1250" sprite="stages/inopia/monster" scrollx="1.5" scrolly="1.5">
+    <anim name="idle" anim="monster_idle" x="0" y="0" loop="true" fps="24"/>
+  </sprite>
+  <sprite name="marco" x="-310" y="-180" sprite="stages/inopia/marco" scale="0.68">
+    <anim name="marco" x="0" y="0" loop="true" fps="24"/>
+  </sprite>
+  <sprite name="vignette" x="-310" y="-180" sprite="stages/inopia/inopia vignette" scale="0.68">
+    <anim name="vignette" x="0" y="0" loop="true" fps="24"/>
+  </sprite>
+  <sprite name="red" x="-310" y="-180" sprite="stages/inopia/red" scale="0.68">
+    <anim name="red" x="0" y="0" loop="true" fps="24"/>
+  </sprite>
+  <sprite name="avignette" x="-310" y="-180" sprite="stages/inopia/vignette_2" scale="0.68"/>
+</stage>

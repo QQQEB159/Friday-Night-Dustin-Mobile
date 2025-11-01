@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="space_press.png" width="1167" height="639" spritePadding="3" borderPadding="1">
+	<SubTexture name="space0000" x="755" y="358" width="398" height="280" rotated="true" frameX="-20" frameY="0" frameWidth="314" frameHeight="399"/>
+	<SubTexture name="space0001" x="755" y="358" width="398" height="280" rotated="true" frameX="-20" frameY="0" frameWidth="314" frameHeight="399"/>
+	<SubTexture name="space0002" x="362" y="358" width="390" height="280" rotated="true" frameX="-20" frameY="-9" frameWidth="314" frameHeight="399"/>
+	<SubTexture name="space0003" x="362" y="358" width="390" height="280" rotated="true" frameX="-20" frameY="-9" frameWidth="314" frameHeight="399"/>
+	<SubTexture name="space0004" x="570" y="1" width="313" height="314" rotated="true" frameX="0" frameY="-85" frameWidth="314" frameHeight="399"/>
+	<SubTexture name="space0005" x="570" y="1" width="313" height="314" rotated="true" frameX="0" frameY="-85" frameWidth="314" frameHeight="399"/>
+	<SubTexture name="space0006" x="284" y="1" width="283" height="339" frameX="-17" frameY="-60" frameWidth="314" frameHeight="399"/>
+	<SubTexture name="space0007" x="284" y="1" width="283" height="339" frameX="-17" frameY="-60" frameWidth="314" frameHeight="399"/>
+	<SubTexture name="space0008" x="1" y="1" width="280" height="342" frameX="-20" frameY="-56" frameWidth="314" frameHeight="399"/>
+	<SubTexture name="space0009" x="1" y="1" width="280" height="342" frameX="-20" frameY="-56" frameWidth="314" frameHeight="399"/>
+	<SubTexture name="space0010" x="886" y="1" width="280" height="354" frameX="-20" frameY="-45" frameWidth="314" frameHeight="399"/>
+	<SubTexture name="space0011" x="886" y="1" width="280" height="354" frameX="-20" frameY="-45" frameWidth="314" frameHeight="399"/>
+	<SubTexture name="space0012" x="1" y="358" width="358" height="280" rotated="true" frameX="-20" frameY="-40" frameWidth="314" frameHeight="399"/>
+	<SubTexture name="space0013" x="1" y="358" width="358" height="280" rotated="true" frameX="-20" frameY="-40" frameWidth="314" frameHeight="399"/>
+</TextureAtlas>

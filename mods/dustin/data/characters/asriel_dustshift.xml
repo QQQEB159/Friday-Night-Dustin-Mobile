@@ -1,0 +1,1 @@
+<!DOCTYPE codename-engine-character><character sprite="redscreen/asrielredscreen" icon="icon" color="#0D0102" holdTime="9"><anim name="idle" anim="idle"/><anim name="singLEFT" anim="left" x="268" y="183"/><anim name="singDOWN" anim="down" x="168" y="184"/><anim name="singUP" anim="up" x="183" y="589"/><anim name="singRIGHT" anim="right" x="-36" y="216"/></character>

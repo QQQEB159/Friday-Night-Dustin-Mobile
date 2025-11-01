@@ -1,0 +1,35 @@
+{
+	"color": "#9271FD",
+	"customValues": {
+		"characterY": null,
+		"character": null,
+		"mainColor": null,
+		"credits": {
+			"CHART": "FROSTIC",
+			"BACKGROUND": "HLOARTS",
+			"SPRITES": "SAMUEL PASTEL, CHUF, HORRORSPINN",
+			"SONG": "SKIE, MAR MAR"
+		},
+		"customName": "cOrnered",
+		"titleCardSubtext": "* by Skie/pause(0.5)/\n* ft. Mar Mar",
+		"gameover": {
+			"isMonster": false,
+			"quote": "I know you can do it, BOYFRIEND!",
+			"song": "cornered",
+			"sound": "gf"
+		},
+		"stats": "* SANS 55 ATK 46 DEF\n* He looks weirdly relaxed.\n* You hear him talking to himself.",
+		"characterX": null
+	},
+	"opponentModeAllowed": false,
+	"icon": "face",
+	"difficulties": [
+		"hard"
+	],
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "cornered",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 120
+}

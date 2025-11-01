@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="tenna.png" width="5108" height="867" spritePadding="3" borderPadding="1">
+	<SubTexture name="tenna idle0000" x="1" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+	<SubTexture name="tenna idle0001" x="1" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+	<SubTexture name="tenna idle0002" x="1704" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+	<SubTexture name="tenna idle0003" x="1704" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+	<SubTexture name="tenna idle0004" x="3407" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+	<SubTexture name="tenna idle0005" x="3407" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+	<SubTexture name="tenna idle0006" x="3407" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+	<SubTexture name="tenna idle0007" x="3407" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+	<SubTexture name="tenna idle0008" x="3407" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+	<SubTexture name="tenna idle0009" x="3407" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+	<SubTexture name="tenna idle0010" x="1704" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+	<SubTexture name="tenna idle0011" x="1704" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+	<SubTexture name="tenna idle0012" x="1" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+	<SubTexture name="tenna idle0013" x="1" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+	<SubTexture name="tenna idle0014" x="1" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+	<SubTexture name="tenna idle0015" x="1" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+	<SubTexture name="tenna idle0016" x="1" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+	<SubTexture name="tenna idle0017" x="1" y="1" width="1700" height="865" frameX="-1205" frameY="-305" frameWidth="1700" frameHeight="865"/>
+</TextureAtlas>

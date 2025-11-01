@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="iconsText.png" width="3478" height="1643">
+	<SubTexture name="sans_idle" x="2369" y="655" width="515" height="481" frameX="-1" frameY="-1" frameWidth="517" frameHeight="483"/>
+	<SubTexture name="sans_singDOWN" x="2809" y="1139" width="455" height="481" rotated="true" frameX="-1" frameY="-1" frameWidth="483" frameHeight="457"/>
+	<SubTexture name="sans_singLEFT" x="2299" y="1139" width="507" height="481" frameX="-1" frameY="-1" frameWidth="509" frameHeight="483"/>
+	<SubTexture name="sans_singRIGHT" x="2983" y="1" width="494" height="507" frameX="-1" frameY="-1" frameWidth="496" frameHeight="509"/>
+	<SubTexture name="sans_singUP" x="2983" y="511" width="494" height="507" rotated="true" frameX="-1" frameY="-1" frameWidth="509" frameHeight="496"/>
+	<SubTexture name="paps_idle0000" x="1518" y="1" width="416" height="754" frameX="-501" frameY="-189" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_idle0001" x="1518" y="1" width="416" height="754" frameX="-501" frameY="-189" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_idle0002" x="1518" y="1" width="416" height="754" frameX="-501" frameY="-189" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_idle0003" x="1518" y="1" width="416" height="754" frameX="-501" frameY="-189" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_idle0004" x="1518" y="1" width="416" height="754" frameX="-501" frameY="-189" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_idle0005" x="1518" y="1" width="416" height="754" frameX="-501" frameY="-189" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_idle0006" x="1518" y="1" width="416" height="754" frameX="-501" frameY="-189" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_idle0007" x="1518" y="1" width="416" height="754" frameX="-501" frameY="-189" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_idle0008" x="1518" y="1" width="416" height="754" frameX="-501" frameY="-189" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_singDOWN0000" x="940" y="1057" width="702" height="429" rotated="true" frameX="-475" frameY="-267" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_singDOWN0001" x="940" y="1057" width="702" height="429" rotated="true" frameX="-475" frameY="-267" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_singDOWN0002" x="1937" y="1" width="429" height="676" frameX="-475" frameY="-267" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_singDOWN0003" x="1937" y="1" width="429" height="676" frameX="-475" frameY="-267" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_singLEFT0000" x="969" y="1" width="546" height="962" frameX="-176" frameY="-85" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_singLEFT0001" x="969" y="1" width="546" height="962" frameX="-176" frameY="-85" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_singLEFT0002" x="1" y="1096" width="936" height="546" rotated="true" frameX="-176" frameY="-85" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_singLEFT0003" x="1" y="1096" width="936" height="546" rotated="true" frameX="-176" frameY="-85" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_singRIGHT0000" x="1645" y="758" width="651" height="650" frameX="-565" frameY="-293" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_singRIGHT0001" x="1645" y="758" width="651" height="650" frameX="-565" frameY="-293" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_singRIGHT0002" x="2369" y="1" width="611" height="651" rotated="true" frameX="-565" frameY="-293" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_singRIGHT0003" x="2369" y="1" width="611" height="651" rotated="true" frameX="-565" frameY="-293" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_singUP0000" x="1" y="1" width="481" height="1092" frameX="-501" frameY="-7" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_singUP0001" x="1" y="1" width="481" height="1092" frameX="-501" frameY="-7" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_singUP0002" x="485" y="1" width="481" height="1053" frameX="-501" frameY="-7" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="paps_singUP0003" x="485" y="1" width="481" height="1053" frameX="-501" frameY="-7" frameWidth="1280" frameHeight="1280"/>
+</TextureAtlas>

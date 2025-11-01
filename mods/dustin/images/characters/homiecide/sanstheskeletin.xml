@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="sanstheskeletin.png" width="5612" height="5265">
+	<SubTexture name="swapsans_death0000" x="4979" y="3019" width="512" height="512" frameX="-73" frameY="-108" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0001" x="595" y="4644" width="538" height="537" frameX="-47" frameY="-83" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0002" x="5059" y="1247" width="544" height="537" frameX="-47" frameY="-83" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0003" x="4487" y="2498" width="546" height="518" frameX="-45" frameY="-102" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0004" x="4969" y="3755" width="540" height="501" frameX="-51" frameY="-119" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0005" x="5036" y="2498" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0006" x="5079" y="1787" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0007" x="4969" y="4259" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0008" x="4969" y="4745" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0009" x="5036" y="2498" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0010" x="5079" y="1787" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0011" x="4969" y="4259" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0012" x="4969" y="4745" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0013" x="5036" y="2498" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0014" x="5079" y="1787" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0015" x="4969" y="4259" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0016" x="4969" y="4745" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0017" x="5036" y="2498" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0018" x="5079" y="1787" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0019" x="4969" y="4259" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0020" x="4969" y="4745" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0021" x="5036" y="2498" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0022" x="5079" y="1787" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0023" x="4969" y="4259" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0024" x="4969" y="4745" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0025" x="5036" y="2498" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0026" x="5079" y="1787" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0027" x="4969" y="4259" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0028" x="4969" y="4745" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0029" x="5036" y="2498" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0030" x="5079" y="1787" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0031" x="4969" y="4259" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0032" x="4969" y="4745" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0033" x="5036" y="2498" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0034" x="5079" y="1787" width="521" height="483" frameX="-70" frameY="-137" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0035" x="2604" y="3906" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0036" x="3198" y="3906" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0037" x="1941" y="3920" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0038" x="1191" y="3976" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0039" x="593" y="4021" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0040" x="4375" y="3890" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0041" x="3871" y="1263" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0042" x="4424" y="629" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0043" x="4426" y="1" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0044" x="3891" y="1886" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0045" x="3893" y="2509" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0046" x="4385" y="3132" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0047" x="4375" y="4513" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0048" x="2535" y="4529" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0049" x="3129" y="4529" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0050" x="3723" y="4531" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0051" x="1785" y="4543" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0052" x="1187" y="4599" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0053" x="1" y="4644" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0054" x="4465" y="1252" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0055" x="5018" y="624" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0056" x="5020" y="1" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_death0057" x="4485" y="1875" width="591" height="620" frameX="-0" frameY="-0" frameWidth="591" frameHeight="621"/>
+	<SubTexture name="swapsans_deathEND0000" x="3219" y="1" width="608" height="625" frameX="-81" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0001" x="3204" y="644" width="631" height="648" frameX="-58" frameY="-3" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0002" x="2661" y="1993" width="648" height="631" rotated="true" frameX="-58" frameY="-3" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0003" x="1970" y="3269" width="631" height="648" frameX="-58" frameY="-3" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0004" x="1304" y="3329" width="634" height="644" frameX="-55" frameY="-7" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0005" x="2655" y="2633" width="639" height="642" frameX="-50" frameY="-9" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0006" x="2573" y="1" width="643" height="640" frameX="-46" frameY="-11" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0007" x="2618" y="1352" width="647" height="638" frameX="-42" frameY="-13" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0008" x="1315" y="2689" width="652" height="637" frameX="-37" frameY="-14" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0009" x="666" y="2736" width="635" height="654" rotated="true" frameX="-35" frameY="-16" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0010" x="1993" y="2633" width="659" height="633" frameX="-30" frameY="-18" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0011" x="1" y="2513" width="662" height="632" frameX="-27" frameY="-19" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0012" x="1993" y="1999" width="665" height="631" frameX="-24" frameY="-20" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0013" x="2572" y="681" width="629" height="668" rotated="true" frameX="-21" frameY="-22" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0014" x="1944" y="1368" width="671" height="628" frameX="-18" frameY="-23" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0015" x="684" y="2060" width="628" height="673" rotated="true" frameX="-16" frameY="-23" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0016" x="1315" y="2059" width="675" height="627" frameX="-14" frameY="-24" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0017" x="1945" y="1" width="625" height="677" rotated="true" frameX="-12" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0018" x="1944" y="687" width="625" height="678" rotated="true" frameX="-11" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0019" x="1" y="1885" width="680" height="625" frameX="-9" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0020" x="1316" y="1374" width="625" height="682" rotated="true" frameX="-7" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0021" x="687" y="1375" width="625" height="682" rotated="true" frameX="-7" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0022" x="1" y="1257" width="683" height="625" frameX="-6" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0023" x="1316" y="688" width="625" height="683" rotated="true" frameX="-6" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0024" x="1317" y="1" width="625" height="683" rotated="true" frameX="-6" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0025" x="1" y="629" width="684" height="625" frameX="-5" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0026" x="689" y="1" width="625" height="684" rotated="true" frameX="-5" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0027" x="1" y="1" width="685" height="625" frameX="-4" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0028" x="688" y="688" width="625" height="684" rotated="true" frameX="-5" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0029" x="1" y="629" width="684" height="625" frameX="-5" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0030" x="689" y="1" width="625" height="684" rotated="true" frameX="-5" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0031" x="1" y="1" width="685" height="625" frameX="-4" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0032" x="688" y="688" width="625" height="684" rotated="true" frameX="-5" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathEND0033" x="1" y="629" width="684" height="625" frameX="-5" frameY="-26" frameWidth="689" frameHeight="651"/>
+	<SubTexture name="swapsans_deathLOOP0000" x="3268" y="1295" width="600" height="616" frameX="-0" frameY="-22" frameWidth="600" frameHeight="638"/>
+	<SubTexture name="swapsans_deathLOOP0001" x="3312" y="1914" width="576" height="638" frameX="-24" frameY="-0" frameWidth="600" frameHeight="638"/>
+	<SubTexture name="swapsans_deathLOOP0002" x="3796" y="3890" width="576" height="638" frameX="-24" frameY="-0" frameWidth="600" frameHeight="638"/>
+	<SubTexture name="swapsans_deathLOOP0003" x="3838" y="629" width="583" height="631" frameX="-17" frameY="-7" frameWidth="600" frameHeight="638"/>
+	<SubTexture name="swapsans_deathLOOP0004" x="3796" y="3255" width="586" height="632" frameX="-14" frameY="-6" frameWidth="600" frameHeight="638"/>
+	<SubTexture name="swapsans_deathLOOP0005" x="1" y="3148" width="591" height="628" frameX="-9" frameY="-10" frameWidth="600" frameHeight="638"/>
+	<SubTexture name="swapsans_deathLOOP0006" x="1" y="3779" width="589" height="627" frameX="-11" frameY="-11" frameWidth="600" frameHeight="638"/>
+	<SubTexture name="swapsans_deathLOOP0007" x="595" y="3393" width="593" height="625" frameX="-7" frameY="-13" frameWidth="600" frameHeight="638"/>
+	<SubTexture name="swapsans_deathLOOP0008" x="2604" y="3278" width="593" height="625" frameX="-7" frameY="-13" frameWidth="600" frameHeight="638"/>
+	<SubTexture name="swapsans_deathLOOP0009" x="3200" y="3278" width="593" height="625" frameX="-7" frameY="-13" frameWidth="600" frameHeight="638"/>
+	<SubTexture name="swapsans_deathLOOP0010" x="3830" y="1" width="593" height="625" frameX="-7" frameY="-13" frameWidth="600" frameHeight="638"/>
+	<SubTexture name="swapsans_deathLOOP0011" x="3297" y="2627" width="593" height="625" frameX="-7" frameY="-13" frameWidth="600" frameHeight="638"/>
+	<SubTexture name="swapsans_deathLOOP0012" x="2604" y="3278" width="593" height="625" frameX="-7" frameY="-13" frameWidth="600" frameHeight="638"/>
+	<SubTexture name="swapsans_deathLOOP0013" x="3200" y="3278" width="593" height="625" frameX="-7" frameY="-13" frameWidth="600" frameHeight="638"/>
+	<SubTexture name="swapsans_deathLOOP0014" x="3830" y="1" width="593" height="625" frameX="-7" frameY="-13" frameWidth="600" frameHeight="638"/>
+	<SubTexture name="swapsans_deathLOOP0015" x="3297" y="2627" width="593" height="625" frameX="-7" frameY="-13" frameWidth="600" frameHeight="638"/>
+	<SubTexture name="swapsans_deathLOOP0016" x="2604" y="3278" width="593" height="625" frameX="-7" frameY="-13" frameWidth="600" frameHeight="638"/>
+</TextureAtlas>

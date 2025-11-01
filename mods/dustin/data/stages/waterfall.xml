@@ -1,0 +1,24 @@
+<!DOCTYPE codename-engine-stage>
+<stage folder="stages/waterfall/" name="waterfall" zoom=".6" noteSkin="cornered" healthBarSkin="waterfall" timeBarSkin="waterfall">
+  <sprite scrolly="0.9" x="-756" sprite="rest_of_the_bg_2" y="-157" scrollx="0.7" name="bg"/>
+  <sprite scrolly="0.95" x="-790" sprite="rest_of_the_bg_1" y="-304" type="beat" scrollx="0.8" name="bg_front"/>
+  <sprite x="-950" sprite="walls_part_1" y="-16" scrollx="0.9" scrolly="0.98" name="wall_left"/>
+  <sprite x="1252" sprite="walls_part_2" y="-16" scrollx="0.9" scrolly="0.98" name="wall_right"/>
+  <sprite x="-995.423824386614" sprite="Bridge_part" y="702.066823925886" name="bridge"/>
+  <sprite x="250" sprite="cracks" y="910" scrollx="1" scrolly="1" name="cracks"/>
+  <girlfriend x="286" scroll="1" y="349"/>
+  <sprite x="210" sprite="BlueBones" y="440" scrollx="1" scrolly="1" name="bones"/>
+  <dad x="-579" y="260"/>
+  <boyfriend x="1176" y="235"/>
+  <sprite name="ATTACK" x="1626" y="700" sprite="attackbutton" antialiasing="true" scrollx="1" scrolly="1" scale="1.2" alpha="0">
+    <anim name="appear" anim="fightbuttonappear" loop="false"/>
+    <anim name="press" anim="fightbuttonpress" loop="false"/>
+  </sprite>
+  <sprite x="-1050" sprite="glow_shards_purple" y="-52" name="shards"/>
+  <sprite name="BLASTER_IMPACT1" x="230" y="250" sprite="undyneimpact1" antialiasing="true" scrollx="1" scrolly="1.2" scale="1.5" alpha=".0"/>
+  <sprite name="BLASTER_IMPACT2" x="200" y="230" sprite="undyneimpact2" antialiasing="true" scrollx="1" scrolly="1.2" scale="1.5" alpha=".0"/>
+  <sprite name="BLASTER_IMPACT3" x="200" y="230" sprite="undyneimpact3" antialiasing="true" scrollx="1" scrolly="1.2" scale="1.5" alpha=".0"/>
+  <sprite name="BLASTER_IMPACT4" x="220" y="250" sprite="impact1" antialiasing="true" scrollx="1" scrolly="1.2" scale="1.7" alpha=".0"/>
+  <sprite name="BLASTER_IMPACT5" x="220" y="250" sprite="impact2" antialiasing="true" scrollx="1" scrolly="1.2" scale="1.7" alpha=".0"/>
+  <sprite name="BLASTER_IMPACT6" x="220" y="250" sprite="impact3" antialiasing="true" scrollx="1" scrolly="1.2" scale="1.7" alpha=".0"/>
+</stage>

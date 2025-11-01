@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="Core_part.png" width="6050" height="1472" spritePadding="3" borderPadding="1">
+	<SubTexture name="machine part0000" x="1" y="1" width="2014" height="1470" frameX="-10" frameY="-20" frameWidth="2024" frameHeight="1607"/>
+	<SubTexture name="machine part0001" x="1" y="1" width="2014" height="1470" frameX="-10" frameY="-20" frameWidth="2024" frameHeight="1607"/>
+	<SubTexture name="machine part0002" x="1" y="1" width="2014" height="1470" frameX="-10" frameY="-20" frameWidth="2024" frameHeight="1607"/>
+	<SubTexture name="machine part0003" x="1" y="1" width="2014" height="1470" frameX="-10" frameY="-20" frameWidth="2024" frameHeight="1607"/>
+	<SubTexture name="machine part0004" x="1" y="1" width="2014" height="1470" frameX="-10" frameY="-20" frameWidth="2024" frameHeight="1607"/>
+	<SubTexture name="machine part0005" x="1" y="1" width="2014" height="1470" frameX="-10" frameY="-20" frameWidth="2024" frameHeight="1607"/>
+	<SubTexture name="machine part0006" x="1" y="1" width="2014" height="1470" frameX="-10" frameY="-20" frameWidth="2024" frameHeight="1607"/>
+	<SubTexture name="machine part0007" x="2018" y="1" width="2014" height="1470" frameX="-10" frameY="-20" frameWidth="2024" frameHeight="1607"/>
+	<SubTexture name="machine part0008" x="2018" y="1" width="2014" height="1470" frameX="-10" frameY="-20" frameWidth="2024" frameHeight="1607"/>
+	<SubTexture name="machine part0009" x="2018" y="1" width="2014" height="1470" frameX="-10" frameY="-20" frameWidth="2024" frameHeight="1607"/>
+	<SubTexture name="machine part0010" x="2018" y="1" width="2014" height="1470" frameX="-10" frameY="-20" frameWidth="2024" frameHeight="1607"/>
+	<SubTexture name="machine part0011" x="2018" y="1" width="2014" height="1470" frameX="-10" frameY="-20" frameWidth="2024" frameHeight="1607"/>
+	<SubTexture name="machine part0012" x="2018" y="1" width="2014" height="1470" frameX="-10" frameY="-20" frameWidth="2024" frameHeight="1607"/>
+	<SubTexture name="machine part0013" x="2018" y="1" width="2014" height="1470" frameX="-10" frameY="-20" frameWidth="2024" frameHeight="1607"/>
+	<SubTexture name="machine part0014" x="4035" y="1" width="2014" height="1470" frameX="-10" frameY="-20" frameWidth="2024" frameHeight="1607"/>
+</TextureAtlas>

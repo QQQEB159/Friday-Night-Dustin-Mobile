@@ -1,0 +1,1 @@
+<!DOCTYPE codename-engine-character><character y="350" flipX="true" isPlayer="true" sprite="b3/b3_balls"><anim x="37" y="11" anim="DEATH" name="firstDeath"/><anim x="-16" y="9" anim="death_loop" name="deathLoop"/><anim x="-16" y="20" anim="death_end" name="deathConfirm"/></character>

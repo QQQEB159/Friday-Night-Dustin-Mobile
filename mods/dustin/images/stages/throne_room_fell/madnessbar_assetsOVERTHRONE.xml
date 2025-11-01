@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="madnessbar_assetsOVERTHRONE.png" width="4939" height="671" spritePadding="3" borderPadding="1">
+	<SubTexture name="madnessbar_1_fill0000" x="1" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_1_fill0001" x="1" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_1_fill0002" x="381" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_1_fill0003" x="381" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_1_fill0004" x="761" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_1_fill0005" x="761" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_1_fill0006" x="1141" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_1_fill0007" x="1141" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_2_fill0000" x="1521" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_2_fill0001" x="1521" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_2_fill0002" x="1901" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_2_fill0003" x="1901" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_2_fill0004" x="2281" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_2_fill0005" x="2281" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_2_fill0006" x="2661" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_2_fill0007" x="2661" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_3_fill0000" x="3041" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_3_fill0001" x="3041" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_3_fill0002" x="3421" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_3_fill0003" x="3421" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_3_fill0004" x="3801" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_3_fill0005" x="3801" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_3_fill0006" x="4181" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_3_fill0007" x="4181" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_4_fill0000" x="4561" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_4_fill0001" x="4561" y="1" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_4_fill0002" x="1" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_4_fill0003" x="1" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_4_fill0004" x="381" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_4_fill0005" x="381" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_4_fill0006" x="761" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_4_fill0007" x="761" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_5_fill0000" x="1141" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_5_fill0001" x="1141" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_5_fill0002" x="1521" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_5_fill0003" x="1521" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_5_fill0004" x="1901" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_5_fill0005" x="1901" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_5_fill0006" x="2281" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_5_fill0007" x="2281" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_6_fill0000" x="2661" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_6_fill0001" x="2661" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_6_fill0002" x="3041" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_6_fill0003" x="3041" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_6_fill0004" x="3421" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_6_fill0005" x="3421" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_6_fill0006" x="3801" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_6_fill0007" x="3801" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_7_fill0000" x="4181" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+	<SubTexture name="madnessbar_idle0000" x="4561" y="337" width="377" height="333" frameX="0" frameY="0" frameWidth="377" frameHeight="333"/>
+</TextureAtlas>

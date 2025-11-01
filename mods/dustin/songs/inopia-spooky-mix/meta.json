@@ -1,0 +1,32 @@
+{
+	"customValues": {
+		"customName": "inopia-spooky-mix",
+		"character": "inopia",
+		"titleCardSubtext": "* by Chezzar/pause(0.5)/\n* ft. Ug32T & Skie",
+		"gameover": {
+			"quote": "KEVIN, remember our deal sweetie.",
+			"isMonster": false,
+			"sound": "gf",
+			"song": "inopia"
+		},
+		"credits": {
+			"SPRITES": "CHEZZAR",
+			"BACKGROUND": "WILLART-MEI",
+			"CHART": "WILLART-MEI",
+			"SONG": "CHEZZAR, UG32T, SKIE"
+		},
+		"stats": "* SANS 1 ATK 1 DEF\n* Hasn't eaten in 7 years.\n* He seems to be in pain."
+	},
+	"color": "#9271FD",
+	"opponentModeAllowed": false,
+	"difficulties": [
+		"hard"
+	],
+	"icon": "face",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "inopia-spooky-mix",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 132
+}

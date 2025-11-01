@@ -1,0 +1,27 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom=".6" name="snowdinbridge" playerZoom=".65">
+  <sprite name="BG1" x="-60" y="0" sprite="stages/ruins_exit/forest/background_back" antialiasing="true" scrollx=".7" scrolly="1" scale="1">
+    <property name="zoomFactor" type="float" value="1.05"/>
+  </sprite>
+  <sprite name="BG2" x="-40" y="0" sprite="stages/ruins_exit/forest/background_front" antialiasing="true" scrollx=".9" scrolly="1" scale="1">
+    <property name="zoomFactor" type="float" value="1.05"/>
+  </sprite>
+  <sprite name="BG3" x="0" y="0" sprite="stages/ruins_exit/forest/middleground" antialiasing="true" scrollx="1" scrolly="1" scale="1"/>
+  <sprite name="PILLARS" x="1950" y="900" sprite="stages/ruins_exit/pixel/pillars" antialiasing="false" scrollx="1" scrolly="1" scale="7">
+    <property name="visible" type="bool" value="false"/>
+  </sprite>
+  <gf x="1397" y="850" camxoffset="0" camyoffset="0" alpha="1"/>
+  <opponent x="1040" y="730" camxoffset="200" camyoffset="40"/>
+  <player x="1900" y="740" camxoffset="-180" camyoffset="-40"/>
+  <sprite name="BLASTER" x="720" y="920" sprite="stages/ruins_exit/mechanics/gasterblaster" antialiasing="true" scrollx="1" scrolly="1" scale="1.2">
+    <anim name="blast" anim="blaster_blast" loop="false" x="900"/>
+    <anim name="idle" anim="blaster_idle" loop="true"/>
+  </sprite>
+  <sprite name="PRESS_SPACE" x="1400" y="920" sprite="stages/ruins_exit/mechanics/space_press" antialiasing="true" scrollx=".95" scrolly=".9" scale="1">
+    <property name="zoomFactor" type="float" value="0"/>
+    <anim name="idle" anim="space" loop="true"/>
+  </sprite>
+  <sprite name="BLASTER_IMPACT1" x="430" y="510" sprite="stages/ruins_exit/mechanics/blasterimpact1" antialiasing="true" scrollx="1" scrolly="1" scale="1" alpha="0"/>
+  <sprite name="BLASTER_IMPACT2" x="425" y="510" sprite="stages/ruins_exit/mechanics/blasterimpact2" antialiasing="true" scrollx="1" scrolly="1" scale=".9" alpha="0"/>
+  <sprite name="BG4" x="15" y="-104" sprite="stages/ruins_exit/forest/foreground" antialiasing="true" scrollx=".8" scrolly=".8" scale=".82"/>
+</stage>

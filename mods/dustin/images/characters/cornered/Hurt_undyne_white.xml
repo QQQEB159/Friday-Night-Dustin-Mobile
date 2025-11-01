@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="Hurt_undyne_white.png" width="7725" height="5700" spritePadding="3" borderPadding="1">
+	<SubTexture name="undynedownALT0000" x="2314" y="4906" width="756" height="793" frameX="-19" frameY="-7" frameWidth="764" frameHeight="801"/>
+	<SubTexture name="undynedownALT0001" x="3073" y="4906" width="750" height="793" frameX="-11" frameY="-7" frameWidth="764" frameHeight="801"/>
+	<SubTexture name="undynedownALT0002" x="6870" y="4906" width="746" height="746" frameX="-19" frameY="-55" frameWidth="764" frameHeight="801"/>
+	<SubTexture name="undynedownALT0003" x="4597" y="4906" width="760" height="764" rotated="true" frameX="-15" frameY="-41" frameWidth="764" frameHeight="801"/>
+	<SubTexture name="undynedownALT0004" x="5360" y="4906" width="759" height="760" frameX="-6" frameY="-41" frameWidth="764" frameHeight="801"/>
+	<SubTexture name="undynedownALT0005" x="6122" y="4906" width="745" height="760" frameX="-19" frameY="-41" frameWidth="764" frameHeight="801"/>
+	<SubTexture name="undynedownALT0006" x="2333" y="4102" width="764" height="801" frameX="-15" frameY="0" frameWidth="764" frameHeight="801"/>
+	<SubTexture name="undynedownALT0007" x="3870" y="4102" width="760" height="801" frameX="-6" frameY="0" frameWidth="764" frameHeight="801"/>
+	<SubTexture name="undyneidleALT0000" x="3993" y="1" width="797" height="806" rotated="true" frameX="-16" frameY="-18" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0001" x="2354" y="826" width="797" height="800" rotated="true" frameX="-7" frameY="-18" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0002" x="5402" y="4102" width="774" height="784" frameX="-26" frameY="-30" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0003" x="1" y="3293" width="784" height="794" rotated="true" frameX="-22" frameY="-30" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0004" x="5493" y="3293" width="785" height="785" frameX="-15" frameY="-30" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0005" x="1556" y="4102" width="774" height="791" frameX="-26" frameY="-24" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0006" x="5505" y="1651" width="791" height="794" rotated="true" frameX="-22" frameY="-24" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0007" x="3921" y="2476" width="790" height="791" frameX="-11" frameY="-24" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0008" x="1" y="1651" width="777" height="815" frameX="-23" frameY="0" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0009" x="809" y="1" width="802" height="815" frameX="-17" frameY="0" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0010" x="781" y="1651" width="794" height="797" frameX="-9" frameY="-18" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0011" x="4714" y="2476" width="784" height="797" frameX="-19" frameY="-18" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0012" x="3160" y="1651" width="785" height="804" rotated="true" frameX="-16" frameY="-30" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0013" x="2362" y="2476" width="785" height="797" rotated="true" frameX="-8" frameY="-30" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0014" x="6281" y="3293" width="785" height="785" frameX="-20" frameY="-30" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0015" x="3154" y="826" width="791" height="805" rotated="true" frameX="-17" frameY="-24" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0016" x="1578" y="1651" width="791" height="800" rotated="true" frameX="-7" frameY="-24" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0017" x="788" y="3293" width="786" height="791" frameX="-20" frameY="-24" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0018" x="1" y="1" width="805" height="815" frameX="-17" frameY="0" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0019" x="1614" y="1" width="800" height="815" frameX="-7" frameY="0" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0020" x="784" y="2476" width="786" height="797" frameX="-20" frameY="-18" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0021" x="4793" y="1" width="797" height="805" rotated="true" frameX="-17" frameY="-18" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0022" x="6299" y="1651" width="785" height="800" rotated="true" frameX="-7" frameY="-30" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0023" x="4705" y="3293" width="785" height="786" rotated="true" frameX="-20" frameY="-30" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0024" x="2372" y="1651" width="785" height="806" rotated="true" frameX="-17" frameY="-30" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0025" x="1578" y="1651" width="791" height="800" rotated="true" frameX="-7" frameY="-24" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0026" x="788" y="3293" width="786" height="791" frameX="-20" frameY="-24" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0027" x="3154" y="826" width="791" height="805" rotated="true" frameX="-17" frameY="-24" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0028" x="1614" y="1" width="800" height="815" frameX="-7" frameY="0" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneidleALT0029" x="6391" y="1" width="786" height="815" frameX="-20" frameY="0" frameWidth="806" frameHeight="815"/>
+	<SubTexture name="undyneleftALT0000" x="774" y="4102" width="779" height="786" frameX="-26" frameY="-36" frameWidth="786" frameHeight="822"/>
+	<SubTexture name="undyneleftALT0001" x="6179" y="4102" width="772" height="786" frameX="-18" frameY="-36" frameWidth="786" frameHeight="822"/>
+	<SubTexture name="undyneleftALT0002" x="773" y="4906" width="766" height="786" frameX="-19" frameY="-36" frameWidth="786" frameHeight="822"/>
+	<SubTexture name="undyneleftALT0003" x="6289" y="2476" width="786" height="793" frameX="-15" frameY="-29" frameWidth="786" frameHeight="822"/>
+	<SubTexture name="undyneleftALT0004" x="3923" y="3293" width="779" height="793" frameX="-6" frameY="-29" frameWidth="786" frameHeight="822"/>
+	<SubTexture name="undyneleftALT0005" x="4633" y="4102" width="766" height="793" frameX="-19" frameY="-29" frameWidth="786" frameHeight="822"/>
+	<SubTexture name="undyneleftALT0006" x="3205" y="1" width="785" height="819" frameX="-15" frameY="-3" frameWidth="786" frameHeight="822"/>
+	<SubTexture name="undyneleftALT0007" x="1572" y="826" width="779" height="819" frameX="-6" frameY="-3" frameWidth="786" frameHeight="822"/>
+	<SubTexture name="undyneleftALT0008" x="4736" y="1651" width="766" height="822" frameX="-19" frameY="0" frameWidth="786" frameHeight="822"/>
+	<SubTexture name="undyneleftALT0009" x="2417" y="1" width="785" height="822" frameX="-15" frameY="0" frameWidth="786" frameHeight="822"/>
+	<SubTexture name="undyneleftALT0010" x="1" y="826" width="779" height="822" frameX="-6" frameY="0" frameWidth="786" frameHeight="822"/>
+	<SubTexture name="undyneleftALT0011" x="4736" y="1651" width="766" height="822" frameX="-19" frameY="0" frameWidth="786" frameHeight="822"/>
+	<SubTexture name="undynerightALT0000" x="6329" y="826" width="780" height="812" rotated="true" frameX="-15" frameY="-15" frameWidth="812" frameHeight="795"/>
+	<SubTexture name="undynerightALT0001" x="1" y="2476" width="780" height="804" rotated="true" frameX="-7" frameY="-15" frameWidth="812" frameHeight="795"/>
+	<SubTexture name="undynerightALT0002" x="3134" y="3293" width="786" height="786" frameX="-25" frameY="-9" frameWidth="812" frameHeight="795"/>
+	<SubTexture name="undynerightALT0003" x="5540" y="826" width="786" height="806" rotated="true" frameX="-21" frameY="-9" frameWidth="812" frameHeight="795"/>
+	<SubTexture name="undynerightALT0004" x="3948" y="826" width="795" height="799" rotated="true" frameX="-12" frameY="0" frameWidth="812" frameHeight="795"/>
+	<SubTexture name="undynerightALT0005" x="5501" y="2476" width="785" height="795" frameX="-25" frameY="0" frameWidth="812" frameHeight="795"/>
+	<SubTexture name="undynerightALT0006" x="5593" y="1" width="795" height="806" rotated="true" frameX="-21" frameY="0" frameWidth="812" frameHeight="795"/>
+	<SubTexture name="undynerightALT0007" x="3948" y="826" width="795" height="799" rotated="true" frameX="-12" frameY="0" frameWidth="812" frameHeight="795"/>
+	<SubTexture name="undynerightALT0008" x="6954" y="4102" width="770" height="786" rotated="true" frameX="-25" frameY="-25" frameWidth="812" frameHeight="795"/>
+	<SubTexture name="undynerightALT0009" x="2361" y="3293" width="770" height="806" rotated="true" frameX="-21" frameY="-25" frameWidth="812" frameHeight="795"/>
+	<SubTexture name="undynerightALT0010" x="1" y="4102" width="770" height="799" rotated="true" frameX="-12" frameY="-25" frameWidth="812" frameHeight="795"/>
+	<SubTexture name="undyneupALT0000" x="4746" y="826" width="791" height="803" frameX="-16" frameY="-11" frameWidth="791" frameHeight="814"/>
+	<SubTexture name="undyneupALT0001" x="3948" y="1651" width="785" height="803" frameX="-7" frameY="-11" frameWidth="791" frameHeight="814"/>
+	<SubTexture name="undyneupALT0002" x="3150" y="2476" width="768" height="814" frameX="-19" frameY="0" frameWidth="791" frameHeight="814"/>
+	<SubTexture name="undyneupALT0003" x="783" y="826" width="786" height="814" frameX="-16" frameY="0" frameWidth="791" frameHeight="814"/>
+	<SubTexture name="undyneupALT0004" x="1577" y="3293" width="781" height="796" frameX="-7" frameY="-18" frameWidth="791" frameHeight="814"/>
+	<SubTexture name="undyneupALT0005" x="3100" y="4102" width="767" height="796" frameX="-19" frameY="-18" frameWidth="791" frameHeight="814"/>
+	<SubTexture name="undyneupALT0006" x="1573" y="2476" width="786" height="796" frameX="-16" frameY="-18" frameWidth="791" frameHeight="814"/>
+	<SubTexture name="undyneupALT0007" x="1577" y="3293" width="781" height="796" frameX="-7" frameY="-18" frameWidth="791" frameHeight="814"/>
+	<SubTexture name="undyneupALT0008" x="3826" y="4906" width="768" height="769" frameX="-19" frameY="-45" frameWidth="791" frameHeight="814"/>
+	<SubTexture name="undyneupALT0009" x="1" y="4906" width="769" height="786" rotated="true" frameX="-16" frameY="-45" frameWidth="791" frameHeight="814"/>
+	<SubTexture name="undyneupALT0010" x="1542" y="4906" width="769" height="781" rotated="true" frameX="-7" frameY="-45" frameWidth="791" frameHeight="814"/>
+</TextureAtlas>

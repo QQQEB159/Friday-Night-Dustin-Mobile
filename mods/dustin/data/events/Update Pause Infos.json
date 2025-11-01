@@ -1,0 +1,29 @@
+{
+    "params": [
+        {
+            "name": "New Color",
+            "type": "ColorWheel",
+            "defaultValue": "#FFFFFF"
+        },
+        {
+            "name": "New Character",
+            "type": "String",
+            "defaultValue": "sasn undertail"
+        },
+        {
+            "name": "New Stats",
+            "type": "String",
+            "defaultValue": "* GASTER ?? ATK, ?? DEF\\n* Dark, yet darker.\\n* You are not supposed to see this."
+        }, 
+        {
+            "name": "New Character X",
+            "type": "Float(-99999, 99999, 0.01, 2)",
+            "defaultValue": "0"
+        }, 
+        {
+            "name": "New Character Y",
+            "type": "Float(-99999, 99999, 0.01, 2)",
+            "defaultValue": "0"
+        }
+    ]
+}

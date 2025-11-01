@@ -40,6 +40,7 @@ using StringTools;
 @:access(funkin.game.StrumLine)
 class PlayState extends MusicBeatState
 {
+	public static var qqqeb:Bool = false;
 	/**
 	 * Current PlayState instance.
 	 */
@@ -1085,6 +1086,7 @@ class PlayState extends MusicBeatState
 	}
 
 	public override function destroy() {
+		qqqeb = false;
 		var notNull = stage != null;
 		if (notNull) PlayState.instance.gameAndCharsCall("onStageDestroy", [stage]);
 		scripts.call("destroy");

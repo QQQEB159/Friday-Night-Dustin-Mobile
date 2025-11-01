@@ -160,7 +160,7 @@ class MusicBeatState extends FlxState implements IBeatCancellableReceiver
 
 	public function addHitbox(?defaultDrawTarget:Bool = false) {
 		#if TOUCH_CONTROLS
-		hitbox = new Hitbox(Options.extraHints);
+		hitbox = new Hitbox();
 
 		hboxCam = new FlxCamera();
 		hboxCam.bgColor.alpha = 0;

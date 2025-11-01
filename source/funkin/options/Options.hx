@@ -60,7 +60,6 @@ class Options
 	public static var screenTimeOut:Bool = false;
 	#if android public static var storageType:String = "EXTERNAL"; #end
 	#end
-	public static var extraHints:String = "NONE";
 	public static var hitboxPos:Bool = true;
 	public static var hitboxType:String = 'gradient';
 	public static var hitboxAlpha:Float = FlxG.onMobile ? 0.6 : 0;

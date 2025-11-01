@@ -61,6 +61,7 @@ class Options
 	#if android
 	public static var useExternal:Bool = false;
 	#end
+	#end
 	public static var hitboxPos:Bool = true;
 	public static var hitboxType:String = 'gradient';
 	public static var hitboxAlpha:Float = FlxG.onMobile ? 0.6 : 0;

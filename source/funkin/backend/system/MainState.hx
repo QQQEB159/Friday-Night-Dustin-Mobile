@@ -42,9 +42,6 @@ class MainState extends FlxState {
 				return;
 			}
 			#end
-		}
-		else
-		{
 			#if TOUCH_CONTROLS
 		    mobile.funkin.backend.utils.MobileData.init();
 			#end

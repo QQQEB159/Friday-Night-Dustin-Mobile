@@ -78,7 +78,7 @@ class TreeMenuScreen extends FlxSpriteGroup {
 			state.removeTouchPad();
 
 			state.addTouchPad(menuTPadModes[0], menuTPadModes[1]);
-			state.addTouchPadCamera();
+			//state.addTouchPadCamera();
 		}
 		#end
 
@@ -177,7 +177,7 @@ class TreeMenuScreen extends FlxSpriteGroup {
 			state.removeTouchPad();
 
 			state.addTouchPad(prevMenuTPadModes[0], prevMenuTPadModes[1]);
-			state.addTouchPadCamera();
+			//state.addTouchPadCamera();
 		}
 		#end
 	}

@@ -13,7 +13,7 @@ import funkin.backend.utils.NativeAPI.MessageBoxIcon;
 </target>
 ')
 
-// majority is taken from microsofts doc
+// majority is taken from Microsoft's doc
 @:cppFileCode('
 #include "mmdeviceapi.h"
 #include "combaseapi.h"
@@ -114,7 +114,7 @@ class AudioFixClient : public IMMNotificationClient {
 AudioFixClient *curAudioFix;
 ')
 @:dox(hide)
-class Windows {
+final class Windows {
 
 	public static var __audioChangeCallback:Void->Void = function() {
 		trace("test");
@@ -132,7 +132,7 @@ class Windows {
 		int darkMode = enable ? 1 : 0;
 
 		HWND window = FindWindowA(NULL, title.c_str());
-		// Look for child windows if top level aint found
+		// Look for child windows if top level is not found
 		if (window == NULL) window = FindWindowExA(GetActiveWindow(), NULL, NULL, title.c_str());
 		// If still not found, try to get the active window
 		if (window == NULL) window = GetActiveWindow();
@@ -184,6 +184,16 @@ class Windows {
 	UpdateWindow(window);
 	')
 	public static function setWindowTitleColor(title:String, color:Array<Int>) {}
+
+	@:functionCode('
+	HWND window = GetConsoleWindow();
+	HICON smallIcon = (HICON) LoadImage(NULL, path, IMAGE_ICON, 16, 16, LR_LOADFROMFILE);
+	HICON icon = (HICON) LoadImage(NULL, path, IMAGE_ICON, 0, 0, LR_LOADFROMFILE | LR_DEFAULTSIZE);
+	SendMessage(window, WM_SETICON, ICON_SMALL, (LPARAM)smallIcon);
+	SendMessage(window, WM_SETICON, ICON_BIG, (LPARAM)icon);    
+	')
+	public static function setWindowIcon(path:String) {}
+
 
 	@:functionCode('
 	// https://stackoverflow.com/questions/15543571/allocconsole-not-displaying-cout

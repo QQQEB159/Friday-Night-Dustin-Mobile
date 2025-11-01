@@ -3,20 +3,25 @@ on:
   push:
     branches: ['main']
   workflow_dispatch:
+  workflow_call:
 jobs:
   build:
     name: iOS Build
     permissions: write-all
-    runs-on: macos-13
+    runs-on: macos-15
     steps:
       - name: Pulling the new commit
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Setting up Haxe
-        uses: krdlab/setup-haxe@v1
+        uses: krdlab/setup-haxe@v2
         with:
-          haxe-version: 4.2.5
+          haxe-version: 4.3.7
+      - name: Setup Xcode
+        uses: maxim-lobanov/setup-xcode@master
+        with:
+          xcode-version: '16.4'
       - name: Restore existing build cache for faster compilation
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           # not caching the bin folder to prevent asset duplication and stuff like that
           key: cache-build-ios
@@ -27,9 +32,9 @@ jobs:
             cache-build-ios
       - name: Installing/Updating libraries
         run: |
-          haxe -cp commandline -D analyzer-optimize --run Main setup -s --lib=./libs.mobile.xml
+          haxe -cp commandline -D analyzer-optimize --run Main setup -s
       - name: Building the game
-        run: haxelib run lime build ios -nosign
+        run: haxelib run lime build ios -eval -nosign -final
       - name: Clearing already existing cache
         uses: actions/github-script@v6
         with:
@@ -58,18 +63,18 @@ jobs:
           mkdir Payload
           mv dustin.app Payload
           zip -r dustin.ipa Payload
-      - name: Uploading artifact
+      - name: Uploading artifact (entire build)
         uses: actions/upload-artifact@v4
         with:
-          name: Dustin IOS
+          name: Dustin iOS
           path: export/release/ios/build/Release-iphoneos/*.ipa
       - name: Uploading new cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           # caching again since for some reason it doesnt work with the first post cache shit
           key: cache-build-ios
           path: |
             .haxelib/
-            export/release/ios/dustin/haxe
+            export/release/ios/dustin/haxe/
           restore-keys: |
             cache-build-ios

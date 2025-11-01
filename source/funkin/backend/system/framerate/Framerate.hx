@@ -1,12 +1,11 @@
 package funkin.backend.system.framerate;
 
+import flixel.math.FlxPoint;
 import openfl.display.Bitmap;
 import openfl.display.BitmapData;
-import flixel.math.FlxPoint;
-import openfl.events.KeyboardEvent;
 import openfl.display.DisplayObject;
 import openfl.display.Sprite;
-import openfl.text.TextField;
+import openfl.events.KeyboardEvent;
 import openfl.text.TextFormat;
 import openfl.ui.Keyboard;
 import flixel.util.FlxTimer;
@@ -21,6 +20,8 @@ class Framerate extends Sprite {
 	#if SHOW_BUILD_ON_FPS
 	public static var codenameBuildField:CodenameBuildField;
 	#end
+
+	public static var fontName:String = #if windows '${Sys.getEnv("windir")}\\Fonts\\consola.ttf' #else "_typewriter" #end;
 
 	/**
 	 * 0: FPS INVISIBLE
@@ -58,13 +59,6 @@ class Framerate extends Sprite {
 		x = 10;
 		y = 2;
 
-		FlxG.stage.addEventListener(KeyboardEvent.KEY_UP, function(e:KeyboardEvent) {
-			switch(e.keyCode) {
-				case #if web Keyboard.NUMBER_3 #else Keyboard.F3 #end: // 3 on web or F3 on windows, linux and other things that runs code
-					debugMode = (debugMode + 1) % 3;
-			}
-		});
-
 		if (__bitmap == null)
 			__bitmap = new BitmapData(1, 1, 0xFF000000);
 
@@ -85,6 +79,16 @@ class Framerate extends Sprite {
 		#if (gl_stats && !disable_cffi && (!html5 || !canvas))
 		__addCategory(new StatsInfo());
 		#end
+	}
+
+	public function reload() {
+		for(c in categories)
+			c.reload();
+		#if SHOW_BUILD_ON_FPS
+		codenameBuildField.reload();
+		#end
+		memoryCounter.reload();
+		fpsCounter.reload();
 	}
 
 	private function __addCategory(category:FramerateCategory) {
@@ -141,7 +145,7 @@ class Framerate extends Sprite {
 		x = #if mobile FlxG.game.x + #end 10 + offset.x;
 		y = #if mobile FlxG.game.y + #end 2 + offset.y;
 
-		var width = Math.max(fpsCounter.width, #if SHOW_BUILD_ON_FPS Math.max(memoryCounter.width, codenameBuildField.width) #else memoryCounter.width #end) + (x*2);
+		var width = MathUtil.maxSmart(fpsCounter.width, memoryCounter.width #if SHOW_BUILD_ON_FPS , codenameBuildField.width #end) + (x*2);
 		var height = #if SHOW_BUILD_ON_FPS codenameBuildField.y + codenameBuildField.height #else memoryCounter.y + memoryCounter.height #end;
 		bgSprite.x = -x;
 		bgSprite.y = offset.x;
@@ -149,7 +153,7 @@ class Framerate extends Sprite {
 		bgSprite.scaleY = height;
 
 		var selectable = debugMode == 2;
-		{  // idk i tried to make it more lookable:sob:  - Nex
+		{  // idk i tried to make it more readable:sob:  - Nex
 			memoryCounter.memoryText.selectable = memoryCounter.memoryPeakText.selectable =
 			fpsCounter.fpsNum.selectable = fpsCounter.fpsLabel.selectable =
 			#if SHOW_BUILD_ON_FPS codenameBuildField.selectable = #end selectable;

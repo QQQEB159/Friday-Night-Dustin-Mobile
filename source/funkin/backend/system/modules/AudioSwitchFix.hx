@@ -1,12 +1,12 @@
 package funkin.backend.system.modules;
 
-import lime.media.AudioManager;
-import flixel.sound.FlxSound;
 import flixel.FlxState;
+import flixel.sound.FlxSound;
 import funkin.backend.utils.NativeAPI;
+import lime.media.AudioManager;
 
 /**
- * if youre stealing this keep this comment at least please lol
+ * if you are stealing this keep this comment at least please lol
  *
  * hi gray itsa me yoshicrafter29 i fixed it hehe
  */

@@ -3,14 +3,16 @@ package funkin.backend.system;
 import flixel.input.FlxInput;
 import flixel.input.actions.FlxAction;
 import flixel.input.actions.FlxActionInput;
-import flixel.input.actions.FlxActionInputDigital;
 import flixel.input.actions.FlxActionManager;
 import flixel.input.actions.FlxActionSet;
-import flixel.input.gamepad.FlxGamepadButton;
 import flixel.input.gamepad.FlxGamepadInputID;
 import flixel.input.keyboard.FlxKey;
 #if TOUCH_CONTROLS
 import mobile.funkin.backend.system.input.MobileInputID;
+#end
+
+#if !TOUCH_CONTROLS
+typedef MobileInputID = Dynamic;
 #end
 
 enum abstract Action(String) to String from String {
@@ -27,7 +29,6 @@ enum abstract Action(String) to String from String {
 	var RIGHT_R = "right-release";
 	var DOWN_R = "down-release";
 
-
 	var NOTE_UP = "note-up";
 	var NOTE_LEFT = "note-left";
 	var NOTE_RIGHT = "note-right";
@@ -42,14 +43,37 @@ enum abstract Action(String) to String from String {
 	var NOTE_DOWN_R = "note-down-release";
 
 	var ACCEPT = "accept";
-	var BACK = "back";
-	var PAUSE = "pause";
-	var RESET = "reset";
-	var CHEAT = "cheat";
-	var SWITCHMOD = "switchmod";
+	var ACCEPT_HOLD = "accept-press";
+	var ACCEPT_R = "accept-release";
 
-	// Debugs
-	var DEBUG_RELOAD = "debug-reload";
+	var BACK = "back";
+	var BACK_HOLD = "back-press";
+	var BACK_R = "back-release";
+	var PAUSE = "pause";
+	var PAUSE_HOLD = "pause-press";
+	var PAUSE_R = "pause-release";
+	var RESET = "reset";
+	var RESET_HOLD = "reset-press";
+	var RESET_R = "reset-release";
+	var CHANGE_MODE = "change-mode";
+	var CHANGE_MODE_HOLD = "change-mode-press";
+	var CHANGE_MODE_R = "change-mode-release";
+	var SWITCHMOD = "switchmod";
+	var SWITCHMOD_HOLD = "switchmod-press";
+	var SWITCHMOD_R = "switchmod-release";
+	var FPS_COUNTER = "fps-counter";
+	var FPS_COUNTER_HOLD = "fps-counter-press";
+	var FPS_COUNTER_R = "fps-counter-release";
+
+	var DEV_ACCESS = "dev-access";
+	var DEV_ACCESS_HOLD = "dev-access-press";
+	var DEV_ACCESS_R = "dev-access-release";
+	var DEV_CONSOLE = "dev-console";
+	var DEV_CONSOLE_HOLD = "dev-console-press";
+	var DEV_CONSOLE_R = "dev-console-release";
+	var DEV_RELOAD = "dev-reload";
+	var DEV_RELOAD_HOLD = "dev-reload-press";
+	var DEV_RELOAD_R = "dev-reload-release";
 }
 
 enum Device
@@ -77,11 +101,15 @@ enum Control
 	ACCEPT;
 	BACK;
 	PAUSE;
-	CHEAT;
+	CHANGE_MODE;
+	//CHEAT;
 	SWITCHMOD;
-	
+	FPS_COUNTER;
+
 	// Debugs
-	DEBUG_RELOAD;
+	DEV_ACCESS;
+	DEV_CONSOLE;
+	DEV_RELOAD;
 }
 
 enum KeyboardScheme
@@ -96,6 +124,7 @@ enum KeyboardScheme
  * A list of actions that a player would invoke via some input device.
  * Uses FlxActions to funnel various inputs to a single action.
  */
+// A and B are swapped for switch
 @:noCustomClass
 class Controls extends FlxActionSet
 {
@@ -126,273 +155,214 @@ class Controls extends FlxActionSet
 	var _noteDownR = new FlxActionDigital(Action.NOTE_DOWN_R);
 
 	var _accept = new FlxActionDigital(Action.ACCEPT);
+	var _acceptHold = new FlxActionDigital(Action.ACCEPT_HOLD);
+	var _acceptR = new FlxActionDigital(Action.ACCEPT_R);
 	var _back = new FlxActionDigital(Action.BACK);
+	var _backHold = new FlxActionDigital(Action.BACK_HOLD);
+	var _backR = new FlxActionDigital(Action.BACK_R);
 	var _pause = new FlxActionDigital(Action.PAUSE);
+	var _pauseHold = new FlxActionDigital(Action.PAUSE_HOLD);
+	var _pauseR = new FlxActionDigital(Action.PAUSE_R);
 	var _reset = new FlxActionDigital(Action.RESET);
-	var _cheat = new FlxActionDigital(Action.CHEAT);
+	var _resetHold = new FlxActionDigital(Action.RESET_HOLD);
+	var _resetR = new FlxActionDigital(Action.RESET_R);
+	var _changeMode = new FlxActionDigital(Action.CHANGE_MODE);
+	var _changeModeHold = new FlxActionDigital(Action.CHANGE_MODE_HOLD);
+	var _changeModeR = new FlxActionDigital(Action.CHANGE_MODE_R);
+	//var _cheat = new FlxActionDigital(Action.CHEAT);
 	var _switchMod = new FlxActionDigital(Action.SWITCHMOD);
-	
-	var debug_reload = new FlxActionDigital(Action.DEBUG_RELOAD);
+	var _switchModHold = new FlxActionDigital(Action.SWITCHMOD_HOLD);
+	var _switchModR = new FlxActionDigital(Action.SWITCHMOD_R);
+	var _fpsCounter = new FlxActionDigital(Action.FPS_COUNTER);
+	var _fpsCounterHold = new FlxActionDigital(Action.FPS_COUNTER_HOLD);
+	var _fpsCounterR = new FlxActionDigital(Action.FPS_COUNTER_R);
 
-	#if (haxe >= "4.0.0")
-	var byName:Map<String, FlxActionDigital> = [];
-	#else
-	var byName:Map<String, FlxActionDigital> = new Map<String, FlxActionDigital>();
-	#end
+	var _devAccess = new FlxActionDigital(Action.DEV_ACCESS);
+	var _devAccessHold = new FlxActionDigital(Action.DEV_ACCESS_HOLD);
+	var _devAccessR = new FlxActionDigital(Action.DEV_ACCESS_R);
+	var _devConsole = new FlxActionDigital(Action.DEV_CONSOLE);
+	var _devConsoleHold = new FlxActionDigital(Action.DEV_CONSOLE_HOLD);
+	var _devConsoleR = new FlxActionDigital(Action.DEV_CONSOLE_R);
+	var _devReload = new FlxActionDigital(Action.DEV_RELOAD);
+	var _devReloadHold = new FlxActionDigital(Action.DEV_RELOAD_HOLD);
+	var _devReloadR = new FlxActionDigital(Action.DEV_RELOAD_R);
+
+	public var byName:Map<String, FlxActionDigital> = [];
 
 	public var gamepadsAdded:Array<Int> = [];
 	public var keyboardScheme = KeyboardScheme.None;
 
 	public var UP(get, set):Bool;
-
-	inline function get_UP()
-		return _up.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.UP) #end;
-
-	inline function set_UP(val)
-		return @:privateAccess _up._checked = val;
-
+	inline function get_UP() return _up.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.UP) #end;
+	inline function set_UP(val) return @:privateAccess _up._checked = val;
 	public var LEFT(get, set):Bool;
-
-	inline function get_LEFT()
-		return _left.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.LEFT) #end;
-
-	inline function set_LEFT(val)
-		return @:privateAccess _left._checked = val;
-
+	inline function get_LEFT()return _left.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.LEFT) #end;
+	inline function set_LEFT(val) return @:privateAccess _left._checked = val;
 	public var RIGHT(get, set):Bool;
-
-	inline function get_RIGHT()
-		return _right.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.RIGHT) #end;
-
-	inline function set_RIGHT(val)
-		return @:privateAccess _right._checked = val;
-
+	inline function get_RIGHT() return _right.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.RIGHT) #end;
+	inline function set_RIGHT(val) return @:privateAccess _right._checked = val;
 	public var DOWN(get, set):Bool;
-
-	inline function get_DOWN()
-		return _down.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.DOWN) #end;
-
-	inline function set_DOWN(val)
-		return @:privateAccess _down._checked = val;
-
+	inline function get_DOWN() return _down.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.DOWN) #end;
+	inline function set_DOWN(val) return @:privateAccess _down._checked = val;
 	public var UP_P(get, set):Bool;
-
-	inline function get_UP_P()
-		return _upP.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.UP) #end;
-
-	inline function set_UP_P(val)
-		return @:privateAccess _upP._checked = val;
-
+	inline function get_UP_P() return _upP.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.UP) #end;
+	inline function set_UP_P(val) return @:privateAccess _upP._checked = val;
 	public var LEFT_P(get, set):Bool;
-
-	inline function get_LEFT_P()
-		return _leftP.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.LEFT) #end;
-
-	inline function set_LEFT_P(val)
-		return @:privateAccess _leftP._checked = val;
-
+	inline function get_LEFT_P() return _leftP.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.LEFT) #end;
+	inline function set_LEFT_P(val) return @:privateAccess _leftP._checked = val;
 	public var RIGHT_P(get, set):Bool;
-
-	inline function get_RIGHT_P()
-		return _rightP.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.RIGHT) #end;
-
-	inline function set_RIGHT_P(val)
-		return @:privateAccess _rightP._checked = val;
-
+	inline function get_RIGHT_P() return _rightP.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.RIGHT) #end;
+	inline function set_RIGHT_P(val) return @:privateAccess _rightP._checked = val;
 	public var DOWN_P(get, set):Bool;
-
-	inline function get_DOWN_P()
-		return _downP.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.DOWN) #end;
-
-	inline function set_DOWN_P(val)
-		return @:privateAccess _downP._checked = val;
-
+	inline function get_DOWN_P() return _downP.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.DOWN) #end;
+	inline function set_DOWN_P(val) return @:privateAccess _downP._checked = val;
 	public var UP_R(get, set):Bool;
-
-	inline function get_UP_R()
-		return _upR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.UP) #end;
-
-	inline function set_UP_R(val)
-		return @:privateAccess _upR._checked = val;
-
+	inline function get_UP_R() return _upR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.UP) #end;
+	inline function set_UP_R(val) return @:privateAccess _upR._checked = val;
 	public var LEFT_R(get, set):Bool;
-
-	inline function get_LEFT_R()
-		return _leftR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.LEFT) #end;
-
-	inline function set_LEFT_R(val)
-		return @:privateAccess _leftR._checked = val;
-
+	inline function get_LEFT_R() return _leftR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.LEFT) #end;
+	inline function set_LEFT_R(val) return @:privateAccess _leftR._checked = val;
 	public var RIGHT_R(get, set):Bool;
-
-	inline function get_RIGHT_R()
-		return _rightR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.RIGHT) #end;
-
-	inline function set_RIGHT_R(val)
-		return @:privateAccess _rightR._checked = val;
-
+	inline function get_RIGHT_R() return _rightR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.RIGHT) #end;
+	inline function set_RIGHT_R(val) return @:privateAccess _rightR._checked = val;
 	public var DOWN_R(get, set):Bool;
-
-	inline function get_DOWN_R()
-		return _downR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.DOWN) #end;
-
-	inline function set_DOWN_R(val)
-		return @:privateAccess _downR._checked = val;
+	inline function get_DOWN_R() return _downR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.DOWN) #end;
+	inline function set_DOWN_R(val) return @:privateAccess _downR._checked = val;
 
 	public var NOTE_UP(get, set):Bool;
-
-	inline function get_NOTE_UP()
-		return _noteUp.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.NOTE_UP) #end;
-
-	inline function set_NOTE_UP(val)
-		return @:privateAccess _noteUp._checked = val;
-
+	inline function get_NOTE_UP() return _noteUp.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.NOTE_UP) #end;
+	inline function set_NOTE_UP(val) return @:privateAccess _noteUp._checked = val;
 	public var NOTE_LEFT(get, set):Bool;
-
-	inline function get_NOTE_LEFT()
-		return _noteLeft.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.NOTE_LEFT) #end;
-
-	inline function set_NOTE_LEFT(val)
-		return @:privateAccess _noteLeft._checked = val;
-
+	inline function get_NOTE_LEFT() return _noteLeft.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.NOTE_LEFT) #end;
+	inline function set_NOTE_LEFT(val) return @:privateAccess _noteLeft._checked = val;
 	public var NOTE_RIGHT(get, set):Bool;
-
-	inline function get_NOTE_RIGHT()
-		return _noteRight.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.NOTE_RIGHT) #end;
-
-	inline function set_NOTE_RIGHT(val)
-		return @:privateAccess _noteRight._checked = val;
-
+	inline function get_NOTE_RIGHT() return _noteRight.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.NOTE_RIGHT) #end;
+	inline function set_NOTE_RIGHT(val) return @:privateAccess _noteRight._checked = val;
 	public var NOTE_DOWN(get, set):Bool;
-
-	inline function get_NOTE_DOWN()
-		return _noteDown.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.NOTE_DOWN) #end;
-
-	inline function set_NOTE_DOWN(val)
-		return @:privateAccess _noteDown._checked = val;
-
+	inline function get_NOTE_DOWN() return _noteDown.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.NOTE_DOWN) #end;
+	inline function set_NOTE_DOWN(val) return @:privateAccess _noteDown._checked = val;
 	public var NOTE_UP_P(get, set):Bool;
-
-	inline function get_NOTE_UP_P()
-		return _noteUpP.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.NOTE_UP) #end;
-
-	inline function set_NOTE_UP_P(val)
-		return @:privateAccess _noteUpP._checked = val;
-
+	inline function get_NOTE_UP_P() return _noteUpP.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.NOTE_UP) #end;
+	inline function set_NOTE_UP_P(val) return @:privateAccess _noteUpP._checked = val;
 	public var NOTE_LEFT_P(get, set):Bool;
-
-	inline function get_NOTE_LEFT_P()
-		return _noteLeftP.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.NOTE_LEFT) #end;
-
-	inline function set_NOTE_LEFT_P(val)
-		return @:privateAccess _noteLeftP._checked = val;
-
+	inline function get_NOTE_LEFT_P() return _noteLeftP.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.NOTE_LEFT) #end;
+	inline function set_NOTE_LEFT_P(val) return @:privateAccess _noteLeftP._checked = val;
 	public var NOTE_RIGHT_P(get, set):Bool;
-
-	inline function get_NOTE_RIGHT_P()
-		return _noteRightP.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.NOTE_RIGHT) #end;
-
-	inline function set_NOTE_RIGHT_P(val)
-		return @:privateAccess _noteRightP._checked = val;
-
+	inline function get_NOTE_RIGHT_P() return _noteRightP.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.NOTE_RIGHT) #end;
+	inline function set_NOTE_RIGHT_P(val) return @:privateAccess _noteRightP._checked = val;
 	public var NOTE_DOWN_P(get, set):Bool;
-
-	inline function get_NOTE_DOWN_P()
-		return _noteDownP.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.NOTE_DOWN) #end;
-
-	inline function set_NOTE_DOWN_P(val)
-		return @:privateAccess _noteDownP._checked = val;
-
+	inline function get_NOTE_DOWN_P() return _noteDownP.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.NOTE_DOWN) #end;
+	inline function set_NOTE_DOWN_P(val) return @:privateAccess _noteDownP._checked = val;
 	public var NOTE_UP_R(get, set):Bool;
-
-	inline function get_NOTE_UP_R()
-		return _noteUpR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.NOTE_UP) #end;
-
-	inline function set_NOTE_UP_R(val)
-		return @:privateAccess _noteUpR._checked = val;
-
+	inline function get_NOTE_UP_R() return _noteUpR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.NOTE_UP) #end;
+	inline function set_NOTE_UP_R(val) return @:privateAccess _noteUpR._checked = val;
 	public var NOTE_LEFT_R(get, set):Bool;
-
-	inline function get_NOTE_LEFT_R()
-		return _noteLeftR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.NOTE_LEFT) #end;
-
-	inline function set_NOTE_LEFT_R(val)
-		return @:privateAccess _noteLeftR._checked = val;
-
+	inline function get_NOTE_LEFT_R() return _noteLeftR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.NOTE_LEFT) #end;
+	inline function set_NOTE_LEFT_R(val) return @:privateAccess _noteLeftR._checked = val;
 	public var NOTE_RIGHT_R(get, set):Bool;
-
-	inline function get_NOTE_RIGHT_R()
-		return _noteRightR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.NOTE_RIGHT) #end;
-
-	inline function set_NOTE_RIGHT_R(val)
-		return @:privateAccess _noteRightR._checked = val;
-
+	inline function get_NOTE_RIGHT_R() return _noteRightR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.NOTE_RIGHT) #end;
+	inline function set_NOTE_RIGHT_R(val) return @:privateAccess _noteRightR._checked = val;
 	public var NOTE_DOWN_R(get, set):Bool;
-
-	inline function get_NOTE_DOWN_R()
-		return _noteDownR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.NOTE_DOWN) #end;
-
-	inline function set_NOTE_DOWN_R(val)
-		return @:privateAccess _noteDownR._checked = val;
+	inline function get_NOTE_DOWN_R() return _noteDownR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.NOTE_DOWN) #end;
+	inline function set_NOTE_DOWN_R(val) return @:privateAccess _noteDownR._checked = val;
 
 	public var ACCEPT(get, set):Bool;
-
-	inline function get_ACCEPT()
-		return _accept.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.A) #end;
-
-	inline function set_ACCEPT(val)
-		return @:privateAccess _accept._checked = val;
-
+	inline function get_ACCEPT() return _accept.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.A) #end;
+	inline function set_ACCEPT(val) return @:privateAccess _accept._checked = val;
+	public var ACCEPT_HOLD(get, set):Bool;
+	inline function get_ACCEPT_HOLD() return _acceptHold.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.A) #end;
+	inline function set_ACCEPT_HOLD(val:Bool) return @:privateAccess _acceptHold._checked = val;
+	public var ACCEPT_R(get, set):Bool;
+	inline function get_ACCEPT_R() return _acceptR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.A) #end;
+	inline function set_ACCEPT_R(val:Bool) return @:privateAccess _acceptR._checked = val;
 	public var BACK(get, set):Bool;
-
-	inline function get_BACK()
-		return _back.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.B) #end;
-
-	inline function set_BACK(val)
-		return @:privateAccess _back._checked = val;
-
+	inline function get_BACK() return _back.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.B) #end;
+	inline function set_BACK(val) return @:privateAccess _back._checked = val;
+	public var BACK_HOLD(get, set):Bool;
+	inline function get_BACK_HOLD() return _backHold.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.B) #end;
+	inline function set_BACK_HOLD(val:Bool) return @:privateAccess _backHold._checked = val;
+	public var BACK_R(get, set):Bool;
+	inline function get_BACK_R() return _backR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.B) #end;
+	inline function set_BACK_R(val:Bool) return @:privateAccess _backR._checked = val;
 	public var PAUSE(get, set):Bool;
-
-	inline function get_PAUSE()
-		return _pause.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.P) #end;
-
-	inline function set_PAUSE(val)
-		return @:privateAccess _pause._checked = val;
-
+	inline function get_PAUSE() return _pause.check() #if TOUCH_CONTROLS || mobileControlsJustPressed(MobileInputID.P) #end;
+	inline function set_PAUSE(val) return @:privateAccess _pause._checked = val;
+	public var PAUSE_HOLD(get, set):Bool;
+	inline function get_PAUSE_HOLD() return _pauseHold.check() #if TOUCH_CONTROLS || mobileControlsPressed(MobileInputID.P) #end;
+	inline function set_PAUSE_HOLD(val:Bool) return @:privateAccess _pauseHold._checked = val;
+	public var PAUSE_R(get, set):Bool;
+	inline function get_PAUSE_R() return _pauseR.check() #if TOUCH_CONTROLS || mobileControlsJustReleased(MobileInputID.P) #end;
+	inline function set_PAUSE_R(val:Bool) return @:privateAccess _pauseR._checked = val;
 	public var RESET(get, set):Bool;
-
-	inline function get_RESET()
-		return _reset.check();
-
-	inline function set_RESET(val)
-		return @:privateAccess _reset._checked = val;
-
-	public var CHEAT(get, set):Bool;
-
-	inline function get_CHEAT()
-		return _cheat.check();
-
-	inline function set_CHEAT(val)
-		return @:privateAccess _cheat._checked = val;
-
+	inline function get_RESET() return _reset.check();
+	inline function set_RESET(val:Bool) return @:privateAccess _reset._checked = val;
+	public var RESET_HOLD(get, set):Bool;
+	inline function get_RESET_HOLD() return _resetHold.check();
+	inline function set_RESET_HOLD(val:Bool) return @:privateAccess _resetHold._checked = val;
+	public var RESET_R(get, set):Bool;
+	inline function get_RESET_R() return _resetR.check();
+	inline function set_RESET_R(val:Bool) return @:privateAccess _resetR._checked = val;
+	public var CHANGE_MODE(get, set):Bool;
+	inline function get_CHANGE_MODE() return _changeMode.check();
+	inline function set_CHANGE_MODE(val) return @:privateAccess _changeMode._checked = val;
+	public var CHANGE_MODE_HOLD(get, set):Bool;
+	inline function get_CHANGE_MODE_HOLD() return _changeModeHold.check();
+	inline function set_CHANGE_MODE_HOLD(val:Bool) return @:privateAccess _changeModeHold._checked = val;
+	public var CHANGE_MODE_R(get, set):Bool;
+	inline function get_CHANGE_MODE_R() return _changeModeR.check();
+	inline function set_CHANGE_MODE_R(val:Bool) return @:privateAccess _changeModeR._checked = val;
+	/*public var CHEAT(get, set):Bool;
+	inline function get_CHEAT() return _cheat.check();
+	inline function set_CHEAT(val) return @:privateAccess _cheat._checked = val;*/
 	public var SWITCHMOD(get, set):Bool;
+	inline function get_SWITCHMOD() return _switchMod.check();
+	inline function set_SWITCHMOD(val) return @:privateAccess _switchMod._checked = val;
+	public var SWITCHMOD_HOLD(get, set):Bool;
+	inline function get_SWITCHMOD_HOLD() return _switchModHold.check();
+	inline function set_SWITCHMOD_HOLD(val:Bool) return @:privateAccess _switchModHold._checked = val;
+	public var SWITCHMOD_R(get, set):Bool;
+	inline function get_SWITCHMOD_R() return _switchModR.check();
+	inline function set_SWITCHMOD_R(val:Bool) return @:privateAccess _switchModR._checked = val;
+	public var FPS_COUNTER(get, set):Bool;
+	inline function get_FPS_COUNTER() return _fpsCounter.check();
+	inline function set_FPS_COUNTER(val:Bool) return @:privateAccess _fpsCounter._checked = val;
+	public var FPS_COUNTER_HOLD(get, set):Bool;
+	inline function get_FPS_COUNTER_HOLD() return _fpsCounterHold.check();
+	inline function set_FPS_COUNTER_HOLD(val:Bool) return @:privateAccess _fpsCounterHold._checked = val;
+	public var FPS_COUNTER_R(get, set):Bool;
+	inline function get_FPS_COUNTER_R() return _fpsCounterR.check();
+	inline function set_FPS_COUNTER_R(val:Bool) return @:privateAccess _fpsCounterR._checked = val;
 
-	inline function get_SWITCHMOD()
-		return _switchMod.check();
-
-	inline function set_SWITCHMOD(val)
-		return @:privateAccess _switchMod._checked = val;
-
-	public var DEBUG_RELOAD(get, set):Bool;
-
-	inline function get_DEBUG_RELOAD()
-		return debug_reload.check();
-
-	inline function set_DEBUG_RELOAD(val)
-		return @:privateAccess debug_reload._checked = val;
+	public var DEV_ACCESS(get, set):Bool;
+	inline function get_DEV_ACCESS() return _devAccess.check();
+	inline function set_DEV_ACCESS(val:Bool) return @:privateAccess _devAccess._checked = val;
+	public var DEV_ACCESS_HOLD(get, set):Bool;
+	inline function get_DEV_ACCESS_HOLD() return _devAccessHold.check();
+	inline function set_DEV_ACCESS_HOLD(val:Bool) return @:privateAccess _devAccessHold._checked = val;
+	public var DEV_ACCESS_R(get, set):Bool;
+	inline function get_DEV_ACCESS_R() return _devAccessR.check();
+	inline function set_DEV_ACCESS_R(val:Bool) return @:privateAccess _devAccessR._checked = val;
+	public var DEV_CONSOLE(get, set):Bool;
+	inline function get_DEV_CONSOLE() return _devConsole.check();
+	inline function set_DEV_CONSOLE(val:Bool) return @:privateAccess _devConsole._checked = val;
+	public var DEV_CONSOLE_HOLD(get, set):Bool;
+	inline function get_DEV_CONSOLE_HOLD() return _devConsoleHold.check();
+	inline function set_DEV_CONSOLE_HOLD(val:Bool) return @:privateAccess _devConsoleHold._checked = val;
+	public var DEV_CONSOLE_R(get, set):Bool;
+	inline function get_DEV_CONSOLE_R() return _devConsoleR.check();
+	inline function set_DEV_CONSOLE_R(val:Bool) return @:privateAccess _devConsoleR._checked = val;
+	public var DEV_RELOAD(get, set):Bool;
+	inline function get_DEV_RELOAD() return _devReload.check();
+	inline function set_DEV_RELOAD(val:Bool) return @:privateAccess _devReload._checked = val;
+	public var DEV_RELOAD_HOLD(get, set):Bool;
+	inline function get_DEV_RELOAD_HOLD() return _devReloadHold.check();
+	inline function set_DEV_RELOAD_HOLD(val:Bool) return @:privateAccess _devReloadHold._checked = val;
+	public var DEV_RELOAD_R(get, set):Bool;
+	inline function get_DEV_RELOAD_R() return _devReloadR.check();
+	inline function set_DEV_RELOAD_R(val:Bool) return @:privateAccess _devReloadR._checked = val;
 
 	public static var instance:Controls;
-	
+
 	public function new(name, scheme = None)
 	{
 		super(name);
@@ -425,12 +395,34 @@ class Controls extends FlxActionSet
 		add(_noteDownR);
 
 		add(_accept);
+		add(_acceptHold);
+		add(_acceptR);
 		add(_back);
+		add(_backHold);
+		add(_backR);
 		add(_pause);
+		add(_pauseHold);
+		add(_pauseR);
 		add(_reset);
-		add(_cheat);
+		add(_resetHold);
+		add(_resetR);
+		// add(_cheat);
 		add(_switchMod);
-		add(debug_reload);
+		add(_switchModHold);
+		add(_switchModR);
+		add(_fpsCounter);
+		add(_fpsCounterHold);
+		add(_fpsCounterR);
+
+		add(_devAccess);
+		add(_devAccessHold);
+		add(_devAccessR);
+		add(_devConsole);
+		add(_devConsoleHold);
+		add(_devConsoleR);
+		add(_devReload);
+		add(_devReloadHold);
+		add(_devReloadR);
 
 		for (action in digitalActions)
 			byName[action.name] = action;
@@ -442,7 +434,7 @@ class Controls extends FlxActionSet
 	{
 		super.update();
 	}
-	
+
 	public var touchC(get, never):Bool;
 	
 	@:noCompletion
@@ -480,7 +472,7 @@ class Controls extends FlxActionSet
 		return getDialogueName(getActionFromControl(Control.createByName(token.toUpperCase())));
 	}
 
-	function getActionFromControl(control:Control):FlxActionDigital
+	public function getActionFromControl(control:Control):FlxActionDigital
 	{
 		return switch (control)
 		{
@@ -496,9 +488,13 @@ class Controls extends FlxActionSet
 			case BACK: _back;
 			case PAUSE: _pause;
 			case RESET: _reset;
-			case CHEAT: _cheat;
+			case CHANGE_MODE: _changeMode;
+			// case CHEAT: _cheat;
 			case SWITCHMOD: _switchMod;
-			case DEBUG_RELOAD: debug_reload;
+			case FPS_COUNTER: _fpsCounter;
+			case DEV_ACCESS: _devAccess;
+			case DEV_CONSOLE: _devConsole;
+			case DEV_RELOAD: _devReload;
 		}
 	}
 
@@ -552,18 +548,46 @@ class Controls extends FlxActionSet
 				func(_downR, JUST_RELEASED);
 			case ACCEPT:
 				func(_accept, JUST_PRESSED);
+				func(_acceptHold, PRESSED);
+				func(_acceptR, JUST_RELEASED);
 			case BACK:
 				func(_back, JUST_PRESSED);
+				func(_backHold, PRESSED);
+				func(_backR, JUST_RELEASED);
 			case PAUSE:
 				func(_pause, JUST_PRESSED);
+				func(_pauseHold, PRESSED);
+				func(_pauseR, JUST_RELEASED);
 			case RESET:
 				func(_reset, JUST_PRESSED);
-			case CHEAT:
-				func(_cheat, JUST_PRESSED);
+				func(_resetHold, PRESSED);
+				func(_resetR, JUST_RELEASED);
+			case CHANGE_MODE:
+				func(_changeMode, JUST_PRESSED);
+				func(_changeModeHold, PRESSED);
+				func(_changeModeR, JUST_RELEASED);
+			/*case CHEAT:
+				func(_cheat, JUST_PRESSED); */
 			case SWITCHMOD:
 				func(_switchMod, JUST_PRESSED);
-			case DEBUG_RELOAD:
-				func(debug_reload, JUST_PRESSED);
+				func(_switchModHold, PRESSED);
+				func(_switchModR, JUST_RELEASED);
+			case FPS_COUNTER:
+				func(_fpsCounter, JUST_PRESSED);
+				func(_fpsCounterHold, PRESSED);
+				func(_fpsCounterR, JUST_RELEASED);
+			case DEV_ACCESS:
+				func(_devAccess, JUST_PRESSED);
+				func(_devAccessHold, PRESSED);
+				func(_devAccessR, JUST_RELEASED);
+			case DEV_CONSOLE:
+				func(_devConsole, JUST_PRESSED);
+				func(_devConsoleHold, PRESSED);
+				func(_devConsoleR, JUST_RELEASED);
+			case DEV_RELOAD:
+				func(_devReload, JUST_PRESSED);
+				func(_devReloadHold, PRESSED);
+				func(_devReloadR, JUST_RELEASED);
 		}
 	}
 
@@ -590,7 +614,6 @@ class Controls extends FlxActionSet
 
 	public function copyFrom(controls:Controls, ?device:Device)
 	{
-		#if (haxe >= "4.0.0")
 		for (name => action in controls.byName)
 		{
 			for (input in action.inputs)
@@ -599,31 +622,13 @@ class Controls extends FlxActionSet
 					byName[name].add(cast input);
 			}
 		}
-		#else
-		for (name in controls.byName.keys())
-		{
-			var action = controls.byName[name];
-			for (input in action.inputs)
-			{
-				if (device == null || isDevice(input, device))
-				byName[name].add(cast input);
-			}
-		}
-		#end
 
 		switch (device)
 		{
 			case null:
 				// add all
-				#if (haxe >= "4.0.0")
 				for (gamepad in controls.gamepadsAdded)
-					if (!gamepadsAdded.contains(gamepad))
-						gamepadsAdded.push(gamepad);
-				#else
-				for (gamepad in controls.gamepadsAdded)
-					if (gamepadsAdded.indexOf(gamepad) == -1)
-					  gamepadsAdded.push(gamepad);
-				#end
+					gamepadsAdded.pushOnce(gamepad);
 
 				mergeKeyboardScheme(controls.keyboardScheme);
 
@@ -659,11 +664,7 @@ class Controls extends FlxActionSet
 	 */
 	public function bindKeys(control:Control, keys:Array<FlxKey>)
 	{
-		#if (haxe >= "4.0.0")
 		inline forEachBound(control, (action, state) -> addKeys(action, keys, state));
-		#else
-		forEachBound(control, function(action, state) addKeys(action, keys, state));
-		#end
 	}
 
 	/**
@@ -671,27 +672,21 @@ class Controls extends FlxActionSet
 	 * If binder is a literal you can inline this
 	 */
 	public function unbindKeys(control:Control, keys:Array<FlxKey>)
-	{
-		#if (haxe >= "4.0.0")
 		inline forEachBound(control, (action, _) -> removeKeys(action, keys));
-		#else
-		forEachBound(control, function(action, _) removeKeys(action, keys));
-		#end
-	}
 
-	inline static function addKeys(action:FlxActionDigital, keys:Array<FlxKey>, state:FlxInputState)
+	inline public static function addKeys(action:FlxActionDigital, keys:Array<FlxKey>, state:FlxInputState)
 	{
 		for (key in keys)
 			action.addKey(key, state);
 	}
 
-	static function removeKeys(action:FlxActionDigital, keys:Array<FlxKey>)
+	public static function removeKeys(action:FlxActionDigital, keys:Array<FlxKey>)
 	{
 		var i = action.inputs.length;
 		while (i-- > 0)
 		{
 			var input = action.inputs[i];
-			if (input.device == KEYBOARD && keys.indexOf(cast input.inputID) != -1)
+			if (input.device == KEYBOARD && keys.contains(cast input.inputID))
 				action.remove(input);
 		}
 	}
@@ -719,7 +714,10 @@ class Controls extends FlxActionSet
 				inline bindKeys(Control.PAUSE, Options.SOLO_PAUSE);
 				inline bindKeys(Control.RESET, Options.SOLO_RESET);
 				inline bindKeys(Control.SWITCHMOD, Options.SOLO_SWITCHMOD);
-				inline bindKeys(Control.DEBUG_RELOAD, Options.SOLO_DEBUG_RELOAD);
+				inline bindKeys(Control.FPS_COUNTER, Options.SOLO_FPS_COUNTER);
+				inline bindKeys(Control.DEV_ACCESS, Options.SOLO_DEV_ACCESS);
+				inline bindKeys(Control.DEV_CONSOLE, Options.SOLO_DEV_CONSOLE);
+				inline bindKeys(Control.DEV_RELOAD, Options.SOLO_DEV_RELOAD);
 			case Duo(true):
 				inline bindKeys(Control.UP, Options.P1_UP);
 				inline bindKeys(Control.DOWN, Options.P1_DOWN);
@@ -734,7 +732,10 @@ class Controls extends FlxActionSet
 				inline bindKeys(Control.PAUSE, Options.P1_PAUSE);
 				inline bindKeys(Control.RESET, Options.P1_RESET);
 				inline bindKeys(Control.SWITCHMOD, Options.P1_SWITCHMOD);
-				inline bindKeys(Control.DEBUG_RELOAD, Options.P1_DEBUG_RELOAD);
+				inline bindKeys(Control.FPS_COUNTER, Options.P1_FPS_COUNTER);
+				inline bindKeys(Control.DEV_ACCESS, Options.P1_DEV_ACCESS);
+				inline bindKeys(Control.DEV_CONSOLE, Options.P1_DEV_CONSOLE);
+				inline bindKeys(Control.DEV_RELOAD, Options.P1_DEV_RELOAD);
 			case Duo(false):
 				inline bindKeys(Control.UP, Options.P2_UP);
 				inline bindKeys(Control.DOWN, Options.P2_DOWN);
@@ -749,7 +750,10 @@ class Controls extends FlxActionSet
 				inline bindKeys(Control.PAUSE, Options.P2_PAUSE);
 				inline bindKeys(Control.RESET, Options.P2_RESET);
 				inline bindKeys(Control.SWITCHMOD, Options.P2_SWITCHMOD);
-				inline bindKeys(Control.DEBUG_RELOAD, Options.P2_DEBUG_RELOAD);
+				inline bindKeys(Control.FPS_COUNTER, Options.P2_FPS_COUNTER);
+				inline bindKeys(Control.DEV_ACCESS, Options.P2_DEV_ACCESS);
+				inline bindKeys(Control.DEV_CONSOLE, Options.P2_DEV_CONSOLE);
+				inline bindKeys(Control.DEV_RELOAD, Options.P2_DEV_RELOAD);
 			case None: // nothing
 			case Custom: // nothing
 		}
@@ -773,26 +777,16 @@ class Controls extends FlxActionSet
 	{
 		gamepadsAdded.push(id);
 
-		#if (haxe >= "4.0.0")
 		for (control => buttons in buttonMap)
 			inline bindButtons(control, id, buttons);
-		#else
-		for (control in buttonMap.keys())
-			bindButtons(control, id, buttonMap[control]);
-		#end
 	}
 
 	inline function addGamepadLiteral(id:Int, ?buttonMap:Map<Control, Array<FlxGamepadInputID>>):Void
 	{
 		gamepadsAdded.push(id);
 
-		#if (haxe >= "4.0.0")
 		for (control => buttons in buttonMap)
 			inline bindButtons(control, id, buttons);
-		#else
-		for (control in buttonMap.keys())
-			bindButtons(control, id, buttonMap[control]);
-		#end
 	}
 
 	public function removeGamepad(deviceID:Int = FlxInputDeviceID.ALL):Void
@@ -822,7 +816,9 @@ class Controls extends FlxActionSet
 			Control.LEFT => [DPAD_LEFT, LEFT_STICK_DIGITAL_LEFT],
 			Control.RIGHT => [DPAD_RIGHT, LEFT_STICK_DIGITAL_RIGHT],
 			Control.PAUSE => [START],
-			Control.RESET => [Y]
+			Control.RESET => [Y],
+			Control.SWITCHMOD => [FlxGamepadInputID.BACK],
+			Control.CHANGE_MODE => [FlxGamepadInputID.BACK]
 		]);
 		#else
 		addGamepadLiteral(id, [
@@ -836,7 +832,9 @@ class Controls extends FlxActionSet
 			Control.PAUSE => [START],
 			//Swap Y and X for switch
 			Control.RESET => [Y],
-			Control.CHEAT => [X]
+			//Control.CHEAT => [X],
+			Control.SWITCHMOD => [FlxGamepadInputID.BACK],
+			Control.CHANGE_MODE => [FlxGamepadInputID.BACK]
 		]);
 		#end
 	}
@@ -847,11 +845,7 @@ class Controls extends FlxActionSet
 	 */
 	public function bindButtons(control:Control, id, buttons)
 	{
-		#if (haxe >= "4.0.0")
 		inline forEachBound(control, (action, state) -> addButtons(action, buttons, state, id));
-		#else
-		forEachBound(control, function(action, state) addButtons(action, buttons, state, id));
-		#end
 	}
 
 	/**
@@ -860,11 +854,7 @@ class Controls extends FlxActionSet
 	 */
 	public function unbindButtons(control:Control, gamepadID:Int, buttons)
 	{
-		#if (haxe >= "4.0.0")
 		inline forEachBound(control, (action, _) -> removeButtons(action, gamepadID, buttons));
-		#else
-		forEachBound(control, function(action, _) removeButtons(action, gamepadID, buttons));
-		#end
 	}
 
 	inline static function addButtons(action:FlxActionDigital, buttons:Array<FlxGamepadInputID>, state, id)
@@ -879,7 +869,7 @@ class Controls extends FlxActionSet
 		while (i-- > 0)
 		{
 			var input = action.inputs[i];
-			if (isGamepad(input, gamepadID) && buttons.indexOf(cast input.inputID) != -1)
+			if (isGamepad(input, gamepadID) && buttons.contains(cast input.inputID))
 				action.remove(input);
 		}
 	}
@@ -931,7 +921,7 @@ class Controls extends FlxActionSet
 	{
 		return input.device == GAMEPAD && (deviceID == FlxInputDeviceID.ALL || input.deviceID == deviceID);
 	}
-	
+
 	#if TOUCH_CONTROLS
 	public function mobileControlsJustPressed(id:MobileInputID):Bool
 	{
@@ -1065,4 +1055,39 @@ class Controls extends FlxActionSet
 		return bools.contains(true);
 	}
 	#end
+
+	public function getMobileIDFromControl(control:Control):MobileInputID
+	{
+		#if TOUCH_CONTROLS
+		return switch (control)
+		{
+			case UP: MobileInputID.UP;
+			case DOWN: MobileInputID.DOWN;
+			case LEFT: MobileInputID.LEFT;
+			case RIGHT: MobileInputID.RIGHT;
+			case NOTE_UP: MobileInputID.NOTE_UP;
+			case NOTE_DOWN: MobileInputID.NOTE_DOWN;
+			case NOTE_LEFT: MobileInputID.NOTE_LEFT;
+			case NOTE_RIGHT: MobileInputID.NOTE_RIGHT;
+			case ACCEPT: MobileInputID.A;
+			case BACK: MobileInputID.B;
+			case PAUSE: MobileInputID.P;
+			default: MobileInputID.NONE;
+		}
+		#else
+		return null; // jumpscare
+		#end
+	}
+
+	public inline function getJustPressed(name:String) {
+		return ControlsUtil.getJustPressed(this, name);
+	}
+
+	public inline function getJustReleased(name:String) {
+		return ControlsUtil.getJustReleased(this, name);
+	}
+
+	public inline function getPressed(name:String) {
+		return ControlsUtil.getPressed(this, name);
+	}
 }

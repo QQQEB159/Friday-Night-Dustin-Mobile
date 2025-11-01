@@ -57,7 +57,7 @@ class OptionsMenu extends TreeMenu {
 	];
 
 	var bg:FlxSprite;
-	//var debugOption:TextOption;
+	var debugOption:TextOption;
 
 	override function create() {
 		super.create();
@@ -107,7 +107,7 @@ class OptionsMenu extends TreeMenu {
 			}
 		})]));
 
-		//checkDebugOption();
+		checkDebugOption();
 		var first = tree.first();
 
 		for (i in funkin.backend.assets.ModsFolder.getLoadedMods()) {
@@ -126,7 +126,7 @@ class OptionsMenu extends TreeMenu {
 		#end
 	}
 
-	/*function checkDebugOption() {
+	function checkDebugOption() {
 		var first = tree.first();
 		if (Options.devMode) {
 			if (debugOption == null) {
@@ -140,7 +140,7 @@ class OptionsMenu extends TreeMenu {
 			debugOption = flixel.util.FlxDestroyUtil.destroy(debugOption);
 			if (first.curSelected >= first.length) first.changeSelection(0, true);
 		}
-	}*/
+	}
 
 	public function updateBG() {
 		var scaleX:Float = FlxG.width / bg.width;
@@ -158,7 +158,7 @@ class OptionsMenu extends TreeMenu {
 
 	override function menuChanged() {
 		super.menuChanged();
-		//checkDebugOption();
+		checkDebugOption();
 	}
 
 	override function exit() {
@@ -183,6 +183,10 @@ class OptionsMenu extends TreeMenu {
 			}
 			var name = node.getAtt("name");
 			var desc = node.getAtt("desc").getDefault("optionsMenu.desc-missing");
+			if (screen.prefix?.length > 0) {
+				name = screen.prefix + name;
+				if (node.has.desc) desc = screen.prefix + desc;
+			}
 
 			switch(node.name) {
 				case "checkbox":

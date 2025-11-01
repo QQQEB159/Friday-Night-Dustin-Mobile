@@ -167,6 +167,6 @@ class CharterMetaDataScreen extends UISubstateWindow {
 		meta.customValues = customVals;
 
 		Charter.instance.updateBPMEvents();
-		Charter.instance.vocals.muted = !needsVoicesCheckbox.checked;
+		//Charter.instance.vocals.muted = !needsVoicesCheckbox.checked;
 	}
 }

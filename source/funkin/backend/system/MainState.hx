@@ -3,15 +3,18 @@ package funkin.backend.system;
 #if MOD_SUPPORT
 import sys.FileSystem;
 #end
-import funkin.backend.assets.ModsFolder;
-import funkin.menus.TitleState;
-import funkin.menus.WarningState;
-import funkin.backend.chart.EventsData;
 import flixel.FlxState;
-import haxe.io.Path;
 #if mobile
 import mobile.funkin.backend.system.CopyState;
 #end
+import funkin.backend.assets.AssetsLibraryList;
+import funkin.backend.assets.ModsFolder;
+import funkin.backend.assets.ModsFolderLibrary;
+import funkin.backend.chart.EventsData;
+import funkin.backend.system.framerate.Framerate;
+import funkin.editors.ModConfigWarning;
+import funkin.menus.TitleState;
+import haxe.io.Path;
 
 @dox(hide)
 typedef AddonInfo = {
@@ -24,7 +27,6 @@ typedef AddonInfo = {
  */
 class MainState extends FlxState {
 	public static var initiated:Bool = false;
-	public static var warningShown:Bool = false;
 	public override function create() {
 		super.create();
 		#if mobile
@@ -40,10 +42,14 @@ class MainState extends FlxState {
 				return;
 			}
 			#end
+		}
+		else
+		{
 			#if TOUCH_CONTROLS
-			mobile.funkin.backend.utils.MobileData.init();
+		    mobile.funkin.backend.utils.MobileData.init();
 			#end
 		}
+
 		initiated = true;
 
 		#if sys
@@ -51,6 +57,7 @@ class MainState extends FlxState {
 		#end
 		Options.save();
 
+		ControlsUtil.resetCustomControls();
 		FlxG.bitmap.reset();
 		FlxG.sound.destroy(true);
 
@@ -79,12 +86,12 @@ class MainState extends FlxState {
 			)
 		];
 
-		for(path in addonPaths) {
+		for (path in addonPaths) {
 			if (path == null) continue;
 			if (!isDirectory(path)) continue;
 
-			for(addon in FileSystem.readDirectory(path)) {
-				if(!FileSystem.isDirectory(path + addon)) {
+			for (addon in FileSystem.readDirectory(path)) {
+				if (!FileSystem.isDirectory(path + addon)) {
 					switch(Path.extension(addon).toLowerCase()) {
 						case 'zip':
 							addon = Path.withoutExtension(addon);
@@ -103,7 +110,14 @@ class MainState extends FlxState {
 				else _noPriorityAddons.insert(0, data);
 			}
 		}
+		#end
 
+		#if GLOBAL_SCRIPT
+		funkin.backend.scripting.GlobalScript.destroy();
+		#end
+		funkin.backend.scripting.Script.staticVariables.clear();
+
+		#if MOD_SUPPORT
 		for (addon in _lowPriorityAddons)
 			loadLib(addon.path, ltrim(addon.name, "[LOW]"));
 
@@ -120,24 +134,41 @@ class MainState extends FlxState {
 		Flags.reset();
 		Flags.load();
 		funkin.savedata.FunkinSave.init();
+		FlxG.game.soundTray.reloadText(true);
 
 		TranslationUtil.findAllLanguages();
 		TranslationUtil.setLanguage(Flags.DISABLE_LANGUAGES ? Flags.DEFAULT_LANGUAGE : null);
-		
-		MusicBeatTransition.script = "";
+		ModsFolder.onModSwitch.dispatch(ModsFolder.currentModFolder); // Loads global.hx
+		MusicBeatTransition.script = Flags.DEFAULT_TRANSITION_SCRIPT;
+		WindowUtils.resetAffixes(false);
+		WindowUtils.setWindow();
 		Main.refreshAssets();
-		ModsFolder.onModSwitch.dispatch(ModsFolder.currentModFolder);
 		DiscordUtil.init();
 		EventsData.reloadEvents();
+		ControlsUtil.loadCustomControls();
 		TitleState.initialized = false;
 
-		if (warningShown)
-			FlxG.switchState(new TitleState());
-		else {
-			FlxG.switchState(new WarningState());
-			warningShown = true;
+		if (Framerate.isLoaded)
+			Framerate.instance.reload();
+
+		#if sys
+		CoolUtil.safeAddAttributes('.temp/', NativeAPI.FileAttribute.HIDDEN);
+		#end
+
+		var startState:Class<FlxState> = Flags.DISABLE_WARNING_SCREEN ? TitleState : funkin.menus.WarningState;
+
+		if (Options.devMode && Options.allowConfigWarning) {
+			var lib:ModsFolderLibrary;
+			for (e in Paths.assetsTree.libraries) if ((lib = cast AssetsLibraryList.getCleanLibrary(e)) is ModsFolderLibrary
+				&& lib.modName == ModsFolder.currentModFolder)
+			{
+				if (lib.exists(Paths.ini("config/modpack"), lime.utils.AssetType.TEXT)) break;
+
+				FlxG.switchState(new ModConfigWarning(lib, startState));
+				return;
+			}
 		}
 
-		CoolUtil.safeAddAttributes('./.temp/', NativeAPI.FileAttribute.HIDDEN);
+		FlxG.switchState(cast Type.createInstance(startState, []));
 	}
 }

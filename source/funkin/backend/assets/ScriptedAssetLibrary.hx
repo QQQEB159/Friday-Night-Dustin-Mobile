@@ -1,12 +1,11 @@
 package funkin.backend.assets;
 
 import funkin.backend.scripting.Script;
+import lime.graphics.Image;
+import lime.media.AudioBuffer;
+import lime.text.Font;
 import lime.utils.AssetLibrary;
 import lime.utils.Assets as LimeAssets;
-
-import lime.media.AudioBuffer;
-import lime.graphics.Image;
-import lime.text.Font;
 import lime.utils.Bytes;
 
 #if MOD_SUPPORT
@@ -21,10 +20,10 @@ class ScriptedAssetLibrary extends ModsFolderLibrary {
 	public var scriptName:String;
 	private static var nullValue:Dynamic = {};
 
-	public function new(scriptName:String, args:Array<Dynamic> = null, folderPath:String, libName:String="assets", ?modName:String) {
-		if(folderPath == null) folderPath = #if mobile StorageUtil.getStorageDirectory(true) + #end "assets/";
+	public function new(scriptName:String, args:Array<Dynamic> = null, basePath:Null<String> = null, libName:String="assets", ?modName:String) {
+		if(basePath == null) basePath = #if mobile StorageUtil.getStorageDirectory() + #end "assets/";
 		if(modName == null) modName = scriptName;
-		super(folderPath, libName, modName);
+		super(basePath, libName, modName);
 		this.scriptName = scriptName;
 		script = Script.create(Paths.script("data/library/" + scriptName));
 		script.setParent(this);
@@ -32,7 +31,10 @@ class ScriptedAssetLibrary extends ModsFolderLibrary {
 		script.load();
 		if(args == null) args = [];
 		script.call("create", args);
-		trace(script);
+	}
+
+	override function toString():String {
+		return '(ScriptedAssetLibrary: $libName/$modName/$scriptName)';
 	}
 
 	#if MOD_SUPPORT

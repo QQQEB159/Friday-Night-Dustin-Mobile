@@ -50,10 +50,10 @@ class Flags {
 	@:lazy public static var TITLE:String = Application.current.meta.get('name');
 	@:lazy public static var VERSION:String = Application.current.meta.get('version');
 
-	@:lazy public static var VERSION_MESSAGE:String = 'Codename Engine v$VERSION';
+	@:lazy public static var VERSION_MESSAGE:String = "Friday Night Dustin'" + ' v$VERSION';
 
-	public static var REPO_NAME:String = "CodenameEngine";
-	public static var REPO_OWNER:String = "CodenameCrew";
+	public static var REPO_NAME:String = "dustin-build";
+	public static var REPO_OWNER:String = "lunarcleint";
 	public static var REPO_URL:String = 'https://github.com/$REPO_OWNER/$REPO_NAME';
 
 	/**
@@ -266,7 +266,7 @@ class Flags {
 	public static var DEFAULT_CHARACTER_GHOSTDISABLE_SOUND:String = "editors/character/ghostDisable";
 	public static var DEFAULT_CHARACTER_GHOSTENABLE_SOUND:String = "editors/character/ghostEnable";
 
-	public static var DEFAULT_GLSL_VERSION:String = #if mobile "100" #else "120" #end;
+	public static var DEFAULT_GLSL_VERSION:String = #if mobile "300 es" #else "400 core" #end;
 	@:also(funkin.backend.utils.HttpUtil.userAgent)
 	public static var USER_AGENT:String = 'request';
 	// -- End of Codename's Default Flags --

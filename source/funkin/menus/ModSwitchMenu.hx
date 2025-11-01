@@ -1,10 +1,11 @@
 package funkin.menus;
 
 #if MOD_SUPPORT
-import haxe.io.Path;
-import funkin.backend.assets.ModsFolder;
-import sys.FileSystem;
 import flixel.tweens.FlxTween;
+import flixel.util.FlxColor;
+import funkin.backend.assets.ModsFolder;
+import haxe.io.Path;
+import sys.FileSystem;
 
 class ModSwitchMenu extends MusicBeatSubstate {
 	var mods:Array<String> = [];
@@ -33,14 +34,16 @@ class ModSwitchMenu extends MusicBeatSubstate {
 
 		alphabets = new FlxTypedGroup<Alphabet>();
 		for(mod in mods) {
-			var a = new Alphabet(0, 0, mod == null ? "DISABLE MODS" : mod, true);
+			var a = new Alphabet(0, 0, mod == null ? TU.translate("mods.disableMods") : mod, "bold");
+			if(mod == ModsFolder.currentModFolder)
+				a.color = FlxColor.LIME;
 			a.isMenuItem = true;
 			a.scrollFactor.set();
 			alphabets.add(a);
 		}
 		add(alphabets);
 		changeSelection(0, true);
-		
+
 		addTouchPad('UP_DOWN', 'A_B');
 		addTouchPadCamera(); // dawg wtf
 	}

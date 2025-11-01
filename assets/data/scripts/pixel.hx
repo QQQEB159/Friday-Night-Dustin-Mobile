@@ -12,7 +12,7 @@ public var enablePauseMenu = true;
 public var isSpooky = false;
 
 var oldStageQuality = FlxG.game.stage.quality;
-static var daPixelZoom = 6;
+public var daPixelZoom = PlayState.daPixelZoom;
 
 /**
  * UI
@@ -22,15 +22,19 @@ function onNoteCreation(event) {
 	event.cancel();
 
 	var note = event.note;
+	var strumID = event.strumID;
 	if (event.note.isSustainNote) {
 		note.loadGraphic(Paths.image('stages/school/ui/arrowEnds'), true, 7, 6);
-		note.animation.add("hold", [event.strumID]);
-		note.animation.add("holdend", [4 + event.strumID]);
+		var maxCol = Math.floor(note.graphic.width / 7);
+		note.animation.add("hold", [strumID%maxCol]);
+		note.animation.add("holdend", [maxCol + strumID%maxCol]);
 	} else {
 		note.loadGraphic(Paths.image('stages/school/ui/arrows-pixels'), true, 17, 17);
-		note.animation.add("scroll", [4 + event.strumID]);
+		var maxCol = Math.floor(note.graphic.width / 17);
+		note.animation.add("scroll", [maxCol + strumID%maxCol]);
 	}
-	note.scale.set(daPixelZoom, daPixelZoom);
+	var strumScale = event.note.strumLine.strumScale;
+	note.scale.set(daPixelZoom*strumScale, daPixelZoom*strumScale);
 	note.updateHitbox();
 	note.antialiasing = false;
 }
@@ -44,11 +48,15 @@ function onStrumCreation(event) {
 
 	var strum = event.strum;
 	strum.loadGraphic(Paths.image('stages/school/ui/arrows-pixels'), true, 17, 17);
-	strum.animation.add("static", [event.strumID]);
-	strum.animation.add("pressed", [4 + event.strumID, 8 + event.strumID], 12, false);
-	strum.animation.add("confirm", [12 + event.strumID, 16 + event.strumID], 24, false);
+	var maxCol = Math.floor(strum.graphic.width / 17);
+	var strumID = event.strumID % maxCol;
 
-	strum.scale.set(daPixelZoom, daPixelZoom);
+	strum.animation.add("static", [strumID]);
+	strum.animation.add("pressed", [maxCol + strumID, (maxCol*2) + strumID], 12, false);
+	strum.animation.add("confirm", [(maxCol*3) + strumID, (maxCol*4) + strumID], 24, false);
+
+	var strumScale = strumLines.members[event.player].strumScale;
+	strum.scale.set(daPixelZoom*strumScale, daPixelZoom*strumScale);
 	strum.updateHitbox();
 	strum.antialiasing = false;
 }

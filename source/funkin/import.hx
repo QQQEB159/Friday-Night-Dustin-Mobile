@@ -24,8 +24,6 @@ import flixel.FlxObject;
 import flixel.math.FlxMath;
 import flixel.tweens.FlxEase;
 import flixel.util.FlxDestroyUtil;
-import flixel.effects.particles.FlxEmitter;
-import flixel.effects.particles.FlxParticle;
 
 import funkin.backend.system.Flags;
 import funkin.Types;

@@ -690,7 +690,7 @@ class Charter extends UIState {
 		else
 			vocals = new FlxSound();
 
-		vocals.muted = !PlayState.SONG.meta.needsVoices;
+		//vocals.muted = !PlayState.SONG.meta.needsVoices;
 		vocals.group = FlxG.sound.defaultMusicGroup;
 
 		gridBackdrops.createGrids(PlayState.SONG.strumLines.length);
@@ -765,14 +765,14 @@ class Charter extends UIState {
 	public function getWavesToGenerate():Array<{name:String, sound:FlxSound}> {
 		var wavesToGenerate:Array<{name:String, sound:FlxSound}> = [];
 
-		if (FlxG.sound.music.loaded)
+		if(isSoundLoaded(FlxG.sound.music))
 			wavesToGenerate.push({name: 'Inst${PlayState.SONG.meta.instSuffix}.ogg', sound: FlxG.sound.music});
 
-		if (vocals.loaded)
+		if (PlayState.SONG.meta.needsVoices != false && isSoundLoaded(vocals))
 			wavesToGenerate.push({name: 'Voices${PlayState.SONG.meta.vocalsSuffix}.ogg', sound: vocals});
 
 		for (strumLine in strumLines)
-			if (strumLine.vocals != null && strumLine.strumLine.vocalsSuffix != null && strumLine.strumLine.vocalsSuffix != "" && strumLine.vocals.loaded)
+			if (strumLine.vocals != null && strumLine.strumLine.vocalsSuffix != null && strumLine.strumLine.vocalsSuffix != "" && isSoundLoaded(strumLine.vocals))
 				wavesToGenerate.push({
 					name: 'Voices${strumLine.strumLine.vocalsSuffix}.ogg',
 					sound: strumLine.vocals
@@ -781,6 +781,11 @@ class Charter extends UIState {
 		return wavesToGenerate;
 	}
 
+	inline function isSoundLoaded(sound:FlxSound) {
+		@:privateAccess
+		return sound != null && sound._sound != null && sound._sound.length > 0;
+	}
+	
 	public function updateWaveforms() {
 		var wavesToGenerate:Array<{name:String, sound:FlxSound}> = getWavesToGenerate();
 
@@ -1878,10 +1883,12 @@ class Charter extends UIState {
 			vocals.pause();
 			for (strumLine in strumLines.members) strumLine.vocals.pause();
 		} else {
-			FlxG.sound.music.play(true, Conductor.songPosition + Conductor.songOffset);
-			vocals.play(true, FlxG.sound.music.getActualTime());
+			FlxG.sound.music.play();
+			vocals.play();
+			vocals.time = FlxG.sound.music.time = Conductor.songPosition + Conductor.songOffset * 2;
 			for (strumLine in strumLines.members) {
-				strumLine.vocals.play(true, FlxG.sound.music.getActualTime());
+				strumLine.vocals.play();
+				strumLine.vocals.time = vocals.time;
 			}
 		}
 	}

@@ -35,24 +35,28 @@ class SplashGroup extends FlxTypedGroup<Splash> {
 			pregenerateSplashes(splash);
 			add(splash);
 
-			// immediatly draw once and put image in GPU to prevent freezes
+			// immediately draw once and put image in GPU to prevent freezes
 			// TODO: change to graphics cache
+			@:privateAccess
 			splash.drawComplex(FlxG.camera);
 		} catch(e:Dynamic) {
-			Logs.trace('Couldn\'t parse splash data for "${path}": ${e.toString()}', ERROR);
+			Logs.error('Couldn\'t parse splash data for "${path}": ${e.toString()}');
 			valid = false;
 		}
-		maxSize = 8;
+		maxSize = Flags.MAX_SPLASHES;
 	}
+
+	var _scale:Float = 1.0;
+	var _alpha:Float = 1.0;
+	var _antialiasing:Bool = true;
 
 	function createSplash(imagePath:String) {
 		var splash = new Splash();
-		splash.antialiasing = true;
 		splash.active = splash.visible = false;
 		splash.loadSprite(Paths.image(imagePath));
-		if (xml.has.scale) splash.scale.scale(Std.parseFloat(xml.att.scale).getDefault(1));
-		if (xml.has.alpha) splash.alpha = Std.parseFloat(xml.att.alpha).getDefault(1);
-		if (xml.has.antialiasing) splash.antialiasing = xml.att.antialiasing == "true";
+		_scale = xml.has.scale ? Std.parseFloat(xml.att.scale).getDefault(1) : 1;
+		_alpha = xml.has.alpha ? Std.parseFloat(xml.att.alpha).getDefault(1) : 1;
+		_antialiasing = xml.has.antialiasing ? xml.att.antialiasing == "true" : true;
 		return splash;
 	}
 
@@ -82,6 +86,8 @@ class SplashGroup extends FlxTypedGroup<Splash> {
 		}
 		splash.animation.finishCallback = function(name:String) {
 			splash.active = splash.visible = false;
+			splash.strum = null;
+			splash.strumID = null;
 		};
 	}
 
@@ -101,8 +107,9 @@ class SplashGroup extends FlxTypedGroup<Splash> {
 	public function getSplashAnim(id:Int):String {
 		if (animationNames.length <= 0) return null;
 		id %= animationNames.length;
-		if (animationNames[id] == null || animationNames[id].length <= 0) return null;
-		return animationNames[id][FlxG.random.int(0, animationNames[id].length - 1)];
+		var animNames = animationNames[id];
+		if (animNames == null || animNames.length <= 0) return null;
+		return animNames[FlxG.random.int(0, animNames.length - 1)];
 	}
 
 	var __splash:Splash;
@@ -113,8 +120,13 @@ class SplashGroup extends FlxTypedGroup<Splash> {
 		__splash.strum = strum;
 		__splash.strumID = strum.ID;
 
+		@:privateAccess
+		__splash.scale.x = __splash.scale.y = _scale * strum.strumLine.strumScale;
+		__splash.alpha = _alpha;
+		__splash.antialiasing = _antialiasing;
+
 		__splash.cameras = strum.lastDrawCameras;
-		__splash.setPosition(strum.x + ((strum.width - __splash.width) / 2), strum.y + ((strum.height - __splash.height) / 2));
+		__splash.setPosition(strum.x + 0.5 * (strum.width - __splash.width), strum.y + 0.5 * (strum.height - __splash.height));
 		__splash.active = __splash.visible = true;
 		__splash.playAnim(getSplashAnim(strum.ID), true);
 		__splash.scrollFactor.set(strum.scrollFactor.x, strum.scrollFactor.y);

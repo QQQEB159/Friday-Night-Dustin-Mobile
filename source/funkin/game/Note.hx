@@ -1,10 +1,10 @@
 package funkin.game;
 
-import funkin.backend.chart.ChartData;
 import flixel.math.FlxPoint;
 import flixel.math.FlxRect;
+import funkin.backend.chart.ChartData;
+import funkin.backend.scripting.events.note.NoteCreationEvent;
 import funkin.backend.system.Conductor;
-import funkin.backend.scripting.events.*;
 
 using StringTools;
 
@@ -27,7 +27,7 @@ class Note extends FlxSprite
 		return strumLine = strLine;
 	}
 
-	private function get_mustPress():Bool {
+	private inline function get_mustPress():Bool {
 		return false;
 	}
 	public var noteData:Int = 0;
@@ -52,6 +52,13 @@ class Note extends FlxSprite
 	 * The next sustain after this one
 	 */
 	public var nextSustain:Note;
+
+	/**
+	 * The parent of the sustain.
+	 * 
+	 * If this note is not sustain, this will be null.
+	 */
+	public var sustainParent:Null<Note>;
 
 	/**
 	 * Name of the splash.
@@ -80,7 +87,7 @@ class Note extends FlxSprite
 	public var updateNotesPosY:Bool = true;
 	public var updateFlipY:Bool = true;
 
-	public var noteType(get, null):String;
+	public var noteType(get, never):String;
 
 	@:dox(hide) public var __strumCameras:Array<FlxCamera> = null;
 	@:dox(hide) public var __strum:Strum = null;
@@ -91,7 +98,7 @@ class Note extends FlxSprite
 		return PlayState.instance.getNoteType(noteTypeID);
 	}
 
-	public static var swagWidth:Float = 160 * 0.7;
+	public static var swagWidth:Float = 160 * 0.7; // TODO: remove this
 
 	private static var __customNoteTypeExists:Map<String, Bool> = [];
 
@@ -122,11 +129,12 @@ class Note extends FlxSprite
 		this.isSustainNote = sustain;
 		this.sustainLength = sustainLength;
 		this.strumLine = strumLine;
-		for(field in Reflect.fields(noteData)) {
-			if(!DEFAULT_FIELDS.contains(field)) {
-				this.extra.set(field, Reflect.field(noteData, field));
-			}
-		}
+		for(field in Reflect.fields(noteData)) if(!DEFAULT_FIELDS.contains(field))
+			this.extra.set(field, Reflect.field(noteData, field));
+
+		// work around to set the `sustainParent`
+		if (isSustainNote)
+			sustainParent = prevNote.isSustainNote ? prevNote.sustainParent : prevNote;
 
 		x += 50;
 		// MAKE SURE ITS DEFINITELY OFF SCREEN?
@@ -137,10 +145,10 @@ class Note extends FlxSprite
 
 		var customType = Paths.image('game/notes/${this.noteType}');
 		var event = EventManager.get(NoteCreationEvent).recycle(this, strumID, this.noteType, noteTypeID, PlayState.instance.strumLines.members.indexOf(strumLine), mustPress,
-			(this.noteType != null && customTypePathExists(customType)) ? 'game/notes/${this.noteType}' : 'game/notes/default', @:privateAccess strumLine.strumScale * 0.7, animSuffix);
+			(this.noteType != null && customTypePathExists(customType)) ? 'game/notes/${this.noteType}' : 'game/notes/default', @:privateAccess strumLine.strumScale * Flags.DEFAULT_NOTE_SCALE, animSuffix);
 
 		if (PlayState.instance != null)
-			event = PlayState.instance.scripts.event("onNoteCreation", event);
+			event = PlayState.instance.gameAndCharsEvent("onNoteCreation", event);
 
 		this.animSuffix = event.animSuffix;
 		if (!event.cancelled) {
@@ -196,13 +204,12 @@ class Note extends FlxSprite
 
 		if (PlayState.instance != null) {
 			PlayState.instance.splashHandler.getSplashGroup(splash);
-			PlayState.instance.scripts.event("onPostNoteCreation", event);
+			PlayState.instance.gameAndCharsEvent("onPostNoteCreation", event);
 		}
 	}
 
 	public var lastScrollSpeed:Null<Float> = null;
-	public var angleOffsets:Bool = true;
-	public var gapFix:Single = 0;
+	public var gapFix:SingleOrFloat = 0;
 	public var useAntialiasingFix(get, set):Bool;
 	inline function set_useAntialiasingFix(v:Bool) {
 		if(v != useAntialiasingFix) {
@@ -221,7 +228,7 @@ class Note extends FlxSprite
 	public var strumRelativePos:Bool = true;
 
 	override function drawComplex(camera:FlxCamera) {
-		var downscrollCam = (camera is HudCamera ? cast(camera, HudCamera).downscroll : false);
+		var downscrollCam = (camera is HudCamera ? ({var _:HudCamera=cast camera;_;}).downscroll : false);
 		if (updateFlipY) flipY = (isSustainNote && flipSustain) && (downscrollCam != (__strum != null && __strum.getScrollSpeed(this) < 0));
 		if (downscrollCam) {
 			frameOffset.y += __notePosFrameOffset.y * 2;

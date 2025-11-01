@@ -33,7 +33,7 @@ function onEditorTreeLoaded(name:String) {
 			DiscordUtil.changePresenceSince("Choosing a Character", null);
 		case "Chart Editor":
 			DiscordUtil.changePresenceSince("Choosing a Chart", null);
-		case "Stage Editor":
+		case "Stage Editor": // secret for now
 			DiscordUtil.changePresenceSince("Choosing a Stage", null);
 	}
 }

@@ -29,8 +29,13 @@ class AudioAnalyzer {
 
 		var maxByte:Int = 0;
 		for(i in 0...Math.floor((bytesEndPos - bytesStartPos) / buffer.bitsPerSample)) {
+			#if js
+			var byte:Int = buffer.data[bytesStartPos + (i * buffer.bitsPerSample)]
+			| (buffer.data[bytesStartPos + (i * buffer.bitsPerSample) + 1] << 8);
+			#else
 			var byte:Int = buffer.data.buffer.get(bytesStartPos + (i * buffer.bitsPerSample))
 			| (buffer.data.buffer.get(bytesStartPos + (i * buffer.bitsPerSample) + 1) << 8);
+			#end
 			if (byte > 256 * 128) byte -= 256 * 256;
 			if (maxByte < byte) maxByte = byte;
 		}

@@ -17,6 +17,8 @@ class CharterSelection extends EditorTreeMenu {
 		DiscordUtil.call("onEditorTreeLoaded", ["Chart Editor"]);
 		addMenu(new CharterSelectionScreen());
 		bgType = 'charter';
+		addTouchPad("UP_DOWN", "A_B");
+		addTouchPadCamera();
 	}
 }
 
@@ -26,7 +28,28 @@ class CharterSelectionScreen extends EditorTreeMenuScreen {
 	public var curSong:ChartMetaData;
 
 	inline public function makeChartOption(d:String, v:String, name:String):TextOption {
-		return new TextOption(d, getID('acceptDifficulty'), () -> FlxG.switchState(new Charter(name, d, v)));
+		return new TextOption(d, getID('acceptDifficulty'), () ->
+		{
+			if (funkin.backend.system.Controls.instance.touchC)
+				parent.openSubState(new UIWarningSubstate(TU.translate('editor.warnings.mkRequirement-title'),
+					TU.translate('editor.warnings.mkRequirement-body'), [
+					{
+						label: TU.translate("editor.ok"),
+						color: 0xFFFFFF00,
+						onClick: (t) ->
+						{
+							FlxG.switchState(new Charter(name, d, v));
+						}
+					},
+					{
+						label: TU.translate("editor.cancel"),
+						color: 0xFFFFFF00,
+						onClick: (t) -> {}
+					}
+				], false));
+			else
+				FlxG.switchState(new Charter(name, d, v));
+		});
 	}
 
 	inline public function makeVariationOption(s:ChartMetaData):TextOption {

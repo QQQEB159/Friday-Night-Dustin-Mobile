@@ -14,6 +14,8 @@ class CharacterSelection extends EditorTreeMenu {
 		super.create();
 		DiscordUtil.call("onEditorTreeLoaded", ["Character Editor"]);
 		addMenu(new CharacterSelectionScreen());
+		addTouchPad("UP_DOWN", "A_B");
+		addTouchPadCamera();
 	}
 }
 
@@ -47,8 +49,26 @@ class CharacterSelectionScreen extends EditorTreeMenuScreen {
 					}));
 				}
 				else {
-					list.push(new IconOption(char, getID('acceptCharacter'), Character.getIconFromCharName(folderPath + char, char), () -> {
-						FlxG.switchState(new CharacterEditor(folderPath + char));
+					list.push(new IconOption(char, getID('acceptCharacter'), Character.getIconFromCharName(folderPath + char, char), () ->
+					{
+						if (funkin.backend.system.Controls.instance.touchC)
+							parent.openSubState(new UIWarningSubstate(TU.translate('editor.warnings.mkRequirement-title'), TU.translate('editor.warnings.mkRequirement-body'), [
+								{
+									label: TU.translate("editor.ok"),
+									color: 0xFFFFFF00,
+									onClick: (t) ->
+									{
+										FlxG.switchState(new CharacterEditor(folderPath + char));
+									}
+								},
+								{
+									label: TU.translate("editor.cancel"),
+									color: 0xFFFFFF00,
+									onClick: (t) -> {}
+								}
+							], false));
+						else
+							FlxG.switchState(new CharacterEditor(folderPath + char));
 					}));
 				}
 			}
@@ -76,8 +96,26 @@ class CharacterSelectionScreen extends EditorTreeMenuScreen {
 		UIImageExplorer.saveFilesGlobal(imageSaveData, '${Paths.getAssetsRoot()}/images/characters');
 
 		// Add to Menu >:D
-		var option:IconOption = new IconOption(name, getID('acceptCharacter'), Character.getIconFromCharName(name), () -> {
-			FlxG.switchState(new CharacterEditor(name));
+		var option:IconOption = new IconOption(name, getID('acceptCharacter'), Character.getIconFromCharName(name), () ->
+		{
+			if (funkin.backend.system.Controls.instance.touchC)
+				parent.openSubState(new UIWarningSubstate(TU.translate('editor.warnings.mkRequirement-title'), TU.translate('editor.warnings.mkRequirement-body'), [
+					{
+						label: TU.translate("editor.ok"),
+						color: 0xFFFFFF00,
+						onClick: (t) ->
+						{
+							FlxG.switchState(new CharacterEditor(name));
+						}
+					},
+					{
+						label: TU.translate("editor.cancel"),
+						color: 0xFFFFFF00,
+						onClick: (t) -> {}
+					}
+				], false));
+			else
+				FlxG.switchState(new CharacterEditor(name));
 		});
 
 		insert(1, option);

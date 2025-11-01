@@ -105,7 +105,7 @@ class UIState extends MusicBeatState {
 			buttonHandler = null;
 		}
 
-		if (FlxG.mouse.justPressed) {
+		if (FlxG.mouse.justPressed && !funkin.backend.system.Controls.instance.touchC) {
 			FlxG.sound.play(Paths.sound(Flags.DEFAULT_EDITOR_CLICK_SOUND));
 		}
 

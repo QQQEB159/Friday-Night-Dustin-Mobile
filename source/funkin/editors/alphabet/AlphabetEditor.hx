@@ -282,6 +282,10 @@ class AlphabetEditor extends UIState {
 
 		add(topMenuSpr);
 		add(uiGroup);
+	    #if TOUCH_CONTROLS
+		addTouchPad("LEFT_RIGHT", "NONE");
+		addTouchPadCamera();
+		#end
 
 		if(Framerate.isLoaded) {
 			Framerate.fpsCounter.alpha = 0.4;
@@ -351,7 +355,12 @@ class AlphabetEditor extends UIState {
 		if (currentFocus == null) {
 			if(FlxG.keys.justPressed.ANY)
 				UIUtil.processShortcuts(topMenu);
-			
+			#if TOUCH_CONTROLS
+			if (controls.LEFT_P)
+				_tape_left(null);
+			if (controls.RIGHT_P)
+				_tape_right(null);
+		    #end
 			if(curSelectedComponent != null) {
 				if(FlxG.keys.pressed.K) {
 					curSelectedComponent.y -= 100 * elapsed;

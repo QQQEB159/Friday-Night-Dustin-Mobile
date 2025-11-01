@@ -91,7 +91,7 @@ class CharacterSpriteScreen extends UISubstateWindow {
 		idCounter = FlxMath.wrap(idCounter + FlxG.random.int(1, 57349), 0, 9999);
 		CharacterEditor.undos.addToUndo(CCharEditSprite(idCounter));
 	
-		CoolUtil.safeSaveFile('./.temp/__undo__${Type.getClassName(Type.getClass(FlxG.state))}__${idCounter}.cneisd', UIImageExplorer.serializeSaveDataGlobal(ogImageSaveData));
-		CoolUtil.safeSaveFile('./.temp/__redo__${Type.getClassName(Type.getClass(FlxG.state))}__${idCounter}.cneisd', UIImageExplorer.serializeSaveDataGlobal(imageExplorer.getSaveData()));
+		CoolUtil.safeSaveFile('.temp/__undo__${Type.getClassName(Type.getClass(FlxG.state))}__${idCounter}.cneisd', UIImageExplorer.serializeSaveDataGlobal(ogImageSaveData));
+		CoolUtil.safeSaveFile('.temp/__redo__${Type.getClassName(Type.getClass(FlxG.state))}__${idCounter}.cneisd', UIImageExplorer.serializeSaveDataGlobal(imageExplorer.getSaveData()));
 	}
 }

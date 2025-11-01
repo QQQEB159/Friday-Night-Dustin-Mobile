@@ -28,11 +28,16 @@ class SaveSubstate extends MusicBeatSubstate {
 
 		var fileDialog = new FileDialog();
 		fileDialog.onCancel.add(function() close());
+		#if mobile
+		fileDialog.onSave.add(function(path) close());
+		fileDialog.save(data, null, options.defaultSaveFile, null, "*/*");
+		#else
 		fileDialog.onSelect.add(function(str) {
 			CoolUtil.safeSaveFile(str, data);
 			close();
 		});
 		fileDialog.browse(SAVE, options.saveExt.getDefault(Path.extension(options.defaultSaveFile)), options.defaultSaveFile);
+		#end
 	}
 
 	public override function update(elapsed:Float) {

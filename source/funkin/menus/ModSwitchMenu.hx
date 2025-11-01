@@ -43,6 +43,9 @@ class ModSwitchMenu extends MusicBeatSubstate {
 		}
 		add(alphabets);
 		changeSelection(0, true);
+
+		addTouchPad('UP_DOWN', 'A_B');
+		addTouchPadCamera(); // dawg wtf
 	}
 
 	public override function update(elapsed:Float) {

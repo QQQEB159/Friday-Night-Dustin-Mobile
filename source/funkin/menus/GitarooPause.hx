@@ -46,6 +46,8 @@ class GitarooPause extends MusicBeatState
 		changeThing();
 
 		super.create();
+
+		addTouchPad('LEFT_RIGHT', 'A');
 	}
 
 	override function update(elapsed:Float)

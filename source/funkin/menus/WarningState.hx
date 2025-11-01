@@ -18,7 +18,7 @@ class WarningState extends MusicBeatState {
 
 		disclaimer = new FunkinText(16, titleAlphabet.y + titleAlphabet.height + 10, FlxG.width - 32, "", 32);
 		disclaimer.alignment = CENTER;
-		disclaimer.text = "This is a warning state! Make a script #./data/states/WarningState.hx# to edit this text! \n\n Note: you can use *asterisks* or #hashtags# to highlight your text in *red* or #yellow#, or you can just make your own markup using postCreate (you have to change the text in create() to apply the default markup)";
+		disclaimer.text = "This is a warning state! Make a script #data/states/WarningState.hx# to edit this text! \n\n Note: you can use *asterisks* or #hashtags# to highlight your text in *red* or #yellow#, or you can just make your own markup using postCreate (you have to change the text in create() to apply the default markup)";
 
 		super.create();
 
@@ -39,6 +39,22 @@ class WarningState extends MusicBeatState {
 
 	public override function update(elapsed:Float) {
 		super.update(elapsed);
+
+		#if FLX_TOUCH
+		for (touch in FlxG.touches.list)
+		{
+			if (touch.justPressed && transitioning) {
+				FlxG.camera.stopFX(); FlxG.camera.visible = false;
+				goToTitle();
+			} else if (touch.justPressed && !transitioning) {
+				transitioning = true;
+				CoolUtil.playMenuSFX(CONFIRM);
+				FlxG.camera.flash(FlxColor.WHITE, 1, function() {
+					FlxG.camera.fade(FlxColor.BLACK, 2.5, false, goToTitle);
+				});
+			}
+		}
+		#end
 
 		if (controls.ACCEPT && transitioning) {
 			FlxG.camera.stopFX(); FlxG.camera.visible = false;

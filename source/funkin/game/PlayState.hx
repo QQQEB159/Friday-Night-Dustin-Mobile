@@ -1729,7 +1729,7 @@ class PlayState extends MusicBeatState
 		endingSong = true;
 		canPause = false;
 		#if TOUCH_CONTROLS
-		if(PlayState.SONG.meta.name != "genocides") mobileControls.instance.visible = false;
+		if(SONG.meta.name != "genocides") mobileControls.instance.visible = false;
 		#end
 
 		for (strumLine in strumLines.members) strumLine.vocals.stop();
@@ -1765,7 +1765,7 @@ class PlayState extends MusicBeatState
 	 */
 	public function nextSong() {
 		#if TOUCH_CONTROLS
-		mobileControls.instance.visible = false;
+		if(SONG.meta.name != "genocides") mobileControls.instance.visible = false;
 		#end
 		if (isStoryMode) {
 			campaignScore += songScore;

@@ -134,7 +134,6 @@ class MainState extends FlxState {
 		Flags.reset();
 		Flags.load();
 		funkin.savedata.FunkinSave.init();
-		FlxG.game.soundTray.reloadText(true);
 
 		TranslationUtil.findAllLanguages();
 		TranslationUtil.setLanguage(Flags.DISABLE_LANGUAGES ? Flags.DEFAULT_LANGUAGE : null);

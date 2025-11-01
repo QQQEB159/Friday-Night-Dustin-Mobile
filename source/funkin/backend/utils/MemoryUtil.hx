@@ -1,6 +1,8 @@
 package funkin.backend.utils;
 
+#if !android
 import funkin.backend.utils.native.HiddenProcess;
+#end
 #if cpp
 import cpp.vm.Gc;
 #elseif hl

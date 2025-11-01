@@ -182,7 +182,7 @@ class FlxSoundTray extends Sprite
 		text.wordWrap = true;
 		text.selectable = false;
 
-		text.defaultTextFormat = new TextFormat(Framerate.fontName, 16, -1);
+		text.defaultTextFormat = new TextFormat(openfl.utils.Assets.getFont("assets/fonts/DTM-Mono.ttf").fontName, 16, -1);
 		text.defaultTextFormat.align = TextFormatAlign.CENTER;
 		this.text.antiAliasType = ADVANCED;
         this.text.sharpness = 400/*MAX ON OPENFL*/;

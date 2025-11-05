@@ -17,8 +17,10 @@ class CustomShader extends FunkinShader {
 	/**
 	 * Creates a new custom shader
 	 * @param name Name of the frag and vert files.
+	 * @param glslVersion GLSL version to use. Defaults to `120`.
 	 */
-	public function new(name:String) {
+	public function new(name:String, glslVersion:String = null) {
+		if (glslVersion == null) glslVersion = Flags.DEFAULT_GLSL_VERSION;
 		var fragShaderPath = Paths.fragShader(name);
 		var vertShaderPath = Paths.vertShader(name);
 		var fragCode = Assets.exists(fragShaderPath) ? Assets.getText(fragShaderPath) : null;
@@ -33,6 +35,6 @@ class CustomShader extends FunkinShader {
 		if (fragCode == null && vertCode == null)
 			Logs.error('Shader "$name" couldn\'t be found.');
 
-		super(fragCode, vertCode);
+		super(fragCode, vertCode, glslVersion);
 	}
 }

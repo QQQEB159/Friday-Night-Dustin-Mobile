@@ -49,8 +49,6 @@ class Hitbox extends MobileInputManager implements IMobileControls
 	public var buttonExtra2:TouchButton = new TouchButton(0, 0, [MobileInputID.EXTRA_2]);
 
 	public var instance:MobileInputManager;
-	public var onButtonDown:FlxTypedSignal<TouchButton->Void> = new FlxTypedSignal<TouchButton->Void>();
-	public var onButtonUp:FlxTypedSignal<TouchButton->Void> = new FlxTypedSignal<TouchButton->Void>();
 
 	var storedButtonsIDs:Map<String, Array<MobileInputID>> = new Map<String, Array<MobileInputID>>();
 
@@ -112,7 +110,7 @@ class Hitbox extends MobileInputManager implements IMobileControls
 		}
 	}
 
-	private function createHint(X:Float, Y:Float, Width:Int, Height:Int, Color:Int = 0xFFFFFF):TouchButton
+	public function createHint(X:Float, Y:Float, Width:Int, Height:Int, Color:Int = 0xFFFFFF):TouchButton
 	{
 		var hint = new TouchButton(X, Y);
 		hint.statusAlphas = [];
@@ -167,7 +165,7 @@ class Hitbox extends MobileInputManager implements IMobileControls
 		return hint;
 	}
 
-	function createHintGraphic(Width:Int, Height:Int):FlxGraphic
+	private function createHintGraphic(Width:Int, Height:Int):FlxGraphic
 	{
 		var shape:Shape = new Shape();
 		shape.graphics.beginFill(0xFFFFFF);

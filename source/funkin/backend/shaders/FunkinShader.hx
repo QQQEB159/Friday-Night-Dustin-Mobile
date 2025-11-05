@@ -1,7 +1,7 @@
 package funkin.backend.shaders;
 
 import flixel.graphics.FlxGraphic;
-import flixel.system.FlxAssets.FlxShader;
+import mobile.flixel.system.FlxShader;
 import flixel.util.FlxSignal.FlxTypedSignal;
 import haxe.Exception;
 import hscript.IHScriptCustomBehaviour;
@@ -27,7 +27,6 @@ class FunkinShader extends FlxShader implements IHScriptCustomBehaviour {
 	public var onGLUpdate:FlxTypedSignal<Void->Void> = new FlxTypedSignal<Void->Void>();
 	public var onProcessGLData:FlxTypedSignal<(String, String)->Void> = new FlxTypedSignal<(String, String)->Void>();
 
-	public var glslVer:String = Flags.DEFAULT_GLSL_VERSION;
 	public var fileName:String = "FunkinShader";
 	public var fragFileName:String = "FunkinShader";
 	public var vertFileName:String = "FunkinShader";
@@ -41,16 +40,13 @@ class FunkinShader extends FlxShader implements IHScriptCustomBehaviour {
 	 * Accepts `#pragma header`.
 	 * @param frag Fragment source (pass `null` to use default)
 	 * @param vert Vertex source (pass `null` to use default)
-	 * @param glslVer Version of GLSL to use (defaults to 120 at OpenGL, 100 at OpenGL ES)
 	 */
-	public override function new(frag:String, vert:String, glslVer:String = null) {
-		if (glslVer == null) glslVer = Flags.DEFAULT_GLSL_VERSION;
+	public override function new(frag:String, vert:String) {
 		if (frag == null) frag = ShaderTemplates.defaultFragmentSource;
 		if (vert == null) vert = ShaderTemplates.defaultVertexSource;
 		this.glFragmentSource = frag;
 		this.glVertexSource = vert;
 
-		this.glslVer = glslVer;
 		super();
 	}
 
@@ -290,7 +286,6 @@ class FunkinShader extends FlxShader implements IHScriptCustomBehaviour {
 		if (__context != null && program == null)
 		{
 			var prefixBuf = new StringBuf();
-			prefixBuf.add('#version ${glslVer}\n');
 			prefixBuf.add(shaderPrefix);
 
 			var gl = __context.gl;
@@ -311,19 +306,12 @@ class FunkinShader extends FlxShader implements IHScriptCustomBehaviour {
 			prefixBuf.add("#endif\n");
 			#end
 
-			#if lime_opengles
 			prefixBuf.add("out vec4 output_FragColor;\n");
-			#end
 
 			var prefix = prefixBuf.toString();
 
-			#if lime_opengles
 			var vertex = prefix + vertexPrefix + glVertexSource.replace("attribute", "in").replace("varying", "out").replace("texture2D", "texture").replace("gl_FragColor", "output_FragColor");
 			var fragment = prefix + fragmentPrefix + glFragmentSource.replace("varying", "in").replace("texture2D", "texture").replace("gl_FragColor", "output_FragColor");
-			#else
-			var vertex = prefix + vertexPrefix + glVertexSource;
-			var fragment = prefix + fragmentPrefix + glFragmentSource;
-			#end
 
 			var id = vertex + fragment;
 

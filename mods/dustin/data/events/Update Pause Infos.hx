@@ -26,7 +26,7 @@ function onEvent(eventEvent) {
     }
 }
 
-function destroy() if (_originalInfos.length > 0 && !PlayState.chartingMode) {
+function destroy() if (_originalInfos.length > 0 && PlayState.chartingMode) {
     PlayState.SONG.meta.customValues.mainColor = _originalInfos[0];
     PlayState.SONG.meta.customValues.character = _originalInfos[1];
     PlayState.SONG.meta.customValues.stats = _originalInfos[2];

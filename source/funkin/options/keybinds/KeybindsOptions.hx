@@ -213,11 +213,16 @@ class KeybindsOptions extends MusicBeatSubstate {
 		add(alphabets);
 		add(camFollow);
 
-		if(PlayState.SONG.meta.name == "genocides") {
+		if(PlayState.SONG != null) {
+	    if(PlayState.SONG.meta.name == "genocides") {
 	    addTouchPad('NONE', 'B_Q');
 	    addTouchPadCamera();
 	    } else {
-	    addTouchPad('LEFT_FULL', 'B');
+	    addTouchPad('NONE', 'B_J');
+	    addTouchPadCamera();
+	    }
+	    } else {
+	    addTouchPad('NONE', 'B_J');
 	    addTouchPadCamera();
 	    }
 		FlxG.sound.volumeUpKeys = [];

@@ -63,12 +63,12 @@ class OptionsMenu extends TreeMenu {
 	override function create() {
 		super.create();
 
-		if (funkin.backend.system.Controls.instance.touchC)
+		/*if (funkin.backend.system.Controls.instance.touchC)
 		{
 			mainOptions = mainOptions.filter(function(option) {
 				return option.name != "optionsTree.controls-name";
 			});
-		}
+		}*/
 
 		CoolUtil.playMenuSong();
 

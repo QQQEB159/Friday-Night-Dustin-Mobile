@@ -99,8 +99,8 @@ class Hitbox extends MobileInputManager implements IMobileControls
 	override function destroy()
 	{
 		super.destroy();
-		onButtonUp.destroy();
-		onButtonDown.destroy();
+		//onButtonUp.destroy();
+		//onButtonDown.destroy();
 
 		for (fieldName in Reflect.fields(this))
 		{
@@ -123,7 +123,7 @@ class Hitbox extends MobileInputManager implements IMobileControls
 
 			hint.onDown.callback = function()
 			{
-				onButtonDown.dispatch(hint);
+				//onButtonDown.dispatch(hint);
 
 				if (hintTween != null)
 					hintTween.cancel();
@@ -136,7 +136,7 @@ class Hitbox extends MobileInputManager implements IMobileControls
 
 			hint.onOut.callback = hint.onUp.callback = function()
 			{
-				onButtonUp.dispatch(hint);
+				//onButtonUp.dispatch(hint);
 
 				if (hintTween != null)
 					hintTween.cancel();
@@ -149,8 +149,8 @@ class Hitbox extends MobileInputManager implements IMobileControls
 		}
 		else
 		{
-			hint.onDown.callback = () -> onButtonDown.dispatch(hint);
-			hint.onOut.callback = hint.onUp.callback = () -> onButtonUp.dispatch(hint);
+			//hint.onDown.callback = () -> onButtonDown.dispatch(hint);
+			//hint.onOut.callback = hint.onUp.callback = () -> onButtonUp.dispatch(hint);
 		}
 
 		hint.immovable = hint.multiTouch = true;

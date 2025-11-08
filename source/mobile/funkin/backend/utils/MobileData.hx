@@ -40,12 +40,12 @@ class MobileData
 
 	public static var mode(get, set):Int;
 	public static var forcedMode:Null<Int>;
-	public static var save:FlxSave;
+	public static var saveMobile:FlxSave;
 
 	public static function init()
 	{
-		save = new FlxSave();
-		save.bind('MobileControls', flixel.FlxG.stage.application.meta.get('company'));
+		saveMobile = new FlxSave();
+		saveMobile.bind('MobileControls', flixel.FlxG.stage.application.meta.get('company'));
 
 		for (folder in [
 			'${ModsFolder.modsPath}${ModsFolder.currentModFolder}/mobile',
@@ -75,38 +75,38 @@ class MobileData
 	
 	public static function setTouchPadCustom(touchPad:TouchPad):Void
 	{
-		if (save.data.buttons == null)
+		if (saveMobile.data.buttons == null)
 		{
-			save.data.buttons = new Array();
+			saveMobile.data.buttons = new Array();
 			for (buttons in touchPad)
-				save.data.buttons.push(FlxPoint.get(buttons.x, buttons.y));
+				saveMobile.data.buttons.push(FlxPoint.get(buttons.x, buttons.y));
 		}
 		else
 		{
 			var tempCount:Int = 0;
 			for (buttons in touchPad)
 			{
-				save.data.buttons[tempCount] = FlxPoint.get(buttons.x, buttons.y);
+				saveMobile.data.buttons[tempCount] = FlxPoint.get(buttons.x, buttons.y);
 				tempCount++;
 			}
 		}
 
-		save.flush();
+		saveMobile.flush();
 	}
 
 	public static function getTouchPadCustom(touchPad:TouchPad):TouchPad
 	{
 		var tempCount:Int = 0;
 
-		if (save.data.buttons == null)
+		if (saveMobile.data.buttons == null)
 			return touchPad;
 
 		for (buttons in touchPad)
 		{
-			if (save.data.buttons[tempCount] != null)
+			if (saveMobile.data.buttons[tempCount] != null)
 			{
-				buttons.x = save.data.buttons[tempCount].x;
-				buttons.y = save.data.buttons[tempCount].y;
+				buttons.x = saveMobile.data.buttons[tempCount].x;
+				buttons.y = saveMobile.data.buttons[tempCount].y;
 			}
 			tempCount++;
 		}
@@ -116,8 +116,8 @@ class MobileData
 	
 	static function set_mode(mode:Int = 3)
 	{
-		save.data.mobileControlsMode = mode;
-		save.flush();
+		saveMobile.data.mobileControlsMode = mode;
+		saveMobile.flush();
 		return mode;
 	}
 
@@ -126,13 +126,13 @@ class MobileData
 		if (forcedMode != null)
 			return forcedMode;
 
-		if (save.data.mobileControlsMode == null)
+		if (saveMobile.data.mobileControlsMode == null)
 		{
-			save.data.mobileControlsMode = 3;
-			save.flush();
+			saveMobile.data.mobileControlsMode = 3;
+			saveMobile.flush();
 		}
 
-		return save.data.mobileControlsMode;
+		return saveMobile.data.mobileControlsMode;
 	}
 }
 

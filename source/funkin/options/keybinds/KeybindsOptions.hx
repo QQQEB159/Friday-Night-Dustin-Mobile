@@ -270,7 +270,7 @@ class KeybindsOptions extends MusicBeatSubstate {
 				return;
 			}
 
-			if (controls.ACCEPT && !skipThisFrame) {
+			if (FlxG.keys.justPressed.ENTER && !skipThisFrame) {
 				if (alphabets.members[curSelected] != null) {
 					canSelect = false;
 					CoolUtil.playMenuSFX(CONFIRM);

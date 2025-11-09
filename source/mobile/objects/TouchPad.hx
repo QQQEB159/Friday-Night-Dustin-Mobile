@@ -152,19 +152,19 @@ class TouchPad extends MobileInputManager implements IMobileControls
 	{
 		var int:Int = 0;
 
-		if (MobileData.saveMobile.data.extraData == null)
-			MobileData.saveMobile.data.extraData = new Array();
+		if (FlxG.save.data.extraData == null)
+			FlxG.save.data.extraData = new Array();
 
 		for (button in Reflect.fields(this))
 		{
 			var field = Reflect.field(this, button);
 			if (button.toLowerCase().contains('extra') && Std.isOfType(field, TouchButton))
 			{
-				MobileData.saveMobile.data.extraData[int] = FlxPoint.get(field.x, field.y);
+				FlxG.save.data.extraData[int] = FlxPoint.get(field.x, field.y);
 				++int;
 			}
 		}
-		MobileData.saveMobile.flush();
+		FlxG.save.flush();
 	}
 	
 	private function createButton(X:Float, Y:Float, Graphic:String, ?Color:FlxColor = 0xFFFFFF, ?IDs:Array<MobileInputID>):TouchButton

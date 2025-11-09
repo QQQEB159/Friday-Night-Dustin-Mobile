@@ -27,7 +27,6 @@ import haxe.ds.Map;
 import haxe.Json;
 import haxe.io.Path;
 import openfl.utils.Assets;
-import flixel.util.FlxSave;
 
 /**
  * ...
@@ -40,13 +39,9 @@ class MobileData
 
 	public static var mode(get, set):Int;
 	public static var forcedMode:Null<Int>;
-	public static var saveMobile:FlxSave;
 
 	public static function init()
 	{
-		saveMobile = new FlxSave();
-		saveMobile.bind('MobileControls', flixel.FlxG.stage.application.meta.get('company'));
-
 		for (folder in [
 			'${ModsFolder.modsPath}${ModsFolder.currentModFolder}/mobile',
 			Paths.getPath('mobile')
@@ -75,38 +70,38 @@ class MobileData
 	
 	public static function setTouchPadCustom(touchPad:TouchPad):Void
 	{
-		if (saveMobile.data.buttons == null)
+		if (FlxG.save.data.buttons == null)
 		{
-			saveMobile.data.buttons = new Array();
+			FlxG.save.data.buttons = new Array();
 			for (buttons in touchPad)
-				saveMobile.data.buttons.push(FlxPoint.get(buttons.x, buttons.y));
+				FlxG.save.data.buttons.push(FlxPoint.get(buttons.x, buttons.y));
 		}
 		else
 		{
 			var tempCount:Int = 0;
 			for (buttons in touchPad)
 			{
-				saveMobile.data.buttons[tempCount] = FlxPoint.get(buttons.x, buttons.y);
+				FlxG.save.data.buttons[tempCount] = FlxPoint.get(buttons.x, buttons.y);
 				tempCount++;
 			}
 		}
 
-		saveMobile.flush();
+		FlxG.save.flush();
 	}
 
 	public static function getTouchPadCustom(touchPad:TouchPad):TouchPad
 	{
 		var tempCount:Int = 0;
 
-		if (saveMobile.data.buttons == null)
+		if (FlxG.save.data.buttons == null)
 			return touchPad;
 
 		for (buttons in touchPad)
 		{
-			if (saveMobile.data.buttons[tempCount] != null)
+			if (FlxG.save.data.buttons[tempCount] != null)
 			{
-				buttons.x = saveMobile.data.buttons[tempCount].x;
-				buttons.y = saveMobile.data.buttons[tempCount].y;
+				buttons.x = FlxG.save.data.buttons[tempCount].x;
+				buttons.y = FlxG.save.data.buttons[tempCount].y;
 			}
 			tempCount++;
 		}
@@ -116,8 +111,8 @@ class MobileData
 	
 	static function set_mode(mode:Int = 3)
 	{
-		saveMobile.data.mobileControlsMode = mode;
-		saveMobile.flush();
+		FlxG.save.data.mobileControlsMode = mode;
+		FlxG.save.flush();
 		return mode;
 	}
 
@@ -126,13 +121,13 @@ class MobileData
 		if (forcedMode != null)
 			return forcedMode;
 
-		if (saveMobile.data.mobileControlsMode == null)
+		if (FlxG.save.data.mobileControlsMode == null)
 		{
-			saveMobile.data.mobileControlsMode = 3;
-			saveMobile.flush();
+			FlxG.save.data.mobileControlsMode = 3;
+			FlxG.save.flush();
 		}
 
-		return saveMobile.data.mobileControlsMode;
+		return FlxG.save.data.mobileControlsMode;
 	}
 }
 
